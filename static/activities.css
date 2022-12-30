@@ -1,0 +1,45 @@
+/* “Activity section used for providing users activities information
+//Made by Anh Khôi” */
+.line1{align-items: center;
+    background-color: rgb(131, 189, 117);
+    left: 0;
+    right: 0;
+    height: 23rem;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.folder{ float: left;
+    padding: 5px;
+}
+
+.anh{
+    max-width: 15rem;
+    height: auto;
+    position: relative;
+    display: block;
+    transition: 0.5s all ease-in-out;
+ }
+.anh:hover{
+    /* opacity: 0.5; */
+    transform: scale(1.35);
+    /* transition: 1s; */
+
+ }
+ h3 { color: grey;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.09rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+ /* h3:hover{ color: whitesmoke;} */
+ .line2{align-items: center;
+    background-color: rgb(131, 189, 117);
+    left: 0;
+    right: 0;
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

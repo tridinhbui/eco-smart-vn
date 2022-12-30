@@ -1,0 +1,42 @@
+/* BO FONT CHUNG */
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    /*color: rgb(144, 110, 110); */
+    background-color: rgb(233, 255, 204);
+}
+
+
+/*-----------------------------------------------------*/
+
+
+/* BO FONT HEADING */
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+/*-----------------------------------------------------*/
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%
+}
+
+.question {
+    font-weight: bold;
+}
