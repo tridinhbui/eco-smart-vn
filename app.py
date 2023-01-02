@@ -10,6 +10,10 @@ def index():
 def hello():
     return render_template('index.html', content = "dep trai")
 
+@app.route('/navbar')
+def navBar():
+    return render_template('navbar.html', content = "deptrai")
+
 @app.route('/about-us')
 def aboutUs():
     return render_template('aboutus.html', content = "dep trai")

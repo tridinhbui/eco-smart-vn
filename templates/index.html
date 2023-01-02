@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/activities.css">
-    <link rel="stylesheet" href="/static/aboutus.css">
-    <link rel="stylesheet" href="/static/slideshow.css">
-    <link rel="stylesheet" href="/static/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style/navbar.css" />
+    <link rel="stylesheet" href="/static/style/activities.css" />
+    <link rel="stylesheet" href="/static/style/aboutus.css" />
+    <link rel="stylesheet" href="/static/style/slideshow.css" />
+    <link rel="stylesheet" href="/static/style/footer.css" />
     <title>Home</title>
-</head>
-<body>
+  </head>
 
-    <div id="banner">
-      <span class="text_style">Eco Smart Vietnam</span>
-    </div>
-  
+  <body>
+    <div id="banner">{% include 'navbar.html' %}</div>
+
     {% include 'aboutus.html'%}
-  
-    <div id="content">
-      {% include 'activities.html' %}
-      {% include 'slideshow.html' %}
-    </div>
-  
-  
 
-    
-</body>
-<footer>
-  {% include 'footer.html' %}
-</footer>
+    <div id="content">
+      {% include 'activities.html' %} {% include 'slideshow.html' %}
+    </div>
+  </body>
+  <footer>{% include 'footer.html' %}</footer>
 </html>
