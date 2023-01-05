@@ -1,36 +1,36 @@
- /* Made by GPham  */
+/* Made by GPham  */
 
- .navbar{
-    background-color: rgb(131, 188, 117);
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: 'Arial';
-    font-style: normal;
+.navbar {
+  background-color: rgb(131, 188, 117);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Arial";
+  font-style: normal;
 }
 
-.navbar-brand{
-    width: 50%;
+.navbar-brand {
+  width: 20%;
 }
 
-.title-logo{
-    width: 20%;
-    margin-left: 40%;
+.title-logo {
+  width: 20%;
+  margin-left: 110%;
 }
 
-.title-name{
-    display: inline-block;
-    font-size: 90%;
+.title-name {
+  display: inline-block;
+  font-size: 90%;
 }
 
-.navbar-nav{
-    text-align: right;
+.navbar-nav {
+  text-align: right;
 }
 
-.navbar-toggler{
-    margin-right: 5%;
+.navbar-toggler {
+  margin-right: 5%;
 }
 
-#navbarToggler{
-    margin-left: 15%;
-    padding-right:10%;
+#navbarToggler {
+  margin-left: 15%;
+  padding-right: 10%;
 }
