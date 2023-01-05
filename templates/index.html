@@ -1,23 +1,24 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/style/navbar.css" />
-    <link rel="stylesheet" href="/static/style/activities.css" />
-    <link rel="stylesheet" href="/static/style/aboutus.css" />
-    <link rel="stylesheet" href="/static/style/slideshow.css" />
-    <link rel="stylesheet" href="/static/style/footer.css" />
-    <title>Home</title>
+    <title>My Homepage</title>
   </head>
-
   <body>
-    {% include 'navbar.html' %} {% include 'aboutus.html'%}
+    <!-- include navbar.html here -->
+    {% include 'navbar.html' %}
 
-    <div id="content">
-      {% include 'activities.html' %} {% include 'slideshow.html' %}
-    </div>
+    <!-- include body.html here -->
+    {% include 'activities.html' %}
+    {% include 'slideshow.html' %}
+    {% include 'aboutus.html' %}
+
+
   </body>
-  <footer>{% include 'footer.html' %}</footer>
+
+  <footer>
+    <!-- include footer.html here -->
+    {% include 'footer.html' %}
+  </footer>
 </html>
