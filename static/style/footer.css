@@ -4,9 +4,9 @@
     
 }
 .background_footer {
-    position: absolute;
+    position: fixed;
     align-items: center;
-    background-color: rgb(38, 151, 10);
+    background-color:rgb(38, 151, 10);
     height: 5rem;
     width: 100%;
     display: flex;
