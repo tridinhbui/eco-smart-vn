@@ -7,7 +7,6 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 500;
-  
 }
 
 .navbar-brand {
@@ -43,4 +42,26 @@
 
 #navbarToggler {
   padding-right: 10%;
+}
+
+/* Style the search box inside the navigation bar */
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+}
+
+/* Submit icon for search box */
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
 }
