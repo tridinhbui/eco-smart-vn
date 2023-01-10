@@ -9,27 +9,34 @@
     justify-content: space-around;
     /* align-items: center; */
 }
-.folder{ float: left;
-    padding: 5px;
-}
 
+.folder_anh {
+    float: left;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15%;
+}
 .anh{
+    border-radius: 15%;
     max-width: 15rem;
     height: auto;
-    position: relative;
-    display: block;
+    /* position: relative;
+    display: block; */
     transition: 0.5s all ease-in-out;
+ 
  }
 .anh:hover{
-    /* opacity: 0.5; */
+   
     transform: scale(1.35);
-    /* transition: 1s; */
+
 
  }
- h3 { color: grey;
+ h3 { 
+    /* position: absolute; */
+    color: whitesmoke;
     font-size: 2rem;
     text-align: center;
-    margin-top: 0.09rem;
+    margin-top: 10rem;
     padding-bottom: 0px;
     margin-bottom: 0px;
  }
