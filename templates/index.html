@@ -1,5 +1,7 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,13 +13,34 @@
     <link rel="stylesheet" href="../static/style/footer.css" />
     <title>Home</title>
   </head>
-
   <body>
-    {% include 'navbar.html' %} {% include 'aboutus.html'%}
-
-    <div id="content">
-      {% include 'activities.html' %} {% include 'slideshow.html' %}
+    <!-- include navbar.html here -->
+    {% include 'navbar.html' %}
+    <div
+      style="
+        color: rgb(0, 128, 0);
+        font-family: Georgia;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+      "
+    >
+      ECO SMART VIETNAM
     </div>
-    <footer>{% include 'footer.html' %}</footer>
+    {% include 'carousel.html' %}
+    <!-- include body.html here -->
+    {% include 'activities.html' %} {% include 'slideshow.html' %}
+    <div>{% include 'aboutus.html' %}</div>
+    {% include 'footer.html' %}
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OG"
+    ></script>
   </body>
 </html>

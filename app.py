@@ -47,6 +47,8 @@ def hello_admin():
 def blog_id(block_id):
     return f"<h1> Hello {block_id}!</h1>"
 
+app.run(host='0.0.0.0', port=5000)
+
 # @app.get('/login')
 # def login_get():
 #     return show_the_login_form()
