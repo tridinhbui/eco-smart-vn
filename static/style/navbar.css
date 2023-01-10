@@ -9,8 +9,8 @@
   font-weight: 500;
 }
 
-.navbar-brand {
-
+#navbar-id {
+  margin: 0;
 }
 
 .container-fluid{
@@ -48,6 +48,7 @@
 .search-container input[type=text] {
   padding: 6px;
   margin-top: 8px;
+  margin-left: 8px;
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -68,4 +69,22 @@
 
 .search-container button:hover {
   background: #ccc;
+}
+
+.title p {
+  color: rgb(0, 128, 0); 
+  font-family: Georgia; 
+  font-size: 40px; 
+  font-weight: bold; 
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.title p:hover {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+#title-link {
+  text-decoration: none;
 }

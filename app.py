@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-        return render_template('index.html', content = "dep trai")
+    return render_template('index.html', content = "dep trai")
 
 #Truyền vào kiểu biến String 
 @app.route('/hello')
