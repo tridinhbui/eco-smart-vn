@@ -1,13 +1,15 @@
 /* “Activity section used for providing users activities information
 //Made by Anh Khôi” */
-.line1{align-items: center;
+table{
     background-color: rgb(131, 189, 117);
+    width: 100%;
+}
+.line1{align-items: center;
     left: 0;
     right: 0;
-    height: 23rem;
+    height: 16rem;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
 }
 
 .folder_anh {
@@ -20,32 +22,31 @@
     border-radius: 15%;
     max-width: 15rem;
     height: auto;
-    /* position: relative;
-    display: block; */
     transition: 0.5s all ease-in-out;
- 
+ }
+.line_below_img_2 {
+    margin-top: 16rem;
  }
 .anh:hover{
-   
     transform: scale(1.35);
-
-
  }
+ .folder{
+    position: relative;
+}
  h3 { 
-    /* position: absolute; */
+    position: absolute;
+    width: 100%;
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 13rem;
     padding-bottom: 0px;
     margin-bottom: 0px;
  }
- /* h3:hover{ color: whitesmoke;} */
  .line2{align-items: center;
-    background-color: rgb(131, 189, 117);
     left: 0;
     right: 0;
-    height: 15rem;
+    height: 20rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
