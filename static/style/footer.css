@@ -1,19 +1,28 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+
+    
     
 }
 .background_footer {
     position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     align-items: center;
     background-color:rgb(38, 151, 10);
     height: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    bottom: 0;
+    
 }
 
 p{
     color: white;
+}
+
+img{
+    width: 50px;
 }
