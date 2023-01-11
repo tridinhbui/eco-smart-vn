@@ -21,6 +21,10 @@ pages = FlatPages(app)
 def index():
     return render_template('index.html', content = "dep trai")
 
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+
 #Truyền vào kiểu biến String 
 @app.route('/hello')
 def hello():
