@@ -1,0 +1,95 @@
+/* Made by GPham  */
+
+.navbar {
+  background-color: rgb(38, 151, 10);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+}
+
+#navbar-id {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0 10px;
+}
+
+.container-fluid {
+  height: 35%;
+}
+
+.nav-item {
+  float: left;
+  border-left: 0.15rem solid green;
+}
+
+.title-logo {
+  width: 20%;
+  margin-left: 15%;
+}
+
+.title-name {
+  display: inline-block;
+  font-size: 3vh;
+  font-weight: 300;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar-toggler {
+  padding-left: 0.75rem;
+}
+
+#navbarToggler {
+  padding-right: 10%;
+}
+
+/* Style the search box inside the navigation bar */
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 8px;
+  /* margin-bottom: 8px; */
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Submit icon for search box */
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.title p {
+  color: rgb(0, 128, 0);
+  font-family: Georgia;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.title p:hover {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+#title-link {
+  text-decoration: none;
+}

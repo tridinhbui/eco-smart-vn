@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../static/style/footer.css" />
+<div class="background_footer">
+<<<<<<< HEAD
+  <p>
+    All right reserved by
+    <a href="https://www.facebook.com/ecosmartvietnam"> ECO SMART VIETNAM</a>
+  </p>
+  <div>
+    <a href="https://www.facebook.com/ecosmartvietnam"
+      ><img src="../static/images/footer/ins.gif" alt=""
+    /></a>
+    <a href="https://www.instagram.com/ecosmart.vietnam/"
+      ><img src="../static/images/footer/ins.gif" alt=""
+    /></a>
+  </div>
+</div>
+=======
+    <p class="footerstyle">
+        All right reserved by
+        <a href="https://www.facebook.com/ecosmartvietnam"> ECO SMART VIETNAM</a>
+    </p>
+    <div>
+        <a href="https://www.facebook.com/ecosmartvietnam"><img class="footerimages" src="../static/images/footer/facebook.png" alt="" /></a>
+        <a href="https://www.instagram.com/ecosmart.vietnam/"><img class="footerimages" src="../static/images/footer/ins.gif" alt="" /></a>
+    </div>
+</div>
+>>>>>>> 6c9774ac3a12f44dd30272229f8c47d1dda559fe
