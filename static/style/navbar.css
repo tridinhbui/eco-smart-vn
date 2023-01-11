@@ -11,15 +11,18 @@
 
 #navbar-id {
   margin: 0;
+  border: 0;
   border-radius: 0;
+  padding: 0 10px;
 }
 
-.container-fluid{
+.container-fluid {
   height: 35%;
 }
 
-.nav-item{
+.nav-item {
   float: left;
+  border-left: 0.15rem solid green;
 }
 
 .title-logo {
@@ -38,7 +41,7 @@
 }
 
 .navbar-toggler {
-  padding-left: 25%;
+  padding-left: 0.75rem;
 }
 
 #navbarToggler {
@@ -46,10 +49,11 @@
 }
 
 /* Style the search box inside the navigation bar */
-.search-container input[type=text] {
+.search-container input[type="text"] {
   padding: 6px;
   margin-top: 8px;
   margin-left: 8px;
+  /* margin-bottom: 8px; */
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -73,10 +77,10 @@
 }
 
 .title p {
-  color: rgb(0, 128, 0); 
-  font-family: Georgia; 
-  font-size: 40px; 
-  font-weight: bold; 
+  color: rgb(0, 128, 0);
+  font-family: Georgia;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 0;
 }
