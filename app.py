@@ -1,9 +1,29 @@
 from flask import Flask, redirect, url_for, render_template
+from flask_flatpages import FlatPages
+
+# Tell Flatpages to auto reload when a page is changed, and look for .md files
+FLATPAGES_AUTO_RELOAD = True
+FLATPAGES_EXTENSION = '.md'
+
+# Create our app object, use this page as our settings (will pick up DEBUG)
 app = Flask(__name__)
+
+# For settings, we just use this file itself, very easy to configure
+app.config.from_object(__name__)
+
+# We want Flask to allow no slashes after paths, because they get turned into flat files
+app.url_map.strict_slashes = False
+
+# Create an instance of our extension
+pages = FlatPages(app)
 
 @app.route('/')
 def index():
     return render_template('index.html', content = "dep trai")
+
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
 
 #Truyền vào kiểu biến String 
 @app.route('/hello')
