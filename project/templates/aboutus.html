@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/aboutus.css') }}">
+</head>
+
+<body id="bodystyle">
+    {% include 'navbar.html' %}
+    <div>
+        <main id="mainstyle">
+            <!-- Including: Awareness, Mission & Vision, Founder -->
+            <h1 class="head1">About Us</h1>
+            {% include 'animation.html' %}
+            <h2 class="head2">Founder</h2>
+            <!-- Founder Content -->
+            <div>
+                <img class="caption" src="{{ url_for('static', filename='images/aboutus/founder.jpg') }}" alt="Founder" />
+                <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
+                <p>
+                    Để hình thành và phát triển một dự án thì sự góp phần của người chủ tịch là vô cùng quan trọng. Ngày hôm nay, hãy cùng theo chân chúng mình tìm hiểu về người thủ lĩnh của Eco Smart Vietnam - anh Bùi Đình Trí thông qua phần phỏng vấn nho nhỏ dưới đây,
+                    đồng thời cũng để hiểu thêm những thông tin hết sức thú vị về nhà Eco Smart bạn nhé. Bắt đầu thôi nào.
+                </p>
+                <p class="question">
+                    Câu hỏi số 1: Anh hãy giới thiệu về bản thân mình và kể 3 điều thú vị về bản thân anh.
+                </p>
+                <p>
+                    Anh Trí: Anh hiện đang là du học sinh Mỹ theo học 2 chuyên ngành là Khoa học máy tính và Kinh tế tại Mỹ. Ba điều thú vị về bản thân anh có lẽ là anh thuận tay trái, máu liều cao (nhưng liều khôn và trong tầm kiểm soát 🙂 thế mới ngược đời) và lười học
+                    (học không hề dốt nhé 😃).
+                </p>
+                <p class="question">
+                    Câu hỏi số 2: Cơ duyên đã thúc đẩy anh Bùi Đình Trí sáng lập nên Eco Smart Vietnam là gì?
+                </p>
+                <p>
+                    Anh Trí: Cơ duyên chắc là bắt nguồn từ việc anh tham gia một trong những hoạt động hàng năm của Trung tâm hỗ trợ Doanh nhân trẻ và Khởi nghiệp của trường anh, đó là Macalester Entrepreneurship and Innovation Department trao thưởng cho các bạn trẻ có những
+                    ý tưởng, sáng kiến đặc biệt giúp cải thiện cuộc sống của cộng đồng xung quanh họ. Anh may mắn đạt giải và Eco Smart Vietnam là ý tưởng giúp anh đạt giải thưởng đó(Tiền thân ban đầu là Eco Heroes Campaign!).
+                </p>
+                <p class="question">
+                    Câu hỏi số 3: Anh có thể chia sẻ một chút về mục tiêu, kỳ vọng mà anh đặt ở Eco-Smart Vietnam trong tương lai được không?
+                </p>
+                <p>
+                    Anh Trí: Như anh chia sẻ, anh là người máu liều cao nhưng mà trong tầm kiểm soát nên anh đặt mục tiêu/kỳ vọng thường cân bằng giữa xa vời và thực tế =))). Anh thực sự kì vọng Eco Smart Vietnam sẽ trở thành một trong những tổ chức dành cho học sinh/sinh
+                    viên về môi trường lớn và chuyên nghiệp nhất miền Bắc. Tuy nhiên trong lòng anh nghĩ trước mắt chỉ cần lớn nhất Hà Nội cái đã (có lẽ lớn nhất HN nhiều khả năng có thể top 2, top 3 miền Bắc rồi nhỉ? :))
+                </p>
+                <p class="question">
+                    Câu hỏi số 4: Anh có điều gì muốn gửi gắm điều gì tới những bạn đọc và những người theo dõi của dự án không?
+                </p>
+                <p>
+                    Anh Trí: Lời nhắn nhủ của anh là: “Eco Smart Vietnam sẽ là dự án không để những người theo dõi và kỳ vọng thất vọng đâu bởi với đội ngũ Eco Smart - đội ngũ mà anh tin là toàn những con người tài năng và trách nhiệm với công việc sẽ có thể giúp dự án phát
+                    triển và lan tỏa đi xa. Ngoài ra, một lời hứa nho nhỏ đấy là Eco Smart Vietnam sẽ luôn cố gắng hết sức thực hiện đúng sứ mệnh mà chúng mình đề ra: Hành động vì sự phát triển và an toàn của môi trường tại Việt Nam!”
+                </p>
+            </div>
+        </main>
+    </div>
+    {% include 'footer.html' %}
+</body>
+
+</html>
