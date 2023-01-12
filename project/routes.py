@@ -28,6 +28,6 @@ def activities():
 def footer():
     return render_template('footer.html', content = "dep trai")
 
-@app.route('/slide-show/')
+@app.route('/slideshow/')
 def slideShow():
     return render_template('slideshow.html', content = "dep trai")
