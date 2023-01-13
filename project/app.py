@@ -5,34 +5,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', content = "dep trai")
-
-#Truyền vào kiểu biến String 
-@app.route('/hello/')
-def hello():
-    return render_template('index.html', content = "dep trai")
-
-@app.route('/navbar/')
-def navBar():
-    return render_template('navbar.html', content = "deptrai")
+    return render_template('index.html')
 
 @app.route('/about-us/')
 def aboutUs():
-    return render_template('aboutus.html', content = "dep trai")
+    return render_template('aboutus.html')
 
 @app.route('/activities/')
 def activities():
-    return render_template('activities.html', content = "dep trai")
-
-@app.route('/footer/')
-def footer():
-    return render_template('footer.html', content = "dep trai")
+    return render_template('activities.html')
 
 @app.route('/slideshow/')
 def slideShow():
-    return render_template('slideshow.html', content = "dep trai")
+    return render_template('slideshow.html')
 
-
-@app.route('/contactus/')
-def contacUs():
-    return render_template('contactus.html', content = "dep trai")
+@app.route('/contact-us/')
+def contactUs():
+    return render_template('contactus.html')
