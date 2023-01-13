@@ -37,8 +37,8 @@
 
 .nav-m {
     position: absolute;
-    margin-top: 610px;
-    width: 800px;
+    margin-top: 920px;
+    width: 1100px;
     justify-content: center;
     display: flex;
     border-radius: 10px;
@@ -78,8 +78,8 @@
 
 .nav-auto {
     position: absolute;
-    width: 800px;
-    margin-top: 610px;
+    width: 1100px;
+    margin-top: 920px;
     display: flex;
     justify-content: center;
 }
@@ -118,11 +118,13 @@
 
 .animation-content {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     background-color: black;
     opacity: 35%;
     color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 100px;
+    height: 260px;
+    padding-left: 50px;
+    padding-top: 5px;
 }
