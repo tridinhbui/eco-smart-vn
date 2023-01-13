@@ -16,7 +16,7 @@
 .head1 {
     background-image: url('../images/aboutus/titlebackground.png');
     background-size: cover;
-    margin-top: 20px;
+    padding-top: 20px;
     height: 200px;
     width: 100%;
 }
@@ -29,12 +29,27 @@
     padding-top: 80px;
 }
 
+#aboutus-content {
+    background-size: cover;
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+}
+
+#aboutus-content h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(65, 128, 49);
+    text-align: center;
+    padding-top: 80px;
+}
+
 .head2 {
     margin-top: 20px;
     font-size: 56px;
     font-weight: bolder;
     text-align: center;
-    color: rgb(65, 128, 49)
+    color: rgb(65, 128, 49);
 }
 
 
