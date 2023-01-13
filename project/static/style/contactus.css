@@ -1,0 +1,44 @@
+body {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.title {
+  text-align: center;
+}
+
+.contact-box {
+  padding-left: 1.2%;
+  padding-right: 2.4%;
+  padding-top: 1rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+.contact-item {
+  width: 100%;
+  border-width: 0.11rem;
+  margin-top: 0.7rem;
+  padding-left: 1rem;
+  height: 3rem;
+  border-radius: 4px;
+  margin-right: 10%;
+
+  box-sizing: border-box;
+}
+
+#messagebox {
+  font-family: "Arial";
+  font-style: normal;
+  padding-top: 1rem;
+  height: 5rem;
+}
+
+#send-btn {
+  margin-top: 1rem;
+  margin-left: 35%;
+  width: 30%;
+}

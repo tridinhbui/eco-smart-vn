@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/contactus.css')}}"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("qKMuaq5-XFFxWlReH");
+      })();
+    </script>
+
+    <script
+      src="{{ url_for('static', filename='JS/contactus.js')}}"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <h1 class="title">Eco Smart Vietnam</h1>
+
+    <form class="contact-box" id="contact-form">
+      <input
+        class="contact-item"
+        type="text"
+        name="from_name"
+        placeholder="Full name"
+      />
+      <br />
+      <input
+        class="contact-item"
+        type="email"
+        name="email_id"
+        placeholder="Email"
+      />
+      <br />
+      <textarea
+        class="contact-item"
+        name="message"
+        placeholder="Message"
+        id="messagebox"
+      ></textarea>
+      <br />
+      <input type="submit" value="Send" id="send-btn" />
+    </form>
+  </body>
+</html>

@@ -31,3 +31,8 @@ def footer():
 @app.route('/slideshow/')
 def slideShow():
     return render_template('slideshow.html', content = "dep trai")
+
+
+@app.route('/contactus/')
+def contacUs():
+    return render_template('contactus.html', content = "dep trai")
