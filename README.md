@@ -3,8 +3,8 @@ Project structure:
 │   ├── build           # Deployment folder for Netlify (ecosmart.netlify.app). Static files are created here by Frozen-Flask!
 │   ├── static
 │   │   ├── css         # CSS files for styling the pages
-│   │   ├── img      # Images displayed on the pages
-│   │   └── js          # JS files for styling the pages
+│   │   ├── img         # Images displayed on the pages
+│   │   └── js          # JavaScript files for styling the pages
 │   ├── templates       # Base templates
 |   └── app.py          # Routes in the Flask app
 ├── venv                # Virtual environment to activate
