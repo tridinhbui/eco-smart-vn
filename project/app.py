@@ -15,10 +15,14 @@ def aboutUs():
 def activities():
     return render_template('activities.html')
 
-@app.route('/slideshow/')
-def slideShow():
-    return render_template('slideshow.html')
-
 @app.route('/contact-us/')
 def contactUs():
     return render_template('contactus.html')
+
+@app.route('/nav-bar/')
+def navBar():
+    return render_template('navbar.html')
+
+@app.route('/slideshow/')
+def slideShow():
+    return render_template('slideshow.html')
