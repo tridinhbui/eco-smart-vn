@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(233, 255, 204);
+}
+
+.esvabout {
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    position: relative;
+}
+
+#myVideo {
+    z-index: 2;
+    object-fit: fill;
+    opacity: 0.5;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.all_text {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title {
+    display: inline;
+    vertical-align: middle;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    padding-left: 50px;
+}
+
+.seperate {
+    width: 100px;
+    height: 2px;
+    margin-bottom: 24px;
+    border-radius: 7px;
+    display: flex;
+    background-color: white;
+    transform-origin: center;
+}
+
+#detailtext {
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+}
+
+.text1 {
+    margin-top: 10px;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    position: relative;
+    align-self: center;
+    color: white;
+    font-weight: 100;
+}
+
+.text2 {
+    text-decoration-line: none;
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.text2:hover {
+    text-decoration-line: underline;
+    color: white;
+    font-weight: bolder;
+}

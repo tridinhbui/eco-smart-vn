@@ -1,0 +1,67 @@
+#ecoteam {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+}
+
+.column {
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.5em 0;
+}
+
+.row h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #1f003b;
+}
+
+.card {
+    box-shadow: 0 0 2.2em #1f003b;
+    padding: 3.5em 1em;
+    margin: 10px auto;
+    border-radius: 0.6em;
+    width: 25%;
+    min-width: 300px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: rgb(101, 177, 101);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.card p {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.card:hover {
+    background: linear-gradient(rgb(65, 128, 49), rgb(117, 186, 99));
+}
