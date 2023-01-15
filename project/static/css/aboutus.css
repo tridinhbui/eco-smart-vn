@@ -14,7 +14,7 @@
 /* BO FONT HEADING */
 
 .head1 {
-    background-image: url('../images/aboutus/titlebackground.png');
+    background-image: url('../img/aboutus/titlebackground.png');
     background-size: cover;
     padding-top: 20px;
     height: 200px;
@@ -26,7 +26,7 @@
     font-weight: bolder;
     color: white;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 #aboutus-content {
