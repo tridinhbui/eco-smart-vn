@@ -2,6 +2,7 @@ body {
   font-family: "Arial";
   font-style: normal;
   font-weight: 500;
+  background-color: white;
 }
 
 .title {
@@ -14,7 +15,7 @@ body {
   padding-top: 1rem;
   margin-left: 30%;
   margin-right: 30%;
-  background-color: #f5f5f5;
+  background-color: rgb(233, 255, 204);
   border: 1px solid #ccc;
 }
 
@@ -41,4 +42,12 @@ body {
   margin-top: 1rem;
   margin-left: 35%;
   width: 30%;
+  background-color: rgb(64, 109, 89);
+}
+
+#send-btn:hover {
+  font-weight: bold;
+  background-color: white;
+  color: rgb(64, 109, 89);
+  text-decoration: none;
 }
