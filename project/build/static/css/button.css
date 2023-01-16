@@ -9,19 +9,19 @@
 }
 
 .button {
-  text-decoration: none;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  position: inherit;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
-  width: 125px;
-  color: white;
-  border-radius: 5px;
-  border: rgb(64, 109, 89) solid;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: inherit;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    color: white;
+    border-radius: 5px;
+    border: rgb(64, 109, 89) solid;
 }
 
 .button:link {
@@ -37,7 +37,7 @@
 }
 
 .button:active {
-  font-weight: bold;
-  background-color: rgb(64, 109, 89);
-  text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(64, 109, 89);
+    text-decoration: none;
 }
