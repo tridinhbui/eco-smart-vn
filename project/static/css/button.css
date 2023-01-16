@@ -1,43 +1,43 @@
 .button-show {
-  border: rgb(64, 109, 89);
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+    border: rgb(64, 109, 89);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .button {
-  text-decoration: none;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  position: inherit;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
-  width: 125px;
-  color: white;
-  border-radius: 5px;
-  border: rgb(64, 109, 89) solid;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: inherit;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    color: white;
+    border-radius: 5px;
+    border: rgb(64, 109, 89) solid;
 }
 
 .button:link {
-  background-color: rgb(64, 109, 89);
-  text-decoration: none;
+    background-color: rgb(64, 109, 89);
+    text-decoration: none;
 }
 
 .button:hover {
-  font-weight: bold;
-  background-color: white;
-  color: rgb(64, 109, 89);
-  text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(64, 109, 89);
+    text-decoration: none;
 }
 
-.button:active {
-  font-weight: bold;
-  background-color: rgb(64, 109, 89);
-  text-decoration: none;
+.button:active:visited {
+    font-weight: bold;
+    background-color: rgb(64, 109, 89);
+    text-decoration: none;
 }
