@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/contactus.css')}}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/button.css') }}"
+    />
 
     <script
       type="text/javascript"
@@ -27,7 +31,9 @@
     ></script>
   </head>
   <body>
-    <h1 class="title">Eco Smart Vietnam</h1>
+    {% include 'navbar.html' %} 
+    <h1 class="title">Contact us</h1>
+    <h2 class="title"> For any information please contact us through this form!</h2>
 
     <form class="contact-box" id="contact-form">
       <input
@@ -35,6 +41,7 @@
         type="text"
         name="from_name"
         placeholder="Full name"
+        required
       />
       <br />
       <input
@@ -42,6 +49,7 @@
         type="email"
         name="email_id"
         placeholder="Email"
+        required
       />
       <br />
       <textarea
@@ -49,9 +57,11 @@
         name="message"
         placeholder="Message"
         id="messagebox"
+        required
       ></textarea>
       <br />
-      <input type="submit" value="Send" id="send-btn" />
+      <input type="submit" class="button" value="Send" id="send-btn" />
     </form>
+    {% include 'footer.html' %} 
   </body>
 </html>

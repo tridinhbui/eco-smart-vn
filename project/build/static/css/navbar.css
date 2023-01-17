@@ -51,9 +51,8 @@
 /* Style the search box inside the navigation bar */
 .search-container input[type="text"] {
   padding: 6px;
-  margin-top: 8px;
+  margin-top: 3px;
   margin-left: 8px;
-  /* margin-bottom: 8px; */
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -63,7 +62,7 @@
 .search-container button {
   float: right;
   padding: 6px 10px;
-  margin-top: 8px;
+  margin-top: 3px;
   margin-right: 16px;
   background: #ddd;
   border: none;
