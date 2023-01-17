@@ -26,3 +26,7 @@ def navBar():
 @app.route('/slideshow/')
 def slideShow():
     return render_template('slideshow.html')
+
+@app.route('/video/')
+def video():
+    return render_template('video.html')

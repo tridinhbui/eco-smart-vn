@@ -1,0 +1,12 @@
+figure {
+    display: block; 
+    padding: 50px 20%; 
+    background-color: rgb(144, 238, 144);
+}
+
+figcaption {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
