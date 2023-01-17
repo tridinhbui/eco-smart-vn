@@ -1,0 +1,42 @@
+.button-show-scroll {
+    display: grid;
+    align-content: flex-end;
+    justify-items: center;
+    background-image: url('../img/index/firstbackground.jpg');
+    background-color: black;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 40vw;
+}
+
+.button-scroll {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    margin-bottom: 0.8vw;
+    width: 10vw;
+    height: 3.5vw;
+    color: white;
+    border-radius: 0.5vw;
+    border: rgb(64, 109, 89) solid;
+}
+
+.button-scroll:link {
+    background-color: rgb(64, 109, 89);
+    text-decoration: none;
+}
+
+.button-scroll:hover {
+    font-weight: bold;
+    background-color: white;
+    color: rgb(64, 109, 89);
+    text-decoration: none;
+}
+
+.button-scroll:active:visited {
+    font-weight: bold;
+    background-color: rgb(64, 109, 89);
+    text-decoration: none;
+}

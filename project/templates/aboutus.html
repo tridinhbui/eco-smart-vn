@@ -19,8 +19,9 @@
             <!-- Including: Awareness, Mission & Vision, Founder -->
             <h2 class="head2">Awareness, Mission and Vision</h2>
             {% include 'animation.html' %}
-
-            <h2 class="head2">Founder</h2>
+            <h2 class="head2">Our Team</h2>
+            {% include 'ourteam.html' %}
+            <h2 class="head2">The Story of Eco Smart Vietnam</h2>
             <!-- Founder Content -->
             <div>
                 <img class="caption" src="{{ url_for('static', filename='img/aboutus/founder.jpg') }}" alt="Founder" />
@@ -46,8 +47,8 @@
                     Question 3: Could you share a little about the goals and expectations that you set at Eco Smart Vietnam in the future?
                 </p>
                 <p>
-                    Mr. Tri: As I share, I am a high-dose blood person but in control, so I set goals/expectations that often balance between far-fetched and realistic =))). I really expect Eco Smart Vietnam to become one of the largest and most professional environmental
-                    organizations in the North. However, in my mind, I think that in the short term, it only needs to be the largest in Hanoi (probably the largest HN is likely to be top 2, top 3 in the North, right? :))
+                    Mr. Tri: As I share, I am a high-dose blood person but in control, so I set goals/expectations that often balance between far-fetched and realistic. I really expect Eco Smart Vietnam to become one of the largest and most professional environmental
+                    organizations in the North. However, in my mind, I think that in the short term, it only needs to be the largest in Hanoi (probably the largest HN is likely to be top 2, top 3 in the North, right?
                 </p>
                 <p class="question">
                     Question 4: Do you have anything to say to readers and followers of the project?
@@ -59,8 +60,7 @@
             </div>
         </main>
     </div>
-    <h2 class="head2">Our Team</h2>
-    {% include 'ourteam.html' %} {% include 'footer.html' %}
+    {% include 'footer.html' %}
 </body>
 
 </html>
