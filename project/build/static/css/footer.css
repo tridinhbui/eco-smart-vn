@@ -20,3 +20,9 @@
 .footerimages {
     width: 50px;
 }
+@media screen and (width < 400px) {
+        .background_footer{
+            display: block;
+            height: 10rem;
+        }
+  }
