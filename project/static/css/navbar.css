@@ -16,6 +16,12 @@
   padding: 0 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    width: 75%;
+  }
+}
+
 .container-fluid {
   height: 35%;
 }
