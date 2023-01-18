@@ -1,12 +1,13 @@
 .container{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    width: 500px;
-    height: 500px;
-    margin: 100px auto;
+    width: 150vh;
+    height: 95vh;
+    margin-top: 5%;
+    /* margin: 100px auto; */
 }
 
 .container .carousel-inner .item  img{
-    width: 1100px;
-    height: 600px;
+    width: 150vh;
+    height: 90vh;
 }

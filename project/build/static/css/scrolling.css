@@ -40,6 +40,12 @@
         height: 8vw;
         border-radius: 1vw;
     }
+    .button-scroll:hover {
+        font-weight: bold;
+        background-color: white;
+        color: rgb(64, 109, 89);
+        text-decoration: none;
+    }
 }
 
 .button-scroll:link {
