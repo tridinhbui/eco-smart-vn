@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 768px) {
   .navbar-brand {
-    width: 250px;
+    width: 75%;
   }
 }
 
