@@ -13,7 +13,7 @@
 @media(max-width: 600px) {
     .button-show-scroll {
         height: 60vw;
-        background-image: url('../img/index/firstbackground_mobile.jpg');
+        background-image: url('../img/index/firstbackground_mobile.png');
     }
 }
 
@@ -33,12 +33,18 @@
 
 @media(max-width: 600px) {
     .button-scroll {
-        font-size: 2.5vw;
-        padding: 0.8vw;
-        margin-bottom: 1.8vw;
-        width: 20vw;
-        height: 6.5vw;
-        border-radius: 0.8vw;
+        font-size: 4vw;
+        padding: 0.5vw;
+        margin-bottom: 1.6vw;
+        width: 25vw;
+        height: 8vw;
+        border-radius: 1vw;
+    }
+    .button-scroll:hover {
+        font-weight: bold;
+        background-color: white;
+        color: rgb(64, 109, 89);
+        text-decoration: none;
     }
 }
 
