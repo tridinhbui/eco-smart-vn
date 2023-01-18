@@ -11,3 +11,8 @@ figcaption {
     margin-bottom: 20px;
     color: rgb(0, 102, 0);
 }
+
+figcaption:hover {
+    transform: scale(1.2);
+    color: rgb(0, 150, 0);
+}

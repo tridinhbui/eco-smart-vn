@@ -5,7 +5,7 @@
     right: 0px;
     align-items: center;
     background-color: rgb(38, 151, 10);
-    height: 5rem;
+    height: 6.5vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -13,12 +13,17 @@
     font-size: 14px;
 }
 
-.footerstyle {
+.footer-style {
     color: white;
+    margin-top: 1vh;
 }
 
 .footerimages {
+<<<<<<< HEAD
     width: 50px;
+=======
+    width: 4.8vh;
+>>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1
 }
 @media screen and (width < 400px) {
         .background_footer{

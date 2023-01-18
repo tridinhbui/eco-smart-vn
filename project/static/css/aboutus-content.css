@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(131, 189, 117);
+    background-color: rgb(144, 238, 144);
 }
 
 .esvabout {
@@ -29,24 +29,36 @@ body {
 .all_text {
     z-index: 3;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+@media(max-width: 600px) {
+    .all_text {
+        top: 40%;
+    }
+}
+
 #title {
-    display: inline;
-    vertical-align: middle;
+    text-align: center;
     font-size: 36px;
     font-weight: bolder;
     color: white;
-    padding-left: 50px;
+}
+
+@media(max-width: 600px) {
+    #title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bolder;
+        color: white;
+    }
 }
 
 .seperate {
     width: 100px;
-    height: 2px;
-    margin-bottom: 24px;
+    height: 1.5px;
     border-radius: 7px;
     display: flex;
     background-color: white;
@@ -54,21 +66,33 @@ body {
 }
 
 #detailtext {
-    font-size: 25px;
+    /*font-size: 28px;
     color: white;
-    font-weight: 100;
+    font-weight: 100;*/
+    display: grid;
 }
 
 .text1 {
+    font-size: 24px;
     margin-top: 10px;
     display: inline-block;
-    width: 500px;
-    height: 100px;
+    text-align: justify;
+    width: 560px;
+    height: fit-content;
     padding: 5px;
     position: relative;
     align-self: center;
     color: white;
     font-weight: 100;
+}
+
+@media(max-width: 600px) {
+    .text1 {
+        width: 360px;
+        height: 60px;
+        padding: 3px;
+        font-size: 18px;
+    }
 }
 
 .text2 {
@@ -86,8 +110,21 @@ body {
     border: 2px white solid;
 }
 
+@media(max-width: 600px) {
+    .text2 {
+        top: 130%;
+        font-size: 16px;
+        padding: 8px 16px 8px 16px;
+    }
+}
+
 .text2:hover {
     text-decoration-line: underline;
     color: white;
     font-weight: bolder;
+}
+
+#title:hover {
+    transform: scale(1.2);
+    color: rgb(245, 245, 245);
 }

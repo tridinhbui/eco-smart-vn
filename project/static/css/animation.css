@@ -1,130 +1,37 @@
-.section {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 90vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* margin: 100px auto; */
 }
 
-.slider {
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
+.container .carousel-inner .item img {
+    width: 90vw;
 }
 
-.slide {
-    width: 500%;
-    display: flex;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.slide input {
-    display: none;
-}
-
-.st {
-    width: 20%;
-    transition: 2s;
-}
-
-.st img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.nav-m {
-    position: absolute;
-    margin-top: 920px;
-    width: 1100px;
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
-}
-
-.m-btn {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.m-btn:not(:last-child) {
-    margin-right: 30px;
-}
-
-.m-btn:hover {
-    background-color: black;
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-#radio4:checked~.first {
-    margin-left: -60%;
-}
-
-.nav-auto {
-    position: absolute;
-    width: 1100px;
-    margin-top: 920px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-auto div {
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.nav-auto div:not(:last-child) {
-    margin-right: 30px;
-    justify-content: center;
-}
-
-#radio1:checked~.nav-auto .a-b1 {
-    background-color: black;
-}
-
-#radio2:checked~.nav-auto .a-b2 {
-    background-color: black;
-}
-
-#radio3:checked~.nav-auto .a-b3 {
-    background-color: black;
-}
-
-#radio4:checked~.nav-auto .a-b4 {
-    background-color: black;
-}
-
-#radio1:checked~.nav-auto .a-b1 {
-    background-color: black;
+@media(min-width: 1000px) {
+    .container {
+        width: 50vw;
+    }
+    .container .carousel-inner .item img {
+        width: 50vw;
+    }
 }
 
 .animation-content {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.2vw;
     background-color: black;
     opacity: 35%;
     color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 260px;
-    padding-left: 50px;
-    padding-top: 5px;
+    height: 18vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+
+.animation-content p {
+    margin: 0;
+    padding: 0;
 }

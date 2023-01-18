@@ -1,8 +1,14 @@
-body {
+  .contact-us-body {
   font-family: "Arial";
   font-style: normal;
   font-weight: 500;
-  background-color: white;
+  background-color: rgb(233, 255, 204);
+
+}
+
+.contact-us-title {
+  padding-top: 2.5%;
+  padding-bottom: 2rem;
 }
 
 .contact-us-title {
@@ -20,8 +26,16 @@ body {
   padding-top: 1rem;
   margin-left: 30%;
   margin-right: 30%;
-  background-color: rgb(233, 255, 204);
+  margin-bottom: 8vh;
+  background-color: rgb(144, 238, 144);
   border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-box {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .contact-item {
@@ -55,7 +69,11 @@ body {
 
 #send-btn {
   margin-top: 1rem;
+<<<<<<< HEAD
   margin-left: 35%;
+=======
+  margin-left: 30%;
+>>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1
   width: 40%;
   background-color: rgb(64, 109, 89);
   padding-left: 0;
