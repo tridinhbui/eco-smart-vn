@@ -1,14 +1,29 @@
-.container{
+.container {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    width: 150vh;
-    height: 95vh;
+    width: 90vw;
     margin-top: 5%;
+    margin-bottom: 5%;
     /* margin: 100px auto; */
 }
 
+<<<<<<< HEAD
 .container .carousel-inner .item  img{
     width: 150vh;
     height: 90vh;
 }
 
+=======
+.container .carousel-inner .item img {
+    width: 90vw;
+}
+
+@media(min-width: 1000px) {
+    .container {
+        width: 60vw;
+    }
+    .container .carousel-inner .item img {
+        width: 60vw;
+    }
+}
+>>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1

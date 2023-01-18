@@ -12,10 +12,16 @@ figcaption {
     color: rgb(0, 102, 0);
 }
 
+<<<<<<< HEAD
 
 @media(max-width: 600px) {
     figure {
         padding: 5%;
 
     }
+=======
+figcaption:hover {
+    transform: scale(1.2);
+    color: rgb(0, 150, 0);
+>>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1
 }

@@ -130,24 +130,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/static/css/animation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/animation.css" />
+    <link rel="stylesheet" href="../static/css/animation.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section class="section">
-        <div class="slider">
-            <div class="slide">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
 
-                <div class="st first">
-                    <img src="/static/img/aboutus/aware1.jpg" alt="Awareness1" />
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <!--slide 1-->
+                <div class="item active">
+                    <img src="/static/img/aboutus/aware1.jpg" />
+                    <img src="../static/img/aboutus/aware1.jpg" />
                     <div class="animation-content">
                         <p>In 10 centuries, a new plastic bottle will decompose.</p>
                         <p>100 years from now, 1 plastic bag will leave this earth.</p>
@@ -157,16 +167,20 @@
                     </div>
                 </div>
 
-                <div class="st">
-                    <img src="/static/img/aboutus/aware2.jpg" alt="Awareness 2">
+                <!--slide 2-->
+                <div class="item">
+                    <img src="/static/img/aboutus/aware2.jpg" />
+                    <img src="../static/img/aboutus/aware2.jpg" />
                     <div class="animation-content">
                         <p>If now, inaction, then when?</p>
                         <p>A few years later, when that pile of garbage has not yet decomposed, will humanity eat on the garbage heap, sleep on the garbage pile, and drown in the ocean of garbage?</p>
                     </div>
                 </div>
 
-                <div class="st">
-                    <img src="/static/img/aboutus/mission.jpg" alt="Mission">
+                <!--slide 3-->
+                <div class="item">
+                    <img src="/static/img/aboutus/mission.jpg" />
+                    <img src="../static/img/aboutus/mission.jpg" />
                     <div class="animation-content">
                         <p>Eco Smart VietNam is committed to 2 main MISSIONS and VISIONS:</p>
                         <p>- Raising Vietnamese awareness of environmental protection activities</p>
@@ -178,43 +192,29 @@
                     </div>
                 </div>
 
-                <div class="st">
-                    <img src="/static/img/aboutus/history.jpg" alt="Vision">
+                <!--slide 4-->
+                <div class="item">
+                    <img src="/static/img/aboutus/history.jpg" />
+                    <img src="../static/img/aboutus/history.jpg" />
                     <div class="animation-content">
                         <p>With those things, ECO SMART VIETNAM was born.</p>
                         <p>In 2022-2024, Eco Smart VietNam operates with the vision of becoming one of the leading active student organizations in the North acting for the environment. In particular, ESV is a pioneer in promoting the development of environmentally
                             friendly products.</p>
                     </div>
                 </div>
-
-                <div class="nav-auto">
-                    <div class="a-b1"></div>
-                    <div class="a-b2"></div>
-                    <div class="a-b3"></div>
-                    <div class="a-b4"></div>
-                </div>
-
-                <div class="nav-m">
-                    <label for="radio1" class="m-btn"></label>
-                    <label for="radio2" class="m-btn"></label>
-                    <label for="radio3" class="m-btn"></label>
-                    <label for="radio4" class="m-btn"></label>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Java for animation -->
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function() {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000)
-    </script>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
@@ -270,8 +270,11 @@
                 <h2 class="head2">The Story of Eco Smart Vietnam</h2>
                 <!-- Founder Content -->
                 <div>
-                    <img class="caption" src="/static/img/aboutus/founder.jpg" alt="Founder" />
-                    <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
+                    <figure>
+                        <img class="caption" src="/static/img/aboutus/founder.jpg" alt="Founder" />
+                        <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
+                        <figcaption class="founder_pic">Founder of Eco Smart Vietnam - Mr Bui Dinh Tri</figcaption>
+                    </figure>
                     <p>
                         To form and develop a project, the contribution of the chairman is extremely important. Today, let's follow us to learn about the leader of Eco Smart Vietnam - Mr. Bui Dinh Tri through the small interview below as well as understand more interesting information
                         about Eco Smart home. Let's get started.

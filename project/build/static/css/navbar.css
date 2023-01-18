@@ -92,7 +92,8 @@
 
 .title p:hover {
   text-decoration: none;
-  color: darkgreen;
+  transform: scale(1.2);
+  color: rgb(0, 150, 0);
 }
 
 #title-link {

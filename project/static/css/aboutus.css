@@ -24,7 +24,7 @@
 .head1 h1 {
     font-size: 80px;
     font-weight: bolder;
-    color: white;
+    color: rgb(233, 255, 204);
     text-align: center;
     padding-top: 60px;
 }
@@ -56,12 +56,26 @@
 /*-----------------------------------------------------*/
 
 #mainstyle {
-    width: 75%;
+    width: 50%;
     margin: 0 auto;
 }
 
+@media(max-width: 1000px) {
+    #mainstyle {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .caption {
-    width: 100%
+    width: 100%;
+}
+
+.founder_pic {
+    background-color: black;
+    opacity: 35%;
+    color: white;
+    text-align: center;
 }
 
 .question {
