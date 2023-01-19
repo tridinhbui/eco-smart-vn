@@ -1,6 +1,6 @@
 figure {
     display: block;
-    padding: 50px 20%;
+    padding: 20px 15%;
     background-color: rgb(144, 238, 144);
 }
 
@@ -16,7 +16,6 @@ figcaption {
 @media(max-width: 600px) {
     figure {
         padding: 5%;
-
     }
 }
 

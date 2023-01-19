@@ -7,23 +7,18 @@
     /* margin: 100px auto; */
 }
 
-<<<<<<< HEAD
-.container .carousel-inner .item  img{
-    width: 150vh;
-    height: 90vh;
-}
-
-=======
 .container .carousel-inner .item img {
     width: 90vw;
 }
 
 @media(min-width: 1000px) {
     .container {
-        width: 60vw;
+        width: 80vw;
+        height: 90vh;
     }
     .container .carousel-inner .item img {
-        width: 60vw;
+        width: 80vw;
+        height: 90vh;
     }
+
 }
->>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1
