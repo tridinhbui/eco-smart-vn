@@ -14,15 +14,21 @@
 
 <body>
     {% include 'navbar.html' %}
-    <div id="bodystyle">
+    <div class="bodystyle">
+
         <div class="head1">
             <h1>About Us</h1>
         </div>
+
         <div>
-            <main id="mainstyle">
+            <div class="mainstyle">
                 <!-- Including: Awareness, Mission & Vision, Founder -->
                 <h2 class="head2">Awareness, Mission and Vision</h2>
-                {% include 'animation.html' %}
+            </div>
+
+            {% include 'animation.html' %}
+
+            <div class="mainstyle">
                 <h2 class="head2">Our Team</h2>
                 {% include 'ourteam.html' %}
                 <h2 class="head2">The Story of Eco Smart Vietnam</h2>
@@ -65,7 +71,7 @@
                         spread far and wide. In addition, a small promise is that Eco Smart Vietnam will always try its best to fulfill the mission that we set out: Acting for the development and safety of the environment in Vietnam!”
                     </p>
                 </div>
-            </main>
+            </div>
         </div>
     </div>
     {% include 'footer.html' %}
