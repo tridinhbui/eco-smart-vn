@@ -13,9 +13,12 @@
 
 @media(min-width: 1000px) {
     .container {
-        width: 60vw;
+        width: 80vw;
+        height: 90vh;
     }
     .container .carousel-inner .item img {
-        width: 60vw;
+        width: 80vw;
+        height: 90vh;
     }
+
 }

@@ -1,10 +1,14 @@
 /* BO FONT CHUNG */
 
-#bodystyle {
+.bodystyle {
     font-family: Arial;
     font-size: 20px;
     background-color: rgb(233, 255, 204);
     color: grey;
+}
+
+.bodystyle p {
+    text-align: justify;
 }
 
 
@@ -26,7 +30,11 @@
     font-weight: bolder;
     color: rgb(233, 255, 204);
     text-align: center;
-    padding-top: 60px;
+    padding-top: 40px;
+}
+
+.head1 h1:hover {
+    transform: scale(1.2)
 }
 
 #aboutus-content {
@@ -46,7 +54,7 @@
 
 .head2 {
     margin-top: 20px;
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     color: rgb(65, 128, 49);
@@ -55,13 +63,13 @@
 
 /*-----------------------------------------------------*/
 
-#mainstyle {
+.mainstyle {
     width: 50%;
     margin: 0 auto;
 }
 
 @media(max-width: 1000px) {
-    #mainstyle {
+    .mainstyle {
         width: 80%;
         margin: 0 auto;
     }

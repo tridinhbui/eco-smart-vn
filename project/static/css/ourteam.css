@@ -1,7 +1,19 @@
 #ecoteam {
     padding: 0;
-    margin: 0;
+    margin: 0 -12.5vw 0 -12.5vw;
     box-sizing: border-box;
+    width: 75vw;
+}
+
+@media(max-width: 1000px) {
+    #ecoteam {
+        margin: 0;
+        width: 100%;
+    }
+    .row {
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 .row {
@@ -28,7 +40,7 @@
     padding: 3.5em 1em;
     margin: 10px auto;
     border-radius: 0.6em;
-    width: 25%;
+    width: 30%;
     min-width: 300px;
     text-align: center;
     color: rgb(85, 85, 85);
@@ -58,8 +70,9 @@
 .card p {
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
     margin: 0.5em 0 2em 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .card:hover {
