@@ -25,6 +25,12 @@ table{
  }
 .line_below_img_2 {
     margin-top: 21rem;
+    position: absolute;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-align: center;
  }
 .anh:hover{
     transform: scale(1.35);
@@ -32,7 +38,7 @@ table{
  .folder{
     position: relative;
 }
- h3 { 
+.line_below_img { 
     position: absolute;
     width: 100%;
     color: whitesmoke;
