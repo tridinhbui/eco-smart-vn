@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link
+      rel="icon"
+      href="/static/img/aboutus/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
       rel="stylesheet"
       href="/static/css/contactus.css"
     />
@@ -30,7 +36,7 @@
       type="text/javascript"
     ></script>
   </head>
-  <body>
+  <body class = "contact-us-body">
     <!-- Made by GPham -->
 
 <!DOCTYPE html>
@@ -68,7 +74,7 @@
         <p>ECO SMART VIETNAM</p>
       </a>
     </div>
-    <!-- Navbar expands from large and collapse from size smaller than large -->
+    <!-- Navbar expands from large and collapses from size smaller than large -->
     <nav class="navbar navbar-expand-lg" id="navbar-id">
       <!-- Navbar spans the entire width of any viewport -->
       <div class="container-fluid">
@@ -135,31 +141,25 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html> 
-    <h1 class="title">Contact us</h1>
-    <h2 class="title"> For any information please contact us through this form!</h2>
+</html>
 
+    <div class="contact-us-title">
+      <h1 class="title">Contact us</h1>
+      <h2 class="title">
+        For any information please contact us through this form!
+      </h2>
+    </div>
     <form class="contact-box" id="contact-form">
-      <input
-        class="contact-item"
-        type="text"
-        name="from_name"
-        placeholder="Full name"
-        required
-      />
+      <p class="field-name">Full name</p>
+      <input class="contact-item" type="text" name="from_name" required />
       <br />
-      <input
-        class="contact-item"
-        type="email"
-        name="email_id"
-        placeholder="Email"
-        required
-      />
+      <p class="field-name">Email</p>
+      <input class="contact-item" type="email" name="email_id" required />
       <br />
+      <p class="field-name">Message</p>
       <textarea
         class="contact-item"
         name="message"
-        placeholder="Message"
         id="messagebox"
         required
       ></textarea>
@@ -168,7 +168,7 @@
     </form>
     <link rel="stylesheet" href="/static/css/footer.css" />
 <div class="background_footer">
-    <p class="footerstyle">
+    <p class="footer-style">
         All rights reserved by
         <a href="https://www.facebook.com/ecosmartvietnam">ECO SMART VIETNAM</a>
     </p>
@@ -176,6 +176,6 @@
         <a href="https://www.facebook.com/ecosmartvietnam"><img class="footerimages" src="/static/img/footer/facebook.png" alt="" /></a>
         <a href="https://www.instagram.com/ecosmart.vietnam/"><img class="footerimages" src="/static/img/footer/ins.gif" alt="" /></a>
     </div>
-</div> 
+</div>
   </body>
 </html>

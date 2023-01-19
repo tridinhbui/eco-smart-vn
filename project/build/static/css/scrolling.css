@@ -5,8 +5,16 @@
     background-image: url('../img/index/firstbackground.jpg');
     background-color: black;
     background-size: 100% 100%;
+    background-position: center;
     width: 100vw;
     height: 40vw;
+}
+
+@media(max-width: 600px) {
+    .button-show-scroll {
+        height: 60vw;
+        background-image: url('../img/index/firstbackground_mobile.png');
+    }
 }
 
 .button-scroll {
@@ -21,6 +29,23 @@
     color: white;
     border-radius: 0.5vw;
     border: rgb(64, 109, 89) solid;
+}
+
+@media(max-width: 600px) {
+    .button-scroll {
+        font-size: 4vw;
+        padding: 0.5vw;
+        margin-bottom: 1.6vw;
+        width: 25vw;
+        height: 8vw;
+        border-radius: 1vw;
+    }
+    .button-scroll:hover {
+        font-weight: bold;
+        background-color: white;
+        color: rgb(64, 109, 89);
+        text-decoration: none;
+    }
 }
 
 .button-scroll:link {

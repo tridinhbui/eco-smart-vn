@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link
+      rel="icon"
+      href="{{ url_for('static', filename='img/aboutus/logo.png') }}"
+      type="image/x-icon"
+    />
+
+    <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/contactus.css')}}"
     />
@@ -30,38 +36,32 @@
       type="text/javascript"
     ></script>
   </head>
-  <body>
-    {% include 'navbar.html' %} 
-    <h1 class="title">Contact us</h1>
-    <h2 class="title"> For any information please contact us through this form!</h2>
+  <body class = "contact-us-body">
+    {% include 'navbar.html' %}
 
+    <div class="contact-us-title">
+      <h1 class="title">Contact us</h1>
+      <h2 class="title">
+        For any information please contact us through this form!
+      </h2>
+    </div>
     <form class="contact-box" id="contact-form">
-      <input
-        class="contact-item"
-        type="text"
-        name="from_name"
-        placeholder="Full name"
-        required
-      />
+      <p class="field-name">Full name</p>
+      <input class="contact-item" type="text" name="from_name" required />
       <br />
-      <input
-        class="contact-item"
-        type="email"
-        name="email_id"
-        placeholder="Email"
-        required
-      />
+      <p class="field-name">Email</p>
+      <input class="contact-item" type="email" name="email_id" required />
       <br />
+      <p class="field-name">Message</p>
       <textarea
         class="contact-item"
         name="message"
-        placeholder="Message"
         id="messagebox"
         required
       ></textarea>
       <br />
       <input type="submit" class="button" value="Send" id="send-btn" />
     </form>
-    {% include 'footer.html' %} 
+    {% include 'footer.html' %}
   </body>
 </html>
