@@ -7,11 +7,10 @@ table{
 .line1{align-items: center;
     left: 0;
     right: 0;
-    height: 16rem;
+    height: 19rem;
     display: flex;
     justify-content: space-around;
 }
-
 .folder_anh {
     float: left;
     padding: 5px;
@@ -20,12 +19,12 @@ table{
 }
 .anh{
     border-radius: 15%;
-    max-width: 15rem;
+    max-width: 20rem;
     height: auto;
     transition: 0.5s all ease-in-out;
  }
 .line_below_img_2 {
-    margin-top: 16rem;
+    margin-top: 21rem;
  }
 .anh:hover{
     transform: scale(1.35);
@@ -37,17 +36,36 @@ table{
     position: absolute;
     width: 100%;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
+    font-weight: 500;
     text-align: center;
-    margin-top: 13rem;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-top: 18rem;
  }
  .line2{align-items: center;
     left: 0;
     right: 0;
-    height: 20rem;
+    height: 28rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+/* title */
+#title-activities-style{
+    display: block; 
+    padding: 8px 20%; 
+    background-color:  rgb(131, 189, 117);
+}
+
+#figcaption-activities-style {
+    margin-top: 1rem;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+#figcaption-activities-style:hover {
+    transform: scale(1.2) ;
+    color: white;
 }

@@ -19,11 +19,7 @@
 }
 
 .footerimages {
-<<<<<<< HEAD
-    width: 50px;
-=======
     width: 4.8vh;
->>>>>>> 23934ce44668d6b9fd734275657d0f833db179c1
 }
 @media screen and (width < 400px) {
         .background_footer{
