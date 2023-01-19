@@ -33,6 +33,10 @@
     padding-top: 40px;
 }
 
+.head1 h1:hover {
+    transform: scale(1.2)
+}
+
 #aboutus-content {
     background-size: cover;
     margin-top: 20px;
@@ -50,7 +54,7 @@
 
 .head2 {
     margin-top: 20px;
-    font-size: 5vw;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     color: rgb(65, 128, 49);
