@@ -13,12 +13,13 @@ figure#title-activities-style {
     padding: 0;
     margin: 0 10vw 0 10vw;
     box-sizing: border-box;
-    width: 90%;
+    width: 80%;
 }
 
 @media(max-width: 1000px) {
     #activities_folder {
         width: 100%;
+        margin: 0;
     }
 }
 
@@ -30,7 +31,7 @@ figure#title-activities-style {
 
 .activities_photo {
     padding: 0 1em;
-    margin: 0;
+    margin: 0 auto;
     width: 30%;
     min-width: 150px;
     text-align: center;
