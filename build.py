@@ -1,6 +1,7 @@
 from flask_frozen import Freezer
 from project.app import app
 
+
 # Create an instance of Freezer for generating the static files from
 # the Flask application routes ('/', '/about-us', etc.)
 freezer = Freezer(app)
