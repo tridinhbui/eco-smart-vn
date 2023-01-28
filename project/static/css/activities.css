@@ -1,77 +1,62 @@
-/* “Activity section used for providing users activities information
-//Made by Anh Khôi” */
-table{
+figure#title-activities-style {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(131, 189, 117);
+}
+
+.background-activities {
     background-color: rgb(131, 189, 117);
     width: 100%;
 }
-.line1{align-items: center;
-    left: 0;
-    right: 0;
-    height: 19rem;
+
+#activities_folder {
+    padding: 0;
+    margin: 0 10vw 0 10vw;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+@media(max-width: 1000px) {
+    #activities_folder {
+        width: 100%;
+    }
+}
+
+.activities_line {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 1em;
 }
-.folder_anh {
-    float: left;
-    padding: 5px;
-    overflow: hidden;
-    border-radius: 15%;
-}
-.anh{
-    border-radius: 15%;
-    max-width: 20rem;
-    height: auto;
-    transition: 0.5s all ease-in-out;
- }
-.line_below_img_2 {
-    margin-top: 21rem;
-    position: absolute;
-    width: 100%;
-    color: whitesmoke;
-    font-size: 2.1rem;
-    font-weight: 500;
+
+.activities_photo {
+    padding: 0 1em;
+    margin: 0;
+    width: 30%;
+    min-width: 150px;
     text-align: center;
- }
-.anh:hover{
+    color: rgb(85, 85, 85);
+}
+
+.activities_photo img {
+    width: 100%;
+}
+
+.activities_photo img:hover {
     transform: scale(1.35);
- }
- .folder{
-    position: relative;
 }
-.line_below_img { 
-    position: absolute;
-    width: 100%;
+
+figure.photo_cap {
+    background-color: rgb(131, 189, 117);
+}
+
+.photo_cap figcaption {
     color: whitesmoke;
-    font-size: 2.1rem;
+    font-size: 2.5vh;
     font-weight: 500;
     text-align: center;
-    margin-top: 18rem;
- }
- .line2{align-items: center;
-    left: 0;
-    right: 0;
-    height: 28rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-/* title */
-#title-activities-style{
-    display: block; 
-    padding: 8px 20%; 
-    background-color:  rgb(131, 189, 117);
 }
 
-#figcaption-activities-style {
-    margin-top: 1rem;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: whitesmoke;
-}
-
-#figcaption-activities-style:hover {
-    transform: scale(1.2) ;
+.photo_cap figcaption:hover {
+    transform: scale(1.2);
     color: white;
 }
