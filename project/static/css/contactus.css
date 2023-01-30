@@ -1,94 +1,94 @@
-  .contact-us-body {
-      font-family: "Arial";
-      font-style: normal;
-      font-weight: 500;
-      background-color: rgb(233, 255, 204);
-  }
-  
-  .contact-us-title {
-      padding-top: 2.5%;
-      padding-bottom: 2rem;
-  }
-  
-  .title {
-      text-align: center;
-  }
-  
-  .heading1 {
-      background-image: url('../img/aboutus/titlebackground.png');
-      background-size: cover;
-      padding-top: 20px;
-      height: 200px;
-      width: 100%;
-  }
-  
-  h1.title {
-      font-size: 80px;
-      font-weight: bolder;
-      color: rgb(233, 255, 204);
-      text-align: center;
-      padding-top: 40px;
-  }
-  
+.contact-us-body {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgb(233, 255, 204);
+}
+
+.contact-us-title {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.heading1 {
+  background-image: url("../img/aboutus/titlebackground.png");
+  background-size: cover;
+  padding-top: 20px;
+  height: 200px;
+  width: 100%;
+}
+
+h1.title {
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(233, 255, 204);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact-box {
+  padding-left: 1.2%;
+  padding-right: 2.4%;
+  padding-top: 1rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 8vh;
+  background-color: rgb(144, 238, 144);
+  border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 768px) {
   .contact-box {
-      padding-left: 1.2%;
-      padding-right: 2.4%;
-      padding-top: 1rem;
-      margin-left: 30%;
-      margin-right: 30%;
-      margin-bottom: 8vh;
-      background-color: rgb(144, 238, 144);
-      border: 1px solid #ccc;
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  
-  @media only screen and (max-width: 768px) {
-      .contact-box {
-          margin-left: 10%;
-          margin-right: 10%;
-      }
-  }
-  
-  .contact-item {
-      width: 100%;
-      border-width: 0.11rem;
-      margin-top: 0.3rem;
-      padding-left: 1rem;
-      height: 3rem;
-      border-radius: 4px;
-      margin-right: 10%;
-      margin-bottom: 0.5rem;
-      box-sizing: border-box;
-  }
-  
-  .field-name {
-      padding-left: 1rem;
-      margin-bottom: 0;
-  }
-  
-  .field-name::after {
-      content: "*";
-      color: red;
-  }
-  
-  #messagebox {
-      font-family: "Arial";
-      font-style: normal;
-      padding-top: 1rem;
-      height: 5rem;
-  }
-  
-  #send-btn {
-      margin-top: 1rem;
-      margin-left: 30%;
-      width: 40%;
-      background-color: rgb(64, 109, 89);
-      padding-left: 0;
-      padding-right: 0;
-  }
-  
-  #send-btn:hover {
-      font-weight: bold;
-      background-color: white;
-      color: rgb(64, 109, 89);
-      text-decoration: none;
-  }
+}
+
+.contact-item {
+  width: 100%;
+  border-width: 0.11rem;
+  margin-top: 0.3rem;
+  padding-left: 1rem;
+  height: 3rem;
+  border-radius: 4px;
+  margin-right: 10%;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.field-name {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.field-name::after {
+  content: "*";
+  color: red;
+}
+
+#messagebox {
+  font-family: "Arial";
+  font-style: normal;
+  padding-top: 1rem;
+  height: 5rem;
+}
+
+#send-btn {
+  margin-top: 1rem;
+  margin-left: 30%;
+  width: 40%;
+  background-color: rgb(64, 109, 89);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#send-btn:hover {
+  font-weight: bold;
+  background-color: white;
+  color: rgb(64, 109, 89);
+  text-decoration: none;
+}
