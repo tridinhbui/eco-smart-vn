@@ -1,80 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>About Us</title>
-    <link rel="icon" href="{{ url_for('static', filename='img/aboutus/logo.png') }}" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='img/aboutus/logo.png') }}"
+      type="image/x-icon"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus.css') }}" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/aboutus.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
+    {% include 'navbar.html' %}
     <div class="bodystyle">
-        {% include 'navbar.html' %}
-        <div class="head1">
-            <h1>About Us</h1>
+      <div class="head1">
+        <h1>About Us</h1>
+      </div>
+
+      <div>
+        <div class="mainstyle">
+          <!-- Including: Awareness, Mission & Vision, Founder -->
+          <h2 class="head2">Awareness, Mission and Vision</h2>
         </div>
 
-        <div>
-            <div class="mainstyle">
-                <!-- Including: Awareness, Mission & Vision, Founder -->
-                <h2 class="head2">Awareness, Mission and Vision</h2>
-            </div>
+        {% include 'animation.html' %}
 
-            {% include 'animation.html' %}
-
-            <div class="mainstyle">
-                <h2 class="head2">Executive Board</h2>
-                {% include 'ourteam.html' %}
-                <h2 class="head2">The Story of Eco Smart Vietnam</h2>
-                <!-- Founder Content -->
-                <div>
-                    <figure>
-                        <img class="caption" src="{{ url_for('static', filename='img/aboutus/founder.jpg') }}" alt="Founder" />
-                        <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
-                        <figcaption class="founder_pic">Founder of Eco Smart Vietnam - Mr Bui Dinh Tri</figcaption>
-                    </figure>
-                    <p>
-                        To form and develop a project, the contribution of the chairman is extremely important. Today, let's follow us to learn about the leader of Eco Smart Vietnam - Mr. Bui Dinh Tri through the small interview below as well as understand more interesting information
-                        about Eco Smart home. Let's get started.
-                    </p>
-                    <p class="question">
-                        Question 1: Introduce yourself and tell 3 interesting things about yourself.
-                    </p>
-                    <p>
-                        Mr. Tri: I am currently an overseas student studying 2 majors: Computer Science and Economics in the US. Three interesting things about me are probably that I am left-handed, high-dose (but reckless and in control) and lazy to study (but still learn well).
-                    </p>
-                    <p class="question">
-                        Question 2: Mr Tri, what was the fate that motivated you to found Eco Smart Vietnam?
-                    </p>
-                    <p>
-                        Mr. Tri: The charm probably stems from my participation in one of the annual activities of my school's Young Entrepreneurs and Entrepreneurship Support Center, it is the Macalester Entrepreneurship and Innovation Department that rewards young people with
-                        ideas, special initiatives that help improve the lives of the communities around them. I was lucky to win the award and Eco Smart Vietnam was the idea that helped me win that award (the original name was Eco Heroes Campaign).
-                    </p>
-                    <p class="question">
-                        Question 3: Could you share a little about the goals and expectations that you set at Eco Smart Vietnam in the future?
-                    </p>
-                    <p>
-                        Mr. Tri: As I share, I am a high-dose blood person but in control, so I set goals/expectations that often balance between far-fetched and realistic. I really expect Eco Smart Vietnam to become one of the largest and most professional environmental organizations
-                        in the North. However, in my mind, I think that in the short term, it only needs to be the largest in Hanoi (probably the largest HN is likely to be top 2, top 3 in the North, right?
-                    </p>
-                    <p class="question">
-                        Question 4: Do you have anything to say to readers and followers of the project?
-                    </p>
-                    <p>
-                        Mr. Tri: My message is: "Eco Smart Vietnam will be a project that will not let followers and expectations down because with the Eco Smart team - the team I believe is full of talented and responsible people - will be able to help the project grow and
-                        spread far and wide. In addition, a small promise is that Eco Smart Vietnam will always try its best to fulfill the mission that we set out: Acting for the development and safety of the environment in Vietnam!”
-                    </p>
-                </div>
-            </div>
+        <div class="mainstyle">
+          <h2 class="head2">Executive Board</h2>
+          {% include 'ourteam.html' %}
+          <h2 class="head2">The Story of Eco Smart Vietnam</h2>
+          <!-- Founder Content -->
+          <div>
+            <figure>
+              <img
+                class="caption"
+                src="{{ url_for('static', filename='img/aboutus/founder.jpg') }}"
+                alt="Founder"
+              />
+              <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
+              <figcaption class="founder_pic">
+                Founder of Eco Smart Vietnam - Mr Bui Dinh Tri
+              </figcaption>
+            </figure>
+            <p>
+              To form and develop a project, the contribution of the chairman is
+              extremely important. Today, let's follow us to learn about the
+              leader of Eco Smart Vietnam - Mr. Bui Dinh Tri through the small
+              interview below as well as understand more interesting information
+              about Eco Smart home. Let's get started.
+            </p>
+            <p class="question">
+              Question 1: Introduce yourself and tell 3 interesting things about
+              yourself.
+            </p>
+            <p>
+              Mr. Tri: I am currently an overseas student studying 2 majors:
+              Computer Science and Economics in the US. Three interesting things
+              about me are probably that I am left-handed, high-dose (but
+              reckless and in control) and lazy to study (but still learn well).
+            </p>
+            <p class="question">
+              Question 2: Mr Tri, what was the fate that motivated you to found
+              Eco Smart Vietnam?
+            </p>
+            <p>
+              Mr. Tri: The charm probably stems from my participation in one of
+              the annual activities of my school's Young Entrepreneurs and
+              Entrepreneurship Support Center, it is the Macalester
+              Entrepreneurship and Innovation Department that rewards young
+              people with ideas, special initiatives that help improve the lives
+              of the communities around them. I was lucky to win the award and
+              Eco Smart Vietnam was the idea that helped me win that award (the
+              original name was Eco Heroes Campaign).
+            </p>
+            <p class="question">
+              Question 3: Could you share a little about the goals and
+              expectations that you set at Eco Smart Vietnam in the future?
+            </p>
+            <p>
+              Mr. Tri: As I share, I am a high-dose blood person but in control,
+              so I set goals/expectations that often balance between far-fetched
+              and realistic. I really expect Eco Smart Vietnam to become one of
+              the largest and most professional environmental organizations in
+              the North. However, in my mind, I think that in the short term, it
+              only needs to be the largest in Hanoi (probably the largest HN is
+              likely to be top 2, top 3 in the North, right?
+            </p>
+            <p class="question">
+              Question 4: Do you have anything to say to readers and followers
+              of the project?
+            </p>
+            <p>
+              Mr. Tri: My message is: "Eco Smart Vietnam will be a project that
+              will not let followers and expectations down because with the Eco
+              Smart team - the team I believe is full of talented and
+              responsible people - will be able to help the project grow and
+              spread far and wide. In addition, a small promise is that Eco
+              Smart Vietnam will always try its best to fulfill the mission that
+              we set out: Acting for the development and safety of the
+              environment in Vietnam!”
+            </p>
+          </div>
         </div>
-        {% include 'footer.html' %}
+      </div>
+      {% include 'footer.html' %}
     </div>
-
-</body>
-
+  </body>
 </html>
