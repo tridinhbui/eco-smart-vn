@@ -1,45 +1,48 @@
-.container {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    width: 50vw;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.myContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 50vw;
+  margin: 2px auto;
 }
 
-.container .carousel-inner .item img {
-    width: 50vw;
+.carousel-item img {
+  width: 50vw;
 }
 
-@media(max-width: 1000px) {
-    .container {
-        width: 90vw;
-    }
-    .container .carousel-inner .item img {
-        width: 90vw;
-    }
-    .animation-content {
-        height: 25vw;
-    }
-    .animation-content p {
-        font-size: 1.5vw;
-        text-transform: uppercase;
-    }
+#indicators {
+  margin-bottom: 0.5vh;
 }
 
 .animation-content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
-    background-color: black;
-    opacity: 35%;
-    color: white;
-    height: 22vw;
-    padding-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  background-color: #98a587;
+  color: white;
+  height: 17vw;
+  padding-top: 1vw;
+  opacity: 85%;
 }
 
 .animation-content p {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0.75vw;
+  margin-top: 0;
+  margin-bottom: 0.25vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .myContainer {
+    width: 70vw;
+  }
+  .carousel-item img {
+    width: 70vw;
+  }
+
+  .animation-content {
+    height: 21vw;
+  }
+  .animation-content p {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+  }
 }
