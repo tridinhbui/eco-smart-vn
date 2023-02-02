@@ -15,7 +15,7 @@ width: 100%;
   margin: 5%;
 }
 .text1{
-  font-size: 2vw;
+  font-size: 1.8vw;
   color:black;
   font-weight: 600;
 }
@@ -55,16 +55,16 @@ img{
 
 }
 .text2{
-  margin-top: 5%;
+  margin-top: 0%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 1.25vw;
+  font-size: 1.2vw;
 }
 .text3{
   position: absolute;
   bottom: 5%;
   text-decoration-line: none;
-  margin-left: 5%;
+  margin-left: 70%;
   border:1px black solid;
   border-radius: 20px;
   font-size: 1vw;
