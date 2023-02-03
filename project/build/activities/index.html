@@ -8,12 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/activities_page.css" />
-
+    
     <title>Activities</title>
     <link rel="icon" href="/static/img/aboutus/logo.png" type="image/x-icon" />
 </head>
 
 <body>
+
     <!-- Made by GPham -->
 
 <!DOCTYPE html>
@@ -117,7 +118,7 @@
     ></script>
   </body>
 </html>
- 
+
             <div id="activities_news">
                 <div class="content_block">
             
@@ -217,6 +218,7 @@
         </div>
             
     <link rel="stylesheet" href="/static/css/footer.css" />
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <div class="background_footer">
     <p class="footer-style">
         All rights reserved by
@@ -227,6 +229,40 @@
         <a href="https://www.instagram.com/ecosmart.vietnam/"><img class="footerimages" src="/static/img/footer/ins.gif" alt="" /></a>
     </div>
 </div>
+    <script>
+      $ (window).on("load",function(){
+        $(".loader").fadeOut("slow");
+      })
+
+    </script>
+    <style>
+      .loader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+        transition: opacity 2s, visibility 2s;
+    }
+    </style>
+  
+  <div class="loader">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+ 
+
 </body>
 
 </html>
