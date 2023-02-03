@@ -6,18 +6,21 @@
   align-items: center;
   background-color:  rgb(233, 255, 204);
 }  
-/* @media(max-width: 900px) {
-.content_block{
-width: 100%;
-}
+
+/* @media(max-width: 1000px) {
+  #activities_folder {
+      width: 100%;
+      margin: 0;
+  }
 } */
 .block_header{
   margin: 5%;
 }
 .text1{
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   color:black;
   font-weight: 600;
+  margin: 0%;
 }
 
 .content2{
