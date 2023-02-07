@@ -50,7 +50,6 @@
 }
 
 .content2{
-  border-radius: 5%;
   width: 60%;
   height: auto;
   background-color:whitesmoke;
@@ -65,7 +64,7 @@
   flex-direction: row;
 }
 img{
-  border-radius: 5%;
+  /* border-radius: 5%; */
   width: 100%;
 }
 .content_block{
