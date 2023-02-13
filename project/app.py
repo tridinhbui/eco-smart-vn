@@ -23,6 +23,9 @@ def activities():
 def contactUs():
     return render_template('contactus.html')
 
+@app.route('/product/')
+def product():
+    return render_template('product.html')
 
 @app.route('/nav-bar/')
 def navBar():
