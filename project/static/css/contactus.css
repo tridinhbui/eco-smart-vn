@@ -15,17 +15,18 @@
 }
 
 .heading1 {
-  background-image: url("../img/aboutus/titlebackground.png");
-  background-size: cover;
-  padding-top: 20px;
-  height: 200px;
-  width: 100%;
-}
+    background-image: url('../img/aboutus/titlebackground2.png');
+    background-color: rgb(233, 255, 204);
+    background-size: cover;
+    padding-top: 20px;
+    height: 350px;
+    width: 100%;
+  }
 
 h1.title {
   font-size: 80px;
   font-weight: bolder;
-  color: rgb(233, 255, 204);
+  color: white;
   text-align: center;
   padding-top: 40px;
 }

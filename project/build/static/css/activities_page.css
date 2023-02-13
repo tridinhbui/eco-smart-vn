@@ -1,21 +1,20 @@
 
 .head1 {
-  background-image: url('../img/aboutus/titlebackground.png');
+  background-image: url('../img/aboutus/titlebackground2.png');
+  background-color: rgb(233, 255, 204);
   background-size: cover;
   padding-top: 20px;
-  height: 200px;
+  height: 350px;
   width: 100%;
 }
 .head1 h1 {
   font-size: 80px;
   font-weight: bolder;
-  color: rgb(233, 255, 204);
+  color: white;
   text-align: center;
   padding-top: 40px;
 }
-.head1 h1:hover {
-  transform: scale(1.2)
-}
+
 #activities_news{
   width:100%;
   display: flex;
