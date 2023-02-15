@@ -16,8 +16,19 @@ def aboutUs():
 
 @app.route('/activities/')
 def activities():
-    return render_template('activities.html')
+    return render_template('activities/activities.html')
 
+@app.route('/activities/page2/')
+def activities_page2():
+    return render_template('activities/page2.html')
+
+@app.route('/activities/page3/')
+def activities_page3():
+    return render_template('activities/page3.html')
+
+@app.route('/activities/page4/')
+def activities_page4():
+    return render_template('activities/page4.html')
 
 @app.route('/contact-us/')
 def contactUs():

@@ -1,4 +1,7 @@
 
+html{
+  background-color: rgb(233, 255, 204);
+}
 .head1 {
   background-image: url('../img/aboutus/titlebackground2.png');
   background-color: rgb(233, 255, 204);
@@ -105,6 +108,29 @@ img{
   background-color: green;
   color:white;
   transition: 0.3s ;
+}
+selector .elementor-pagination{
+  padding: 30px 20px 40px 20px;
+  background: #E1FD13;
+}
+.elementor-pagination{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 255, 204);
+  text-decoration-line: none;
+}
+.page-number{
+  text-decoration-line: none;
+  margin: 10px;    
+  color: black;
+  font-size: 18px; 
+  font-weight: 600;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+.page-number :hover{
+  color: blue;
+
 }
 /* .loader-wrapper {
   width: 100%;
