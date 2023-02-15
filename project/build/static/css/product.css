@@ -2,15 +2,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-.head1 {
+html{
+  position: relative;
+}
+#head1 {
     background-image: url('../img/aboutus/titlebackground2.png');
     background-color: rgb(233, 255, 204);
     background-size: cover;
     padding-top: 20px;
-    height: 350px;
+    height: 30%;
     width: 100%;
+    position: absolute;
   }
-  .head1 h1 {
+#head1-h1 {
     font-size: 80px;
     font-weight: bolder;
     color: white;
@@ -20,7 +24,7 @@
 .menu{
     background-color: rgb(233, 255, 204);
     padding: 10vw;
-    padding-top: 0;
+    padding-top: 50vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px,300px));
  grid-gap: 20px 30px;   
