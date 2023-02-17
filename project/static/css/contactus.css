@@ -1,95 +1,172 @@
 .contact-us-body {
-  font-family: "Arial";
+  font-family: "Heebo", sans-serif;
   font-style: normal;
   font-weight: 500;
-  background-color: rgb(233, 255, 204);
+  background-color: #e5d9b6;
+  display: flex;
+  height: 100vh;
+  background-image: url('../img/contactus/background-forest.jpg');
 }
 
-.contact-us-title {
-  padding-top: 0;
-  padding-bottom: 2rem;
+.content-left {
+  color: #FCF5E5		;
 }
 
-.title {
-  text-align: center;
+.flex-item {
+  width: 100%;
 }
 
-.heading1 {
-    background-image: url('../img/aboutus/titlebackground2.png');
-    background-color: rgb(233, 255, 204);
-    background-size: cover;
-    padding-top: 20px;
-    height: 350px;
-    width: 100%;
-  }
+.scripts1 {
+  font-size: 7rem;
+  margin-top: 16rem;
+  margin-left: 20rem;
+}
 
-h1.title {
-  font-size: 80px;
-  font-weight: bolder;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
+.scripts2 {
+  margin-left: 20rem;
+  font-size: 3rem;
 }
 
 .contact-box {
-  padding-left: 1.2%;
-  padding-right: 2.4%;
-  padding-top: 1rem;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 8vh;
-  background-color: rgb(144, 238, 144);
-  border: 1px solid #ccc;
+  width: 29rem;
+  background-color: #FCF5E5	;
+  border: 2px solid #5f8d4e;
+  border-radius: 1.6%;
+  margin-top: 10rem;
+  margin-left: 8rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .contact-box {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+.word {
+  font-size: 1.65rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #5F8575;
+}
+
+.heading1 {
+  background-image: url("../img/aboutus/titlebackground.png");
+  background-size: cover;
+  padding-top: 1.5rem;
+  height: 14rem;
+  width: 100%;
 }
 
 .contact-item {
-  width: 100%;
+  width: 25rem;
   border-width: 0.11rem;
   margin-top: 0.3rem;
   padding-left: 1rem;
   height: 3rem;
   border-radius: 4px;
-  margin-right: 10%;
+  margin-left: 2rem;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
+  color: white;
+  background: white;
 }
 
-.field-name {
-  padding-left: 1rem;
-  margin-bottom: 0;
-}
-
-.field-name::after {
-  content: "*";
-  color: red;
+::placeholder {
+  color: white;
 }
 
 #messagebox {
-  font-family: "Arial";
+  font-family: "Heebo", sans-serif;
   font-style: normal;
-  padding-top: 1rem;
-  height: 5rem;
+  padding-top: 2rem;
+  height: 8rem;
 }
 
 #send-btn {
+  border-color: #5f8d4e;
   margin-top: 1rem;
   margin-left: 30%;
   width: 40%;
-  background-color: rgb(64, 109, 89);
+  background-color: #50C878;	
   padding-left: 0;
   padding-right: 0;
+  color: white;
 }
 
 #send-btn:hover {
   font-weight: bold;
   background-color: white;
-  color: rgb(64, 109, 89);
+  color: #5f8d4e;
   text-decoration: none;
+}
+::placeholder {color:#404040	;}
+
+@media(max-width:1770px){
+  .scripts1 {
+    font-size: 7rem;
+    margin-top: 16rem;
+    margin-left: 12rem;
+  }
+  
+  .scripts2 {
+    margin-left: 12rem;
+    font-size: 3rem;
+  }
+}
+@media(max-width:1530px){
+  .scripts1 {
+    font-size: 7rem;
+    margin-top: 16rem;
+    margin-left: 8rem;
+  }
+  
+  .scripts2 {
+    margin-left: 8rem;
+    font-size: 3rem;
+  }
+}
+@media(max-width:1400px){
+  .scripts1 {
+    font-size: 7rem;
+    margin-top: 16rem;
+    margin-left: 4rem;
+  }
+  
+  .scripts2 {
+    margin-left: 4rem;
+    font-size: 3rem;
+  }
+}
+@media(max-width:1250px){
+  .scripts1 {
+    font-size: 7rem;
+    margin-top: 16rem;
+    margin-left: 2rem;
+  }
+  
+  .scripts2 {
+    margin-left: 2rem;
+    font-size: 3rem;
+  }
+}
+@media(max-width:1200px){
+  .content-left{
+    display:flex;
+    margin-bottom:70vh;
+    align-items:center;
+    align-self:center;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .contact-box{
+    display:block;
+    margin-top:23rem;
+    margin-right:50%;
+  }
+  .scripts1 {
+    font-size: 5rem;
+    margin-top: 16rem;
+    margin-left: 2rem;
+  }
+  
+  .scripts2 {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
 }

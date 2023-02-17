@@ -2,29 +2,41 @@
 
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/activities.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/slideshow.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" /> -->
-    <title>Eco Smart Vietnam</title>
-    <link rel="icon" href="{{ url_for('static', filename='img/aboutus/logo.png') }}" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+    <title>Eco Smart Vietnam</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='img/aboutus/logo.png') }}"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body style="font-family: 'Heebo', sans-serif">
     <!-- include navbar.html here -->
     {% include 'navbar.html' %}
 
     <!-- include body.html here -->
-    {% include 'scrolling.html' %} {% include 'slideshow.html' %} {% include 'activities_content.html' %} {% include 'video.html' %}
+    {% include 'scrolling.html' %} {% include 'slideshow.html' %} {% include
+    'video.html' %}
     <div>{% include 'aboutus_content.html' %}</div>
     {% include 'footer.html' %}
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OG"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OG"
+    ></script>
+  </body>
 </html>

@@ -1,51 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="icon" href="{{ url_for('static', filename='img/aboutus/logo.png') }}" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='img/aboutus/logo.png') }}"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/contactus.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/contactus.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/button.css') }}"
+    />
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
     <script type="text/javascript">
-        (function() {
-            emailjs.init("qKMuaq5-XFFxWlReH");
-        })();
+      (function () {
+        emailjs.init("qKMuaq5-XFFxWlReH");
+      })();
     </script>
 
-    <script src="{{ url_for('static', filename='js/contactus.js')}}" type="text/javascript"></script>
-</head>
+    <script
+      src="{{ url_for('static', filename='js/contactus.js')}}"
+      type="text/javascript"
+    ></script>
+  </head>
 
-<body class="contact-us-body">
+  <body style="font-family: 'Heebo', sans-serif">
     {% include 'navbar.html' %}
 
-    <div class="contact-us-title">
-        <div class="heading1">
-            <h1 class="title">Contact us</h1>
-        </div>
-        <h2 class="title">
-            For any information please contact us through this form!
-        </h2>
-    </div>
-    <form class="contact-box" id="contact-form">
-        <p class="field-name">Full name</p>
-        <input class="contact-item" type="text" name="from_name" required />
-        <br />
-        <p class="field-name">Email</p>
-        <input class="contact-item" type="email" name="email_id" required />
-        <br />
-        <p class="field-name">Message</p>
-        <textarea class="contact-item" name="message" id="messagebox" required></textarea>
-        <br />
-        <input type="submit" class="button" value="Send" id="send-btn" />
-    </form>
-    {% include 'footer.html' %}
-</body>
+    <div class="contact-us-body">
+      <div class="content-left flex-item">
+        <h1 class="scripts1">Let's chat.</h1>
+        <h2 class="scripts2">We want to hear from you!</h2>
+      </div>
 
+      <div class="content-right flex-item">
+        <form class="contact-box" id="contact-form">
+          <h2 class="word">Send us a message!</h2>
+
+          <input
+            class="contact-item"
+            type="text"
+            name="from_name"
+            placeholder="Your Name*"
+            required
+          />
+          <br />
+
+          <input
+            class="contact-item"
+            type="email"
+            name="email_id"
+            placeholder="Email*"
+            required
+          />
+          <br />
+
+          <textarea
+            class="contact-item"
+            name="message"
+            id="messagebox"
+            placeholder="Message*"
+            required
+          ></textarea>
+          <br />
+          <input type="submit" class="button" value="Send" id="send-btn" />
+        </form>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  </body>
 </html>
