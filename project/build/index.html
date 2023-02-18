@@ -2,21 +2,30 @@
 
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="/static/css/navbar.css" />
-    <link rel="stylesheet" href="/static/css/activities.css" />
-    <link rel="stylesheet" href="/static/css/aboutus.css" />
-    <link rel="stylesheet" href="/static/css/slideshow.css" />
-    <link rel="stylesheet" href="/static/css/footer.css" /> -->
-    <title>Eco Smart Vietnam</title>
-    <link rel="icon" href="/static/img/aboutus/logo.png" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="/static/css/index.css"
+    />
+    <title>Eco Smart Vietnam</title>
+    <link
+      rel="icon"
+      href="/static/img/aboutus/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body style="font-family: 'Heebo', sans-serif">
     <!-- include navbar.html here -->
     <!-- Made by GPham -->
 
@@ -47,18 +56,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div class="title">
-      <a href="/" id="title-link">
-        <p>ECO SMART VIETNAM</p>
-      </a>
-    </div>
     <!-- Navbar expands from large and collapses from size smaller than large -->
-    <nav class="navbar navbar-expand-lg" id="navbar-id">
+    <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
       <!-- Navbar spans the entire width of any viewport -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="container-all">
         <a href="/" class="navbar-brand">
           <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
           <img
@@ -87,29 +97,30 @@
           <!-- The list is right-aligned (ms-auto)  -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/activities/">Activities</a>
+              <a class="nav-link" href="/">Home </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="/product/">Product</a>
+              <a class="nav-link" href="/activities/">Activities </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/about-us/"
-                >About us</a
-              >
+                >About Us
+              </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/contact-us/"
-                >Contact Us</a
-              >
+                >Contact Us
+              </a>
             </li>
 
-            <li class="nav-item">
-              <form class="search-container">
-                <input type="text" placeholder="Search.." />
-                <button type="submit"><i class="fa fa-search"></i></button>
+            <li class="nav-item" id="last-nav-item">
+              <form class="search-container" action="">
+                <input class="input-box" type="text" required />
+                <button id="transparent-search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
               </form>
             </li>
           </ul>
@@ -129,223 +140,211 @@
     <!-- include body.html here -->
     <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Button</title>
-    <link rel="stylesheet" href="/static/css/scrolling.css">
-    <script type="text/javascript" src="/static/js/scrolling.js"></script>
-</head>
-
-<body>
-    <div class="button-show-scroll">
-        <a class="button-scroll" href="#aboutus-scroll">Read more</a>
-    </div>
-</body>
-
-</html> <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slideshow</title>
-
+    <title>Scrolling Button</title>
     <link
       rel="stylesheet"
-      href="/static/css/slideshow.css"
+      href="/static/css/scrolling.css"
     />
+    <script
+      type="text/javascript"
+      src="/static/js/scrolling.js"
+    ></script>
+  </head>
 
+  <body>
+    <div class="title1">
+      <div class="image-left flex-item">
+        <img
+          class="env-img"
+          src="/static/img/index/test.png"
+          alt="test"
+        />
+      </div>
+      <div class="content-right flex-item">
+        <h1 class="heading1">Eco Smart Vietnam</h1>
+        <h2 class="heading2">Eco - Aware - Act</h2>
+
+        <p>
+          A pioneer in promoting the development of <br />
+          environmentally friendly products.
+        </p>
+
+        <a class="button-scroll" href="#aboutus-scroll">Read more</a>
+      </div>
+    </div>
+  </body>
+</html> <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <title>Demo Carousel</title>
+    <link
+      rel="stylesheet"
+      href="/static/css/slideshow.css"
+    />
   </head>
 
   <body>
-    <div class="myContainer rounded">
-      <div id="carouselMain" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselMain"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
+    <h1 class="h1ofslideshow">Environmental Facts</h1>
+    <div class="container-fluid my-5" id="container-slideshow">
+      <div class="row">
+        <div class="col-12 m-auto">
+          <div class="owl-carousel owl-theme">
+            <div class="item mb-4">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782"
+                >
+                  <img
+                    src="/static/img/activities/activities1.jpg"
+                    alt="activites1"
+                    class="card-img-top"
+                  />
+                </a>
+              </div>
+            </div>
 
-          <button
-            type="button"
-            data-bs-target="#carouselMain"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo.php?fbid=137191855908935&set=pb.100088543633780.-2207520000.&type=3"
+                >
+                  <img
+                    src="/static/img/activities/activities2.jpg"
+                    alt="activites2"
+                    class="card-img-top"
+                /></a>
+              </div>
+            </div>
 
-          <button
-            type="button"
-            data-bs-target="#carouselMain"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo.php?fbid=134825176145603&set=pb.100088543633780.-2207520000.&type=3"
+                >
+                  <img
+                    src="/static/img/activities/activities3.jpg"
+                    alt="activites3"
+                    class="card-img-top"
+                /></a>
+              </div>
+            </div>
 
-          <button
-            type="button"
-            data-bs-target="#carouselMain"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo?fbid=112881635006624&set=pcb.112882615006526"
+                >
+                  <img
+                    src="/static/img/activities/activities4.jpg"
+                    alt="activites4"
+                    class="card-img-top"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo?fbid=112881805006607&set=pcb.112882615006526"
+                >
+                  <img
+                    src="/static/img/activities/activities5.jpg"
+                    alt="activites5"
+                    class="card-img-top"
+                /></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo/?fbid=117929084501879&set=pcb.117926967835424"
+                >
+                  <img
+                    src="/static/img/activities/activities6.jpg"
+                    alt="activites6"
+                    class="card-img-top"
+                /></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <a
+                  href="https://www.facebook.com/photo.php?fbid=134825202812267&set=pb.100088543633780.-2207520000.&type=3"
+                >
+                  <img
+                    src="/static/img/activities/activities7.jpg"
+                    alt="activites7"
+                    class="card-img-top"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/static/img/slideshow/1.jpg"
-              class="d-block w-100"
-              alt="slide1"
-            />
-            <div class="carousel-caption d-none d-lg-block">
-              <p class="description-slide">Slide 1</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/img/slideshow/2.jpg"
-              class="d-block w-100"
-              alt="slide2"
-            />
-            <div class="carousel-caption d-none d-lg-block">
-              <p class="description-slide">Slide 2</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/img/slideshow/3.jpg"
-              class="d-block w-100"
-              alt="slide3"
-            />
-            <div class="carousel-caption d-none d-lg-block">
-              <p class="description-slide">Slide 3</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/static/img/slideshow/4.jpg"
-              class="d-block w-100"
-              alt="slide4"
-            />
-            <div class="carousel-caption d-none d-lg-block">
-              <p class="description-slide">Slide 4</p>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselMain"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon"
-            id="prev-button"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselMain"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon"
-            id="next-button"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+        navText: ["<", ">"],
+      });
+    </script>
   </body>
-</html> <!-- “Activity section used for providing users activities information
-//Made by Anh Khôi” -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/activities.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="background-activities">
-
-        <figure id="title-activities-style">
-            <figcaption>Checkout our activities!</figcaption>
-        </figure>
-
-        <section id="activities_folder">
-            <div class="activities_line">
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782"> <img src="/static/img/activities/activities1.jpg" alt="activites1" class="anh anh1"> </a>
-                    <figure class="photo_cap">
-                        <figcaption>Loài người rồi sẽ ăn ngủ trên đống rác</figcaption>
-                    </figure>
-                </div>
-
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo?fbid=106068572354597&set=a.105895305705257"> <img src="/static/img/activities/activities2.jpg" alt="activites2" class="anh anh2"></a>
-                    <figure class="photo_cap">
-                        <figcaption>Eco Smart Vietnam</figcaption>
-                    </figure>
-                </div>
-
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo?fbid=114589198169201&set=a.109001262061328"> <img src="/static/img/activities/activities3.jpg" alt="activites3" class="anh anh3"></a>
-                    <figure class="photo_cap">
-                        <figcaption>Human of Eco Smart Vietnam ep 02</figcaption>
-                    </figure>
-                </div>
-
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo?fbid=112881635006624&set=pcb.112882615006526"> <img src="/static/img/activities/activities4.jpg" alt="activites4" class="anh anh4"> </a>
-                    <figure class="photo_cap">
-                        <figcaption>Vũ trụ có thực sự đáng sống?</figcaption>
-                    </figure>
-                </div>
-
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo?fbid=112881805006607&set=pcb.112882615006526"> <img src="/static/img/activities/activities5.jpg" alt="activites5" class="anh anh5"></a>
-                    <figure class="photo_cap">
-                        <figcaption>Tình trạng hiện nay</figcaption>
-                    </figure>
-                </div>
-
-                <div class="activities_photo">
-                    <a href="https://www.facebook.com/photo/?fbid=117929084501879&set=pcb.117926967835424"> <img src="/static/img/activities/activities6.jpg" alt="activites6" class="anh anh6"></a>
-                    <figure class="photo_cap">
-                        <figcaption>Thông điệp vũ trụ</figcaption>
-                    </figure>
-                </div>
-        </section>
-        </div>
-</body>
-
 </html> <!doctype html>
 <html>
 
@@ -411,7 +410,7 @@
       quae maiores odit nobis dolorem atque incidunt, ipsam a nemo ipsa
       blanditiis cumque repudiandae, perferendis, omnis et eaque ad obcaecati.
     </p>
-    <ul class="socials">
+    <!-- <ul class="socials">
       <li>
         <a href="https://www.facebook.com/ecosmartvietnam"
           ><i class="fa fa-facebook"></i
@@ -428,10 +427,10 @@
       <li>
         <a href="#"><i class="fa fa-youtube"></i></a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#"><i class="fa fa-linkedin-square"></i></a>
-      </li>
-    </ul>
+      </li> 
+     </ul> -->
   </div>
   <div class="footer-bottom">
     <p>copyright &copy; <a href="#">ecosmartvietnam</a></p>
@@ -476,7 +475,10 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OG"></script>
-</body>
-
+<!--flask --app build.py --debug run   -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OG"
+    ></script>
+  </body>
 </html>

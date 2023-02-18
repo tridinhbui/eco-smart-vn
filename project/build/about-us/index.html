@@ -21,9 +21,14 @@
       rel="stylesheet"
       href="/static/css/aboutus.css"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
+  <body style="font-family: 'Heebo', sans-serif">
     <!-- Made by GPham -->
 
 <!DOCTYPE html>
@@ -53,18 +58,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div class="title">
-      <a href="/" id="title-link">
-        <p>ECO SMART VIETNAM</p>
-      </a>
-    </div>
     <!-- Navbar expands from large and collapses from size smaller than large -->
-    <nav class="navbar navbar-expand-lg" id="navbar-id">
+    <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
       <!-- Navbar spans the entire width of any viewport -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="container-all">
         <a href="/" class="navbar-brand">
           <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
           <img
@@ -93,29 +99,30 @@
           <!-- The list is right-aligned (ms-auto)  -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/activities/">Activities</a>
+              <a class="nav-link" href="/">Home </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="/product/">Product</a>
+              <a class="nav-link" href="/activities/">Activities </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/about-us/"
-                >About us</a
-              >
+                >About Us
+              </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/contact-us/"
-                >Contact Us</a
-              >
+                >Contact Us
+              </a>
             </li>
 
-            <li class="nav-item">
-              <form class="search-container">
-                <input type="text" placeholder="Search.." />
-                <button type="submit"><i class="fa fa-search"></i></button>
+            <li class="nav-item" id="last-nav-item">
+              <form class="search-container" action="">
+                <input class="input-box" type="text" required />
+                <button id="transparent-search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
               </form>
             </li>
           </ul>
@@ -589,7 +596,7 @@
       quae maiores odit nobis dolorem atque incidunt, ipsam a nemo ipsa
       blanditiis cumque repudiandae, perferendis, omnis et eaque ad obcaecati.
     </p>
-    <ul class="socials">
+    <!-- <ul class="socials">
       <li>
         <a href="https://www.facebook.com/ecosmartvietnam"
           ><i class="fa fa-facebook"></i
@@ -606,10 +613,10 @@
       <li>
         <a href="#"><i class="fa fa-youtube"></i></a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#"><i class="fa fa-linkedin-square"></i></a>
-      </li>
-    </ul>
+      </li> 
+     </ul> -->
   </div>
   <div class="footer-bottom">
     <p>copyright &copy; <a href="#">ecosmartvietnam</a></p>
@@ -654,6 +661,7 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div> -->
+<!--flask --app build.py --debug run   -->
     </div>
   </body>
 </html>

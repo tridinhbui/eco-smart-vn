@@ -20,11 +20,11 @@
 .head1 {
     background-image: url('../img/aboutus/titlebackground2.png');
     background-color: rgb(233, 255, 204);
-    background-size: cover;
+    background-size: auto;
     padding-top: 20px;
-    height: 350px;
+    height: 400px;
     width: 100%;
-  }
+}
 
 .head1 h1 {
     font-size: 80px;
