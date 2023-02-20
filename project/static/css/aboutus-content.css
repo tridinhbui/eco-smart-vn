@@ -92,7 +92,7 @@ body {
 }
 
 #title:hover {
-  transform: scale(1.2);
+  transform: scale(1.04);
   color: rgb(245, 245, 245);
 }
 @media (max-width: 650px) {
