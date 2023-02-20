@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus-content.css') }}">
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/aboutus-content.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
     <section id="aboutus-scroll">
-        <div class="esvabout animated">
-            <video autoplay muted loop id="myVideo">
-      <source src="{{ url_for('static', filename='img/aboutus/ecobackground.mp4') }}" type="video/mp4">
-    </video>
-            <div class="all_text">
-                <h2 id="title">About Eco Smart Vietnam</h2>
-                <hr class="seperate">
-                <div id="detailtext">
-                    <h5 class="text1">In 2022-2024, Eco Smart VietNam operates with the vision of becoming one of the leading active student organizations in the North acting for the environment. In particular, ESV is a pioneer in promoting the development of environmentally
-                        friendly products.</h5>
-                    <a href="/about-us/" class="text2">Read More</a>
-                </div>
-            </div>
+      <div class="esvabout animated">
+        <video autoplay muted loop id="myVideo">
+          <source
+            src="{{ url_for('static', filename='img/aboutus/ecobackground.mp4') }}"
+            type="video/mp4"
+          />
+        </video>
+        <div class="all_text">
+          <h2 id="title">About Eco Smart Vietnam</h2>
+          <hr class="seperate" />
+          <div id="detailtext">
+            <h5 class="text1">
+              In 2022-2024, Eco Smart Vietnam operates with the vision of
+              becoming one of the leading active student organizations in the
+              North acting for the environment. In particular, ESV is a pioneer
+              in promoting the development of environmentally friendly products.
+            </h5>
+            <a href="/about-us/" class="text2">Read More</a>
+          </div>
         </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

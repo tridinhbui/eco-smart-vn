@@ -7,7 +7,7 @@ body {
   height: 350px;
   display: flex;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -92,7 +92,7 @@ body {
 }
 
 #title:hover {
-  transform: scale(1.2);
+  transform: scale(1.04);
   color: rgb(245, 245, 245);
 }
 @media (max-width: 650px) {
