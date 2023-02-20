@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.h1ofslideshow {
+.h1ofproduct{
   margin-top: 5rem;
   font-size: 35px;
   text-align: center;
@@ -7,29 +7,29 @@
   margin-bottom: 20px;
   color: #e5d9b6;
 }
-.h1ofslideshow:hover {
+.h1ofproduct:hover {
   transform: scale(1.2);
   color: #e5d9b6;
 }
 
-.card-img-topofslideshow {
+.card-img-topofproduct {
   object-fit: fill;
   width: 1/3;
   border-radius: 6%;
 }
-#container-slideshow {
+#container-product{
   width: 80%;
 }
-.cardofslideshow border shadow {
+.cardofproduct border shadow {
   height: 20vh;
   width: 80vw;
 }
-.cardofslideshow {
+.cardofproduct {
   background-color: #285430;
   border: none;
   z-index: 1;
 }
-.cardofslideshow :hover {
+.cardofproduct :hover {
   transform: scale(1.025);
   z-index: 2;
 }
