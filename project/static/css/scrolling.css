@@ -130,35 +130,6 @@
 @media (max-width: 600px) {
   .title1 {
     display: grid;
-    height: 75vh;
-  }
-  .image-left {
-    display: flex;
-  }
-  .env-img {
-    margin-left: 0rem;
-    margin-top: 0rem;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    size: 0.01%;
-  }
-  .heading1 {
-    /* padding-top: 33rem; */
-    font-size: 3rem;
-    margin-top: 0rem;
-  }
-  .heading2 {
-    font-size: 2rem;
-  }
-  .content-right p {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .title1 {
-    display: grid;
   }
   .image-left {
     display: flex;
