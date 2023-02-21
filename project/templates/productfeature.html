@@ -77,60 +77,11 @@
               </div>
             </div>
 
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo?fbid=112881635006624&set=pcb.112882615006526"
-                >
-                  <img
-                    src="{{ url_for('static', filename='img/activities/activities4.jpg') }}"
-                    alt="activites4"
-                    class="card-img-topofproduct"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo?fbid=112881805006607&set=pcb.112882615006526"
-                >
-                  <img
-                    src="{{ url_for('static', filename='img/activities/activities5.jpg') }}"
-                    alt="activites5"
-                    class="card-img-topofproduct"
-                /></a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo/?fbid=117929084501879&set=pcb.117926967835424"
-                >
-                  <img
-                    src="{{ url_for('static', filename='img/activities/activities6.jpg') }}"
-                    alt="activites6"
-                    class="card-img-topofproduct"
-                /></a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=134825202812267&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="{{ url_for('static', filename='img/activities/activities7.jpg') }}"
-                    alt="activites7"
-                    class="card-img-topofproduct"
-                /></a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    <a href="/product/" class="seemoreofproduct">See More</a>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
@@ -148,9 +99,9 @@
     ></script>
     <script>
       $(".owl-2").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 15,
-        nav: true,
+        nav: false,
         responsive: {
           0: {
             items: 1,

@@ -33,3 +33,29 @@
   transform: scale(1.025);
   z-index: 2;
 }
+.seemoreofproduct {
+  text-decoration-line: none;
+  font-size: 18px;
+  font-weight:bold;
+  display: flex;
+  justify-content: center; /* Horizontally center the element */
+  align-items: center;
+  color: white;
+  border-radius:1rem;
+  border: 2px white solid;
+  margin: 0 auto; /* Center the element horizontally */
+  width: 9rem; /* Set the width of the element */
+  margin-bottom: 5rem;
+  height:3rem;
+  margin-top:0;
+  background-color: #e5d9b6;
+  border-color:#e5d9b6;
+  color:#285430;
+}
+
+
+.seemoreofproduct:hover {
+  color: #285430;
+  font-weight: bolder;
+  background-color: #FCF5E5;
+}
