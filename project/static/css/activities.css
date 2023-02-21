@@ -1,11 +1,11 @@
 figure#title-activities-style {
     margin-top: 0;
     margin-bottom: 0;
-    background-color: rgb(131, 189, 117);
+    background-color: #E5D9B6;
 }
 
 .background-activities {
-    background-color: rgb(131, 189, 117);
+    background-color: #E5D9B6;
     width: 100%;
 }
 
@@ -47,7 +47,7 @@ figure#title-activities-style {
 }
 
 figure.photo_cap {
-    background-color: rgb(131, 189, 117);
+    background-color: #E5D9B6;
 }
 
 .photo_cap figcaption {
