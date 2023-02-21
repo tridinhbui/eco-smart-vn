@@ -1,10 +1,13 @@
 /* BO FONT CHUNG */
+body {
+    font-family: "Heebo", sans-serif;
+}
 
 .bodystyle {
-    font-family: Arial;
+    font-family: "Heebo", sans-serif;
     font-size: 20px;
-    background-color: rgb(233, 255, 204);
-    color: grey;
+    background-color: #285430;
+    color: #E5D9B6;
 }
 
 .bodystyle p {
@@ -18,22 +21,24 @@
 /* BO FONT HEADING */
 
 .head1 {
-    background-image: url('../img/aboutus/titlebackground2.png');
-    background-color: rgb(233, 255, 204);
-    background-size: auto;
+    display:flex;
+    background-image: url('../img/activities_page/titlebackground.jpg');
+    background-size: cover;
     padding-top: 20px;
-    height: 400px;
+    height: 15vh;
     width: 100%;
-}
+    align-items:center;
+    justify-content:center;
+  }
 
 .head1 h1 {
-    font-size: 80px;
+    font-size: 5vh;
     font-weight: bolder;
-    color: white;
-    text-align: center;
-    padding-top: 40px;
+    color: #E5D9B6;
 }
-
+.head1 h1:hover {
+    transform: scale(1.2)
+}
 #aboutus-content {
     background-size: cover;
     margin-top: 20px;
@@ -48,21 +53,47 @@
     text-align: center;
     padding-top: 80px;
 }
-
-.head2 {
-    margin-top: 20px;
-    font-size: 50px;
+.head2awareness {
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    font-size: 4vh;
     font-weight: bolder;
     text-align: center;
-    color: rgb(65, 128, 49);
+    color: #E5D9B6;
+}
+.head2executive{
+    margin-top: 2rem;
+    font-size: 4vh;
+    font-weight: bolder;
+    text-align: center;
+    color: #E5D9B6;
+}
+.head2ourteam {
+    margin-top: 2rem;
+    font-size: 4vh;
+    font-weight: bolder;
+    text-align: center;
+    color: #E5D9B6;
 }
 
-
 /*-----------------------------------------------------*/
+
+.head2-2 {
+    margin-bottom: 50px;
+}
 
 .mainstyle {
     width: 50%;
     margin: 0 auto;
+}
+
+.mainstyle-1 {
+    margin: 50px auto 50px auto;
+}
+
+.mainstyle-2 {
+    margin-top: 50px;
+    color: #E5D9B6;
 }
 
 @media(max-width: 1000px) {
@@ -77,12 +108,13 @@
 }
 
 .founder_pic {
-    background-color: black;
-    opacity: 35%;
-    color: white;
+    margin: 30px auto;
+    color: #E5D9B6;
     text-align: center;
+    font-weight: bold;
 }
 
 .question {
     font-weight: bold;
+    margin-top:50px;
 }
