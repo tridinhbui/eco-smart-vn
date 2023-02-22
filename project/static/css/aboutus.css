@@ -34,7 +34,7 @@ body {
 .head1 h1 {
     font-size: 5vh;
     font-weight: bolder;
-    color: #E5D9B6;
+    color: #FCF5E5;
 }
 .head1 h1:hover {
     transform: scale(1.2)
@@ -59,21 +59,21 @@ body {
     font-size: 4vh;
     font-weight: bolder;
     text-align: center;
-    color: #E5D9B6;
+    color: #FCF5E5;
 }
 .head2executive{
     margin-top: 2rem;
     font-size: 4vh;
     font-weight: bolder;
     text-align: center;
-    color: #E5D9B6;
+    color: #FCF5E5;
 }
 .head2ourteam {
     margin-top: 2rem;
     font-size: 4vh;
     font-weight: bolder;
     text-align: center;
-    color: #E5D9B6;
+    color: #FCF5E5;
 }
 
 /*-----------------------------------------------------*/
@@ -96,6 +96,7 @@ body {
     color: #E5D9B6;
 }
 
+
 @media(max-width: 1000px) {
     .mainstyle {
         width: 80%;
@@ -109,12 +110,51 @@ body {
 
 .founder_pic {
     margin: 30px auto;
-    color: #E5D9B6;
+    color: #FCF5E5;
     text-align: center;
     font-weight: bold;
+    font-size:3vh;
 }
 
 .question {
     font-weight: bold;
     margin-top:50px;
+    font-size:2.3vh;
+    color:#FCF5E5;
+}
+.statementfromTri {
+    font-size:2vh;
+    color:#F3E5AB;
+}
+.answer {
+    font-size:1.8vh;
+    color:#F3E5AB;
+}
+
+@media (max-width:625px){
+    .head1 h1{
+        font-size:4vh;
+    }
+    .head2awareness {
+        margin-top: 2rem;
+        margin-bottom:2rem;
+        font-size: 3vh;
+        font-weight: bolder;
+        text-align: center;
+        color: #FCF5E5;
+    }
+    .head2executive{
+        margin-top: 2rem;
+        font-size: 3vh;
+        font-weight: bolder;
+        text-align: center;
+        color: #FCF5E5;
+    }
+    .head2ourteam {
+        margin-top: 2rem;
+        font-size: 3vh;
+        font-weight: bolder;
+        text-align: center;
+        color: #FCF5E5;
+    }
 }
