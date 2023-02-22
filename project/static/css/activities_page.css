@@ -25,7 +25,6 @@
   align-items: center;
   background-color:  #E5D9B6;
 }  
-
 @media screen and (max-width: 1000px) {
   #activities_news .content_block{
     width: 90%;
@@ -81,7 +80,6 @@ img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   font-size: 50%;
   /* position: relative; */
-
 }
 .text2{
   margin-top: 0%;
@@ -108,6 +106,24 @@ img{
   color:white;
   transition: 0.3s ;
 }
+.elementor-pagination{
+  background-color: #E5D9B6;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.page-number{
+  font-size: 18px;
+  color: black;
+  text-decoration-line: none;
+  margin: 5px;
+}
+.page-number:hover{
+  color: grey;
+}
+
+
 /* .loader-wrapper {
   width: 100%;
   height: 100%;
