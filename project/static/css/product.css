@@ -36,13 +36,13 @@ color: grey;
 }
 .pop-up-product-name{
 font-size: 30px;  
-margin-left: 150px;
+margin-left: 30%;
 align-items: center;
 justify-content: space-around;
 }
 .pop-up img{
 width: 300px; 
-margin-left: 80px;
+margin-left: 15%;
 }
 .pop-up-details-sub{
 display: grid;
@@ -75,6 +75,13 @@ visibility: visible;
 left: 0%;
 scale: 1;
 }
+
+@media screen and (max-width: 500px) {
+        .pop-up{width:100%}
+      .pop-up img{ margin-left: 10%;}
+      .pop-up-product-name{ margin-left: 30%;}
+}
+
 
 /* product page */
 /* #head1 {
