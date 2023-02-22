@@ -9,10 +9,11 @@ border: 1px solid #333;
 width: 500px;
 height: 100vh;
 background-color: white;
-border-radius: 5%;
 left: 0;
 top: 0%;
 padding: 10px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px ;
 display: grid;
 grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.2fr;
 grid-template-columns: auto ;
@@ -76,7 +77,7 @@ scale: 1;
 }
 
 /* product page */
-#head1 {
+/* #head1 {
   background-image: url('../img/aboutus/titlebackground2.png');
   background-color: rgb(233, 255, 204);
   background-size: cover;
@@ -91,19 +92,36 @@ scale: 1;
   color: white;
   text-align: center;
   padding-top: 40px;
+} */
+.head1 {
+  display:flex;
+  background-image: url('../img/activities_page/titlebackground.jpg');
+  background-size: cover;
+  padding-top: 20px;
+  height: 15vh;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
+}
+.head1 h1 {
+  font-size: 5vh;
+  font-weight: bolder;
+  color: #E5D9B6;
+}
+.head1 h1:hover {
+  transform: scale(1.2)
 }
 /* menu */
 .menu{
-  background-color: rgb(233, 255, 204);
+  background-color:#E5D9B6;
   padding: 10vw;
-  padding-top: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,350px));
 grid-gap: 20px 30px;   
 justify-content: space-around;
 }
 .product-items{
-  background-color: lightgrey;
+  background-color: white;
   display: grid;
   position: relative;
   grid-template-rows: 0.5 fr;
@@ -150,12 +168,13 @@ justify-content: space-around;
   font-size: 18px;
   color:black;
   padding: 2% 5% 2% 5%;
-  transition: 0.3s;
-  background-color: white;
+  transition: 0.2s;
+  background-color: rgb(130, 235, 137);
+  cursor: pointer;
 }
 .goshop:hover{
   border-color: white;
   background-color: green;
   color:white;
-  transition: 0.3s ;
+  transition: 0.2s ;
 }
