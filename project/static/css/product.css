@@ -1,92 +1,161 @@
 *{ padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-  position: relative;
+.pop-up{
+position: fixed;
+background-color: white;
+border: 1px solid #333;
+width: 500px;
+height: 100vh;
+background-color: white;
+border-radius: 5%;
+left: 0;
+top: 0%;
+padding: 10px;
+display: grid;
+grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.2fr;
+grid-template-columns: auto ;
+transition: 0.3s 0.3s;
+scale: 0;
+visibility: hidden;
+box-shadow:0 0 15px rgba(0, 0, 0, 0.5) ;
+/* align-items: center; */
 }
+.close-pop-up {
+width: 40px;
+height: 40px;
+position: absolute;
+right: 10px;
+top: 10px;
+cursor: pointer;
+}  
+.close-pop-up :hover{
+color: grey;
+}
+.pop-up-product-name{
+font-size: 30px;  
+margin-left: 150px;
+align-items: center;
+justify-content: space-around;
+}
+.pop-up img{
+width: 300px; 
+margin-left: 80px;
+}
+.pop-up-details-sub{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.pop-up-contact-cart{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.pop-up-contact{
+width: 100%;
+color:black;
+background-color: white;
+cursor: pointer;
+}
+.pop-up-contact:hover{
+color:grey;
+}
+.pop-up-cart{
+width: 100%;
+color:black;
+background-color: white;
+cursor: pointer;
+}
+.pop-up-cart:hover{
+color:grey;
+}
+.open-popup {
+visibility: visible;
+left: 0%;
+scale: 1;
+}
+
+/* product page */
 #head1 {
-    background-image: url('../img/aboutus/titlebackground2.png');
-    background-color: rgb(233, 255, 204);
-    background-size: cover;
-    padding-top: 20px;
-    height: 30%;
-    width: 100%;
-    position: absolute;
-  }
+  background-image: url('../img/aboutus/titlebackground2.png');
+  background-color: rgb(233, 255, 204);
+  background-size: cover;
+  padding-top: 20px;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+}
 #head1-h1 {
-    font-size: 80px;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-    padding-top: 40px;
-  }
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+/* menu */
 .menu{
-    background-color: rgb(233, 255, 204);
-    padding: 10vw;
-    padding-top: 50vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,300px));
- grid-gap: 20px 30px;   
- justify-content: space-around;
+  background-color: rgb(233, 255, 204);
+  padding: 10vw;
+  padding-top: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,350px));
+grid-gap: 20px 30px;   
+justify-content: space-around;
 }
 .product-items{
-    background-color: lightgrey;
-    display: grid;
-    position: relative;
-    grid-template-rows: 0.5 fr;
-    border-radius: 5%;
-    box-shadow:0 0 15px rgba(0, 0, 0, 0.5) ;
-    grid-gap: 20px 80px;
+  background-color: lightgrey;
+  display: grid;
+  position: relative;
+  grid-template-rows: 0.5 fr;
+  border-radius: 5%;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.5) ;
+  grid-gap: 20px 80px;
 }
 .product-items img{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .details{
-    display: grid;
-    grid-template-rows: auto 1fr 50px;
-    grid-row-gap: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 10px;
 }
 .details-sub{
-    display: grid;
-    grid-template-columns: auto auto ;
+  display: grid;
+  grid-template-columns: auto auto ;
 }
 .product-name  {
-    font-family: 'Heebo', sans-serif;
-    font-size: 18px;
-    font-weight: 400;   
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  font-weight: 400;   
 
 }
 .product-price{
-    font-family: 'Heebo', sans-serif;
-    color: rgb(23, 69, 23);
-    font-weight: 400;
-    font-size: 18px;
-    padding-left: 10px;
-    border-left: 2px solid #333;
+  font-family: 'Heebo', sans-serif;
+  color: rgb(23, 69, 23);
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 10px;
+  border-left: 2px solid #333;
 }
 .goshop{
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    text-decoration-line: none;
-    border:1px black solid;
-    width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 18px;
-    color:black;
-    padding: 2% 5% 2% 5%;
-    transition: 0.3s;
-    background-color: white;
-  }
-  .goshop:hover{
-    border-color: white;
-    background-color: green;
-    color:white;
-    transition: 0.3s ;
-  }
-  /* .product-items :hover{
-    border-color: red;
-  } */
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  text-decoration-line: none;
+  border:1px black solid;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 18px;
+  color:black;
+  padding: 2% 5% 2% 5%;
+  transition: 0.3s;
+  background-color: white;
+}
+.goshop:hover{
+  border-color: white;
+  background-color: green;
+  color:white;
+  transition: 0.3s ;
+}
