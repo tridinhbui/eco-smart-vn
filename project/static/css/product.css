@@ -149,6 +149,10 @@ justify-content: space-around;
 .details-sub{
   display: grid;
   grid-template-columns: auto auto ;
+  padding: 10px;
+}
+.details p{
+  padding: 10px;
 }
 .product-name  {
   font-family: 'Heebo', sans-serif;
