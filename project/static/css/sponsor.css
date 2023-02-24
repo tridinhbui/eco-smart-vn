@@ -1,0 +1,57 @@
+ .h2ofsponsor{
+  margin-top: 1rem;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #e5d9b6;
+}
+  .h2ofsponsor:hover {
+  transform: scale(1.2);
+  color: #e5d9b6;
+}
+  .sponsors-showcase {
+  padding: 20px;
+  text-align: center;
+}
+
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sponsors a {
+    margin-right:6vw;
+    margin-left:6vw;
+    margin-bottom:4vw;
+  }
+
+  .sponsors img {
+    max-width: 150px;
+    height: auto;
+
+  }
+  @media (max-width:1250px) {
+    .sponsors a {
+      margin-right:4vw;
+      margin-left:4vw;
+      margin-bottom:4vw;
+    }
+  }
+  @media(max-width:950px) {
+    .sponsors a {
+      margin-right:2vw;
+      margin-left:3vw;
+      margin-bottom:4vw;
+    }
+  }
+  @media(max-width:805px){
+    .sponsors{
+      flex-direction:column;
+    }
+    .sponsors a {
+      margin-bottom:5vw;
+    }
+  }
