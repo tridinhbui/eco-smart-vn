@@ -50,23 +50,6 @@
   border: rgb(64, 109, 89) solid;
 }
 
-@media (max-width: 600px) {
-  .button-scroll {
-    font-size: 4vw;
-    padding: 0.5vw;
-    margin-bottom: 1.6vw;
-    width: 25vw;
-    height: 8vw;
-    border-radius: 1vw;
-  }
-  .button-scroll:hover {
-    font-weight: bold;
-    background-color: white;
-    color: rgb(64, 109, 89);
-    text-decoration: none;
-  }
-}
-
 .button-scroll:link {
   background-color: rgb(64, 109, 89);
   text-decoration: none;
@@ -145,12 +128,27 @@
   .heading1 {
     /* padding-top: 33rem; */
     font-size: 2.5rem;
-    margin-top: 0rem;
+    margin-top: -2.2rem;
   }
   .heading2 {
     font-size: 1.5rem;
   }
   .content-right p {
     font-size: 1.1rem;
+    margin-top:-1.2rem;
+  }
+  .button-scroll {
+    font-size: 4vw;
+    margin-top:-2rem;
+    margin-bottom: 1.6vw;
+    width: 25vw;
+    height: 8vw;
+    border-radius: 1vw;
+  }
+  .button-scroll:hover {
+    font-weight: bold;
+    background-color: white;
+    color: rgb(64, 109, 89);
+    text-decoration: none;
   }
 }
