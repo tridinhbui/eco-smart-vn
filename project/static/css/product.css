@@ -172,7 +172,7 @@ justify-content: space-around;
   text-align: center;
   font-family: 'Heebo', sans-serif;
   text-decoration-line: none;
-  border:1px black solid;
+  /* border:1px black solid; */
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -180,12 +180,12 @@ justify-content: space-around;
   color:black;
   padding: 2% 5% 2% 5%;
   transition: 0.2s;
-  background-color: rgb(130, 235, 137);
+  background-color:#E5D9B6;
   cursor: pointer;
 }
 .goshop:hover{
   border-color: white;
-  background-color: green;
-  color:white;
+  background-color: #e7d29a;
+  color:rgb(86, 86, 86);
   transition: 0.2s ;
 }
