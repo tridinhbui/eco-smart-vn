@@ -93,7 +93,7 @@
   }
   .env-img {
     margin-left: 0rem;
-    margin-top: 0rem;
+    margin-top: -5.5rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -103,7 +103,7 @@
   .heading1 {
     /* padding-top: 33rem; */
     font-size: 3rem;
-    margin-top: 0rem;
+    margin-top: -5.5rem;
   }
   .heading2 {
     font-size: 2rem;
