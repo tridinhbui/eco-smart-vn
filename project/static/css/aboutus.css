@@ -32,32 +32,45 @@ body {
   }
 
 .head1 h1 {
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: bolder;
     color: #FCF5E5;
 }
 .head1 h1:hover {
     transform: scale(1.2)
 }
+#aboutus-content {
+    background-size: cover;
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+}
 
+#aboutus-content h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(65, 128, 49);
+    text-align: center;
+    padding-top: 80px;
+}
 .head2awareness {
     margin-top: 2rem;
     margin-bottom:2rem;
-    font-size: 4.2vh;
+    font-size: 4vh;
     font-weight: bolder;
     text-align: center;
     color: #FCF5E5;
 }
 .head2executive{
     margin-top: 2rem;
-    font-size: 4.2vh;
+    font-size: 4vh;
     font-weight: bolder;
     text-align: center;
     color: #FCF5E5;
 }
 .head2ourteam {
     margin-top: 2rem;
-    font-size: 4.2vh;
+    font-size: 4vh;
     font-weight: bolder;
     text-align: center;
     color: #FCF5E5;
@@ -81,6 +94,14 @@ body {
 .mainstyle-2 {
     margin-top: 50px;
     color: #E5D9B6;
+}
+
+
+@media(max-width: 1000px) {
+    .mainstyle {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .caption {
@@ -110,17 +131,6 @@ body {
     color:#F3E5AB;
 }
 
-.interview {
-    margin-bottom: 110px;
-}
-
-@media(max-width: 1000px) {
-    .mainstyle {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
 @media (max-width:625px){
     .head1 h1{
         font-size:4vh;
@@ -147,4 +157,7 @@ body {
         text-align: center;
         color: #FCF5E5;
     }
+}
+.interview {
+    margin-bottom: 110px;
 }
