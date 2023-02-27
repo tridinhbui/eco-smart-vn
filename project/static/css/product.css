@@ -120,12 +120,13 @@ scale: 1;
 }
 /* menu */
 .menu{
-  background-color:#E5D9B6;
+  background-color:whitesmoke;
   padding: 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,350px));
 grid-gap: 20px 30px;   
 justify-content: space-around;
+animation: pageLoading 2s;
 }
 .product-items{
   background-color: white;
@@ -188,4 +189,14 @@ justify-content: space-around;
   background-color: #e7d29a;
   color:rgb(86, 86, 86);
   transition: 0.2s ;
+}
+@keyframes pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
