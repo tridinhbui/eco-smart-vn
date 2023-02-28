@@ -10,6 +10,11 @@
 
 .content-left {
   color: #fcf5e5;
+  animation: pageLoading 2s;
+}
+
+.content-right {
+  animation: pageLoading 2s;
 }
 
 .flex-item {
@@ -223,5 +228,16 @@
   #send-btn {
     width: 30%;
     margin-left: 35%;
+  }
+}
+
+@keyframes pageLoading {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

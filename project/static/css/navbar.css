@@ -146,6 +146,33 @@ body {
     color: #285430;
 }
 
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #285430;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+    background-color: green;
+}
+.nav-item .nav-link.active::after {
+    width: 100%;
+    background-color: green;
+}
+
+
+
 @media (max-width: 991px) {
     .navbar-toggler {
         margin-right: 1.6rem;

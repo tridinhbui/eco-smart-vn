@@ -31,8 +31,22 @@
   .sponsors img {
     max-width: 150px;
     height: auto;
-
   }
+
+  .sponsors img {
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    transition: filter 1ms ease ;
+    transition: filter 1ms ease ;
+  }
+    
+  .sponsors img:hover {
+    filter:grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+
+
   @media (max-width:1250px) {
     .sponsors a {
       margin-right:4vw;
