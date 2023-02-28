@@ -33,3 +33,18 @@
   transform: scale(1.025);
   z-index: 2;
 }
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-120%);
+}
+
+.owl-prev {
+  left: -3.4rem;
+}
+
+.owl-next {
+  right: -3.4rem;
+}
