@@ -89,11 +89,6 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/product/cart/">Cart </a>
-            </li>
-
-
             <li class="nav-item" id="last-nav-item">
               <form class="search-container" action="">
                 <input class="input-box" type="text" required />
@@ -102,6 +97,11 @@
                 </button>
               </form>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/product/cart/"><img src="{{ url_for('static', filename='img/cart/shopping-cart.png') }}" alt="shopping cart"> </a>
+            </li>
+
           </ul>
         </div>
       </div>
