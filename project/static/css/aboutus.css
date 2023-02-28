@@ -62,14 +62,15 @@ body {
     color: #FCF5E5;
 }
 .head2executive{
-    margin-top: 2rem;
+    margin-top: 50px;
     font-size: 4vh;
     font-weight: bolder;
     text-align: center;
     color: #FCF5E5;
 }
 .head2ourteam {
-    margin-top: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 4vh;
     font-weight: bolder;
     text-align: center;
@@ -85,6 +86,7 @@ body {
 .mainstyle {
     width: 50%;
     margin: 0 auto;
+    animation: pageLoading 2s;
 }
 
 .mainstyle-1 {
@@ -92,10 +94,17 @@ body {
 }
 
 .mainstyle-2 {
-    margin-top: 50px;
+    padding-top: 100px;
+}
+
+.mainstyle-3 {
+    padding-top: 100px;
     color: #E5D9B6;
 }
 
+.backgroundchange {
+    background-color: #E5D9B6;
+}
 
 @media(max-width: 1000px) {
     .mainstyle {
@@ -161,3 +170,40 @@ body {
 .interview {
     margin-bottom: 110px;
 }
+
+@keyframes pageLoading {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.d-block {
+    animation: pageLoading 2s;
+}
+
+.hr-aboutus {
+	border: 0;
+    margin-bottom: 0;
+    margin-top: 100px; 
+    height: 5px; 
+    background: linear-gradient(to right, black, white, black);
+}
+
+.color-gap {
+    background-color: #E5D9B6;
+}
+
+.hr-aboutus2 {
+	border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 5px; 
+    background: linear-gradient(to right, black, white, black);
+}
+
+
