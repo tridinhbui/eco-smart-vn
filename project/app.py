@@ -45,7 +45,7 @@ def product():
     return render_template('product.html')
 
 
-@app.route('/product/cart.html/')
+@app.route('/product/cart/')
 def cart():
     return render_template('cart.html')
 
