@@ -13,6 +13,7 @@
   font-size: 6vh;
   font-weight: bolder;
   color: #FCF5E5;
+  animation: title-pageLoading 2s;
 }
 .head1 h1:hover {
   transform: scale(1.2)
@@ -133,7 +134,16 @@ img{
       transform: translateY(0);
   }
 }
-
+@keyframes title-pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 /* .loader-wrapper {
   width: 100%;
   height: 100%;

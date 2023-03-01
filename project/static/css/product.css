@@ -36,7 +36,7 @@ color: grey;
 }
 .pop-up-product-name{
 font-size: 30px;  
-margin-left: 30%;
+margin-left: 10%;
 align-items: center;
 justify-content: space-around;
 }
@@ -100,6 +100,7 @@ scale: 1;
   text-align: center;
   padding-top: 40px;
 } */
+
 .head1 {
   display:flex;
   background-image: url('../img/activities_page/titlebackground.jpg');
@@ -114,6 +115,7 @@ scale: 1;
   font-size: 6vh;
   font-weight: bolder;
   color: #FCF5E5;
+  animation: title-pageLoading 2s;
 }
 .head1 h1:hover {
   transform: scale(1.2)
@@ -178,22 +180,32 @@ animation: pageLoading 2s;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 18px;
-  color:black;
+  color:white;
   padding: 2% 5% 2% 5%;
   transition: 0.2s;
-  background-color:#E5D9B6;
+  background-color:rgb(64, 109, 89);
   cursor: pointer;
 }
 .goshop:hover{
   border-color: white;
-  background-color: #e7d29a;
-  color:rgb(86, 86, 86);
+  background-color: rgb(64, 109, 70);
+  color:white;
   transition: 0.2s ;
 }
 @keyframes pageLoading {
   from {
       opacity: 0;
       transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes title-pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
   }
   to {
       opacity: 1;
