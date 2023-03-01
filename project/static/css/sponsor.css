@@ -1,14 +1,17 @@
+ .sponsors-showcase{
+  background-color: white;
+ }
  .h2ofsponsor{
   margin-top: 1rem;
   font-size: 35px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 30px;
-  color: #e5d9b6;
+  margin-bottom: 50px;
+  color: #283746;
 }
   .h2ofsponsor:hover {
   transform: scale(1.2);
-  color: #e5d9b6;
+  color: #283746;
 }
   .sponsors-showcase {
   padding: 20px;

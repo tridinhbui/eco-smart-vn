@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .h1ofslideshow {
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 35px;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #e5d9b6;
+  color: white;
 }
 .h1ofslideshow:hover {
   transform: scale(1.2);
-  color: #e5d9b6;
+  color: white;
 }
 
 .card-img-topofslideshow {
@@ -25,7 +25,7 @@
   width: 80vw;
 }
 .cardofslideshow {
-  background-color: #285430;
+  background-color: #365949;
   border: none;
   z-index: 1;
 }
@@ -47,4 +47,13 @@
 
 .owl-next {
   right: -3.4rem;
+}
+
+#container-slideshow {
+  background-color:#365949;
+  padding-top:0.009rem;
+  padding-bottom: 0.009rem;
+  border-radius:1rem;
+  padding-left:4rem;
+  padding-right:4rem;
 }

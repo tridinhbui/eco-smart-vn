@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background-color: #e5d9b6;
+    background-color: white;
     padding-top: 0;
     padding-bottom: 0;
     font-family: "Heebo", sans-serif;
@@ -65,10 +65,10 @@ body {
     transition: all 1s;
     width: 50px;
     height: 50px;
-    background: #e5d9b6;
+    background: white;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid #285430;
+    border: 4px solid #283746;
     padding: 5px;
 }
 
@@ -96,7 +96,7 @@ body {
     top: 0px;
     right: 0px;
     border-radius: 50%;
-    color: #285430;
+    color: #283746;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
@@ -116,7 +116,7 @@ body {
 .search-container:hover .fa,
 .search-container:valid .fa {
     background: #285430;
-    color: #e5d9b6;
+    color: white;
 }
 
 #transparent-search-btn {
@@ -125,8 +125,8 @@ body {
 }
 
 .input-box {
-    background-color: #e5d9b6;
-    color: #285430;
+    background-color: white;
+    color: #283746;
     font-family: "Heebo", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -143,13 +143,13 @@ body {
 
 .nav-item .nav-link {
     font-size: 115%;
-    color: #285430;
+    color: #283746;
 }
 
 .nav-link {
     position: relative;
     text-decoration: none;
-    color: #285430;
+    color: #283746;
 }
 .nav-link::after {
     content: '';

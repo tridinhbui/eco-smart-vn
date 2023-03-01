@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .h1ofproduct{
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 35px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: #e5d9b6;
+  margin-bottom: 2rem;
+  color: white;
 }
 .h1ofproduct:hover {
   transform: scale(1.2);
-  color: #e5d9b6;
+  color: white;
 }
 
 .card-img-topofproduct {
@@ -25,13 +25,12 @@
   width: 80vw;
 }
 .cardofproduct {
-  background-color: #285430;
+  background-color: #365949;
   border: none;
   z-index: 1;
 }
 .cardofproduct :hover {
-  transform: scale(1.025);
-  z-index: 2;
+  opacity:90%;
 }
 .seemoreofproduct {
   text-decoration-line: none;
@@ -48,14 +47,22 @@
   margin-bottom: 5rem;
   height:3rem;
   margin-top:0;
-  background-color: #e5d9b6;
-  border-color:#e5d9b6;
-  color:#285430;
+  background-color: white;
+  border-color:white;
+  color:#283746;
 }
 
 
 .seemoreofproduct:hover {
-  color: #285430;
+  color: #365949;
   font-weight: bolder;
-  background-color: #FCF5E5;
+  background-color: white;
+  border-color:black;
+}
+
+#container-product{
+  background-color:#365949;
+  padding-top:0.009rem;
+  padding-bottom: 0.009rem;
+  border-radius:1rem;
 }
