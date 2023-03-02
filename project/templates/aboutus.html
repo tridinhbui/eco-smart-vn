@@ -17,6 +17,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/aboutus.css') }}"
@@ -28,13 +29,14 @@
     />
   </head>
 
-  <body style="font-family: 'Heebo', sans-serif">
+  <body style="font-family: 'Heebo', sans-serif" class="body-aboutus">
     {% include 'navbar.html' %}
+    
     <div class="bodystyle">
       <div class="head1">
         <h1>Về chúng tôi</h1>
       </div>
-
+    {% include 'sidebar.html' %}
       <div>
         <div class="mainstyle mainstyle-1">
           <!-- Including: Awareness, Mission & Vision, Founder -->
