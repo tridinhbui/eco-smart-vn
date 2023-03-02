@@ -18,21 +18,23 @@ body {
 /* BO FONT HEADING */
 
 .head1 {
-  display: flex;
-  background-image: url("../img/activities_page/titlebackground.jpg");
+  display:flex;
+  background-image: url('../img/activities_page/titlebackground.jpg');
   background-size: cover;
   padding-top: 20px;
   height: 15vh;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 5vh;
-  font-weight: bolder;
-  color: #ffffff;
+  align-items:center;
+  justify-content:center;
 }
-
+.head1 h1 {
+  font-size: 6vh;
+  font-weight: bolder;
+  color: #FCF5E5;
+  animation: title-pageLoading 2s;
+}
 .head1 h1:hover {
-  transform: scale(1.05);
+  transform: scale(1.2)
 }
 #aboutus-content {
   background-size: cover;

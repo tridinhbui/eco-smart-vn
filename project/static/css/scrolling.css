@@ -44,9 +44,11 @@
 }
 
 .button-scroll {
+    display:inline-block;
+    font-weight: bold;
     margin-top: 1.5rem;
     text-decoration: none;
-    padding: 0.5vw;
+    padding: 0.6vw;
     color: white;
     border-radius: 0.5vw;
     border: rgb(64, 109, 89) solid;
@@ -57,6 +59,12 @@
     background-color: rgb(64, 109, 89);
     text-decoration: none;
 }
+
+.button-scroll:hover .button-icon {
+    display:inline-block;
+    transform:translateX(.25rem);
+    transition: .3s;
+  }
 
 .button-scroll:hover {
     font-weight: bold;
