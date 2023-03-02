@@ -17,9 +17,6 @@
   width: 1/3;
   border-radius: 6%;
 }
-#container-product{
-  width: 80%;
-}
 .cardofproduct border shadow {
   height: 20vh;
   width: 80vw;
@@ -29,6 +26,7 @@
   border: none;
   z-index: 1;
 }
+
 .cardofproduct :hover {
   opacity:90%;
 }
@@ -44,7 +42,7 @@
   border: 2px white solid;
   margin: 0 auto; /* Center the element horizontally */
   width: 9rem; /* Set the width of the element */
-  margin-bottom: 5rem;
+  margin-bottom:1rem;
   height:3rem;
   margin-top:0;
   background-color: white;
@@ -63,6 +61,10 @@
 #container-product{
   background-color:#365949;
   padding-top:0.009rem;
-  padding-bottom: 0.009rem;
   border-radius:1rem;
+  width:80vw;
+  padding-bottom:1px;
+  padding-left:2rem;
+  padding-right:2rem;
 }
+

@@ -132,6 +132,10 @@ body {
     font-weight: 600;
 }
 
+#navbar-id{
+    border-bottom:1px solid green;
+}
+
 .nav-item {
     margin: 0px 10px;
     float: left;
