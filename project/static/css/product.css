@@ -4,6 +4,7 @@
 }
 .pop-up{
 position: fixed;
+z-index: 1;
 background-color: white;
 border: 1px solid #333;
 width: 500px;
