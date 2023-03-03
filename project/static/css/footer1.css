@@ -5,8 +5,8 @@
   right: 0;
   height: auto;
   width: 100%;
-  color: #e5d9b6;
-  background-color: #3a7845;
+  color: white;
+  background-color: #365949;
   padding-top: 1rem;
 }
 
@@ -27,7 +27,7 @@
   width: 30rem;
   margin: 0 auto;
   font-size: 0.9rem;
-  color: #e5d9b6;
+  color: white;
 }
 
 @media only screen and (max-width: 485px) {
@@ -71,15 +71,22 @@
 }
 .footer-menu p {
   padding-right: 0.5rem;
-  color: #e5d9b6;
+  color: white;
 }
 .footer-link {
-  color: #e5d9b6;
+  color: white;
 }
 
 .footer-link:hover {
-  color: #c9b169;
+  color: white;
 }
+
+.fa-brands {
+  color: white;
+  width: 2rem;
+}
+
+
 
 @media only screen and (max-width: 595px) {
   .footer-bottom {
