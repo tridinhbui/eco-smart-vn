@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .h1ofproduct{
   margin-top: 2rem;
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -68,3 +68,14 @@
   padding-right:2rem;
 }
 
+@media(max-width:730px){
+  .h1ofproduct{
+    font-size:1.5rem;
+  }
+}
+
+@media(max-width:600px){
+  .h1ofproduct{
+    font-size:1.3rem;
+  }
+}

@@ -3,7 +3,7 @@
  }
  .h2ofsponsor{
   margin-top: 1rem;
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
@@ -64,11 +64,26 @@
       margin-bottom:4vw;
     }
   }
+   
+    
+
   @media(max-width:805px){
     .sponsors{
       flex-direction:column;
     }
     .sponsors a {
       margin-bottom:5vw;
+    }
+  }
+
+  @media(max-width:730px){
+    .h2ofsponsor{
+      font-size:1.5rem;
+    }
+  }
+
+  @media(max-width:600px){
+    .h2ofsponsor{
+      font-size:1.3rem;
     }
   }
