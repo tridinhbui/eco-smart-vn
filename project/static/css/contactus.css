@@ -9,7 +9,7 @@
 }
 
 .content-left {
-  color: #fcf5e5;
+  color: white;
   animation: pageLoading 2s;
 }
 
@@ -23,7 +23,7 @@
 
 .scripts1 {
   font-size: 7rem;
-  margin-top: 16rem;
+  margin-top: 12rem;
   margin-left: 20rem;
 }
 
@@ -34,8 +34,9 @@
 
 .contact-box {
   width: 29rem;
-  background-color: #fcf5e5;
-  border: 2px solid #5f8d4e;
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.);
+  border:1px solid white;
   border-radius: 1.6%;
   margin-top: 10rem;
   margin-left: 8rem;
@@ -47,7 +48,7 @@
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #5f8575;
+  color: white;
 }
 
 .heading1 {
@@ -84,14 +85,15 @@
 }
 
 #send-btn {
-  border-color: #5f8d4e;
+  border-color: rgb(64, 109, 89) solid;
   margin-top: 1rem;
   margin-left: 30%;
   width: 40%;
-  background-color: #50c878;
+  background-color: rgb(64, 109, 89);
   padding-left: 0;
   padding-right: 0;
   color: white;
+  border-radius:0.5rem;
 }
 
 #send-btn:hover {
@@ -107,7 +109,7 @@
 @media (max-width: 1770px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 12rem;
   }
 
@@ -119,7 +121,7 @@
 @media (max-width: 1530px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 8rem;
   }
 
@@ -131,7 +133,7 @@
 @media (max-width: 1400px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 4rem;
   }
 
@@ -143,7 +145,7 @@
 @media (max-width: 1250px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 2rem;
   }
 
