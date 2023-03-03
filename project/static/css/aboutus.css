@@ -63,7 +63,8 @@
   font-size: 4vh;
   font-weight: bolder;
   text-align: center;
-  color: #fff;
+  color: #365949;
+  margin-bottom: 2rem;
 }
 .head2ourteam {
   margin-top: 50px;
@@ -99,7 +100,7 @@
 }
 
 .ourteam-background {
-  background-color: #285430;
+  background-color: white;
 }
 
 @media (max-width: 1000px) {
@@ -178,4 +179,14 @@
 
 .d-block {
   animation: pageLoading 2s;
+}
+@keyframes title-pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
