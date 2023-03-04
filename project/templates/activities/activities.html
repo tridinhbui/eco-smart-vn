@@ -199,26 +199,19 @@
         </div>
       </div>
     </div>
-
-      <div class="elementor-pagination">
       
-      <div class="page-number-item">
-        <a class="page-number" href="/activities/"><1</a>
-      </div>
-
-      <div class="page-number-item">
-        <a class="page-number" href="/activities/page2/">2</a>
-      </div>
-
-      <div class="page-number-item">
-        <a class="page-number" aria-current="page" href="/activities/page3/">3</a>
-      </div>
-
-      <div class="page-number-item">
-        <a class="page-number" aria-current="page" href="/activities/page4/">4></a>
-      </div>
+    <div class="pagination">
+      <ul>
+        <li><a href="/activities/" data-page ="1" class="page-link">1</a></li>
+        <li><a href="/activities/page2/" data-page ="2" class="page-link">2</a></li>
+        <li><a href="/activities/page3/" data-page ="3" class="page-link">3</a></li>
+        <li><a href="/activities/page4/" data-page ="4" class="page-link">4</a></li>
+      </ul>
     </div>
-
+    <script
+      src="{{ url_for('static', filename='js/activities.js')}}"
+      type="text/javascript"
+    ></script>
     {% include 'footer1.html' %}
   </body>
 </html>
