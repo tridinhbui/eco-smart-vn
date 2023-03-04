@@ -1,88 +1,94 @@
-*{ padding: 0;
+.product-body {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.pop-up{
-position: fixed;
-z-index: 1;
-background-color: white;
-border: 1px solid #333;
-width: 500px;
-height: 100vh;
-background-color: white;
-left: 0;
-top: 0%;
-padding: 10px;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px ;
-display: grid;
-grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.2fr;
-grid-template-columns: auto ;
-transition: 0.3s 0.3s;
-scale: 0;
-visibility: hidden;
-box-shadow:0 0 15px rgba(0, 0, 0, 0.5) ;
-/* align-items: center; */
+.pop-up {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #333;
+  width: 500px;
+  height: 100vh;
+  background-color: white;
+  left: 0;
+  top: 0%;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.2fr;
+  grid-template-columns: auto;
+  transition: 0.3s 0.3s;
+  scale: 0;
+  visibility: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  /* align-items: center; */
 }
 .close-pop-up {
-width: 40px;
-height: 40px;
-position: absolute;
-right: 10px;
-top: 10px;
-cursor: pointer;
-}  
-.close-pop-up :hover{
-color: grey;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
-.pop-up-product-name{
-font-size: 30px;  
-margin-left: 10%;
-align-items: center;
-justify-content: space-around;
+.close-pop-up :hover {
+  color: grey;
 }
-.pop-up img{
-width: 300px; 
-margin-left: 15%;
+.pop-up-product-name {
+  font-size: 30px;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: space-around;
 }
-.pop-up-details-sub{
-display: grid;
-grid-template-columns: 1fr 1fr;
+.pop-up img {
+  width: 300px;
+  margin-left: 15%;
 }
-.pop-up-contact-cart{
-display: grid;
-grid-template-columns: 1fr 1fr;
+.pop-up-details-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.pop-up-contact{
-width: 100%;
-color:black;
-background-color: white;
-cursor: pointer;
+.pop-up-contact-cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.pop-up-contact:hover{
-color:grey;
+.pop-up-contact {
+  width: 100%;
+  color: black;
+  background-color: white;
+  cursor: pointer;
 }
-.pop-up-cart{
-width: 100%;
-color:black;
-background-color: white;
-cursor: pointer;
+.pop-up-contact:hover {
+  color: grey;
 }
-.pop-up-cart:hover{
-color:grey;
+.pop-up-cart {
+  width: 100%;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.pop-up-cart:hover {
+  color: grey;
 }
 .open-popup {
-visibility: visible;
-left: 0%;
-scale: 1;
+  visibility: visible;
+  left: 0%;
+  scale: 1;
 }
 
 @media screen and (max-width: 500px) {
-        .pop-up{width:100%}
-      .pop-up img{ margin-left: 10%;}
-      .pop-up-product-name{ margin-left: 30%;}
+  .pop-up {
+    width: 100%;
+  }
+  .pop-up img {
+    margin-left: 10%;
+  }
+  .pop-up-product-name {
+    margin-left: 30%;
+  }
 }
-
 
 /* product page */
 /* #head1 {
@@ -103,113 +109,112 @@ scale: 1;
 } */
 
 .head1 {
-  display:flex;
-  background-image: url('../img/activities_page/titlebackground.jpg');
+  display: flex;
+  background-image: url("../img/activities_page/titlebackground.jpg");
   background-size: cover;
   padding-top: 20px;
   height: 15vh;
   width: 100%;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
 .head1 h1 {
   font-size: 6vh;
   font-weight: bolder;
-  color: #FCF5E5;
+  color: #fcf5e5;
   animation: title-pageLoading 2s;
 }
 .head1 h1:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 /* menu */
-.menu{
-  background-color:whitesmoke;
+.menu {
+  background-color: whitesmoke;
   padding: 10vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,350px));
-grid-gap: 20px 30px;   
-justify-content: space-around;
-animation: pageLoading 2s;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  grid-gap: 20px 30px;
+  justify-content: space-around;
+  animation: pageLoading 2s;
 }
-.product-items{
+.product-items {
   background-color: white;
   display: grid;
-  position: relative;
+  /* position: relative; */
   grid-template-rows: 0.5 fr;
   border-radius: 5%;
-  box-shadow:0 0 15px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   grid-gap: 20px 80px;
 }
-.product-items img{
+.product-items img {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.details{
+.details {
   display: grid;
   grid-template-rows: auto 1fr 50px;
   grid-row-gap: 10px;
 }
-.details-sub{
+.details-sub {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   padding: 10px;
 }
-.details p{
+.details p {
   padding: 10px;
 }
-.product-name  {
-  font-family: 'Heebo', sans-serif;
+.product-name {
+  font-family: "Heebo", sans-serif;
   font-size: 18px;
-  font-weight: 400;   
-
+  font-weight: 400;
 }
-.product-price{
-  font-family: 'Heebo', sans-serif;
+.product-price {
+  font-family: "Heebo", sans-serif;
   color: rgb(23, 69, 23);
   font-weight: 400;
   font-size: 18px;
   padding-left: 10px;
   border-left: 2px solid #333;
 }
-.goshop{
+.goshop {
   text-align: center;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   text-decoration-line: none;
   /* border:1px black solid; */
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-size: 18px;
-  color:white;
+  color: white;
   padding: 2% 5% 2% 5%;
   transition: 0.2s;
-  background-color:rgb(64, 109, 89);
+  background-color: rgb(64, 109, 89);
   cursor: pointer;
 }
-.goshop:hover{
+.goshop:hover {
   border-color: white;
   background-color: rgb(64, 109, 70);
-  color:white;
-  transition: 0.2s ;
+  color: white;
+  transition: 0.2s;
 }
 @keyframes pageLoading {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes title-pageLoading {
   from {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
