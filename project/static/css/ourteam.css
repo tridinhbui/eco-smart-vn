@@ -13,6 +13,7 @@
     .department {
         justify-content: center;
         justify-items: center;
+        background-color:#365949;
     }
 }
 
@@ -20,6 +21,11 @@
     display: flex;
     flex-wrap: wrap;
     padding: 2em 1em;
+    background-color:#365949;
+    padding-top:0.009rem;
+    padding-bottom: 0.009rem;
+    padding-left:4rem;
+    padding-right:4rem;
 }
 
 .column {
@@ -51,7 +57,7 @@
 .card .img-container {
     width: 8em;
     height: 8em;
-    background-color: rgb(101, 177, 101);
+    background-color: #365949;
     padding: 0.5em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
@@ -82,4 +88,24 @@
 .card{
     position: sticky;
     top: 0;
+}
+
+.first-department {
+    background-color:#365949;
+    padding-top:3rem;
+    padding-bottom: 0.009rem;
+    border-top-right-radius:1rem;
+    border-top-left-radius:1rem;
+    padding-left:4rem;
+    padding-right:4rem;
+}
+
+.last-department {
+    background-color:#365949;
+    padding-bottom:3rem;
+    padding-top: 0.009rem;
+    border-bottom-right-radius:1rem;
+    border-bottom-left-radius:1rem;
+    padding-left:4rem;
+    padding-right:4rem;
 }
