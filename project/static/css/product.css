@@ -165,12 +165,12 @@
   padding: 10px;
 }
 .product-name {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 .product-price {
-  font-family: "Heebo", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: rgb(23, 69, 23);
   font-weight: 400;
   font-size: 18px;
@@ -179,7 +179,7 @@
 }
 .goshop {
   text-align: center;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Inter', sans-serif;
   text-decoration-line: none;
   /* border:1px black solid; */
   width: 100%;

@@ -1,5 +1,5 @@
 .contact-us-body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   background-color: #e5d9b6;
@@ -78,7 +78,7 @@
 }
 
 #messagebox {
-  font-family: "Heebo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   padding-top: 2rem;
   height: 8rem;
