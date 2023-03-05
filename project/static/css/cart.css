@@ -27,14 +27,14 @@
 
 .Heading{
 	font-size: 20px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 	color: #2F3841;
 }
 
 .Action{
 	font-size: 14px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #E44C4C;
 	cursor: pointer;
@@ -65,14 +65,14 @@
 	padding-top: 10px;
 	line-height: 10px;
 	font-size: 32px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 800;
 	color: #202020;
 }
 .subtitle{
 	line-height: 10px;
 	font-size: 18px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #909090;
 }
@@ -92,14 +92,14 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 900;
 	color: #202020;
 	cursor: pointer;
 }
 .count{
 	font-size: 20px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #202020;
 }
@@ -111,14 +111,14 @@
 .amount{
 	padding-top: 20px;
 	font-size: 26px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 800;
 	color: #202020;
 }
 .save{
 	padding-top: 5px;
 	font-size: 14px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #1687d9;
 	cursor: pointer;
@@ -126,7 +126,7 @@
 .remove{
 	padding-top: 5px;
 	font-size: 14px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #E44C4C;
 	cursor: pointer;
@@ -153,20 +153,20 @@
 }
 .Subtotal{
 	font-size: 22px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 	color: #202020;
 }
 .items{
 	font-size: 16px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	color: #909090;
 	line-height: 10px;
 }
 .total-amount{
 	font-size: 36px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 900;
 	color: #202020;
 }
@@ -179,7 +179,7 @@
 	border-radius: 20px;
 	cursor: pointer;
 	font-size: 16px;
-	font-family: 'Open Sans';
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	color: #202020;
 }

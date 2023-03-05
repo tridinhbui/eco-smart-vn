@@ -9,7 +9,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-family: "Heebo";
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   align-items: center;
@@ -34,7 +34,7 @@
 .footer-href {
   text-decoration: none;
   color: #e5d9b6;
-  font-family: "Heebo";
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   text-decoration: underline;

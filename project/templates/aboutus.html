@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About Us</title>
+    <title>Về Chúng Tôi</title>
     <link
       rel="icon"
       href="{{ url_for('static', filename='img/aboutus/logo2.png') }}"
@@ -23,20 +23,19 @@
       href="{{ url_for('static', filename='css/aboutus.css') }}"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+
   </head>
 
-  <body style="font-family: 'Heebo', sans-serif" class="body-aboutus">
+  <body style="font-family: 'Inter', sans-serif" class="body-aboutus">
     {% include 'navbar.html' %}
     
     <div class="bodystyle">
       <div class="head1">
         <h1>Về chúng tôi</h1>
       </div>
-    {% include 'sidebar.html' %}
       <div>
         <div class="mainstyle mainstyle-1">
           <!-- Including: Awareness, Mission & Vision, Founder -->

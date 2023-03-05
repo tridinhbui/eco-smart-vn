@@ -8,7 +8,7 @@
 }
 .achievement-title{
       margin-top: 1rem;
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 30px;
@@ -91,4 +91,15 @@ span.text {
       height: 25vmin;
       font-size: 8px;
     }
+}
+@media(max-width:730px){
+  .achievement-title{
+    font-size:1.5rem;
+  }
+}
+
+@media(max-width:600px){
+  .achievement-title{
+    font-size:1.3rem;
+  }
 }

@@ -6,10 +6,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/activities_page.css') }}"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    
 
     <title>Activities</title>
     <link
@@ -24,7 +25,7 @@
     />
   </head>
 
-  <body style="font-family: 'Heebo', sans-serif">
+  <body style="font-family: 'Inter', sans-serif">
     {% include 'navbar.html' %}
     <div class="bodystyle">
       <div class="head1">
@@ -32,28 +33,19 @@
       </div>
 
 
-    <div class="elementor-pagination">
-      
-        <div class="page-number-item">
-          <a class="page-number" href="/activities/"><1</a>
-        </div>
-
-        <div class="page-number-item">
-          <a class="page-number" href="/activities/page2/">2</a>
-        </div>
-
-        <div class="page-number-item">
-          <a class="page-number" aria-current="page" href="/activities/page3/">3</a
-          >
-        </div>
-
-        <div class="page-number-item">
-          <a class="page-number" aria-current="page" href="/activities/page4/"
-            >4></a
-          >
-        </div>
-      
-    </div>
+      <div class="pagination">
+        <ul>
+          <li><a href="/activities/" data-page ="1" class="page-link">1</a></li>
+          <li><a href="/activities/page2/" data-page ="2" class="page-link">2</a></li>
+          <li><a href="/activities/page3/" data-page ="3" class="page-link">3</a></li>
+          <li><a href="/activities/page4/" data-page ="4" class="page-link">4</a></li>
+        </ul>
+      </div>
+      </div>
+      <script
+      src="{{ url_for('static', filename='js/activities.js')}}"
+      type="text/javascript"
+    ></script>
     {% include 'footer.html' %}
   </body>
 </html>

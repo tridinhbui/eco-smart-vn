@@ -5,17 +5,11 @@ figure {
 }
 
 figcaption {
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
   color: #283746;
-}
-
-@media (max-width: 600px) {
-  figure {
-    padding: 5%;
-  }
 }
 
 figcaption:hover {
@@ -25,4 +19,24 @@ figcaption:hover {
 
 #body-video {
   background-color: #285430;
+}
+
+
+
+@media (max-width: 600px) {
+  figure {
+    padding: 5%;
+  }
+}
+
+@media(max-width:730px){
+  figcaption {
+    font-size:1.5rem;
+  }
+}
+
+@media(max-width:600px){
+  figcaption {
+    font-size:1.3rem;
+  }
 }
