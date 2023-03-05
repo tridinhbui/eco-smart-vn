@@ -1,23 +1,25 @@
-$(".st1").click(function() {
-    $(".step1").prop("checked", true);
-})
+$(".step1").prop("checked", true);
 
-$(".st2").click(function() {
-    $(".step2").prop("checked", true);
-})
+for (let i = 2; i < 7; i++) {
+    var step = ".step" + i;
+    $(step).prop("checked", false);
+}
 
-$(".st3").click(function() {
-    $(".step3").prop("checked", true);
-})
+function setfalse(count) {
+    for (let j = count + 1; j < 7; j++) {
+        let step = ".step" + j;
+        $(step).prop("checked", false);
+    }
+}
 
-$(".st4").click(function() {
-    $(".step4").prop("checked", true);
-})
-
-$(".st5").click(function() {
-    $(".step5").prop("checked", true);
-})
-
-$(".st6").click(function() {
-    $(".step6").prop("checked", true);
-})
+for (let i = 1; i < 7; i++) {
+    var step = ".st" + i;
+    $(step).click(function () {
+        $(".step" + i).prop("checked", true);
+        for (let j = i + 1; j < 7; j++) {
+            let nextstep = step.slice(0, -1) + j;
+            $(nextstep).prop("checked", false);
+        }
+        setfalse(i);
+    })
+}
