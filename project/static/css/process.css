@@ -1,0 +1,290 @@
+.p_title {
+    margin-top: 1rem;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #283746;
+}
+
+.p_title:hover {
+    transform: scale(1.2);
+    color: #283746;
+}
+
+#process_main {
+    font-family: Inter;
+    overflow: hidden;
+    height: 60vw;
+}
+
+.process_container {
+    margin: 150px auto;
+    width: 95vw;
+}
+
+.process_container input {
+    display: none;
+    position: absolute;
+}
+
+.process_head {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    margin-top: 60px;
+    animation: trans .7s linear;
+}
+
+ul.p_nav {
+    padding-top: 15px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin-top: -150px;
+}
+
+ul.p_nav li {
+    list-style: none;
+    float: left;
+    width: 16%;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    height: 6.5vw;
+    position: relative;
+}
+
+.p_inner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.7vw;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+ul.p_nav li::before {
+    content: '';
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    transition: all .3s ease;
+}
+
+ul.p_nav li:hover::before {
+    border: 2px solid #fff;
+    background: #777;
+}
+
+ul.p_nav li.active,
+ul.p_nav li:hover {
+    color: #444;
+}
+
+ul.p_nav li::after {
+    content: '';
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    background: #777;
+    border-radius: 50%;
+    margin: auto;
+    border: 0.6vw solid #fff;
+    margin-top: 4.5vw;
+    box-shadow: 0 0 2vw 0 rgb(0, 0, 0, .2);
+}
+
+ul.p_nav li:hover::after,
+ul.p_nav li.active::after {
+    background: rgb(7, 116, 67);
+}
+
+.p_line {
+    width: 78%;
+    margin: auto;
+    background: #eee;
+    height: 11%;
+    position: absolute;
+    left: 10.5%;
+    top: 8.75vw;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.p_line span {
+    content: ' ';
+    width: 2%;
+    height: 100%;
+    background-image: linear-gradient(to right, #6bb77b 0%, #0a492d 100%);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all .8s ease;
+}
+
+.p_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: anim .7s linear forwards;
+}
+
+.p_content section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3vw;
+    background-image: linear-gradient(to right, #6bb77b 10%, #116740 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 2vw;
+}
+
+.p_content section span {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.p_content section h1 {
+    font-weight: 850;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+}
+
+.p_content section p {
+    padding: 1.5vw 2vw;
+    margin-bottom: 0;
+    font-size: 1.8vw;
+}
+
+
+/*Step 1*/
+
+.step1:checked~.process_head .p_nav li.st1::before,
+
+/*Step 2*/
+
+.step2:checked~.process_head .p_nav li.st1::before,
+.step2:checked~.process_head .p_nav li.st2::before,
+
+/*Step 3*/
+
+.step3:checked~.process_head .p_nav li.st1::before,
+.step3:checked~.process_head .p_nav li.st2::before,
+.step3:checked~.process_head .p_nav li.st3::before,
+
+/*Step 4*/
+
+.step4:checked~.process_head .p_nav li.st1::before,
+.step4:checked~.process_head .p_nav li.st2::before,
+.step4:checked~.process_head .p_nav li.st3::before,
+.step4:checked~.process_head .p_nav li.st4::before,
+
+/*Step 5*/
+
+.step5:checked~.process_head .p_nav li.st1::before,
+.step5:checked~.process_head .p_nav li.st2::before,
+.step5:checked~.process_head .p_nav li.st3::before,
+.step5:checked~.process_head .p_nav li.st4::before,
+.step5:checked~.process_head .p_nav li.st5::before,
+
+/*Step 6*/
+
+.step6:checked~.process_head .p_nav li.st1::before,
+.step6:checked~.process_head .p_nav li.st2::before,
+.step6:checked~.process_head .p_nav li.st3::before,
+.step6:checked~.process_head .p_nav li.st4::before,
+.step6:checked~.process_head .p_nav li.st5::before,
+.step6:checked~.process_head .p_nav li.st6::before {
+    border: 2px solid #fff;
+    background: #777;
+}
+
+.step1:checked~.process_head .p_line span {
+    width: 0%;
+}
+
+.step2:checked~.process_head .p_line span {
+    width: 20%;
+}
+
+.step3:checked~.process_head .p_line span {
+    width: 40%;
+}
+
+.step4:checked~.process_head .p_line span {
+    width: 60%;
+}
+
+.step5:checked~.process_head .p_line span {
+    width: 80%;
+}
+
+.step6:checked~.process_head .p_line span {
+    width: 100%;
+}
+
+.step1-section,
+.step2-section,
+.step3-section,
+.step4-section,
+.step5-section,
+.step6-section {
+    transform: scale(0);
+    transform-origin: center bottom;
+    transition: all 0.7s ease;
+    position: absolute;
+    top: 0;
+}
+
+.step1:checked~.process_head .p_content .step1-section,
+.step2:checked~.process_head .p_content .step2-section,
+.step3:checked~.process_head .p_content .step3-section,
+.step4:checked~.process_head .p_content .step4-section,
+.step5:checked~.process_head .p_content .step5-section,
+.step6:checked~.process_head .p_content .step6-section {
+    display: block;
+    transform: scale(1);
+    transform-origin: bottom;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50% {
+        opacity: -5;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes trans {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50% {
+        opacity: -5;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
