@@ -63,3 +63,7 @@ def slideShow():
 @app.route('/video/')
 def video():
     return render_template('video.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("error.html"), 404 
