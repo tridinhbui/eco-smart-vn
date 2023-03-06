@@ -23,7 +23,6 @@
   flex-direction: column;
   align-items: center;
   background-color:  white;
-  animation: pageLoading 2s;
   width: 150vw;
   padding: 0;
   border-right: 1px solid #365949;
@@ -82,6 +81,7 @@
   margin-top:15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   font-size: 50%;
+  animation: pageLoading 2s;
   /* position: relative; */
 }
 .text2{
