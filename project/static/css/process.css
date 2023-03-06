@@ -168,6 +168,10 @@ ul.p_nav li.active::after {
     font-size: 1.8vw;
 }
 
+.p_content section i {
+    font-size: 10vw;
+}
+
 
 /*Step 1*/
 
@@ -287,5 +291,17 @@ ul.p_nav li.active::after {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1100px) {
+    #process_main {
+        height: 65vw;
+    }
+}
+
+@media (max-width: 1010px) {
+    #process_main {
+        height: 70vw;
     }
 }
