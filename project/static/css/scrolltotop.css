@@ -1,0 +1,20 @@
+.myBtn {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 95%;
+  margin-top: 4rem;
+  width: 4rem;
+  opacity: 0.5;
+  border: grey;
+}
+
+.myBtn:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
