@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/scrolltotop.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-Eh1qe+ESZaWn8mYpPIltmgxbNVh9bn/aZ8WJdDlvKbkLCQltL+s0vJ8WgYK0tGR+KtXZ1v0HuQ2LltKuyG/1cA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <button onclick="topFunction()" class="myBtn" title="Go to top"><i class="ri-arrow-up-fill scrollup__icon"></i></button>
+    <script
+      src="{{ url_for('static', filename='js/scrolltotop.js')}}"
+      type="text/javascript"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.myBtn {
+  background-color: #365949;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 96%;
+  margin-top: 4rem;
+  width: 4rem;
+  opacity: 0.5;
+  border: grey;
+  margin-bottom:1rem;
+}
+
+.scrollup__icon{
+  color: #FFF;
+}
+
+
+.myBtn:hover {
+  background-color: #365949;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}

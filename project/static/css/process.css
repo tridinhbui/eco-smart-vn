@@ -1,5 +1,5 @@
 .p_title {
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 35px;
     text-align: center;
     font-weight: 700;
@@ -13,7 +13,7 @@
 }
 
 #process_main {
-    font-family: Inter;
+    font-family: "Inter";
     overflow: hidden;
     height: 60vw;
 }
@@ -80,12 +80,12 @@ ul.p_nav li::before {
 
 ul.p_nav li:hover::before {
     border: 2px solid #fff;
-    background: #777;
+    background: #365949;
 }
 
 ul.p_nav li.active,
 ul.p_nav li:hover {
-    color: #444;
+    color: #365949;
 }
 
 ul.p_nav li::after {
@@ -93,7 +93,7 @@ ul.p_nav li::after {
     display: block;
     width: 2vw;
     height: 2vw;
-    background: #777;
+    background: #365949;
     border-radius: 50%;
     margin: auto;
     border: 0.6vw solid #fff;
@@ -168,6 +168,10 @@ ul.p_nav li.active::after {
     font-size: 1.8vw;
 }
 
+.p_content section i {
+    font-size: 10vw;
+}
+
 
 /*Step 1*/
 
@@ -208,7 +212,8 @@ ul.p_nav li.active::after {
 .step6:checked~.process_head .p_nav li.st5::before,
 .step6:checked~.process_head .p_nav li.st6::before {
     border: 2px solid #fff;
-    background: #777;
+    background: #365949;
+    color: #365949;
 }
 
 .step1:checked~.process_head .p_line span {
@@ -286,5 +291,23 @@ ul.p_nav li.active::after {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1100px) {
+    #process_main {
+        height: 65vw;
+    }
+}
+
+@media (max-width: 1010px) {
+    #process_main {
+        height: 70vw;
+    }
+}
+
+@media (max-width: 850px) {
+    #process_main {
+        display: none;
     }
 }

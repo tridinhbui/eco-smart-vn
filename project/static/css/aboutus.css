@@ -58,14 +58,7 @@
   text-align: center;
   color: #283746;
 }
-.head2executive {
-  margin-top: 2rem;
-  font-size: 4vh;
-  font-weight: bolder;
-  text-align: center;
-  color: #365949;
-  margin-bottom: 2rem;
-}
+
 .head2ourteam {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -99,13 +92,9 @@
   padding-top: 0.7rem;
 }
 
-.ourteam-background {
-  background-color: white;
-}
-
 @media (max-width: 1000px) {
   .mainstyle {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -159,7 +148,6 @@
     font-size: 3vh;
     font-weight: bolder;
     text-align: center;
-    color: #fcf5e5;
   }
 }
 .interview {

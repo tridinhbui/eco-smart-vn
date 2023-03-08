@@ -1,36 +1,36 @@
-
-html{
-  background-color: rgb(233, 255, 204);
-}
 .head1 {
-  background-image: url('../img/aboutus/titlebackground2.png');
-  background-color: rgb(233, 255, 204);
+  display:flex;
+  background-image: url('../img/activities_page/titlebackground.jpg');
   background-size: cover;
   padding-top: 20px;
-  height: 350px;
+  height: 15vh;
   width: 100%;
+  align-items:center;
+  justify-content:center;
 }
 .head1 h1 {
-  font-size: 80px;
+  font-size: 6vh;
   font-weight: bolder;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
+  color: #FCF5E5;
+  animation: title-pageLoading 2s;
 }
-
+.head1 h1:hover {
+  transform: scale(1.2)
+}
 #activities_news{
-  width:100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color:  rgb(233, 255, 204);
+  background-color:  white;
+  width: 150vw;
+  padding: 0;
+  border-right: 1px solid #365949;
 }  
-
 @media screen and (max-width: 1000px) {
   #activities_news .content_block{
     width: 90%;
-  }
+  }z
   .content_block .text1{
     font-size: 2.4vw;
   }
@@ -45,7 +45,7 @@ html{
   margin: 5%;
 }
 .text1{
-  font-size: 1.7vw;
+  font-size: 1vw;
   color:black;
   font-weight: 600;
   margin: 0%;
@@ -54,7 +54,7 @@ html{
 .content2{
   width: 60%;
   height: auto;
-  background-color:whitesmoke;
+  background-color:white;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -65,7 +65,7 @@ html{
   display:flex;
   flex-direction: row;
 }
-img{
+.img{
   /* border-radius: 5%; */
   width: 100%;
 }
@@ -74,64 +74,110 @@ img{
   border-radius: 5%;
   width:60%;
   height: auto;
-  background-color: rgb(131, 189, 117);
+  background-color: #E5D9B6;
   display:flex;
   flex-direction: row;
   margin-bottom: 20px;
   margin-top:15px;
-  box-shadow: 0 0 1em #1f003b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   font-size: 50%;
+  animation: pageLoading 2s;
   /* position: relative; */
-
 }
 .text2{
   margin-top: 0%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 1.2vw;
+  font-size: 0.9vw;
 }
 .text3{
   position: absolute;
   bottom: 5%;
   text-decoration-line: none;
-  margin-left: 70%;
-  border:1px black solid;
+  margin-left: 50%;
+  border: 2px #285430 solid;
   border-radius: 20px;
   font-size: 1vw;
-  color:black;
+  color:#285430;
   padding: 2% 5% 2% 5%;
   transition: 0.3s;
   background-color: white;
 }
 .text3:hover{
   border-color: white;
-  background-color: green;
+  background-color: #365949;
   color:white;
   transition: 0.3s ;
 }
-selector .elementor-pagination{
-  padding: 30px 20px 40px 20px;
-  background: #E1FD13;
-}
-.elementor-pagination{
-  width: 100%;
-  height: 50px;
+.pagination {
   display: flex;
   justify-content: center;
-  background-color: rgb(233, 255, 204);
-  text-decoration-line: none;
 }
-.page-number{
-  text-decoration-line: none;
-  margin: 10px;    
-  color: black;
-  font-size: 18px; 
-  font-weight: 600;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-}
-.page-number :hover{
-  color: blue;
 
+.pagination ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.pagination a:hover {
+  background-color: #e6e6e6;
+}
+
+.pagination .page-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .page-link.disabled {
+  pointer-events: none;
+  color: #999;
+}
+
+
+@keyframes pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes title-pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.activities-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 /* .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -174,3 +220,79 @@ selector .elementor-pagination{
   75% { height: 100%;}
   100% { height: 0%;}
 } */
+
+.mw-image {
+  width: 20%;
+  height: 20%;
+}
+
+.mw-content-block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #365949;
+  margin-right: 20px;
+}
+
+@media (max-width: 1090px) {
+  #activities_news {
+    width: 250vw;
+  }
+}
+@media (max-width: 755px) {
+  #activities_news {
+    width: 300vw;
+  }
+}
+@media (max-width: 643px) {
+  #activities_news {
+    width: 350vw;
+  }
+}
+@media (max-width: 473px) {
+  #activities_news {
+    width: 550vw;
+  }
+}
+
+.most-watched {
+  background-color: white;
+  animation: pageLoading 2s;
+  padding-left: 2vw;
+  padding-top: 10px;
+}
+
+.mw-heading {
+  color: #365949;
+  padding-top: 20px;
+  font-size: 1.5vw;
+  font-weight: 800;
+  border-bottom: 2px solid #365949;
+  display: inline-block;
+  line-height: 0.85;
+}
+
+.mw-child {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 711px) {
+  .text1 {
+    font-size: 3vw;
+  }
+  .mw-heading {
+    font-size: 3vw;
+  }
+}
+
+.mw-content-block:hover {
+  background-color: #365949;
+  color: white;
+}
+.mw-child:hover {
+  background-color: #365949;
+  color: white;
+}

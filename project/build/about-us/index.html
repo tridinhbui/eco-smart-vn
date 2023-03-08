@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About Us</title>
+    <title>Về Chúng Tôi</title>
     <link
       rel="icon"
-      href="/static/img/aboutus/logo.png"
+      href="/static/img/aboutus/logo2.png"
       type="image/x-icon"
     />
 
@@ -17,18 +17,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="/static/css/aboutus.css"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+
   </head>
 
-  <body style="font-family: 'Heebo', sans-serif">
+  <body style="font-family: 'Inter', sans-serif" class="body-aboutus">
     <!-- Made by GPham -->
 
 <!DOCTYPE html>
@@ -66,8 +67,9 @@
     />
   </head>
 
-  <body>
+  <body class="navbar-body">
     <!-- Navbar expands from large and collapses from size smaller than large -->
+    <div class = "sticky-top">
     <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
       <!-- Navbar spans the entire width of any viewport -->
       <div class="container-fluid" id="container-all">
@@ -97,23 +99,26 @@
 
         <div class="collapse navbar-collapse" id="navbarToggler">
           <!-- The list is right-aligned (ms-auto)  -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home </a>
+              <a class="nav-link" href="/">Trang chủ </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/activities/">Activities </a>
+              <a class="nav-link" href="/product/">Sản Phẩm </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/activities/">Hoạt Động </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/about-us/"
-                >About Us
+                >Về Chúng Tôi
               </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/contact-us/"
-                >Contact Us
+                >Liên Hệ
               </a>
             </li>
 
@@ -125,10 +130,16 @@
                 </button>
               </form>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/product/cart/"><img src="/static/img/cart/shopping-cart.png" alt="shopping cart"> </a>
+            </li>
+
           </ul>
         </div>
       </div>
     </nav>
+  </div>
 
     <!-- JS bootstrap -->
     <script
@@ -136,17 +147,30 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Get the current page URL
+const currentPageUrl = window.location.href;
+
+// Loop through all nav links and add the 'active' class to the one that matches the current page URL
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach((link) => {
+  if (link.href === currentPageUrl) {
+    link.classList.add('active');
+  }
+});
+
+    </script>
   </body>
 </html>
+    
     <div class="bodystyle">
       <div class="head1">
-        <h1>About Us</h1>
+        <h1>Về chúng tôi</h1>
       </div>
-
       <div>
-        <div class="mainstyle">
+        <div class="mainstyle mainstyle-1">
           <!-- Including: Awareness, Mission & Vision, Founder -->
-          <h2 class="head2">Awareness, Mission and Vision</h2>
+          <h2 class="head2awareness">Nhận thức, sứ mệnh và tầm nhìn</h2>
         </div>
 
         <!DOCTYPE html>
@@ -211,7 +235,7 @@
 
             <img
               src="/static/img/aboutus/aware1.jpg"
-              class="d-block"
+              class="d-block img-border"
             />
             <div class="animation-content">
               <p>In 10 centuries, a new plastic bottle will decompose.</p>
@@ -229,7 +253,7 @@
             <!-- <img src="aware2.jpg" class="d-block" alt="..." /> -->
             <img
               src="/static/img/aboutus/aware2.jpg"
-              class="d-block"
+              class="d-block img-border"
             />
             <div class="animation-content">
               <p>If now, inaction, then when?</p>
@@ -245,11 +269,11 @@
             <!-- <img src="mission.jpg" class="d-block" alt="..." /> -->
             <img
               src="/static/img/aboutus/mission.jpg"
-              class="d-block"
+              class="d-block img-border"
             />
             <div class="animation-content">
               <p>
-                Eco Smart VietNam is committed to 2 main MISSIONS and VISIONS:
+                Eco Smart Solutions is committed to 2 main MISSIONS and VISIONS:
               </p>
               <p>
                 - Raising Vietnamese awareness of environmental protection
@@ -267,14 +291,14 @@
             <!-- <img src="history.jpg" class="d-block" alt="..." /> -->
             <img
               src="/static/img/aboutus/history.jpg"
-              class="d-block"
+              class="d-block img-border"
             />
             <div class="animation-content">
-              <p>With those things, ECO SMART VIETNAM was born.</p>
+              <p>With those things, ECO SMART SOLUTIONS was born.</p>
               <p>
-                In 2022-2024, Eco Smart VietNam operates with the vision of
+                In 2022-2024, Eco Smart Solutions operates with the vision of
                 becoming one of the leading active student organizations in the
-                North acting for the environment. In particular, ESV is a
+                North acting for the environment. In particular, ESS is a
                 pioneer in promoting the development of environmentally friendly
                 products.
               </p>
@@ -303,17 +327,14 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
 
-        <div class="mainstyle">
-          <h2 class="head2">Executive Board</h2>
-          <!DOCTYPE html>
+        
+        <div class="ourteam-background">
+          <div class="mainstyle mainstyle-2">
+            <h2 class="head2executive">Ban điều hành</h2>
+            <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -326,16 +347,16 @@
 
 <body>
     <section id="ecoteam">
-        <div class="department">
+        <div class="department first-department">
             <!--Ban Chu Tich-->
             <!--Viet Hoan-->
             <div class="card">
                 <div class="img-container">
                     <img src="/static/img/aboutus/coo.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Nguyen Viet Hoan</h3>
-                <p>Chief Operative Officer</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Nguyễn Việt Hoàn</h3>
+                <p>Giám đốc điều hành</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         
@@ -344,9 +365,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/president.jpg" alt="Mr Bui Dinh Tri - Founder">
                 </div>
-                <h3>Bui Dinh Tri</h3>
-                <p>Chief Executive Officer</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Bùi Đình Trí</h3>
+                <p>Tổng giám đốc</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
             </div>
 
             <!--Kim Ngan-->
@@ -354,9 +375,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/cco.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Nguyen Kim Ngan</h3>
-                <p>Chief Creative Officer</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Nguyễn Kim Ngân</h3>
+                <p>Giám đốc sáng tạo</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         </div>
@@ -367,9 +388,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/advisorrd.jpg" alt="Mr Dam Quang Trung - Lead of R&D">
                 </div>
-                <h3>Dam Quang Trung</h3>
-                <p>Advisor of R&D</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Đàm Quang Trung</h3>
+                <p>Cố vấn nghiên cứu và phát triển</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
             </div>
 
             <!--Chau Anh-->
@@ -377,9 +398,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/headrd.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Ngo Chau Anh</h3>
-                <p>Head of RD</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Ngô Châu Anh</h3>
+                <p>Giám đốc nghiên cứu và phát triển</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -388,9 +409,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/headhr.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Do Pham Chau Giang</h3>
-                <p>Head of HR</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Đỗ Phạm Châu Giang</h3>
+                <p>Giám đốc nhân sự</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         </div>
@@ -401,9 +422,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/vicebus_1.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Hoang Tu Uyen</h3>
-                <p>Vice Head of Business</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Hoàng Tú Uyên</h3>
+                <p>Phó giám đốc kinh doanh</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -412,9 +433,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/headbus.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Luu Phan Phuong Linh</h3>
-                <p>Head of Business</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Lưu Phan Phương Linh</h3>
+                <p>Giám đốc kinh doanh</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -423,9 +444,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/vicebus_2.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Vu Phuong Thao</h3>
-                <p>Vice Head of Business</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Vũ Phương Thảo</h3>
+                <p>Phó giám đốc kinh doanh</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         </div>
@@ -436,9 +457,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/vicemarcom_1.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Hoang Hieu Minh</h3>
-                <p>Vice Head of Marketing/Communication</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Hoàng Hiểu Minh</h3>
+                <p>Phó giám đốc truyền thông/ tiếp thị</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -447,9 +468,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/headmarcom.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Nguyen Minh Khue</h3>
-                <p>Head of Marketing/Communication</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Nguyễn Minh Khuê</h3>
+                <p>Giám đốc truyền thông/ tiếp thị</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -458,22 +479,22 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/vicemarcom_2.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Le Nguyen Viet Anh</h3>
-                <p>Vice Head of Marketing/Communication</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Lê Nguyễn Việt Anh</h3>
+                <p>Phó giám đốc truyền thông/ tiếp thị</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         </div>
-        <div class="department">
+        <div class="department last-department">
             <!--IT Department-->
             <!--Ninh Giang-->
             <div class="card">
                 <div class="img-container">
                     <img src="/static/img/aboutus/viceit_1.jpg" alt="Giang Pham">
                 </div>
-                <h3>Pham Ninh Giang</h3>
-                <p>Vice Head of IT</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Phạm Ninh Giang</h3>
+                <p>Phó giám đốc công nghệ thông tin</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -482,9 +503,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/headit.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Huynh Le Diem Qui</h3>
-                <p>Head of IT</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Huỳnh Lê Diễm Quí</h3>
+                <p>Giám đốc công nghệ thông tin</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
 
@@ -493,9 +514,9 @@
                 <div class="img-container">
                     <img src="/static/img/aboutus/viceit_2.jpg" alt="Miss Do Pham Chau Giang - Lead of HR">
                 </div>
-                <h3>Kieu Minh Duc</h3>
-                <p>Vice Head of IT</p>
-                <div class="personaldetail">Personal Detail</div>
+                <h3>Kiều Minh Đức</h3>
+                <p>Phó giám đốc công nghệ thông tin</p>
+                <div class="personaldetail">Thông tin cá nhân</div>
                 <div class="icons"></div>
             </div>
         </div>
@@ -503,9 +524,13 @@
 </body>
 
 </html>
-          <h2 class="head2">The Story of Eco Smart Vietnam</h2>
+          </div>
+        </div>
+        
+        <div class="mainstyle mainstyle-3">
+          <h2 class="head2ourteam">Câu chuyện của Eco Smart Solutions</h2>
           <!-- Founder Content -->
-          <div>
+          <div class="interview">
             <figure>
               <img
                 class="caption rounded"
@@ -514,122 +539,117 @@
               />
               <!-- <img class="caption" src="../assets/pics/aboutus/founder.jpg" alt="Founder" /> -->
               <figcaption class="founder_pic">
-                Founder of Eco Smart Vietnam - Mr Bui Dinh Tri
+                Người sáng lập Eco Smart Solutions - Mr. Bùi Đình Trí
               </figcaption>
             </figure>
-            <p>
-              To form and develop a project, the contribution of the chairman is
-              extremely important. Today, let's follow us to learn about the
-              leader of Eco Smart Vietnam - Mr. Bui Dinh Tri through the small
-              interview below as well as understand more interesting information
-              about Eco Smart home. Let's get started.
+            <hr class="aboutus-hr"/>
+            <p class="statementfromTri">
+              Để hình thành và phát triển một dự án, sự đóng góp của tổng giám
+              đốc là vô cùng quan trọng. Hôm nay hãy cùng chúng tôi tìm hiểu về
+              người sáng lập ra Eco Smart Solutions - anh Bùi Đình Trí qua những
+              thông tin phỏng vấn dưới đây để hiểu thêm nhiều thông tin thú vị
+              về Eco Smart. Hãy bắt đầu nào!
             </p>
             <p class="question">
-              Question 1: Introduce yourself and tell 3 interesting things about
-              yourself.
+              Câu 1: Giới thiệu và kể 3 điều thú vị về bản thân anh.
             </p>
-            <p>
-              Mr. Tri: I am currently an overseas student studying 2 majors:
-              Computer Science and Economics in the US. Three interesting things
-              about me are probably that I am left-handed, high-dose (but
-              reckless and in control) and lazy to study (but still learn well).
-            </p>
-            <p class="question">
-              Question 2: Mr Tri, what was the fate that motivated you to found
-              Eco Smart Vietnam?
-            </p>
-            <p>
-              Mr. Tri: The charm probably stems from my participation in one of
-              the annual activities of my school's Young Entrepreneurs and
-              Entrepreneurship Support Center, it is the Macalester
-              Entrepreneurship and Innovation Department that rewards young
-              people with ideas, special initiatives that help improve the lives
-              of the communities around them. I was lucky to win the award and
-              Eco Smart Vietnam was the idea that helped me win that award (the
-              original name was Eco Heroes Campaign).
+            <p class="answer">
+              Anh Trí: Hiện tại tôi đang là du học sinh học 2 chuyên ngành Khoa
+              học Máy tính và Kinh tế ở Mỹ. Ba điều thú vị về tôi có lẽ là tôi
+              thuận tay trái, liều lĩnh (nhưng trong tầm kiểm soát) và lười học
+              (nhưng vẫn học tốt).
             </p>
             <p class="question">
-              Question 3: Could you share a little about the goals and
-              expectations that you set at Eco Smart Vietnam in the future?
+              Câu 2: Anh Trí, cơ duyên nào đã đưa anh đến với việc thành lập Eco
+              Smart Việt Nam?
             </p>
-            <p>
-              Mr. Tri: As I share, I am a high-dose blood person but in control,
-              so I set goals/expectations that often balance between far-fetched
-              and realistic. I really expect Eco Smart Vietnam to become one of
-              the largest and most professional environmental organizations in
-              the North. However, in my mind, I think that in the short term, it
-              only needs to be the largest in Hanoi (probably the largest HN is
-              likely to be top 2, top 3 in the North, right?
+            <p class="answer">
+              Anh Trí: Cái duyên có lẽ bắt nguồn từ việc tôi tham gia một trong
+              những hoạt động thường niên của Trung tâm hỗ trợ khởi nghiệp dành
+              cho doanh nhân và doanh nghiệp trẻ của trường tôi. Ban Khởi nghiệp
+              và Đổi mới Sáng tạo của Macalester trao thưởng cho các bạn trẻ có
+              ý tưởng, sáng kiến đặc biệt giúp cải thiện cuộc sống của cộng đồng
+              xung quanh họ. Tôi đã may mắn giành được giải thưởng và Eco Smart
+              Việt Nam là ý tưởng đã giúp tôi giành được giải thưởng đó (giải
+              thưởng có tên ban đầu là Eco Heroes Campaign).
             </p>
             <p class="question">
-              Question 4: Do you have anything to say to readers and followers
-              of the project?
+              Câu hỏi 3: Anh có thể chia sẻ một chút về mục tiêu và kỳ vọng mà
+              bạn đặt ra tại Eco Smart Solutions trong tương lai?
             </p>
-            <p>
-              Mr. Tri: My message is: "Eco Smart Vietnam will be a project that
-              will not let followers and expectations down because with the Eco
-              Smart team - the team I believe is full of talented and
-              responsible people - will be able to help the project grow and
-              spread far and wide. In addition, a small promise is that Eco
-              Smart Vietnam will always try its best to fulfill the mission that
-              we set out: Acting for the development and safety of the
-              environment in Vietnam!”
+            <p class="answer">
+              Anh Trí: Như tôi chia sẻ, tôi là người có máu liều lĩnh nhưng
+              trong tầm kiểm soát, vì vậy mục tiêu và kỳ vọng của tôi thường cân
+              bằng giữa những điều xa vời và thực tế. Tôi thực sự kỳ vọng Eco
+              Smart Việt Nam sẽ trở thành một trong những tổ chức môi trường lớn
+              nhất và chuyên nghiệp nhất ở khu vực miền Bắc. Tuy nhiên, trước
+              mắt, Eco Smart chỉ cần lớn nhất ở trong Hà Nội thôi đã (chắc là
+              lớn nhất trong Hà Nội là đứng thứ 2 hoặc thứ 3 toàn miền Bắc nhỉ?)
             </p>
+            <p class="question">
+              Câu hỏi 4: Anh có điều gì muốn nói với độc giả và những người theo
+              dõi của dự án không?
+            </p>
+            <p class="answer">
+              Anh Trí: Tôi chỉ muốn nói rằng Eco Smart Solutions là một dự án sẽ
+              không mọi người phải thất vọng bởi vì với đội ngũ của Eco Smart
+              chúng tôi - những người mà tôi tin là đầy tài năng và trách nhiệm
+              - sẽ có thể giúp dự án phát triển và lan tỏa rộng rãi. Ngoài ra,
+              chúng tôi cũng xin được cam kết là Eco Smart Solutions sẽ luôn nỗ
+              lực hết mình để hoàn thành sứ mệnh mà chính chúng tôi đặt ra: Hành
+              động vì sự phát triển và an toàn của môi trường Việt Nam!”
+            </p>
+            <hr />
           </div>
         </div>
       </div>
-      <link
-  rel="stylesheet"
-  href="/static/css/footer.css"
-/>
-<link rel="stylesheet" href="../static/css/footer.css" />
-<link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
+      
+<link rel="stylesheet" href="../static/css/footer1.css" />
 
-<footer>
+<footer class="footer">
   <div class="footer-content">
-    <h3>Eco Smart Viet Nam</h3>
+    <h4>Eco Smart Solutions</h4>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat optio
-      quae maiores odit nobis dolorem atque incidunt, ipsam a nemo ipsa
-      blanditiis cumque repudiandae, perferendis, omnis et eaque ad obcaecati.
+      quae maiores odit nobis dolorem atque incidunt, ipsam a nemo ipsa.
     </p>
-    <!-- <ul class="socials">
-      <li>
-        <a href="https://www.facebook.com/ecosmartvietnam"
-          ><i class="fa fa-facebook"></i
-        ></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/ecosmart.vietnam"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa fa-google-plus"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-      </li>
-      <!-- <li>
-        <a href="#"><i class="fa fa-linkedin-square"></i></a>
-      </li> 
-     </ul> -->
   </div>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/ecosmartvietnam"
+      ><i class="fa-brands fa-facebook footer-icon"></i
+    ></a>
+
+    <a
+      href="https://www.instagram.com/ecosmart.vietnam/?fbclid=IwAR33v8jFTPm6HNBmon6yHHyNhUbpEJvLy9DKcHGuEd04n6YYh4S35JoM7hM"
+      ><i class="fa-brands fa-instagram footer-icon"></i
+    ></a>
+
+    <a href="https://www.linkedin.com"
+      ><i class="fa-brands fa-linkedin footer-icon"></i
+    ></a>
+  </div>
+
   <div class="footer-bottom">
-    <p>copyright &copy; <a href="#">ecosmartvietnam</a></p>
-    <div class="footer-menu">
-      <ul class="f-menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Blog</a></li>
-      </ul>
+    <div class="footer-flex-item">
+      <p class="copyright-text">
+        Bản quyền thuộc về &copy; <a class="footer-link" href="#">ecosmartvietnam</a>
+      </p>
+    </div>
+    <div class="footer-flex-item">
+      <div class="footer-menu">
+        <p><a class="footer-link" href="">Trang Chủ</a></p>
+        <p><a class="footer-link" href="">Về Chúng Tôi</a></p>
+        <p><a class="footer-link" href="">Liên Hệ</a></p>
+      </div>
     </div>
   </div>
 </footer>
+
+<script
+  src="https://kit.fontawesome.com/550795c27f.js"
+  crossorigin="anonymous"
+></script>
 <!-- <script>
   $(window).on("load", function () {
     $(".loader").fadeOut("slow");
