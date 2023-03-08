@@ -83,8 +83,8 @@
 }
 
 .c_image {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     padding: 3px;
     background: #365949;
