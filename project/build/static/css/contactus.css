@@ -1,15 +1,20 @@
 .contact-us-body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   background-color: #e5d9b6;
   display: flex;
   height: 100vh;
-  background-image: url('../img/contactus/background-forest.jpg');
+  background-image: url("../img/contactus/background-forest.jpg");
 }
 
 .content-left {
-  color: #FCF5E5		;
+  color: white;
+  animation: pageLoading 2s;
+}
+
+.content-right {
+  animation: pageLoading 2s;
 }
 
 .flex-item {
@@ -18,7 +23,7 @@
 
 .scripts1 {
   font-size: 7rem;
-  margin-top: 16rem;
+  margin-top: 12rem;
   margin-left: 20rem;
 }
 
@@ -29,8 +34,9 @@
 
 .contact-box {
   width: 29rem;
-  background-color: #FCF5E5	;
-  border: 2px solid #5f8d4e;
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.);
+  border:1px solid white;
   border-radius: 1.6%;
   margin-top: 10rem;
   margin-left: 8rem;
@@ -42,7 +48,7 @@
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #5F8575;
+  color: white;
 }
 
 .heading1 {
@@ -63,7 +69,7 @@
   margin-left: 2rem;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
-  color: white;
+  color: black;
   background: white;
 }
 
@@ -72,21 +78,22 @@
 }
 
 #messagebox {
-  font-family: "Heebo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   padding-top: 2rem;
   height: 8rem;
 }
 
 #send-btn {
-  border-color: #5f8d4e;
+  border-color: rgb(64, 109, 89) solid;
   margin-top: 1rem;
   margin-left: 30%;
   width: 40%;
-  background-color: #50C878;	
+  background-color: rgb(64, 109, 89);
   padding-left: 0;
   padding-right: 0;
   color: white;
+  border-radius:0.5rem;
 }
 
 #send-btn:hover {
@@ -95,78 +102,144 @@
   color: #5f8d4e;
   text-decoration: none;
 }
-::placeholder {color:#404040	;}
+::placeholder {
+  color: #404040;
+}
 
-@media(max-width:1770px){
+@media (max-width: 1770px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 12rem;
   }
-  
+
   .scripts2 {
     margin-left: 12rem;
     font-size: 3rem;
   }
 }
-@media(max-width:1530px){
+@media (max-width: 1530px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 8rem;
   }
-  
+
   .scripts2 {
     margin-left: 8rem;
     font-size: 3rem;
   }
 }
-@media(max-width:1400px){
+@media (max-width: 1400px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 4rem;
   }
-  
+
   .scripts2 {
     margin-left: 4rem;
     font-size: 3rem;
   }
 }
-@media(max-width:1250px){
+@media (max-width: 1250px) {
   .scripts1 {
     font-size: 7rem;
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left: 2rem;
   }
-  
+
   .scripts2 {
     margin-left: 2rem;
     font-size: 3rem;
   }
 }
-@media(max-width:1200px){
-  .content-left{
-    display:flex;
-    margin-bottom:70vh;
-    align-items:center;
-    align-self:center;
-    justify-content:center;
-    flex-direction:column;
-  }
-  .contact-box{
-    display:block;
-    margin-top:23rem;
-    margin-right:50%;
+@media (max-width: 1200px) {
+  .contact-us-body {
+    flex-direction: column;
   }
   .scripts1 {
-    font-size: 5rem;
-    margin-top: 16rem;
-    margin-left: 2rem;
+    font-size: 4rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+    text-align: center;
   }
-  
+
   .scripts2 {
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 2rem;
+    text-align: center;
+  }
+  .contact-box {
+    width: 30rem;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    width: 26rem;
+    margin: 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-us-body {
+    flex-direction: column;
+  }
+
+  .contact-box {
+    width: 24rem;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    width: 21rem;
+    margin: 0.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-body {
+    flex-direction: column;
+    height: auto;
+  }
+  .content-right {
+    padding-bottom: 1rem;
+  }
+  .scripts1 {
+    font-size: 3rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  .scripts2 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact-box {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    width: 65vw;
+    margin: 0.5rem 1.5rem;
+  }
+
+  #send-btn {
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+
+@keyframes pageLoading {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

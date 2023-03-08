@@ -1,12 +1,13 @@
 .myContainer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  width: 50vw;
+  width: 45vw;
+  height: auto;
   margin: 2px auto;
 }
 
 .carousel-item img {
-  width: 50vw;
+  width: 45vw;
 }
 
 #indicators {
@@ -14,13 +15,22 @@
 }
 
 .animation-content {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3vw;
-  background-color: #98a587;
-  color: white;
-  height: 17vw;
-  padding-top: 1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  background-color: #fff;
+  color: #283746;
+  width: 45vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   opacity: 85%;
+  margin-bottom: 2rem;
+  border: 2px solid #365949;
+  border-top: none;
+  border-radius: 1rem;
+  animation: pageLoading 2s;
 }
 
 .animation-content p {
@@ -29,20 +39,45 @@
   margin-left: 2vw;
   margin-right: 2vw;
 }
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-device-width: 501px) and (max-device-width: 1000px) {
   .myContainer {
-    width: 70vw;
+    width: 80vw;
   }
   .carousel-item img {
-    width: 70vw;
+    width: 80vw;
   }
 
   .animation-content {
-    height: 21vw;
+    width: 80vw;
   }
   .animation-content p {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     text-transform: uppercase;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .myContainer {
+    width: 100vw;
+  }
+  .carousel-item img {
+    width: 100vw;
+  }
+
+  .animation-content {
+    width: 100vw;
+  }
+  .animation-content p {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+  }
+}
+
+.img-border {
+  border: 5px solid #365949;
+  border-radius: 20px;
+}
+
+.mainstyle h2:hover {
+  transform: scale(1.2);
 }

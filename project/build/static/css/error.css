@@ -1,0 +1,88 @@
+.error-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.error-image {
+    width: 40%;
+}
+.error-body {
+    font-family: "Heebo";
+}
+.error-text {
+    color: #365949;
+}
+.error-text-h1:hover {
+    transform: scale(1.2);
+}
+.error-text-p {
+    font-weight: 450;
+}
+@media (max-width: 500px) {
+    .error-body {
+        font-size: 3vw;
+    }
+}
+
+.error-button {
+    display:inline-block;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    animation: pageLoading 2s;
+}
+.button-home {
+    color: white;
+    background-color: #365949;
+    border: 3px solid #365949;
+    width: 10vw;
+}
+.button-contactus {
+    color: #365949;
+    background-color: white;
+    border: 3px solid #365949;
+    width: 10vw;
+}
+@media (max-width: 743px) {
+    .button-home {
+        width: 15vw;
+    }
+    .button-contactus {
+        width: 15vw;
+    }
+}
+@media (max-width: 1435px) {
+    .error-button {
+        border-radius: 0.7vw;
+    }
+}
+@media (max-width: 1000px) {
+    .error-button {
+        border-radius: 0.9vw;
+    }
+}
+@media (max-width: 500px) {
+    .error-button {
+        border-radius: 1vw;
+    }
+    .button-home {
+        border: 2px solid #365949;
+    }
+    .button-contactus {
+        border: 2px solid #365949;
+    }
+}
+.error-button:link {
+    background-color: #365949;
+    text-decoration: none;
+}
+.error-button:hover {
+    font-weight: bold;
+    background-color: #eee9d8;
+    color: #365949;
+    text-decoration: none;
+}

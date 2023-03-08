@@ -1,16 +1,27 @@
 figure {
   display: block;
   padding: 20px 15%;
-  background-color: #285430;
+  background-color: white;
 }
 
 figcaption {
-  font-size: 35px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #e5d9b6;
+  color: #283746;
 }
+
+figcaption:hover {
+  transform: scale(1.2);
+  color: #283746;
+}
+
+#body-video {
+  background-color: #285430;
+}
+
+
 
 @media (max-width: 600px) {
   figure {
@@ -18,11 +29,14 @@ figcaption {
   }
 }
 
-figcaption:hover {
-  transform: scale(1.2);
-  color: #e5d9b6;
+@media(max-width:730px){
+  figcaption {
+    font-size:1.5rem;
+  }
 }
 
-#body-video {
-  background-color: #285430;
+@media(max-width:600px){
+  figcaption {
+    font-size:1.3rem;
+  }
 }
