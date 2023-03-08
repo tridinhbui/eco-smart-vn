@@ -3,12 +3,12 @@
   color: white;
   cursor: pointer;
   border-radius: 4px;
-  margin-left: 96%;
-  margin-top: 4rem;
   width: 4rem;
   opacity: 0.5;
   border: grey;
-  margin-bottom:1rem;
+  position:fixed;
+  bottom:20px;
+  right:10px;
 }
 
 .scrollup__icon{
