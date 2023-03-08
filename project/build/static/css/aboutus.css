@@ -1,88 +1,192 @@
 /* BO FONT CHUNG */
+.body-aboutus {
+  font-family: "Inter", sans-serif;
+}
 
 .bodystyle {
-    font-family: Arial;
-    font-size: 20px;
-    background-color: rgb(233, 255, 204);
-    color: grey;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
 }
 
 .bodystyle p {
-    text-align: justify;
+  text-align: justify;
 }
 
-
 /*-----------------------------------------------------*/
-
 
 /* BO FONT HEADING */
 
 .head1 {
-    background-image: url('../img/aboutus/titlebackground2.png');
-    background-color: rgb(233, 255, 204);
-    background-size: auto;
-    padding-top: 20px;
-    height: 400px;
-    width: 100%;
+  display:flex;
+  background-image: url('../img/activities_page/titlebackground.jpg');
+  background-size: cover;
+  padding-top: 20px;
+  height: 15vh;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
 }
-
 .head1 h1 {
-    font-size: 80px;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-    padding-top: 40px;
+  font-size: 6vh;
+  font-weight: bolder;
+  color: #FCF5E5;
+  animation: title-pageLoading 2s;
 }
-
+.head1 h1:hover {
+  transform: scale(1.2)
+}
 #aboutus-content {
-    background-size: cover;
-    margin-top: 20px;
-    height: 200px;
-    width: 100%;
+  background-size: cover;
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
 }
 
 #aboutus-content h1 {
-    font-size: 80px;
-    font-weight: bolder;
-    color: rgb(65, 128, 49);
-    text-align: center;
-    padding-top: 80px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: rgb(65, 128, 49);
+  text-align: center;
+  padding-top: 80px;
 }
-
-.head2 {
-    margin-top: 20px;
-    font-size: 50px;
-    font-weight: bolder;
-    text-align: center;
-    color: rgb(65, 128, 49);
+.head2awareness {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 4vh;
+  font-weight: bolder;
+  text-align: center;
+  color: #283746;
 }
-
+.head2executive {
+  margin-top: 2rem;
+  font-size: 4vh;
+  font-weight: bolder;
+  text-align: center;
+  color: #365949;
+  margin-bottom: 2rem;
+}
+.head2ourteam {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 4vh;
+  font-weight: bolder;
+  text-align: center;
+  color: #283746;
+}
 
 /*-----------------------------------------------------*/
 
-.mainstyle {
-    width: 50%;
-    margin: 0 auto;
+.head2-2 {
+  margin-bottom: 50px;
 }
 
-@media(max-width: 1000px) {
-    .mainstyle {
-        width: 80%;
-        margin: 0 auto;
-    }
+.mainstyle {
+  width: 50%;
+  margin: 0 auto;
+  animation: pageLoading 2s;
+}
+
+.mainstyle-1 {
+  margin: 50px auto 50px auto;
+}
+
+.mainstyle-2 {
+  padding-top: 0.7rem;
+}
+
+.mainstyle-3 {
+  padding-top: 0.7rem;
+}
+
+.ourteam-background {
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .mainstyle {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .caption {
-    width: 100%;
+  width: 100%;
 }
 
 .founder_pic {
-    background-color: black;
-    opacity: 35%;
-    color: white;
-    text-align: center;
+  margin: 30px auto;
+  color: #283746;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vh;
 }
 
 .question {
-    font-weight: bold;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 2.3vh;
+  color: #283746;
+}
+.statementfromTri {
+  font-size: 2vh;
+  color: #283746;
+}
+.answer {
+  font-size: 1.8vh;
+  color: #283746;
+}
+
+@media (max-width: 625px) {
+  .head1 h1 {
+    font-size: 4vh;
+  }
+  .head2awareness {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .head2executive {
+    margin-top: 2rem;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .head2ourteam {
+    margin-top: 2rem;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+    color: #fcf5e5;
+  }
+}
+.interview {
+  margin-bottom: 1.5rem;
+}
+
+@keyframes pageLoading {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.d-block {
+  animation: pageLoading 2s;
+}
+@keyframes title-pageLoading {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

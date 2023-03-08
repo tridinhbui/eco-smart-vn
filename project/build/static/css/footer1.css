@@ -1,0 +1,102 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  color: white;
+  background-color: #365949;
+  padding-top: 1rem;
+}
+
+/* *****************footer content************** */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h4 {
+  font-size: 1.5rem;
+}
+
+.footer-content p {
+  width: 30rem;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: white;
+}
+
+@media only screen and (max-width: 485px) {
+  .footer-content p {
+    width: 20rem;
+  }
+}
+
+/* ****************** footer social ***************************/
+.footer-social {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  margin-left: 1.3rem;
+  font-size: 1.5rem;
+}
+
+/* ***********************footer bottom******** */
+
+.footer-bottom {
+  display: flex;
+}
+
+.footer-flex-item {
+  width: 100%;
+}
+
+.copyright-text {
+  margin-left: 5rem;
+}
+
+.footer-menu {
+  float: right;
+  display: flex;
+  margin-right: 4.5rem;
+}
+.footer-menu p {
+  padding-right: 0.5rem;
+  color: white;
+}
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.fa-brands {
+  color: white;
+  width: 2rem;
+}
+
+
+
+@media only screen and (max-width: 595px) {
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+  .copyright-text {
+    margin-left: 2rem;
+  }
+
+  .footer-menu {
+    margin-right: 1.5rem;
+  }
+}
