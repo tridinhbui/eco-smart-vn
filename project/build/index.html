@@ -19,789 +19,661 @@
     <!-- include navbar.html here -->
     <!-- Made by GPham -->
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation bar</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navigation bar</title>
 
-    <!-- Google fonts -->
+        <!-- Google fonts -->
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="/static/css/navbar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-</head>
+        <!-- CSS stylesheet -->
+        <link rel="stylesheet" href="/static/css/navbar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    </head>
 
-<body class="navbar-body">
-    <!-- Navbar expands from large and collapses from size smaller than large -->
-    <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
-            <!-- Navbar spans the entire width of any viewport -->
-            <div class="container-fluid" id="container-all">
-                <a href="/" class="navbar-brand">
-                    <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
-                    <img src="/static/img/aboutus/logo.png" alt="Logo" class="title-logo d-inline-block" />
-                </a>
+    <body class="navbar-body">
+        <!-- Navbar expands from large and collapses from size smaller than large -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
+                <!-- Navbar spans the entire width of any viewport -->
+                <div class="container-fluid" id="container-all">
+                    <a href="/" class="navbar-brand">
+                        <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
+                        <img src="/static/img/aboutus/logo.png" alt="Logo" class="title-logo d-inline-block" />
+                    </a>
 
-                <!-- Navbar Toggle contains the elements inside the list with the id of "navbarToggler" -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Navbar Toggle contains the elements inside the list with the id of "navbarToggler" -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-                <!-- The list -->
+                    <!-- The list -->
 
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <!-- The list is right-aligned (ms-auto)  -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Trang chủ </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/product/">Sản Phẩm </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/activities/">Hoạt Động </a>
-                        </li>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <!-- The list is right-aligned (ms-auto)  -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Trang chủ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/product/">Sản Phẩm </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/activities/">Hoạt Động </a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/about-us/">Về Chúng Tôi
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/about-us/">Về Chúng Tôi
               </a>
-                        </li>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/contact-us/">Liên Hệ
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/contact-us/">Liên Hệ
               </a>
-                        </li>
+                            </li>
 
-                        <li class="nav-item" id="last-nav-item">
-                            <form class="search-container" action="">
-                                <input class="input-box" type="text" required />
-                                <button id="transparent-search-btn" type="submit">
+                            <li class="nav-item" id="last-nav-item">
+                                <form class="search-container" action="">
+                                    <input class="input-box" type="text" required />
+                                    <button id="transparent-search-btn" type="submit">
                   <i class="fa fa-search"></i>
                 </button>
-                            </form>
-                        </li>
+                                </form>
+                            </li>
 
-                        <!-- <li class="nav-item">-->
-                        <!-- <a class="nav-link" aria-current="page" href="/product/cart/"><img src="/static/img/cart/shopping-cart.png" alt="shopping cart"> </a> -->
-                        <!-- </li> -->
+                            <!-- <li class="nav-item">-->
+                            <!-- <a class="nav-link" aria-current="page" href="/product/cart/"><img src="/static/img/cart/shopping-cart.png" alt="shopping cart"> </a> -->
+                            <!-- </li> -->
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
 
-    <!-- JS bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script>
-        // Get the current page URL
-        const currentPageUrl = window.location.href;
+        <!-- JS bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script>
+            // Get the current page URL
+            const currentPageUrl = window.location.href;
 
-        // Loop through all nav links and add the 'active' class to the one that matches the current page URL
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach((link) => {
-            if (link.href === currentPageUrl) {
-                link.classList.add('active');
-            }
-        });
-    </script>
-</body>
+            // Loop through all nav links and add the 'active' class to the one that matches the current page URL
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach((link) => {
+                if (link.href === currentPageUrl) {
+                    link.classList.add('active');
+                }
+            });
+        </script>
+    </body>
 
-</html>
+    </html>
 
     <!-- include body.html here -->
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scrolling Button</title>
-    <link rel="stylesheet" href="/static/css/scrolling.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scrolling Button</title>
+        <link rel="stylesheet" href="/static/css/scrolling.css" />
+    </head>
 
-<body>
-    <div class="title1">
-        <div class="image-left flex-item">
-            <img class="env-img" src="/static/img/index/test2.jpg" alt="test" />
-        </div>
-        <div class="content-right flex-item">
-            <h1 class="heading1">Eco Smart Solutions</h1>
-            <h2 class="heading2">Tôn trọng - Hiệu quả - Chuyên nghiệp</h2>
-
-            <p>
-                Tiên phong thực hiện sứ mệnh nâng tầm thương hiệu - thúc đẩy kinh doanh trong hệ sinh thái các doanh nghiệp phát triển vì sự bền vững của xã hội.
-            </p>
-
-            <a class="button-scroll" href="/about-us/">Đọc thêm <span class = "button-icon">↘</span></a>
-        </div>
-    </div>
-</body>
-
-</html> <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-    />
-    <title>Demo Carousel</title>
-    <link
-      rel="stylesheet"
-      href="/static/css/slideshow.css"
-    />
-  </head>
-
-  <body>
-    <div class="container-fluid my-5" id="container-slideshow">
-    <h1 class="h1ofslideshow">Những sự thật về môi trường</h1>
-      <div class="row">
-        <div class="col-12 m-auto">
-          <div class="owl-1 owl-carousel owl-theme">
-            <div class="item mb-4">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782"
-                >
-                  <img
-                    src="/static/img/activities/activities1.jpg"
-                    alt="activites1"
-                    class="card-img-topofslideshow"
-                  />
-                </a>
-              </div>
+    <body>
+        <div class="title1">
+            <div class="image-left flex-item">
+                <img class="env-img" src="/static/img/index/ess_logo.jpg" alt="logo" />
             </div>
+            <div class="content-right flex-item">
+                <h1 class="heading1">Eco Smart Solutions</h1>
+                <h2 class="heading2">Tôn trọng - Hiệu quả - Chuyên nghiệp</h2>
 
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=137191855908935&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="/static/img/activities/activities2.jpg"
-                    alt="activites2"
-                    class="card-img-topofslideshow"
-                /></a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=134825176145603&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="/static/img/activities/activities3.jpg"
-                    alt="activites3"
-                    class="card-img-topofslideshow"
-                /></a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo?fbid=112881635006624&set=pcb.112882615006526"
-                >
-                  <img
-                    src="/static/img/activities/activities4.jpg"
-                    alt="activites4"
-                    class="card-img-topofslideshow"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo?fbid=112881805006607&set=pcb.112882615006526"
-                >
-                  <img
-                    src="/static/img/activities/activities5.jpg"
-                    alt="activites5"
-                    class="card-img-topofslideshow"
-                /></a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo/?fbid=117929084501879&set=pcb.117926967835424"
-                >
-                  <img
-                    src="/static/img/activities/activities6.jpg"
-                    alt="activites6"
-                    class="card-img-topofslideshow"
-                /></a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="cardofslideshow">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=134825202812267&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="/static/img/activities/activities7.jpg"
-                    alt="activites7"
-                    class="card-img-topofslideshow"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(".owl-1").owlCarousel({
-        loop: true,
-        margin: 15,
-        nav: true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-        navText: ["<img src=/static/img/slideshow/prev%20button.png>","<img src=/static/img/slideshow/next%20button.png>"]
-      });
-    </script>
-  </body>
-</html> <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="/static/css/sponsor.css"
-    />
-</head>
-<body>
-    <div class="sponsors-showcase">
-      <h2 class="h2ofsponsor">Đối tác của Eco Smart Solutions</h2>
-        <div class="sponsors">
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor1-logo.png" alt="Sponsor 1 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor2-logo.png" alt="Sponsor 2 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor3-logo.png" alt="Sponsor 3 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor4-logo.png" alt="Sponsor 4 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor5-logo.png" alt="Sponsor 5 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor6-logo.png" alt="Sponsor 6 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor7-logo.png" alt="Sponsor 7 Logo"></a>
-          <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor8-logo.png" alt="Sponsor 8 Logo"></a>
-        </div>
-      </div>
-</body>
-</html>  <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/customer.css" />
-
-    <title>Customers</title>
-</head>
-
-<body>
-    <div class="customer_style">
-        <h1 class="c_title">Đối tác nói gì về chúng tôi?</h1>
-        <div class="c_wrapper">
-            <div class="c_box">
-
-                <p><i class="fas fa-quote-left quote"></i>Ngay từ khi đọc bản đề xuất kinh doanh của Eco Smart Solutions, chúng tôi đã cảm thấy những tác động tích cực mà ESS sẽ đem lại cho đất nước Việt Nam. Đặc biệt, khi được làm việc với Trí, tôi cảm
-                    thấy tầm nhìn, sự nhiệt huyết, đam mê, và tinh thần trách nhiệm cao, điều mà quyết định rất lớn đến quyết định đầu tư của chúng tôi.
-                    <i class="fas fa-quote-right quote"></i>
-                </p>
-
-                <div class="c_content">
-                    <div class="c_info">
-                        <div class="c_name">
-                            Jody Emmings
-                        </div>
-                        <div class="c_job">
-                            Giám đốc Trung tâm Khởi nghiệp và Sáng tạo Macalester - Minnesota, Hoa Kỳ
-                        </div>
-                        <div class="c_rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="c_image">
-                        <img src="/static/img/customer/customer_1.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="c_box">
                 <p>
-                    <i class="fas fa-quote-left quote"></i> Giải pháp hỗ trợ thúc đẩy kinh doanh cho các doanh nghiệp phát triển bền vững của Eco Smart Solutions là một mô hình kinh doanh bền vững và có tính hiệu quả cao, góp phần tham gia vào các chính
-                    sách phát triển bền vững của xã hội mà chính phủ đang đề ra.
-                    <i class="fas fa-quote-right quote"></i>
+                    Tiên phong thực hiện sứ mệnh nâng tầm thương hiệu - thúc đẩy kinh doanh trong hệ sinh thái các doanh nghiệp phát triển vì sự bền vững của xã hội.
                 </p>
-                <div class="c_content">
-                    <div class="c_info">
-                        <div class="c_name">
-                            Bùi Tôn Hiến
+
+                <a class="button-scroll" href="/about-us/">Đọc thêm <span class = "button-icon">↘</span></a>
+            </div>
+        </div>
+    </body>
+
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/process.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+        <title>Process</title>
+    </head>
+
+    <body>
+        <div id="process_main">
+            <h2 class="p_title">Quy trình hoạt động - GreenBoost</h2>
+            <div class="process_container">
+                <input type="radio" class="step1" checked id="" />
+                <input type="radio" class="step2" checked id="" />
+                <input type="radio" class="step3" checked id="" />
+                <input type="radio" class="step4" checked id="" />
+                <input type="radio" class="step5" id="" />
+                <input type="radio" class="step6" id="" />
+                <div class="process_head">
+                    <ul class="p_nav">
+                        <li class="st1">
+                            <h2 class="p_inner">Tìm kiếm</h2>
+                        </li>
+                        <li class="st2">
+                            <h2 class="p_inner">Gói dịch vụ</h2>
+                        </li>
+                        <li class="st3">
+                            <h2 class="p_inner">Truyền thông</h2>
+                        </li>
+                        <li class="st4">
+                            <h2 class="p_inner">Cộng đồng</h2>
+                        </li>
+                        <li class="st5">
+                            <h2 class="p_inner">Tư vấn & Hỗ trợ</h2>
+                        </li>
+                        <li class="st6">
+                            <h2 class="p_inner">Đánh giá</h2>
+                        </li>
+                        <div class="p_line">
+                            <span></span>
                         </div>
-                        <div class="c_job">
-                            Cục trưởng cục Khoa học Lao Động và Xã Hội, Bộ Lao Động Thương Binh và Xã hội, trực tiếp chỉ đạo chính sách phát triển bền vững của Chính Phủ Việt Nam
-                        </div>
-                        <div class="c_rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="c_image">
-                        <img src="/static/img/customer/customer_2.png" alt="">
+                    </ul>
+
+                    <div class="p_content">
+                        <section class="step1-section">
+                            <span><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+                            <h1>Tìm kiếm đối tác</h1>
+                            <p>
+                                Chúng tôi sẽ tìm kiếm, chọn lọc và đề xuất hợp tác với các doanh nghiệp trong hệ sinh thái các doanh nghiệp phát triển bền vững. Chúng tôi sẽ chủ động tiếp cận các doanh nghiệp này và gửi lời mời hợp tác kinh doanh, hỗ trợ họ quảng bá thương hiệu và đề
+                                xuất các chiến lược phân phối sản phẩm phù hợp.
+                            </p>
+                        </section>
+                        <section class="step2-section">
+                            <span><i class="fa-solid fa-person-chalkboard"></i></span>
+                            <h1>Đề xuất gói dịch vụ</h1>
+                            <p>
+                                Chúng tôi sẽ tạo ra các gói dịch vụ khác nhau để phù hợp với nhu cầu của khách hàng, bao gồm gói 1 năm với mức giá 5 triệu đồng, gói 6 tháng với mức giá 3 triệu đồng và gói 3 tháng với mức giá 2 triệu đồng. Các gói này sẽ bao gồm các dịch vụ như tư vấn
+                                marketing, quảng cáo trực tuyến, thiết kế trang web, cung cấp nội dung và hỗ trợ khách hàng.
+                            </p>
+                        </section>
+                        <section class="step3-section">
+                            <span><i class="fa-regular fa-tty"></i></span>
+                            <h1>Xây dựng truyền thông</h1>
+                            <p>
+                                Chúng tôi sẽ xây dựng các nền tảng truyền thông như website, Facebook, Instagram và TikTok để giới thiệu và quảng bá các sản phẩm eco friendly product của đối tác. Chúng tôi sẽ tập trung vào việc thiết kế các nội dung hấp dẫn và chia sẻ chúng trên các
+                                nền tảng này để tăng khả năng tiếp cận của khách hàng.
+                            </p>
+                        </section>
+                        <section class="step4-section">
+                            <span><i class="fa-sharp fa-solid fa-people-group"></i></span>
+                            <h1>Xây dựng cộng đồng</h1>
+                            <p>
+                                Chúng tôi sẽ xây dựng một cộng đồng các doanh nghiệp kinh doanh sản phẩm thân thiện môi trường. Chúng tôi sẽ tạo ra các sự kiện trực tuyến và offline nhằm tăng cường sự kết nối giữa các doanh nghiệp và khách hàng. Chúng tôi cũng sẽ cung cấp các nội dung
+                                giáo dục và thông tin về các sản phẩm eco friendly product cho cộng đồng này.
+                            </p>
+                        </section>
+                        <section class="step5-section">
+                            <span><i class="fa-sharp fa-solid fa-headset"></i></span>
+                            <h1>Tư vấn & hỗ trợ</h1>
+                            <p>
+                                Chúng tôi sẽ cung cấp các dịch vụ tư vấn và hỗ trợ khách hàng về các sản phẩm eco friendly product của đối tác. Chúng tôi sẽ giúp khách hàng tìm kiếm các sản phẩm phù hợp với nhu cầu của họ và đưa ra các giải pháp tiết kiệm chi phí cho các doanh nghiệp.
+                                Chúng tôi cũng sẽ đảm bảo rằng khách hàng nhận được sự hỗ trợ và phản hồi kịp thời khi có câu hỏi hoặc yêu cầu hỗ trợ.
+                            </p>
+                        </section>
+                        <section class="step6-section">
+                            <span><i class="fa-sharp fa-solid fa-list-check"></i></span>
+                            <h1>Đánh giá hiệu quả</h1>
+                            <p>
+                                Chúng tôi sẽ đánh giá hiệu quả của chiến dịch và đưa ra các phản hồi để cải thiện chiến dịch trong tương lai. Chúng tôi sẽ đo lường các chỉ số như tăng trưởng lượng truy cập trang web, tăng trưởng doanh số bán hàng, tăng trưởng lượt theo dõi và tương
+                                tác trên các mạng xã hội.
+                            </p>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="/static/js/process.js" type="text/javascript"></script>
+    </body>
 
-    </div>
-    </div>
-</body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
 
-</html> <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="/static/css/process.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/customer.css" />
 
-    <title>Process</title>
-  </head>
+        <title>Customers</title>
+    </head>
 
-  <body>
-    <div id="process_main">
-      <h2 class="p_title">Quy trình hoạt động</h2>
-      <div class="process_container">
-        <input type="radio" class="step1" checked id="" />
-        <input type="radio" class="step2" checked id="" />
-        <input type="radio" class="step3" checked id="" />
-        <input type="radio" class="step4" checked id="" />
-        <input type="radio" class="step5" id="" />
-        <input type="radio" class="step6" id="" />
-        <div class="process_head">
-          <ul class="p_nav">
-            <li class="st1">
-              <h2 class="p_inner">Tìm kiếm</h2>
-            </li>
-            <li class="st2">
-              <h2 class="p_inner">Gói dịch vụ</h2>
-            </li>
-            <li class="st3">
-              <h2 class="p_inner">Truyền thông</h2>
-            </li>
-            <li class="st4">
-              <h2 class="p_inner">Cộng đồng</h2>
-            </li>
-            <li class="st5">
-              <h2 class="p_inner">Tư vấn & Hỗ trợ</h2>
-            </li>
-            <li class="st6">
-              <h2 class="p_inner">Đánh giá</h2>
-            </li>
-            <div class="p_line">
-              <span></span>
+    <body>
+        <div class="customer_style">
+            <h1 class="c_title"> Đội ngũ cố vấn - bảo trợ</h1>
+            <div class="c_wrapper">
+                <div class="c_box">
+
+                    <p><i class="fas fa-quote-left quote"></i>Ngay từ khi đọc bản đề xuất kinh doanh của Eco Smart Solutions, chúng tôi đã cảm thấy những tác động tích cực mà ESS sẽ đem lại cho đất nước Việt Nam. Đặc biệt, khi được làm việc với Trí, tôi
+                        cảm thấy tầm nhìn, sự nhiệt huyết, đam mê, và tinh thần trách nhiệm cao, điều mà quyết định rất lớn đến quyết định đầu tư của chúng tôi.
+                        <i class="fas fa-quote-right quote"></i>
+                    </p>
+
+                    <div class="c_content">
+                        <div class="c_info">
+                            <div class="c_name">
+                                Jody Emmings
+                            </div>
+                            <div class="c_job">
+                                Giám đốc Trung tâm Khởi nghiệp và Sáng tạo Macalester - Minnesota, Hoa Kỳ
+                            </div>
+                            <div class="c_rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="c_image">
+                            <img src="/static/img/customer/customer_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_box">
+                    <p>
+                        <i class="fas fa-quote-left quote"></i> Giải pháp hỗ trợ thúc đẩy kinh doanh cho các doanh nghiệp phát triển bền vững của Eco Smart Solutions là một mô hình kinh doanh bền vững và có tính hiệu quả cao, góp phần tham gia vào các
+                        chính sách phát triển bền vững của xã hội mà chính phủ đang đề ra.
+                        <i class="fas fa-quote-right quote"></i>
+                    </p>
+                    <div class="c_content">
+                        <div class="c_info">
+                            <div class="c_name">
+                                Bùi Tôn Hiến
+                            </div>
+                            <div class="c_job">
+                                Cục trưởng cục Khoa học Lao Động và Xã Hội, Bộ Lao Động Thương Binh và Xã hội, trực tiếp chỉ đạo chính sách phát triển bền vững của Chính Phủ Việt Nam
+                            </div>
+                            <div class="c_rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="c_image">
+                            <img src="/static/img/customer/customer_2.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </ul>
 
-          <div class="p_content">
-            <section class="step1-section">
-              <span><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
-              <h1>Tìm kiếm đối tác</h1>
-              <p>
-                Chúng tôi sẽ tìm kiếm và đề xuất hợp tác với các doanh nghiệp
-                kinh doanh sản phẩm eco friendly. Chúng tôi sẽ tiếp cận các
-                doanh nghiệp này bằng cách sử dụng các kênh truyền thông xã hội
-                và các sự kiện trực tuyến và offline.
-              </p>
-            </section>
-            <section class="step2-section">
-              <span><i class="fa-solid fa-person-chalkboard"></i></span>
-              <h1>Đề xuất gói dịch vụ</h1>
-              <p>
-                Chúng tôi sẽ tạo ra các gói dịch vụ khác nhau để phù hợp với nhu
-                cầu của khách hàng, bao gồm gói 1 năm với mức giá 5 triệu đồng,
-                gói 6 tháng với mức giá 3 triệu đồng và gói 3 tháng với mức giá
-                2 triệu đồng. Các gói này sẽ bao gồm các dịch vụ như tư vấn
-                marketing, quảng cáo trực tuyến, thiết kế trang web, cung cấp
-                nội dung và hỗ trợ khách hàng.
-              </p>
-            </section>
-            <section class="step3-section">
-              <span><i class="fa-regular fa-tty"></i></span>
-              <h1>Xây dựng truyền thông</h1>
-              <p>
-                Chúng tôi sẽ xây dựng các nền tảng truyền thông như website,
-                Facebook, Instagram và TikTok để giới thiệu và quảng bá các sản
-                phẩm eco friendly product của đối tác. Chúng tôi sẽ tập trung
-                vào việc thiết kế các nội dung hấp dẫn và chia sẻ chúng trên các
-                nền tảng này để tăng khả năng tiếp cận của khách hàng.
-              </p>
-            </section>
-            <section class="step4-section">
-              <span><i class="fa-sharp fa-solid fa-people-group"></i></span>
-              <h1>Xây dựng cộng đồng</h1>
-              <p>
-                Chúng tôi sẽ xây dựng một cộng đồng các doanh nghiệp kinh doanh
-                sản phẩm thân thiện môi trường. Chúng tôi sẽ tạo ra các sự kiện
-                trực tuyến và offline nhằm tăng cường sự kết nối giữa các doanh
-                nghiệp và khách hàng. Chúng tôi cũng sẽ cung cấp các nội dung
-                giáo dục và thông tin về các sản phẩm eco friendly product cho
-                cộng đồng này.
-              </p>
-            </section>
-            <section class="step5-section">
-              <span><i class="fa-sharp fa-solid fa-headset"></i></span>
-              <h1>Tư vấn & hỗ trợ</h1>
-              <p>
-                Chúng tôi sẽ cung cấp các dịch vụ tư vấn và hỗ trợ khách hàng về
-                các sản phẩm eco friendly product của đối tác. Chúng tôi sẽ giúp
-                khách hàng tìm kiếm các sản phẩm phù hợp với nhu cầu của họ và
-                đưa ra các giải pháp tiết kiệm chi phí cho các doanh nghiệp.
-                Chúng tôi cũng sẽ đảm bảo rằng khách hàng nhận được sự hỗ trợ và
-                phản hồi kịp thời khi có câu hỏi hoặc yêu cầu hỗ trợ.
-              </p>
-            </section>
-            <section class="step6-section">
-              <span><i class="fa-sharp fa-solid fa-list-check"></i></span>
-              <h1>Đánh giá hiệu quả</h1>
-              <p>
-                Chúng tôi sẽ đánh giá hiệu quả của chiến dịch và đưa ra các phản
-                hồi để cải thiện chiến dịch trong tương lai. Chúng tôi sẽ đo
-                lường các chỉ số như tăng trưởng lượng truy cập trang web, tăng
-                trưởng doanh số bán hàng, tăng trưởng lượt theo dõi và tương tác
-                trên các mạng xã hội.
-              </p>
-            </section>
-          </div>
+
         </div>
-      </div>
-    </div>
+        </div>
+    </body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script
-      src="/static/js/process.js"
-      type="text/javascript"
-    ></script>
-  </body>
-</html> <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
         <!-- FontAwesome Icons -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      /> 
-    <link rel="stylesheet" href="/static/css/achievement.css">
-</head>
-<body>
-<div class="achievement">    
-    <h2 class="achievement-title">Thành tựu của chúng tôi</h2>
-    <div class="wrapper">
-        <div class="container">
-            <i class="fa-sharp fa-solid fa-medal"></i>
-            <span class="num" data-val="35+">000</span>
-            <span class="text"> Members</span>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <link rel="stylesheet" href="/static/css/achievement.css">
+    </head>
+
+    <body>
+        <div class="achievement">
+            <h2 class="achievement-title">Thành tựu của chúng tôi</h2>
+            <div class="wrapper">
+                <div class="container">
+                    <i class="fa-sharp fa-solid fa-medal"></i>
+                    <span class="num" data-val="35+">000</span>
+                    <span class="text"> Members</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span class="num" data-val="100">000</span>
+                    <span class="text"> Products sold</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <span class="num " data-val="10">000</span>
+                    <span class="text"> Regions</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa-sharp fa-solid fa-medal"></i>
+                    <span class="num " data-val="500">000</span>
+                    <span class="text"> Approach</span>
+                </div>
+            </div>
         </div>
 
-        <div class="container">
-            <i class="fa-solid fa-handshake"></i>
-            <span class="num" data-val="100">000</span>
-            <span class="text"> Products sold</span>
-        </div>        
-            
-        <div class="container">
-            <i class="fa-solid fa-earth-asia"></i>
-            <span class="num " data-val="10">000</span>
-            <span class="text"> Regions</span>
-        </div>        
-        
-        <div class="container">
-            <i class="fa-sharp fa-solid fa-medal"></i>
-            <span class="num " data-val="500">000</span>
-            <span class="text"> Approach</span>
+
+        <script src="/static/js/achievement.js"></script>
+    </body>
+
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/static/css/sponsor.css" />
+    </head>
+
+    <body>
+        <div class="sponsors-showcase">
+            <h2 class="h2ofsponsor">Một số đối tác nổi bật </h2>
+            <div class="sponsors">
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor1-logo.png" alt="Sponsor 1 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor2-logo.png" alt="Sponsor 2 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor3-logo.png" alt="Sponsor 3 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor4-logo.png" alt="Sponsor 4 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor5-logo.png" alt="Sponsor 5 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor6-logo.png" alt="Sponsor 6 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor7-logo.png" alt="Sponsor 7 Logo"></a>
+                <a href="#" target="_blank"><img src="/static/img/sponsor/sponsor8-logo.png" alt="Sponsor 8 Logo"></a>
+            </div>
         </div>
-    </div>
-</div>
+    </body>
 
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <script src="/static/js/achievement.js"></script>
-</body>
-</html> <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-    />
-    <title>Demo Carousel</title>
-    <link
-      rel="stylesheet"
-      href="/static/css/productfeature.css"
-    />
-  </head>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        />
+        <title>Demo Carousel</title>
+        <link rel="stylesheet" href="/static/css/productfeature.css" />
+    </head>
 
-  <body>
-    <div class="container-fluid my-5" id="container-product">
-    <h1 class="h1ofproduct">Sản phẩm nổi bật<table></table></h1>
-      <div class="rowofproduct">
-        <div class="col-12 m-auto">
-          <div class="owl-2 owl-carousel owl-theme">
-            <div class="item mb-4">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782"
-                >
-                  <img
-                    src="/static/img/activities/activities1.jpg"
-                    alt="activites1"
-                    class="card-img-topofproduct"
-                  />
-                </a>
-              </div>
+    <body>
+        <div class="container-fluid my-5" id="container-product">
+            <h1 class="h1ofproduct">Sản phẩm nổi bật
+                <table></table>
+            </h1>
+            <div class="rowofproduct">
+                <div class="col-12 m-auto">
+                    <div class="owl-2 owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="cardofproduct">
+                                <a href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782">
+                                    <img src="/static/img/activities/activities1.jpg" alt="activites1" class="card-img-topofproduct" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofproduct">
+                                <a href="https://www.facebook.com/photo.php?fbid=137191855908935&set=pb.100088543633780.-2207520000.&type=3">
+                                    <img src="/static/img/activities/activities2.jpg" alt="activites2" class="card-img-topofproduct" /></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofproduct">
+                                <a href="https://www.facebook.com/photo.php?fbid=134825176145603&set=pb.100088543633780.-2207520000.&type=3">
+                                    <img src="/static/img/activities/activities3.jpg" alt="activites3" class="card-img-topofproduct" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="/product/" class="seemoreofproduct">Xem thêm</a>
             </div>
-
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=137191855908935&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="/static/img/activities/activities2.jpg"
-                    alt="activites2"
-                    class="card-img-topofproduct"
-                /></a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="cardofproduct">
-                <a
-                  href="https://www.facebook.com/photo.php?fbid=134825176145603&set=pb.100088543633780.-2207520000.&type=3"
-                >
-                  <img
-                    src="/static/img/activities/activities3.jpg"
-                    alt="activites3"
-                    class="card-img-topofproduct"
-                /></a>
-              </div>
-            </div>
-
-          </div>
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         </div>
-    <a href="/product/" class="seemoreofproduct">Xem thêm</a>
-  </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(".owl-2").owlCarousel({
-        loop: false,
-        margin: 15,
-        nav: false,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-        navText: ["<img src=/static/img/slideshow/prev%20button.png>","<img src=/static/img/slideshow/next%20button.png>"]
-      });
-    </script>
-  </body>
-</html> <!doctype html>
-<html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+        <script>
+            $(".owl-2").owlCarousel({
+                loop: false,
+                margin: 15,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    },
+                },
+                navText: ["<img src=/static/img/slideshow/prev%20button.png>", "<img src=/static/img/slideshow/next%20button.png>"]
+            });
+        </script>
+    </body>
 
-<head>
-  <title>Video</title>
-  <link rel="stylesheet" href="/static/css/video.css">
-</head>
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
 
-<body>
-  <figure>
-    <figcaption>Tại sao nên sử dụng sản phẩm thân thiện với môi trường?</figcaption>
-    <iframe width="100%" height="450px" src="https://www.youtube.com/embed/P7jT3BGsoA0?start=3&amp;end=146" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </figure>
-</body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</html> <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="/static/css/scrolltotop.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-Eh1qe+ESZaWn8mYpPIltmgxbNVh9bn/aZ8WJdDlvKbkLCQltL+s0vJ8WgYK0tGR+KtXZ1v0HuQ2LltKuyG/1cA==" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        />
+        <title>Demo Carousel</title>
+        <link rel="stylesheet" href="/static/css/slideshow.css" />
+    </head>
+
+    <body>
+        <div class="container-fluid my-5" id="container-slideshow">
+            <h1 class="h1ofslideshow"> Ấn phẩm truyền thông</h1>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-1 owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo/?fbid=107995395495248&set=pcb.107563388871782">
+                                    <img src="/static/img/activities/activities1.jpg" alt="activites1" class="card-img-topofslideshow" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo.php?fbid=137191855908935&set=pb.100088543633780.-2207520000.&type=3">
+                                    <img src="/static/img/activities/activities2.jpg" alt="activites2" class="card-img-topofslideshow" /></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo.php?fbid=134825176145603&set=pb.100088543633780.-2207520000.&type=3">
+                                    <img src="/static/img/activities/activities3.jpg" alt="activites3" class="card-img-topofslideshow" /></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo?fbid=112881635006624&set=pcb.112882615006526">
+                                    <img src="/static/img/activities/activities4.jpg" alt="activites4" class="card-img-topofslideshow" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo?fbid=112881805006607&set=pcb.112882615006526">
+                                    <img src="/static/img/activities/activities5.jpg" alt="activites5" class="card-img-topofslideshow" /></a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo/?fbid=117929084501879&set=pcb.117926967835424">
+                                    <img src="/static/img/activities/activities6.jpg" alt="activites6" class="card-img-topofslideshow" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cardofslideshow">
+                                <a href="https://www.facebook.com/photo.php?fbid=134825202812267&set=pb.100088543633780.-2207520000.&type=3">
+                                    <img src="/static/img/activities/activities7.jpg" alt="activites7" class="card-img-topofslideshow" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+        <script>
+            $(".owl-1").owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                    },
+                },
+                navText: ["<img src=/static/img/slideshow/prev%20button.png>", "<img src=/static/img/slideshow/next%20button.png>"]
+            });
+        </script>
+    </body>
+
+    </html>
+    <!doctype html>
+    <html>
+
+    <head>
+        <title>Video</title>
+        <link rel="stylesheet" href="/static/css/video.css">
+    </head>
+
+    <body>
+        <figure>
+            <figcaption>Tại sao nên sử dụng sản phẩm thân thiện với môi trường?</figcaption>
+            <iframe width="100%" height="450px" src="https://www.youtube.com/embed/P7jT3BGsoA0?start=3&amp;end=146" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+    </body>
+
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/static/css/scrolltotop.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-Eh1qe+ESZaWn8mYpPIltmgxbNVh9bn/aZ8WJdDlvKbkLCQltL+s0vJ8WgYK0tGR+KtXZ1v0HuQ2LltKuyG/1cA==" crossorigin="anonymous" />
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-</head>
-<body>
-    <button onclick="topFunction()" class="myBtn" title="Go to top"><i class="ri-arrow-up-fill scrollup__icon"></i></button>
-    <script
-      src="/static/js/scrolltotop.js"
-      type="text/javascript"
-    ></script>
-</body>
-</html> 
-<link rel="stylesheet" href="../static/css/footer1.css" />
+    </head>
 
-<footer class="footer" id = "footer">
-  <div class="footer-content">
-    <h4>Eco Smart Solutions</h4>
-    <p>
-      Giai đoạn 2022-2024, Eco Smart Solutions hoạt động với tầm nhìn trở thành một trong những tổ chức sinh viên tích cực hành động vì môi trường hàng đầu miền Bắc. Đặc biệt, ESS là đơn vị tiên phong thúc đẩy phát triển các sản phẩm thân thiện với môi trường
-    </p>
-  </div>
+    <body>
+        <button onclick="topFunction()" class="myBtn" title="Go to top"><i class="ri-arrow-up-fill scrollup__icon"></i></button>
+        <script src="/static/js/scrolltotop.js" type="text/javascript"></script>
+    </body>
 
-  <div class="footer-social">
-    <a href="https://www.facebook.com/ecosmartvietnam"
-      ><i class="fa-brands fa-facebook footer-icon"></i
+    </html>
+    <link rel="stylesheet" href="../static/css/footer1.css" />
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <h4>Eco Smart Solutions</h4>
+            <p>
+                Đội ngũ Eco Smart Solutions luôn đặt tôn chỉ Hiệu quả - Tôn trọng - Chuyên nghiệp luôn cố gắng hoạt động vì mục tiêu kiến tạo một thế giới bền vững.
+            </p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/ecosmartvietnam"><i class="fa-brands fa-facebook footer-icon"></i
     ></a>
 
-    <a
-      href="https://www.instagram.com/ecosmart.vietnam/?fbclid=IwAR33v8jFTPm6HNBmon6yHHyNhUbpEJvLy9DKcHGuEd04n6YYh4S35JoM7hM"
-      ><i class="fa-brands fa-instagram footer-icon"></i
+            <a href="https://www.instagram.com/ecosmart.vietnam/?fbclid=IwAR33v8jFTPm6HNBmon6yHHyNhUbpEJvLy9DKcHGuEd04n6YYh4S35JoM7hM"><i class="fa-brands fa-instagram footer-icon"></i
     ></a>
 
-    <a href="https://www.linkedin.com"
-      ><i class="fa-brands fa-linkedin footer-icon"></i
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin footer-icon"></i
     ></a>
-  </div>
+        </div>
 
-  <div class="footer-bottom">
-    <div class="footer-flex-item">
-      <p class="copyright-text">
-        Bản quyền thuộc về &copy; <a class="footer-link" href="#">ecosmartvietnam</a>
-      </p>
-    </div>
-    <div class="footer-flex-item">
-      <div class="footer-menu">
-        <p><a class="footer-link" href="">Trang Chủ</a></p>
-        <p><a class="footer-link" href="">Về Chúng Tôi</a></p>
-        <p><a class="footer-link" href="">Liên Hệ</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
+        <div class="footer-bottom">
+            <div class="footer-flex-item">
+                <p class="copyright-text">
+                    Bản quyền thuộc về &copy; <a class="footer-link" href="#">ecosmartsolutions</a>
+                </p>
+            </div>
+            <div class="footer-flex-item">
+                <div class="footer-menu">
+                    <p><a class="footer-link" href="">Trang Chủ</a></p>
+                    <p><a class="footer-link" href="">Về Chúng Tôi</a></p>
+                    <p><a class="footer-link" href="">Liên Hệ</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<script
-  src="https://kit.fontawesome.com/550795c27f.js"
-  crossorigin="anonymous"
-></script>
+    <script src="https://kit.fontawesome.com/550795c27f.js" crossorigin="anonymous"></script>
 
-<script
-      type="text/javascript"
-      src="/static/js/scrolltotop.js"
-    ></script>
+    <script type="text/javascript" src="/static/js/scrolltotop.js"></script>
 
 
-<!-- <script>
+    <!-- <script>
   $(window).on("load", function () {
     $(".loader").fadeOut("slow");
   });
@@ -832,7 +704,7 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div> -->
-<!--flask --app build.py --debug run   -->
+    <!--flask --app build.py --debug run   -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </body>
 
