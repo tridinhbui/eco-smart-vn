@@ -28,7 +28,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,124 +38,90 @@
     <!-- Google fonts -->
 
     <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
     <!-- CSS stylesheet -->
-    <link
-      rel="stylesheet"
-      href="/static/css/navbar.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-  </head>
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+</head>
 
-  <body class="navbar-body">
+<body class="navbar-body">
     <!-- Navbar expands from large and collapses from size smaller than large -->
-    <div class = "sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
-      <!-- Navbar spans the entire width of any viewport -->
-      <div class="container-fluid" id="container-all">
-        <a href="/" class="navbar-brand">
-          <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
-          <img
-            src="/static/img/aboutus/logo.png"
-            alt="Logo"
-            class="title-logo d-inline-block"
-          />
-        </a>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-collapse-md" id="navbar-id">
+            <!-- Navbar spans the entire width of any viewport -->
+            <div class="container-fluid" id="container-all">
+                <a href="/" class="navbar-brand">
+                    <!-- The logo is inline with the title but also the width and height of the logo is changeable-->
+                    <img src="/static/img/aboutus/logo.png" alt="Logo" class="title-logo d-inline-block" />
+                </a>
 
-        <!-- Navbar Toggle contains the elements inside the list with the id of "navbarToggler" -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+                <!-- Navbar Toggle contains the elements inside the list with the id of "navbarToggler" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- The list -->
+                <!-- The list -->
 
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <!-- The list is right-aligned (ms-auto)  -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Trang chủ </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/product/">Sản Phẩm </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/activities/">Hoạt Động </a>
-            </li>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <!-- The list is right-aligned (ms-auto)  -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Trang chủ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/product/">Sản Phẩm </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/activities/">Hoạt Động </a>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/about-us/"
-                >Về Chúng Tôi
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/about-us/">Về Chúng Tôi
               </a>
-            </li>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/contact-us/"
-                >Liên Hệ
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/contact-us/">Liên Hệ
               </a>
-            </li>
+                        </li>
 
-            <li class="nav-item" id="last-nav-item">
-              <form class="search-container" action="">
-                <input class="input-box" type="text" required />
-                <button id="transparent-search-btn" type="submit">
+                        <li class="nav-item" id="last-nav-item">
+                            <form class="search-container" action="">
+                                <input class="input-box" type="text" required />
+                                <button id="transparent-search-btn" type="submit">
                   <i class="fa fa-search"></i>
                 </button>
-              </form>
-            </li>
+                            </form>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/product/cart/"><img src="/static/img/cart/shopping-cart.png" alt="shopping cart"> </a>
-            </li>
+                        <!-- <li class="nav-item">-->
+                        <!-- <a class="nav-link" aria-current="page" href="/product/cart/"><img src="/static/img/cart/shopping-cart.png" alt="shopping cart"> </a> -->
+                        <!-- </li> -->
 
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- JS bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script>
-      // Get the current page URL
-const currentPageUrl = window.location.href;
+        // Get the current page URL
+        const currentPageUrl = window.location.href;
 
-// Loop through all nav links and add the 'active' class to the one that matches the current page URL
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach((link) => {
-  if (link.href === currentPageUrl) {
-    link.classList.add('active');
-  }
-});
-
+        // Loop through all nav links and add the 'active' class to the one that matches the current page URL
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach((link) => {
+            if (link.href === currentPageUrl) {
+                link.classList.add('active');
+            }
+        });
     </script>
-  </body>
+</body>
+
 </html>
     <div class="bodystyle">
       <div class="head1">
