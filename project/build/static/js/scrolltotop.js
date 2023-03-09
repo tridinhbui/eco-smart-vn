@@ -16,6 +16,20 @@ function scrollFunction() {
   } else {
     mybutton.classList.add("hidden")
   }
+
+  // Get the height of the footer
+  const footerHeight = document.querySelector("footer").offsetHeight;
+
+  // Check if the footer is visible in the viewport
+  if (scrollContainer().scrollTop + window.innerHeight > scrollContainer().scrollHeight - footerHeight) {
+    // If the footer is visible, position the button above it
+    mybutton.style.position = "fixed";
+    mybutton.style.bottom = `${footerHeight +20}px`;
+  } else {
+    // If the footer is not visible, reset the button's position
+    mybutton.style.position = "fixed";
+    mybutton.style.bottom = "20px"; // Change this value to adjust the distance from the bottom
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document

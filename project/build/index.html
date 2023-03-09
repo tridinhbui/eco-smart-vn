@@ -153,43 +153,33 @@ navLinks.forEach((link) => {
     <!-- include body.html here -->
     <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scrolling Button</title>
-    <link
-      rel="stylesheet"
-      href="/static/css/scrolling.css"
-    />
-    <script
-      type="text/javascript"
-      src="/static/js/scrolling.js"
-    ></script>
-  </head>
+    <link rel="stylesheet" href="/static/css/scrolling.css" />
+</head>
 
-  <body>
+<body>
     <div class="title1">
-      <div class="image-left flex-item">
-        <img
-          class="env-img"
-          src="/static/img/index/test.png"
-          alt="test"
-        />
-      </div>
-      <div class="content-right flex-item">
-        <h1 class="heading1">Eco Smart Solutions</h1>
-        <h2 class="heading2">Tôn trọng - Hiệu quả - Chuyên nghiệp</h2>
+        <div class="image-left flex-item">
+            <img class="env-img" src="/static/img/index/test.png" alt="test" />
+        </div>
+        <div class="content-right flex-item">
+            <h1 class="heading1">Eco Smart Solutions</h1>
+            <h2 class="heading2">Tôn trọng - Hiệu quả - Chuyên nghiệp</h2>
 
-        <p>
-         Tiên phong trong việc thúc đẩy sự phát triển <br />
-          sản phẩm thân thiện môi trường.
-        </p>
+            <p>
+                Tiên phong thực hiện sứ mệnh nâng tầm thương hiệu - thúc đẩy kinh doanh trong hệ sinh thái các doanh nghiệp phát triển vì sự bền vững của xã hội.
+            </p>
 
-        <a class="button-scroll" href="#aboutus-scroll">Đọc thêm <span class = "button-icon">↘</span></a>
-      </div>
+            <a class="button-scroll" href="/about-us/">Đọc thêm <span class = "button-icon">↘</span></a>
+        </div>
     </div>
-  </body>
+</body>
+
 </html> <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -794,12 +784,11 @@ navLinks.forEach((link) => {
 </html> 
 <link rel="stylesheet" href="../static/css/footer1.css" />
 
-<footer class="footer">
+<footer class="footer" id = "footer">
   <div class="footer-content">
     <h4>Eco Smart Solutions</h4>
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat optio
-      quae maiores odit nobis dolorem atque incidunt, ipsam a nemo ipsa.
+      Giai đoạn 2022-2024, Eco Smart Solutions hoạt động với tầm nhìn trở thành một trong những tổ chức sinh viên tích cực hành động vì môi trường hàng đầu miền Bắc. Đặc biệt, ESS là đơn vị tiên phong thúc đẩy phát triển các sản phẩm thân thiện với môi trường
     </p>
   </div>
 
@@ -838,6 +827,13 @@ navLinks.forEach((link) => {
   src="https://kit.fontawesome.com/550795c27f.js"
   crossorigin="anonymous"
 ></script>
+
+<script
+      type="text/javascript"
+      src="/static/js/scrolltotop.js"
+    ></script>
+
+
 <!-- <script>
   $(window).on("load", function () {
     $(".loader").fadeOut("slow");
