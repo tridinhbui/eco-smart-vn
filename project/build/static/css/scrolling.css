@@ -3,6 +3,7 @@
     color: #283746;
     height: 100vh;
     display: flex;
+    margin-bottom: 5rem;
 }
 
 .content-right {
@@ -102,14 +103,13 @@
 
 @media (max-width: 1400px) {
     .env-img {
-        width: 95%;
-        margin-left: 3rem;
-        margin-top: 1.5rem;
+        width: 100%;
+        margin-top: 12rem;
     }
     .heading1 {
         /* padding-top: 33rem; */
         font-size: 4rem;
-        margin-top: 14rem;
+        margin-top: 25rem;
     }
     .heading2 {
         font-size: 2rem;
