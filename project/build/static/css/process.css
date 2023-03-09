@@ -305,3 +305,9 @@ ul.p_nav li.active::after {
         height: 70vw;
     }
 }
+
+@media (max-width: 850px) {
+    #process_main {
+        display: none;
+    }
+}
