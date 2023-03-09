@@ -25,11 +25,21 @@
   display: none;
 }
 
-@media (max-width:1300px) {
-  .scrollup__icon{
-    font-size:3vw;
+@media screen and (min-device-width: 700px) and (max-device-width: 1300px) {
+  .myBtn{
+    width:4vw;
   }
-  .myBtn {
-    right:0;
+  .scrollup__icon{
+    font-size:4vw;
+  }
+}
+
+
+@media (max-width:700px) {
+  .myBtn{
+    width:6vw;
+  }
+  .scrollup__icon{
+    font-size:6vw;
   }
 }
