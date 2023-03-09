@@ -59,6 +59,15 @@
   color: #283746;
 }
 
+.head2executive {
+  margin-top: 2rem;
+  font-size: 4vh;
+  font-weight: bolder;
+  text-align: center;
+  color: #365949;
+  margin-bottom: 2rem;
+}
+
 .head2ourteam {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -94,7 +103,7 @@
 
 @media (max-width: 1000px) {
   .mainstyle {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }
