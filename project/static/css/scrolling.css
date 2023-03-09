@@ -1,6 +1,6 @@
 .title1 {
     background-color: white;
-    color:#283746;
+    color: #283746;
     height: 100vh;
     display: flex;
 }
@@ -44,7 +44,7 @@
 }
 
 .button-scroll {
-    display:inline-block;
+    display: inline-block;
     font-weight: bold;
     margin-top: 1.5rem;
     text-decoration: none;
@@ -61,10 +61,10 @@
 }
 
 .button-scroll:hover .button-icon {
-    display:inline-block;
-    transform:translateX(.25rem);
+    display: inline-block;
+    transform: translateX(.25rem);
     transition: .3s;
-  }
+}
 
 .button-scroll:hover {
     font-weight: bold;
@@ -98,7 +98,6 @@
         font-size: 1.5rem;
         margin-bottom: 1.8rem;
     }
-    
 }
 
 @media (max-width: 1400px) {
@@ -120,7 +119,6 @@
         font-size: 1.5rem;
         margin-bottom: 1.8rem;
     }
-    
 }
 
 @media screen and (min-device-width: 601px) and (max-device-width: 1100px) {
@@ -147,8 +145,11 @@
     .heading2 {
         font-size: 2rem;
     }
-    .button-icon{
-        display:none;
+    .button-icon {
+        display: none;
+    }
+    .button-scroll:active .button-icon {
+        display: none;
     }
 }
 
@@ -193,8 +194,11 @@
         color: rgb(64, 109, 89);
         text-decoration: none;
     }
-    .button-icon{
-        display:none;
+    .button-icon {
+        display: none;
+    }
+    .button-scroll:active .button-icon {
+        display: none;
     }
 }
 
