@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="../static/css/footer1.css" />
 
-<footer class="footer">
+<footer class="footer" id = "footer">
   <div class="footer-content">
     <h4>Eco Smart Solutions</h4>
     <p>
@@ -45,6 +45,13 @@
   src="https://kit.fontawesome.com/550795c27f.js"
   crossorigin="anonymous"
 ></script>
+
+<script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/scrolltotop.js') }}"
+    ></script>
+
+
 <!-- <script>
   $(window).on("load", function () {
     $(".loader").fadeOut("slow");

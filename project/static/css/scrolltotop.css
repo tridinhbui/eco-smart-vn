@@ -3,7 +3,7 @@
   color: white;
   cursor: pointer;
   border-radius: 4px;
-  width: 4rem;
+  width: 3vw;
   opacity: 0.5;
   border: grey;
   position:fixed;
@@ -23,4 +23,13 @@
 
 .hidden {
   display: none;
+}
+
+@media (max-width:1300px) {
+  .scrollup__icon{
+    font-size:3vw;
+  }
+  .myBtn {
+    right:0;
+  }
 }
