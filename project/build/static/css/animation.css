@@ -29,8 +29,9 @@
   margin-bottom: 2rem;
   border: 2px solid #365949;
   border-top: none;
-  border-radius: 1rem;
   animation: pageLoading 2s;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .animation-content p {
@@ -75,7 +76,8 @@
 
 .img-border {
   border: 5px solid #365949;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .mainstyle h2:hover {
