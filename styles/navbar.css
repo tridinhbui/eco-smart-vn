@@ -1,0 +1,19 @@
+.text-black {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #283746;
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+.text-black:hover{
+  border-bottom: 2px solid green;
+}
+
+.shadow {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000000;
+}

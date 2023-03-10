@@ -1,0 +1,100 @@
+.contact-us-body {
+  display: flex;
+  background-image: url("../public/images/background-forest.jpg");
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding-top: 130px;
+  height: 100vh;
+}
+
+.content-left {
+  color: white;
+  width: 100%;
+  margin-left: 17rem;
+}
+
+.content-right{
+	animation: pageLoading 2s;
+	width: 100%;
+	padding-right: 300px;
+  margin-top: 40px;
+}
+
+.text1 {
+  font-size: 7rem;
+}
+
+.text2 {
+  font-size: 3rem;
+}
+
+.text-gray-700{
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.submit-button{
+  border-color: rgb(64, 109, 89) solid;
+  margin-top: 1rem;
+  margin-left: 30%;
+  width: 40%;
+  background-color: rgb(64, 109, 89);
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  border-radius:0.5rem;
+}
+
+.submit-button:hover {
+  font-weight: bold;
+  background-color: white;
+  color: #5f8d4e;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .contact-us-body {
+    flex-direction: column;
+    padding-top: 2px;
+  }
+
+  .content-left {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .text1 {
+    font-size: 3.8rem;
+  }
+
+  .text2 {
+    font-size: 2rem;
+  }
+
+  .content-right{
+    padding-right: 0;
+    margin: unset;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text1 {
+    font-size: 4rem;
+  }
+
+  .text2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .text1 {
+    font-size: 2.5rem;
+  }
+
+  .text2 {
+    font-size: 1.2rem;
+  }
+}
