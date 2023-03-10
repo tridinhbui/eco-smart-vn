@@ -52,7 +52,7 @@
 
   /* Add animation after scroll */
   .sponsor_loading.show {
-    animation: slideInFromBottom 2.5s forwards;
+    animation: slideInFromBottom 4.5s forwards;
   }
 
   @keyframes slideInFromBottom {
