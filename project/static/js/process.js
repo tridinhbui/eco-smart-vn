@@ -23,3 +23,13 @@ for (let i = 1; i < 7; i++) {
         setfalse(i);
     })
 }
+
+
+window.addEventListener('scroll', function() {
+    var target = document.querySelector('#process_main');
+    var targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+    var scrollPos = window.scrollY + window.innerHeight;
+    if (scrollPos >= targetPos) {
+      document.querySelector('.process_loading').classList.add('show');
+    }
+  });

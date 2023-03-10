@@ -16,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 </head>
 <body>
-<div class="achievement">    
+<div class="achievement achievement_loading" id="achievement-loading" >    
     <h2 class="achievement-title">Thành tựu của chúng tôi</h2>
     <div class="wrapper">
         <div class="container">
@@ -59,16 +59,9 @@
         });
     });
 </script>
-    <!-- <script>
-        $(document).ready(function(){
-          $('.num').counterUp({
-            
-            delay: 10,
-            time: 4000
-          });
-          
-        });
-        
-        </script> -->
+<script
+    src="{{ url_for('static', filename='js/achievement.js')}}"
+    type="text/javascript"
+></script>
 </body>
 </html>

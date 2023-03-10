@@ -37,6 +37,20 @@
     animation: trans .7s linear;
 }
 
+/* Animation after scrolling */
+  .process_loading.show {
+    animation: scaleUp 2s forwards;
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
 ul.p_nav {
     padding-top: 15px;
     z-index: 100;
@@ -165,7 +179,8 @@ ul.p_nav li.active::after {
 .p_content section p {
     padding: 1.5vw 2vw;
     margin-bottom: 0;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    font-style: italic;
 }
 
 .p_content section i {

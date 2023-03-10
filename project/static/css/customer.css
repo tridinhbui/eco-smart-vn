@@ -90,6 +90,20 @@
     background: #365949;
 }
 
+/* Add animation after scroll */
+.customer_loading.show {
+    animation: slideInFromRight 3s forwards;
+  }
+
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(60%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
 @media (max-width: 1045px) {
     .c_wrapper .c_box {
         width: calc(50% - 20px);

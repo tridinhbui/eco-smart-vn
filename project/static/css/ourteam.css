@@ -74,11 +74,11 @@
 
 .card h3 {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -116,8 +116,9 @@
 }
 
 p.personal_achievement {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
     text-align: center;
     margin: 0.5em 0 2em 0;
     letter-spacing: 1px;

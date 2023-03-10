@@ -6,3 +6,4 @@ document.querySelectorAll('a[href-"a"]').forEach(anchor => {
         })
     })
 })
+

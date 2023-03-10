@@ -1,3 +1,12 @@
+window.addEventListener('scroll', function() {
+  var target = document.querySelector('#container-slideshow');
+  var targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+  var scrollPos = window.scrollY + window.innerHeight;
+  if (scrollPos >= targetPos) {
+    document.querySelector('.slideshow_loading').classList.add('show');
+  }
+});
+
 var TrandingSlider = new Swiper('.tranding-slider', {
     effect: 'coverflow',
     grabCursor: true,
@@ -19,3 +28,4 @@ var TrandingSlider = new Swiper('.tranding-slider', {
       prevEl: '.swiper-button-prev',
     }
   });
+

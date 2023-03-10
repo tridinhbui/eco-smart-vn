@@ -50,6 +50,21 @@
   }
 
 
+  /* Add animation after scroll */
+  .sponsor_loading.show {
+    animation: slideInFromBottom 2.5s forwards;
+  }
+
+  @keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
   @media (max-width:1250px) {
     .sponsors a {
       margin-right:4vw;

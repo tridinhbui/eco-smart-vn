@@ -58,6 +58,20 @@
   padding-right:4rem;
 }
 
+/* Add animation after scroll */
+.slideshow_loading.show {
+  animation: slideInFromBottom 2s forwards;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(60%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
 @media(max-width:730px){
   .h1ofslideshow{
     font-size:1.5rem;

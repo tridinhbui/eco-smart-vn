@@ -68,6 +68,21 @@
   padding-right:2rem;
 }
 
+.productfeature_loading.show {
+  display: block;
+  animation: slideInFromLeft 2s forwards;
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-60%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 @media(max-width:730px){
   .h1ofproduct{
     font-size:1.5rem;

@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <div class="container-fluid my-5" id="container-product">
+    <div class="container-fluid my-5 productfeature_loading" id="container-product">
     <h1 class="h1ofproduct">Sản phẩm nổi bật<table></table></h1>
       <div class="rowofproduct">
         <div class="col-12 m-auto">
@@ -108,5 +108,9 @@
         navText: ["<img src={{ url_for('static', filename='img/slideshow/prev button.png') }}>","<img src={{ url_for('static', filename='img/slideshow/next button.png') }}>"]
       });
     </script>
+    <script
+    src="{{ url_for('static', filename='js/productfeature.js')}}"
+    type="text/javascript"
+  ></script>
   </body>
 </html>

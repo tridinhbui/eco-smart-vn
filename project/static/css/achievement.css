@@ -62,6 +62,20 @@ span.text {
     line-height: 0;
 }
 
+/* Add animation after scroll */
+.achievement_loading.show {
+    animation: scaleUp 1.8s forwards;
+  }
+@keyframes scaleUp {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
 @media screen and (max-width: 1200px) {
     .wrapper {
         width: 85vw;
