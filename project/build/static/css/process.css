@@ -39,12 +39,12 @@
 
 /* Animation after scrolling */
   .process_loading.show {
-    animation: scaleUp 2s forwards;
+    animation: scaleUp 3s forwards;
   }
   
   @keyframes scaleUp {
     from {
-      transform: scale(0.6);
+      transform: scale(0);
     }
     to {
       transform: scale(1);
