@@ -21,7 +21,19 @@ figcaption:hover {
   background-color: #285430;
 }
 
+/* Animation after scrolling */
+.youtube-vid-loading.show {
+  animation: scaleUp 2s forwards;
+}
 
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 @media (max-width: 600px) {
   figure {

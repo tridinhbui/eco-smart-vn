@@ -1,3 +1,21 @@
+
+var lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // scrolled down
+    document.querySelector(".myBtn").classList.remove("show");
+  } else {
+    // scrolled up
+    document.querySelector(".myBtn").classList.add("show");
+  }
+
+  lastScrollTop = currentScroll;
+});
+
+
 // Get the button
 let mybutton = document.getElementsByClassName("myBtn")[0];
 
@@ -46,3 +64,5 @@ const scrollContainer = () => {
 document.addEventListener("scroll", () => {
   mybutton.style.display = "block";
 })
+
+

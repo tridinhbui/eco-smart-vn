@@ -7,10 +7,14 @@
 </head>
 
 <body>
-  <figure>
+  <figure class = "youtube-vid-loading" id = "youtube-video" >
     <figcaption>Tại sao nên sử dụng sản phẩm thân thiện với môi trường?</figcaption>
     <iframe width="100%" height="450px" src="https://www.youtube.com/embed/P7jT3BGsoA0?start=3&amp;end=146" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </figure>
+  <script
+  src="{{ url_for('static', filename='js/video.js')}}"
+  type="text/javascript"
+></script>
 </body>
 
 </html>

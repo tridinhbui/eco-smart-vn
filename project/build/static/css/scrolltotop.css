@@ -1,45 +1,54 @@
 .myBtn {
-  background-color: #365949;
+  background-color: #1d573d;
   color: white;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
   width: 3vw;
   opacity: 0.5;
-  border: grey;
-  position:fixed;
-  bottom:20px;
-  right:10px;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s; /* add transition effect to background-color */
+  transform: scale(0);
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
-.scrollup__icon{
-  color: #FFF;
+.myBtn.show {
+  opacity: 0.5;
+  transform: scale(1);
+  animation: fadeOut 0.5s ease-out forwards;
 }
-
 
 .myBtn:hover {
-  background-color: #365949;
+  background-color: #a7f1c7; /* change the background color on hover */
   opacity: 1;
 }
 
-.hidden {
-  display: none;
+.scrollup__icon {
+  color: white; /* change the color of the arrow to white */
 }
 
-@media screen and (min-device-width: 700px) and (max-device-width: 1300px) {
-  .myBtn{
-    width:4vw;
+/* add the fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
   }
-  .scrollup__icon{
-    font-size:4vw;
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-
-@media (max-width:700px) {
-  .myBtn{
-    width:6vw;
+/* add the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
   }
-  .scrollup__icon{
-    font-size:6vw;
+  100% {
+    opacity: 0;
+    transform: scale(0);
   }
 }
