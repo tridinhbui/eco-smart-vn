@@ -1,15 +1,25 @@
+
+#fb-customer-chat {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 100; /* set higher z-index value */
+}
+
 .myBtn {
+  z-index: 50;
   background-color: #1d573d;
   color: white;
   cursor: pointer;
   border-radius: 50%;
   width: 3vw;
+  height: 3vw; /* add height to make a circle */
   opacity: 0.5;
   border: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 10px;
-  transition: opacity 0.3s, transform 0.3s, background-color 0.3s; /* add transition effect to background-color */
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
   transform: scale(0);
   animation: fadeIn 0.5s ease-out forwards;
 }
@@ -20,13 +30,30 @@
   animation: fadeOut 0.5s ease-out forwards;
 }
 
+.scrollup__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+
+
 .myBtn:hover {
-  background-color: #a7f1c7; /* change the background color on hover */
+  background-color: #a7f1c7;
   opacity: 1;
 }
 
 .scrollup__icon {
-  color: white; /* change the color of the arrow to white */
+  color: white;
+}
+
+/* add the fixed position */
+@media screen and (min-height: 600px) {
+  .myBtn {
+    position: fixed;
+    bottom: 10vh;
+  }
 }
 
 /* add the fade-in animation */
