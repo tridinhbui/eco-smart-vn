@@ -65,26 +65,30 @@ span.text {
 /* Add animation after scroll */
 .achievement_loading.show {
     animation: scaleUp 1.8s forwards;
-  }
+}
+
 @keyframes scaleUp {
     from {
-      transform: scale(0.6);
+        transform: scale(0.6);
     }
+
     to {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
 
 
 @media screen and (max-width: 1200px) {
     .wrapper {
         width: 85vw;
     }
+
     .container {
         height: 26vmin;
         width: 26vmin;
         font-size: 12px;
     }
+
     .achievement {
         margin-bottom: 20%;
     }
@@ -94,17 +98,20 @@ span.text {
     .achievement-title {
         font-size: 1.3rem;
     }
+
     .wrapper {
         width: 90vw;
         /* flex-wrap: wrap; */
         gap: 30px;
         margin-top: 10vh;
     }
+
     .container {
         width: calc(50% - 40px);
         height: 26vmin;
         font-size: 10px;
     }
+
     .achievement {
         margin-bottom: 40%;
     }
@@ -115,11 +122,13 @@ span.text {
         gap: 15px;
         margin-top: 5vh;
     }
+
     .container {
         width: 100%;
         height: 25vmin;
         font-size: 8px;
     }
+
     .achievement {
         margin-bottom: 40%;
     }
