@@ -1,9 +1,9 @@
 .title1 {
     background-color: white;
     color: #283746;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .content-right {
@@ -41,7 +41,6 @@
 .env-img {
     width: 80%;
     margin-left: 14rem;
-    margin-top: 1.5rem;
 }
 
   
@@ -81,17 +80,39 @@
     background-color: rgb(64, 109, 89);
     text-decoration: none;
 }
-
-@media (max-width: 1599px) {
+@media (max-width: 2000px) {
     .env-img {
         width: 95%;
-        margin-left: 3rem;
-        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        margin-top: 0.7rem;
+
     }
     .heading1 {
         /* padding-top: 33rem; */
         font-size: 4.5rem;
-        margin-top: 14rem;
+        margin-top: 15rem;
+    }
+    .heading2 {
+        font-size: 2.3rem;
+    }
+    .content-right p {
+        padding-top: 1.1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (max-width: 1599px) {
+    .env-img {
+        width: 95%;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+
+    }
+    .heading1 {
+        /* padding-top: 33rem; */
+        font-size: 4.5rem;
+        margin-top: 7rem;
     }
     .heading2 {
         font-size: 2.3rem;
@@ -106,7 +127,7 @@
 @media (max-width: 1400px) {
     .env-img {
         width: 100%;
-        margin-top: 12rem;
+        margin-top: 5rem;
     }
     .heading1 {
         /* padding-top: 33rem; */
