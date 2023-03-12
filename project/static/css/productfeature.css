@@ -15,7 +15,7 @@
 .card-img-topofproduct {
   object-fit: cover;
   width: 100%;
-  height: 30vh; /* change the value here */
+  height: 40vh; /* change the value here */
   border-radius: 6%;
   position: relative; /* position the image relative to its parent element */
 }
@@ -24,7 +24,7 @@
 .cardofproduct {
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: 30vh;
+  height: 40vh;
   width: (80vw-30px)/3;
   position: relative; /* position the card relative to its parent element */
 }
