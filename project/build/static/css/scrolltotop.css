@@ -1,6 +1,6 @@
 
 
-.myBtn {
+.myBtn{
   z-index: 50;
   background-color: #1d573d;
   color: white;
@@ -11,8 +11,8 @@
   opacity: 0.5;
   border: none;
   position: fixed;
-  bottom: 30px;
-  right: 10px;
+  bottom: 20px;
+  right: 13px;
   transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
   transform: scale(0);
   animation: fadeIn 0.5s ease-out forwards;
@@ -43,12 +43,7 @@
 }
 
 /* add the fixed position */
-@media screen and (min-height: 600px) {
-  .myBtn {
-    position: fixed;
-    bottom: 10vh;
-  }
-}
+
 
 /* add the fade-in animation */
 @keyframes fadeIn {
@@ -71,5 +66,27 @@
   100% {
     opacity: 0;
     transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .myBtn {
+    width: 5vw;
+    height: 5vw; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myBtn {
+    width: 6vw;
+    height: 6vw; 
+    bottom:5px;
+    right: 2px;
+  }
+}
+@media screen and (min-height: 600px) {
+  .myBtn {
+    position: fixed;
+    bottom: 10vh;
   }
 }
