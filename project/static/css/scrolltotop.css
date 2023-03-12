@@ -12,7 +12,7 @@
   border: none;
   position: fixed;
   bottom: 20px;
-  right: 13px;
+  right: 15px;
   transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
   transform: scale(0);
   animation: fadeIn 0.5s ease-out forwards;
@@ -82,11 +82,5 @@
     height: 6vw; 
     bottom:5px;
     right: 2px;
-  }
-}
-@media screen and (min-height: 600px) {
-  .myBtn {
-    position: fixed;
-    bottom: 10vh;
   }
 }
