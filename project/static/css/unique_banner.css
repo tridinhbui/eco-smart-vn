@@ -1,0 +1,35 @@
+#unique_banner_style {
+    width: 100%;
+    background-color: #365949;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    #unique_banner_style {
+        display: none;
+    }
+}
+
+.banner_item {
+    width: calc(33% - 10vw);
+    margin: 5vw;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_item_heading {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.banner_item i {
+    font-size: 5vw;
+    margin: 1vw;
+    color: white;
+}
