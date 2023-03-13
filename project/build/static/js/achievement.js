@@ -6,11 +6,3 @@ window.addEventListener('scroll', function() {
       document.querySelector('.achievement_loading').classList.add('show');
     }
   });
-  new Waypoint({
-    element: document.querySelector('.container'),
-    handler: function() {
-      countStart()
-      //this.destroy() //for once
-    },
-    offset: '50%'
-  });
