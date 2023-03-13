@@ -14,12 +14,15 @@
 iframe{
 width: 100%;
 height: 400px;
-filter: invert(10%);
+/* filter: invert(10%); */
 }
+.map_loading.show {
+    animation: slideInFromRight 3s forwards;
+}
+
 @media screen and (max-width:780px) {
     iframe{
         width: 100%;
         height: 300px;
         }
-    
 }
