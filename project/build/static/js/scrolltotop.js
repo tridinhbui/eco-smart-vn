@@ -42,11 +42,11 @@ function scrollFunction() {
   if (scrollContainer().scrollTop + window.innerHeight > scrollContainer().scrollHeight - footerHeight) {
     // If the footer is visible, position the button above it
     mybutton.style.position = "fixed";
-    mybutton.style.bottom = `${footerHeight +20}px`;
+    mybutton.style.bottom = `${footerHeight +5}px`;
   } else {
     // If the footer is not visible, reset the button's position
     mybutton.style.position = "fixed";
-    mybutton.style.bottom = "20px"; // Change this value to adjust the distance from the bottom
+    mybutton.style.bottom = "5px"; // Change this value to adjust the distance from the bottom
   }
 }
 
