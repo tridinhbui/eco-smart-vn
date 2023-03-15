@@ -1,0 +1,1 @@
+export const ADMIN_LOGIN_API = "http://localhost:8080/user/login";

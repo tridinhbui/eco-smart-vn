@@ -21,3 +21,9 @@ export const MAIL_TEXT = {
     button: 'Gửi',
     notification: "Gửi lời nhắn thành công."
 };
+
+export const ADMIN_LOGIN_TEXT = {
+    username: 'Username',
+    password: 'Password',
+    error: 'Login failed. Please check your username and password'
+};
