@@ -1,7 +1,18 @@
-#unique_banner_style {
+#unique_banner_background{
     width: 100%;
     background-color: #365949;
     color: white;
+}
+
+.unique_banner_title{
+    padding-top: 3rem;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#unique_banner_style {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -11,7 +22,7 @@
 }
 
 @media (max-width: 600px) {
-    #unique_banner_style {
+    #unique_banner_background {
         display: none;
     }
 }

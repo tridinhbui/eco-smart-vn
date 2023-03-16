@@ -122,6 +122,65 @@
     <!-- include body.html here -->
     <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet"
+      href="/static/css/popup-ads.css"  />
+    <!-- font-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body onload="showModal()" >
+
+    <div class="popup-overlay " id="modalbox" >
+
+        <div class="popup-container" >
+            <div class="left">
+                <img  class="bg1" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/334958098_576812574474036_2025743002032352494_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=FH-iuqJPbxsAX9p3yp_&_nc_ht=scontent.fhan14-2.fna&oh=00_AfD5156_xazcI6Knx6NQsuaA4ORhq0gN4BSnTgIUKni2rQ&oe=64169257" alt="">
+            </div>
+            
+            <div class="right">
+                <div class="skip-button" onclick="closeModal()"> Skip</div>
+
+                <p class="logo">Eco Smart Vietnam</p>
+                <h2 class="popup-heading"> Mỵ Store</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi vero odio, iure provident eum repellat, 
+                </p>
+                <a href="#" class="visit-button" onclick="closeModal()"> Visit us</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        let modalBox=document.getElementById("modalbox");
+        function showModal(){
+            setTimeout(() => {
+                modalBox.style.display = "block";
+            }, 1000)
+         }
+         function closeModal(){
+            modalBox.style.display = "none"
+         }
+    </script> -->
+    <script>
+        let modalBox=document.getElementById("modalbox");
+        function showModal(){
+            setTimeout(() => {
+                modalBox.classList.add("open-popup");
+            }, 5000)
+         }
+         function closeModal(){
+            modalBox.classList.remove("open-popup");
+         }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -145,37 +204,6 @@
             </p>
 
             <a class="button-scroll" href="/about-us/">Đọc thêm <span class = "button-icon">↘</span></a>
-        </div>
-    </div>
-</body>
-
-</html> <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/static/css/unique_banner.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner</title>
-</head>
-
-<body>
-    <div id="unique_banner_style">
-        <div class="banner_item">
-            <span><i class="fa-solid fa-person-chalkboard"></i></span>
-            <div class="banner_item_heading">Chi phí tối ưu</div>
-            <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</div>
-        </div>
-        <div class="banner_item">
-            <span><i class="fa-solid fa-person-chalkboard"></i></span>
-            <div class="banner_item_heading">Đội nhóm chuyên nghiệp</div>
-            <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</div>
-        </div>
-        <div class="banner_item">
-            <span><i class="fa-solid fa-person-chalkboard"></i></span>
-            <div class="banner_item_heading">Sứ mệnh cao cả</div>
-            <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</div>
         </div>
     </div>
 </body>
@@ -312,6 +340,43 @@
       type="text/javascript"
     ></script>
   </body>
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/css/unique_banner.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+</head>
+
+<body>
+    <div id="unique_banner_background">
+        <h1 class="unique_banner_title">Sự khác biệt của Eco Smart Solutions</h1>
+        <div id="unique_banner_style">
+            <div class="banner_item">
+                <span><i class="fa-solid fa-person-chalkboard"></i></span>
+                <div class="banner_item_heading">Chi phí tối ưu</div>
+                <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit...</div>
+            </div>
+            <div class="banner_item">
+                <span><i class="fa-solid fa-person-chalkboard"></i></span>
+                <div class="banner_item_heading">Đội nhóm chuyên nghiệp</div>
+                <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit...</div>
+            </div>
+            <div class="banner_item">
+                <span><i class="fa-solid fa-person-chalkboard"></i></span>
+                <div class="banner_item_heading">Sứ mệnh cao cả</div>
+                <div class="banner_item_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit...</div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html> <!DOCTYPE html>
 <html lang="en">
 

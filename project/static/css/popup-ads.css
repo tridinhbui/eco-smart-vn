@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+.popup-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    scale: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.open-popup {
+    visibility: visible;
+    transition: 1s;
+    scale: 1;
+    z-index: 9999;
+  }
+.popup-container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-50%, calc(-50% +50px)); */
+    transform: translate(-40%, -50%);
+    color: white;
+    padding: 12px 0 ;
+    box-shadow: 0px 6px 55px -10px rgba(0, 0, 0, 0.7);
+    background-color: rgb(64, 109, 70);
+    background-size: cover;
+}
+
+.popup-container .left img{
+    position: absolute;
+    bottom: 0;
+}
+.popup-container .left .bg1{
+    left: -110px;
+    max-width: 350px;
+}
+.popup-container .right{
+    width: 540px;
+    padding: 16px;
+    padding-left: 250px;
+}
+.popup-container .skip-button{
+    color: black;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: whitesmoke;
+    padding: 4px 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.popup-container .skip-button:hover{
+    background-color: black;
+    color: white;
+  }
+.popup-container p.logo{
+    font-size: 13px;
+    color: palevioletred;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.popup-container h2.popup-heading{
+    font-size: 30;
+    text-transform: uppercase;
+    margin: 0;
+}
+.popup-container p.description{
+    font-size: 15px;
+    line-height: 1.8;
+}
+.popup-container .visit-button{
+    background: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 8px 24px ;
+}
+.popup-container .visit-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .popup-container .right {
+        padding: 16px;
+        width: 300px; 
+    }
+    .popup-container .left .bg1 {
+        position: relative;
+        left: 0;
+    }
+    .popup-container{
+        padding: 0;
+        transform: translate(-50%, -50%);
+    }
+}
