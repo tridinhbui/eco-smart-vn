@@ -22,15 +22,65 @@
 }
 
 .scripts1 {
-  font-size: 7rem;
-  margin-top: 12rem;
+  font-size:2vh;
+  margin-top: 8rem;
   margin-left: 20rem;
 }
 
 .scripts2 {
   margin-left: 20rem;
-  font-size: 3rem;
+  font-size: 5vh;
+  font-weight:bold;
+  margin-bottom:4rem;
 }
+
+/* Địa chỉ */
+.diachicontact{
+  margin-bottom:4rem;
+}
+
+.diachicontact img{ 
+  margin-bottom:-7rem;
+  margin-left: 18rem;
+  width:10%;
+  height:auto;
+}
+
+.diachicontact h2 {
+  font-size: 2.5vh;
+  margin-left: 25rem;
+}
+
+/* Địa chỉ gmail*/
+.diachimail h2 {
+  font-size: 2.5vh;
+  margin-left: 25rem;
+}
+
+.diachimail {
+  margin-bottom: 4rem;
+}
+
+.diachimail img{ 
+  margin-bottom:-7rem;
+  margin-left: 18rem;
+  width:10%;
+  height:auto;
+}
+
+/* Số điện thoại*/
+.sodienthoai h2 { 
+  font-size: 2.5vh;
+  margin-left: 25rem;
+}
+.sodienthoai img{ 
+  margin-bottom:-7rem;
+  margin-left: 18rem;
+  width:10%;
+  height:auto;
+}
+
+
 
 .contact-box {
   width: 29rem;
@@ -105,53 +155,34 @@
 ::placeholder {
   color: #404040;
 }
-
-@media (max-width: 1770px) {
-  .scripts1 {
-    font-size: 7rem;
-    margin-top: 12rem;
-    margin-left: 12rem;
+@media (max-width: 1450px) {
+  .scripts1{
+    margin-left:10rem;
+  }
+  .scripts2{
+    margin-left:10rem;
   }
 
-  .scripts2 {
-    margin-left: 12rem;
-    font-size: 3rem;
+  .diachicontact h2{
+    margin-left:11rem;
   }
-}
-@media (max-width: 1530px) {
-  .scripts1 {
-    font-size: 7rem;
-    margin-top: 12rem;
-    margin-left: 8rem;
+  .diachimail h2{
+    margin-left:11rem;
+
+  }
+  .sodienthoai h2{
+    margin-left:11rem;
   }
 
-  .scripts2 {
-    margin-left: 8rem;
-    font-size: 3rem;
+  .diachicontact img{
+    margin-left:5rem;
   }
-}
-@media (max-width: 1400px) {
-  .scripts1 {
-    font-size: 7rem;
-    margin-top: 12rem;
-    margin-left: 4rem;
-  }
+  .diachimail img {
+    margin-left:5rem;
 
-  .scripts2 {
-    margin-left: 4rem;
-    font-size: 3rem;
   }
-}
-@media (max-width: 1250px) {
-  .scripts1 {
-    font-size: 7rem;
-    margin-top: 12rem;
-    margin-left: 2rem;
-  }
-
-  .scripts2 {
-    margin-left: 2rem;
-    font-size: 3rem;
+  .sodienthoai img{
+    margin-left:5rem;
   }
 }
 @media (max-width: 1200px) {
@@ -159,17 +190,68 @@
     flex-direction: column;
   }
   .scripts1 {
-    font-size: 4rem;
-    margin-top: 8rem;
-    margin-left: 1rem;
-    text-align: center;
+    font-size:1.5vw;
+    margin-top: 1rem;
+    margin-left: 29vw;
+  }
+  
+  .scripts2 {
+    margin-left: 29vw;
+    font-size: 4vw;
+    font-weight:bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Địa chỉ */
+  .diachicontact{
+    margin-bottom:1rem;
+  }
+  
+  .diachicontact img{ 
+    margin-bottom:-7rem;
+    margin-left: 21vw;
+    width:6%;
+    height:auto;
+  }
+  
+  .diachicontact h2 {
+    font-size: 2vw;
+    margin-left: 29vw;
+  }
+  
+  /* Địa chỉ gmail*/
+  .diachimail h2 {
+    font-size: 2vw;
+    margin-left: 29vw;
+  }
+  
+  .diachimail {
+    margin-bottom: 1rem;
+  }
+  
+  .diachimail img{ 
+    margin-bottom:-7rem;
+    margin-left: 21vw;
+    width:6%;
+    height:auto;
+  }
+  
+  /* Số điện thoại*/
+  .sodienthoai h2 { 
+    font-size: 2vw;
+    margin-left: 29vw;
+  }
+  .sodienthoai img{ 
+    margin-bottom:-7rem;
+    margin-left: 21vw;
+    width:6%;
+    height:auto;
+  }
+  .sodienthoai{
+    margin-bottom:2rem;
   }
 
-  .scripts2 {
-    margin-left: 1rem;
-    font-size: 2rem;
-    text-align: center;
-  }
+
   .contact-box {
     width: 30rem;
     margin: 0 auto;
@@ -181,41 +263,73 @@
   }
 }
 
-@media (max-width: 650px) {
-  .contact-us-body {
-    flex-direction: column;
+@media (max-width: 750px) {
+  .scripts1 {
+    margin-left:25vw;
+    font-size:3vw;
+  }
+  
+  .scripts2 {
+    font-size: 5vw;
+    margin-left:25vw;
+  }
+  
+  /* Địa chỉ */
+  .diachicontact img{ 
+    width:6%;
+    height:auto;
+    margin-left:15vw;
+    margin-top:-1rem;
+  }
+  
+  .diachicontact h2 {
+    font-size: 3vw;
+    margin-left:23vw;
+  }
+  
+  /* Địa chỉ gmail*/
+  .diachimail h2 {
+    font-size: 3vw;
+    margin-left:23vw;
+  }
+  
+  .diachimail img{ 
+    width:6%;
+    height:auto;
+    margin-left:15vw;
+    margin-top:-1rem;
+  }
+  
+  /* Số điện thoại*/
+  .sodienthoai h2 { 
+    font-size: 3vw;
+    margin-left:23vw;
+  }
+  .sodienthoai img{ 
+    width:6%;
+    height:auto;
+    margin-left:15vw;
+    margin-top:-1rem;
   }
 
   .contact-box {
-    width: 24rem;
+    width: 30rem;
     margin: 0 auto;
   }
 
   .contact-item {
-    width: 21rem;
-    margin: 0.5rem 1.2rem;
+    width: 26rem;
+    margin: 0.5rem 2rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .contact-us-body {
     flex-direction: column;
     height: auto;
   }
   .content-right {
     padding-bottom: 1rem;
-  }
-  .scripts1 {
-    font-size: 3rem;
-    margin-top: 8rem;
-    margin-left: 1rem;
-    text-align: center;
-  }
-
-  .scripts2 {
-    margin-left: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
   }
   .contact-box {
     width: 80vw;
@@ -230,6 +344,54 @@
   #send-btn {
     width: 30%;
     margin-left: 35%;
+  }
+
+  .scripts1 {
+    margin-left:25vw;
+    font-size:4vw;
+  }
+  
+  .scripts2 {
+    font-size: 6vw;
+    margin-left:25vw;
+  }
+  
+  /* Địa chỉ */
+  .diachicontact img{ 
+    width:10%;
+    height:auto;
+    margin-left:11vw;
+    margin-top:-2rem;
+  }
+  
+  .diachicontact h2 {
+    font-size: 4vw;
+    margin-left:23vw;
+  }
+  
+  /* Địa chỉ gmail*/
+  .diachimail h2 {
+    font-size: 4vw;
+    margin-left:23vw;
+  }
+  
+  .diachimail img{ 
+    width:10%;
+    height:auto;
+    margin-left:11vw;
+    margin-top:-2rem;
+  }
+  
+  /* Số điện thoại*/
+  .sodienthoai h2 { 
+    font-size: 4vw;
+    margin-left:23vw;
+  }
+  .sodienthoai img{ 
+    width:10%;
+    height:auto;
+    margin-left:11vw;
+    margin-top:-2rem;
   }
 }
 

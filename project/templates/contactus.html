@@ -40,6 +40,8 @@
       src="{{ url_for('static', filename='js/contactus.js')}}"
       type="text/javascript"
     ></script>
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
   </head>
 
   <body style="font-family: 'Inter', sans-serif">
@@ -47,8 +49,23 @@
 
     <div class="contact-us-body">
       <div class="content-left flex-item">
-        <h1 class="scripts1">Hãy trò chuyện.</h1>
-        <h2 class="scripts2">Chúng tôi muốn lắng nghe bạn!</h2>
+        <h1 class="scripts1">// Thông tin liên lạc</h1>
+        <h2 class="scripts2">Liên lạc với chúng tôi</h2>
+        <div class = "diachicontact">
+          <img src="{{ url_for('static', filename='img/contactus/globe.png') }}" alt="activites1" class="anh anh1">
+           <h2> Địa chỉ của chúng tôi:</h2>
+           <h2> Nhà 28, ngách 1/6, ngõ 140 Nguyễn Xiển, Thanh Xuân</h2>
+        </div>
+        <div class = "diachimail">
+          <img src="{{ url_for('static', filename='img/contactus/envelope.png') }}" alt="activites1" class="anh anh1">
+           <h2> Địa chỉ gmail của chúng tôi:</h2>
+           <h2> ecosmartvietnam@gmail.com </h2>
+        </div>
+        <div class = "sodienthoai">
+          <img src="{{ url_for('static', filename='img/contactus/phone-call.png') }}" alt="activites1" class="anh anh1">
+          <h2> Số điện thoại của chúng tôi:</h2>
+          <h2> 09090909090 </h2>
+        </div>
       </div>
 
       <div class="content-right flex-item">
