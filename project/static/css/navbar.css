@@ -10,7 +10,7 @@
     padding-top: 0;
     padding-bottom: 0;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 600;
 }
 
@@ -37,7 +37,7 @@
 
 .title-logo {
     width: 30%;
-    margin-left: 35%;
+    margin-left: 33%;
 }
 
 .title-name {

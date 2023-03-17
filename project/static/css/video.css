@@ -1,7 +1,7 @@
 figure {
   display: block;
-  padding: 20px 15%;
   background-color: white;
+  align-items: center;
 }
 
 figcaption {
@@ -16,23 +16,17 @@ figcaption:hover {
   transform: scale(1.2);
   color: #283746;
 }
+x
+.youtube-vid-loading{
+  align-items: center;
+}
+
 
 #body-video {
   background-color: #285430;
-}
-
-/* Animation after scrolling */
-.youtube-vid-loading.show {
-  animation: scaleUp 2s forwards;
-}
-
-@keyframes scaleUp {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -41,14 +35,14 @@ figcaption:hover {
   }
 }
 
-@media(max-width:730px){
+@media (max-width: 730px) {
   figcaption {
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
   figcaption {
-    font-size:1.3rem;
+    font-size: 1.3rem;
   }
 }
