@@ -53,17 +53,23 @@ height: 500px;
     animation: slideInFromRight 3s forwards;
 }
 
-@media screen and (max-width:780px) {
+/* @media screen and (max-width:780px) {
     iframe{
         width: 100%;
         height: 300px;
         }
-}
+} */
 @media screen and (max-width:1200px) {
-    left{
-display: none;
+        .left{
+            width: 100%;
+            display: flex;
+            margin-left: 100px;
         }
-    right{
-        width:400px
-    }
+        .right{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+            height: 300px;
+            }
 }
