@@ -21,7 +21,7 @@
   grid-template-columns: auto;
   transition: 0.3s 0.3s;
   scale: 0;
-  visibility: hidden;
+    visibility: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   /* align-items: center; */
 }
