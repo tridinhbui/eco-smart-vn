@@ -151,16 +151,14 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
-
 }
 .product-items img {
   width: 100%;
   transition: transform .5s ease;
-  filter: blur(5);
 }
 .product-items img:hover{
   transform: scale(1.1);
-  filter: blur(5);
+  /* filter: blur(0.8px); */
 }
 .details {
   display: grid;

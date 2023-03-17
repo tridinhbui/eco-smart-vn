@@ -3,26 +3,73 @@
     padding: 0;
     box-sizing: border-box;
 }
-.map{
-    width:  100%;
-    height: 100%;
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 400px;
+    flex-direction: column;
+    height: auto;
+    margin-left: 10px;
+}
+.left .heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: grey;
+}
+.left .logo {
+    font-weight: bold;
+    color: green;
+    text-transform: uppercase;
+}
+.left .contact {
+    margin-top: 30px;
+    color: palevioletred;
+    text-transform: uppercase;
+}
+.left .info{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-weight: bold;
+    color: grey;
+}
+.right{
+    width: 700px;
      display: flex;
      align-items: center;
      justify-content: center;
-     flex-direction: column;
+     height: auto;
 }
 iframe{
-width: 100%;
-height: 400px;
+width: 600px;
+height: 500px;
 /* filter: invert(10%); */
 }
 .map_loading.show {
     animation: slideInFromRight 3s forwards;
 }
 
-@media screen and (max-width:780px) {
+/* @media screen and (max-width:780px) {
     iframe{
         width: 100%;
         height: 300px;
         }
+} */
+@media screen and (max-width:1200px) {
+        .left{
+            width: 100%;
+            display: flex;
+            margin-left: 100px;
+        }
+        .right{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+            height: 300px;
+            }
 }
