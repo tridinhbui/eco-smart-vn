@@ -64,10 +64,14 @@
   height:auto;
   display:flex;
   flex-direction: row;
+  overflow: hidden;
 }
 .img{
-  /* border-radius: 5%; */
   width: 100%;
+  transition: transform .5s ease;
+}
+img:hover{
+  transform: scale(1.1);
 }
 .content_block{
   /* border: solid rgb(233, 255, 204); */
