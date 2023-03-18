@@ -62,7 +62,7 @@
 }
 
 .diachimail img{ 
-  margin-bottom:-7rem;
+  margin-bottom:-5rem;
   margin-left: 18rem;
   width:10%;
   height:auto;
@@ -74,7 +74,7 @@
   margin-left: 25rem;
 }
 .sodienthoai img{ 
-  margin-bottom:-7rem;
+  margin-bottom:-5rem;
   margin-left: 18rem;
   width:10%;
   height:auto;
@@ -208,7 +208,7 @@
   }
   
   .diachicontact img{ 
-    margin-bottom:-7rem;
+    margin-bottom:-5rem;
     margin-left: 21vw;
     width:6%;
     height:auto;
@@ -230,7 +230,7 @@
   }
   
   .diachimail img{ 
-    margin-bottom:-7rem;
+    margin-bottom:-5rem;
     margin-left: 21vw;
     width:6%;
     height:auto;
@@ -242,7 +242,7 @@
     margin-left: 29vw;
   }
   .sodienthoai img{ 
-    margin-bottom:-7rem;
+    margin-bottom:-5rem;
     margin-left: 21vw;
     width:6%;
     height:auto;
@@ -279,7 +279,7 @@
     width:6%;
     height:auto;
     margin-left:15vw;
-    margin-top:-1rem;
+    margin-top:-0.5rem;
   }
   
   .diachicontact h2 {
@@ -297,7 +297,7 @@
     width:6%;
     height:auto;
     margin-left:15vw;
-    margin-top:-1rem;
+    margin-top:-0.5rem;
   }
   
   /* Số điện thoại*/
@@ -309,7 +309,7 @@
     width:6%;
     height:auto;
     margin-left:15vw;
-    margin-top:-1rem;
+    margin-top:-0.5rem;
   }
 
   .contact-box {
@@ -360,8 +360,8 @@
   .diachicontact img{ 
     width:10%;
     height:auto;
-    margin-left:11vw;
-    margin-top:-2rem;
+    margin-left:10vw;
+    margin-top:-1rem;
   }
   
   .diachicontact h2 {
@@ -378,8 +378,8 @@
   .diachimail img{ 
     width:10%;
     height:auto;
-    margin-left:11vw;
-    margin-top:-2rem;
+    margin-left:10vw;
+    margin-top:-1rem;
   }
   
   /* Số điện thoại*/
@@ -390,8 +390,8 @@
   .sodienthoai img{ 
     width:10%;
     height:auto;
-    margin-left:11vw;
-    margin-top:-2rem;
+    margin-left:10vw;
+    margin-top:-1rem;
   }
 }
 
