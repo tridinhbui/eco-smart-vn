@@ -1,0 +1,20 @@
+.btn_banner:hover span {
+    display: inline-block;
+    transform: translate(6px, 1px);
+}
+
+.btn_banner {
+    background-color: #365949;
+    padding: 12px 17px;
+    border-radius: px;
+}
+
+.btn_banner:hover {
+    background-color: #fff;
+    border: 2px solid #365949;
+    color: #365949
+}
+
+.btn_banner span {
+    color: white !important;
+} 
