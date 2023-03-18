@@ -50,6 +50,7 @@
     margin: 20px auto;
     border-radius: 2rem;
     width: 30%;
+    height: 554px;
     min-width: 300px;
     text-align: center;
     color: rgb(85, 85, 85);
@@ -88,6 +89,9 @@
 
 .card:hover {
     background: linear-gradient(rgb(65, 128, 49), rgb(117, 186, 99));
+    width: 35%;
+    height: 554px;
+    z-index: 1;
 }
 
 .card {
