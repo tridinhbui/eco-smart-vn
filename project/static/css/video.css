@@ -22,12 +22,16 @@ x
 }
 
 
-#body-video {
-  background-color: #285430;
+figure {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
+
+#body-video {
+  margin: 0 auto;
+}
+
 
 @media (max-width: 600px) {
   figure {

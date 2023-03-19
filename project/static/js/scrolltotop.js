@@ -36,17 +36,21 @@ function scrollFunction() {
   }
 
   // Get the height of the footer
+  const mapHeight = document.getElementById("map-loading").offsetHeight;
   const footerHeight = document.querySelector("footer").offsetHeight;
 
   // Check if the footer is visible in the viewport
-  if (scrollContainer().scrollTop + window.innerHeight > scrollContainer().scrollHeight - footerHeight) {
+  if (scrollContainer().scrollTop + window.innerHeight > scrollContainer().scrollHeight - mapHeight - footerHeight) {
     // If the footer is visible, position the button above it
     mybutton.style.position = "fixed";
-    mybutton.style.bottom = `${footerHeight +5}px`;
-  } else {
+    mybutton.style.bottom = `${mapHeight + footerHeight +5}px`;
+  } 
+  
+  
+  else {
     // If the footer is not visible, reset the button's position
     mybutton.style.position = "fixed";
-    mybutton.style.bottom = "5px"; // Change this value to adjust the distance from the bottom
+    mybutton.style.bottom = "20px"; // Change this value to adjust the distance from the bottom
   }
 }
 
