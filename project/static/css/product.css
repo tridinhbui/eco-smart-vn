@@ -52,23 +52,39 @@
 }
 .pop-up-contact-cart {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
 }
 .pop-up-contact {
   width: 100%;
-  color: black;
-  background-color: white;
   cursor: pointer;
+  color: green;
+  font-size: 2.5em;
+  text-align: center;
 }
-.pop-up-contact:hover {
+/* .pop-up-contact:hover {
   color: grey;
+} */
+.pop-up-contact i{
+  text-align: center;
+  /* background-color: green; */
+  color: green;
+  text-align: center;
+  padding: 8px;
+  border-radius: 1rem;
+  padding-left: 10px;
+  padding-right: 50px;
+  /* border: 1px solid green; */
 }
-.pop-up-cart {
+.pop-up-contact i:hover{
+  color: black;
+  /* border: 1px solid black; */
+}
+/* .pop-up-cart {
   width: 100%;
   color: black;
   background-color: white;
   cursor: pointer;
-}
+} */
 .pop-up-cart:hover {
   color: grey;
 }

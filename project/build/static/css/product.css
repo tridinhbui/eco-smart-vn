@@ -52,7 +52,7 @@
 }
 .pop-up-contact-cart {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
 }
 .pop-up-contact {
   width: 100%;
