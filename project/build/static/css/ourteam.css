@@ -68,7 +68,7 @@
     margin: 0 auto 2em auto;
 }
 
-.card img {
+.ourteam-img {
     width: 100%;
     border-radius: 50%;
 }
@@ -126,4 +126,24 @@ p.personal_achievement {
     text-align: center;
     margin: 0.5em 0 2em 0;
     letter-spacing: 1px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information .img-container {
+    width: 10em;
+    height: 10em;
+    background-color: #365949;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.information-description {
+    font-size: 16px;
+    font-weight: 100;
 }

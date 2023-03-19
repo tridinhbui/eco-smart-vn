@@ -309,77 +309,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/ourteam.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
     <title>Executive Board</title>
 </head>
 
 <body>
     <section id="ecoteam">
+        <!-- Modals -->
+        <div class="modal fade" id="thuyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/coo.jpg">
+                            </div>
+                            <h3 class="information-text">Ms. Mai Thu Thủy</h3>
+                            <p class="information-text">Trưởng phòng Hành chính - Nhân sự</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="triModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/president.png">
+                            </div>
+                            <h3 class="information-text">Mr. Bùi Đình Trí</h3>
+                            <p class="information-text">Giám đốc điều hành</p>
+                            <p class="personal_achievement information-text">Cử nhân song ngành Công nghệ Thông tin/Kinh tế Đầu tư Đại học Macalester, Minnesota, Hoa Kỳ</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="hoangModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/cco.png">
+                            </div>
+                            <h3 class="information-text">Mr. Phan Huy Hoàng</h3>
+                            <p class="information-text">Giám đốc công nghệ</p>
+                            <p class="personal_achievement information-text">Thạc sĩ Công nghệ Thông tin Đại học Depaul, Chicago, Hoa Kỳ</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="linhModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/headbus.jpg">
+                            </div>
+                            <h3 class="information-text">Lưu Phan Phương Linh</h3>
+                            <p class="information-text">Giám đốc kinh doanh</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="chau-anhModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/headrd.jpg">
+                            </div>
+                            <h3 class="information-text">Ngô Châu Anh</h3>
+                            <p class="information-text">Trưởng phòng nghiên cứu và phát triển</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="khueModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="information">
+                            <div class="img-container">
+                                <img class="ourteam-img" src="/static/img/aboutus/headmarcom.jpg">
+                            </div>
+                            <h3 class="information-text">Nguyễn Minh Khuê</h3>
+                            <p class="information-text">Trưởng phòng Marketing</p>
+                            <p class="information-text information-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Team -->
         <div class="department first-department">
             <!--Ban Chu Tich-->
-            <!--Viet Hoan-->
-            <div class="card" id="thuy">
+            <!--Thu Thuy-->
+            <div class="card" id="thuy" type="button" data-bs-toggle="modal" data-bs-target="#thuyModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/coo.jpg">
+                    <img class="ourteam-img" src="/static/img/aboutus/coo.jpg">
                 </div>
-                <h3>Ms. Mai Thu Thủy</h3>
-                <p>Trưởng phòng Hành chính - Nhân sự</p>
-
-                <div class="icons"></div>
+                <h3 class="information-text">Ms. Mai Thu Thủy</h3>
+                <p class="information-text">Trưởng phòng Hành chính - Nhân sự</p>
             </div>
 
-            <!--Anh Tri-->
-            <div class="card" id="tri">
+            <!--Dinh Tri-->
+            <div class="card" id="tri" type="button" data-bs-toggle="modal" data-bs-target="#triModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/president.png">
+                    <img class="ourteam-img" src="/static/img/aboutus/president.png">
                 </div>
                 <h3>Mr. Bùi Đình Trí</h3>
                 <p>Giám đốc điều hành</p>
-                <p class="personal_achievement">Cử nhân song ngành Công nghệ Thông tin/Kinh tế Đầu tư Đại học Macalester, Minnesota, Hoa Kỳ
-                </p>
+                <p class="personal_achievement">Cử nhân song ngành Công nghệ Thông tin/Kinh tế Đầu tư Đại học Macalester, Minnesota, Hoa Kỳ</p>
             </div>
-            <!--Kim Ngan-->
-            <div class="card" id="hoang">
+            <!--Huy Hoang-->
+            <div class="card" id="hoang" type="button" data-bs-toggle="modal" data-bs-target="#hoangModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/cco.png">
+                    <img class="ourteam-img" src="/static/img/aboutus/cco.png">
                 </div>
                 <h3>Mr. Phan Huy Hoàng</h3>
                 <p>Giám đốc công nghệ</p>
-                <p class="personal_achievement">Thạc sĩ Công nghệ Thông tin Đại học Depaul, Chicago, Hoa Kỳ
-                </p>
-                <div class="icons"></div>
+                <p class="personal_achievement">Thạc sĩ Công nghệ Thông tin Đại học Depaul, Chicago, Hoa Kỳ</p>
             </div>
         </div>
         <div class="department last-department">
             <!--RD and HR Department-->
-            <!--Anh Trung-->
-            <div class="card" id="linh">
+            <!--Phuong Linh-->
+            <div class="card" id="linh" type="button" data-bs-toggle="modal" data-bs-target="#linhModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/headbus.jpg">
+                    <img class="ourteam-img" src="/static/img/aboutus/headbus.jpg">
                 </div>
                 <h3>Lưu Phan Phương Linh</h3>
                 <p>Giám đốc kinh doanh</p>
-                <div class="icons"></div>
             </div>
             <!--Chau Anh-->
-            <div class="card" id="chau-anh">
+            <div class="card" id="chau-anh" type="button" data-bs-toggle="modal" data-bs-target="#chau-anhModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/headrd.jpg">
+                    <img class="ourteam-img" src="/static/img/aboutus/headrd.jpg">
                 </div>
                 <h3>Ngô Châu Anh</h3>
                 <p>Trưởng phòng nghiên cứu và phát triển</p>
-                <div class="icons"></div>
             </div>
-            <!--Chi Giang-->
-            <div class="card" id="khue">
+            <!--Minh Khue-->
+            <div class="card" id="khue" type="button" data-bs-toggle="modal" data-bs-target="#khueModal">
                 <div class="img-container">
-                    <img src="/static/img/aboutus/headmarcom.jpg">
+                    <img class="ourteam-img" src="/static/img/aboutus/headmarcom.jpg">
                 </div>
                 <h3>Nguyễn Minh Khuê</h3>
                 <p>Trưởng phòng Marketing</p>
-                <div class="icons"></div>
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
