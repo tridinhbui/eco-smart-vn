@@ -66,7 +66,7 @@
 } */
 .pop-up-contact i{
   text-align: center;
-  /* background-color: green; */
+  background-color: green;
   color: green;
   text-align: center;
   padding: 8px;
@@ -206,7 +206,6 @@
   text-align: center;
   font-family: 'Inter', sans-serif;
   text-decoration-line: none;
-  /* border:1px black solid; */
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -222,6 +221,12 @@
   background-color: rgb(64, 109, 70);
   color: white;
   transition: 0.2s;
+}
+.goshop i{
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-align: center;
 }
 @keyframes pageLoading {
   from {
