@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 50vh;
-    margin-top: 20px;
+    height: 55vh;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -29,19 +29,24 @@
 }
 
 .banner_item {
-    width: calc(33% - 10vw);
-    margin: 5vw;
-    align-items: center;
-    text-align: center;
+    width: calc(33.3% - 8vw);
+    margin: 4vw;
+    align-items: center;  
 }
 
 .banner_item_heading {
     font-size: 1.5vw;
     font-weight: 600;
+    text-align: center;
+}
+
+.banner_item_content {
+    text-align: justify;
 }
 
 .banner_item i {
-    font-size: 5vw;
+    font-size: 10vh;
     margin: 1vw;
     color: white;
+    margin-left: 40%;
 }
