@@ -43,7 +43,7 @@ function scrollFunction() {
   if (scrollContainer().scrollTop + window.innerHeight > scrollContainer().scrollHeight - mapHeight - footerHeight) {
     // If the footer is visible, position the button above it
     mybutton.style.position = "fixed";
-    mybutton.style.bottom = `${mapHeight + footerHeight +5}px`;
+    mybutton.style.bottom = `${mapHeight + footerHeight +17}px`;
   } 
   
   
