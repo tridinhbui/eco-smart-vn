@@ -28,6 +28,7 @@
 }
 
 .scripts2 {
+  margin-top: 9rem;
   margin-left: 20rem;
   font-size: 5vh;
   font-weight:bold;
@@ -88,7 +89,7 @@
   box-shadow: 0 25px 45px rgba(0,0,0,0.);
   border:1px solid white;
   border-radius: 1.6%;
-  margin-top: 13.5rem;
+  margin-top: 15rem;
   margin-left: 8rem;
 }
 
