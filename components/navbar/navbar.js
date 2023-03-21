@@ -4,6 +4,12 @@ import Image from 'next/image';
 import logo from '../../public/images/logo.png';
 import Link from 'next/link';
 
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
+
 const navItems = [NAVBAR_TEXT.home, NAVBAR_TEXT.product, NAVBAR_TEXT.activity, NAVBAR_TEXT.aboutus, NAVBAR_TEXT.contact];
 const navLinks = ["/", "/product", "/activities", "/about-us", "/contact"];
 
@@ -60,14 +66,20 @@ const Navbar = () => {
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'}`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="h-10 items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {navItems.map((item, index) => (
-                <li className="text-black " key={index}>
+                <li className="text-black duration-75" key={index}>
                   <Link href={navLinks[index]}>
                     {item}
                   </Link>
                 </li>
               ))}
+              <div className="search_navbar">
+                <input type="text" className="input_navbar" />
+                <button className="btn_navbar">
+                  <FontAwesomeIcon icon={faSearch} style={{ fontSize: 17}} />
+                </button>
+              </div>
             </ul>
           </div>
         </div>
