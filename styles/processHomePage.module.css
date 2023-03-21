@@ -55,14 +55,14 @@
 
 .banner {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
 }
 
 .section {
     background-image: linear-gradient(to right, #6bb77b 10%, #116740 100%);
     text-align: center;
     margin: 0 80px;
-    padding: 25px;
+    padding: 50px;
     color: white;
     border-radius: 10px;
     height:100%;

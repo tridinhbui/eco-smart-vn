@@ -10,6 +10,7 @@ export const SLOGAN_TEXT = {
     name: 'Eco Smart Solutions',
     slogan1: 'Tôn trọng - Hiệu quả - Chuyên nghiệp',
     slogan2: 'Tiên phong thực hiện sứ mệnh nâng tầm thương hiệu - thúc đẩy kinh doanh trong hệ sinh thái các doanh nghiệp phát triển vì sự bền vững của xã hội.',
+    read_more: 'Đọc thêm'
 };
   
 export const MAIL_TEXT = {
