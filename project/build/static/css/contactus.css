@@ -4,7 +4,7 @@
   font-weight: 500;
   background-color: #e5d9b6;
   display: flex;
-  height: 100vh;
+  height: 120vh;
   background-image: url("../img/contactus/background-forest.jpg");
 }
 
@@ -28,6 +28,7 @@
 }
 
 .scripts2 {
+  margin-top: 7.5rem;
   margin-left: 20rem;
   font-size: 5vh;
   font-weight:bold;
@@ -88,7 +89,7 @@
   box-shadow: 0 25px 45px rgba(0,0,0,0.);
   border:1px solid white;
   border-radius: 1.6%;
-  margin-top: 13.5rem;
+  margin-top: 12rem;
   margin-left: 8rem;
 }
 
