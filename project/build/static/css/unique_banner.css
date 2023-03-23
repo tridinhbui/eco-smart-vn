@@ -29,19 +29,20 @@
 }
 
 .banner_item {
-    width: calc(33.3% - 8vw);
-    margin: 4vw;
+    width: calc(33.3% - 5vw);
+        margin: 2.5vw;
     align-items: center;  
 }
 
 .banner_item_heading {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
 }
 
 .banner_item_content {
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .banner_item i {
