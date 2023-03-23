@@ -74,3 +74,59 @@ export const ADDRESS = {
   address: 'Địa chỉ: Nhà 28, ngách 1/6, ngõ 140 Nguyễn Xiển, quận Thanh Xuân, thành phố Hà Nội',
   email: 'Email: ecosmart.vietnam@gmail.com'
 }
+
+export const ABOUTUS_PAGE = {
+  awareness_aboutus: {
+      title: 'Nhận thức, sứ mệnh và tầm nhìn',
+      list_awareness: [
+          {
+              img: 'https://ecosmart.netlify.app/static/img/aboutus/aware1.jpg',
+              list_content: ['In 10 centuries, a new plastic bottle will decompose.', '100 years from now, 1 plastic bag will leave this earth.', 'But...', 'Humanity discharges 3.5 million tons of garbage every day.', ' "Each year, Vietnamese people emit about 1.8 million tons of plastic waste."']
+          },
+          {
+              img: 'https://ecosmart.netlify.app/static/img/aboutus/aware2.jpg',
+              list_content: ['If now, inaction, then when?', '"A few years later, when that pile of garbage has not yet decomposed, will humanity eat on the garbage heap, sleep on the garbage pile, and drown in the ocean of garbage?"']
+          },
+          {
+              img: 'https://ecosmart.netlify.app/static/img/aboutus/mission.jpg',
+              list_content: [' Eco Smart Solutions is committed to 2 main MISSIONS and VISIONS:',
+              '- Raising Vietnamese awareness of environmental protectionx activities',
+              '- Promote the development of sustainable products.',
+              'With CORE VALUES:',
+              '- Effectiveness: Actionable results.',
+              '- Respect: Listening, sincerity and humility',
+              '- Professionalism: Discipline, professionalism and quality'
+          ]
+          },
+          {
+              img: 'https://ecosmart.netlify.app/static/img/aboutus/history.jpg',
+              list_content: ['With those things, ECO SMART SOLUTIONS was born.', '"In 2022-2024, Eco Smart Solutions operates with the vision of becoming one of the leading active student organizations in the North acting for the environment. In particular, ESS is apioneer in promoting the development of environmentally friendlyproducts."']
+          }
+      ],
+  },
+  executive_aboutus: {
+      title: 'Ban Điều Hành',
+      list_excutive: [{name: 'Ms. Mai Thu Thủy', img: 'https://ecosmart.netlify.app/static/img/aboutus/coo.jpg', position: 'Trưởng phòng Hành chính - Nhân sự'},
+      {name: 'Mr. Bùi Đình Trí', img: '	https://ecosmart.netlify.app/static/img/aboutus/president.png', position: 'Giám đốc điều hành', info: 'Cử nhân song ngành Công nghệ Thông tin/Kinh tế Đầu tư Đại học Macalester, Minnesota, Hoa Kỳ'},
+      {name: 'Mr. Phan Huy Hoàng', img: 'https://ecosmart.netlify.app/static/img/aboutus/headbus.jpg', position: 'Giám đốc công nghệ', info: 'Thạc sĩ Công nghệ Thông tin Đại học Depaul, Chicago, Hoa Kỳ'},
+      {name: 'Lưu Phan Phương Linh', img: 'https://ecosmart.netlify.app/static/img/aboutus/coo.jpg', position: 'Giám đốc kinh doanh'},
+      {name: 'Ngô Châu Anh', img: 'https://ecosmart.netlify.app/static/img/aboutus/headrd.jpg', position: 'Trưởng phòng nghiên cứu và phát triển'},
+      {name: 'Nguyễn Minh Khuê', img: 'https://ecosmart.netlify.app/static/img/aboutus/headmarcom.jpg', position: 'Trưởng phòng Marketing'}
+      ]
+  },
+  ourteam_aboutus: {
+      title: 'Câu chuyện của Eco Smart Solutions',
+      img: 'https://ecosmart.netlify.app/static/img/aboutus/founder.jpg',
+      fouder: 'Người sáng lập Eco Smart Solutions - Mr. Bùi Đình Trí',
+      
+      list_content: {
+          title_question: 'Để hình thành và phát triển một dự án, sự đóng góp của tổng giám đốc là vô cùng quan trọng. Hôm nay hãy cùng chúng tôi tìm hiểu về người sáng lập ra Eco Smart Solutions - anh Bùi Đình Trí qua những thông tin phỏng vấn dưới đây để hiểu thêm nhiều thông tin thú vị về Eco Smart. Hãy bắt đầu nào!',
+          list_questions: [
+              {question: 'Câu 1: Giới thiệu và kể 3 điều thú vị về bản thân anh.', answer: 'Anh Trí: Hiện tại tôi đang là du học sinh học 2 chuyên ngành Khoa học Máy tính và Kinh tế ở Mỹ. Ba điều thú vị về tôi có lẽ là tôi thuận tay trái, liều lĩnh (nhưng trong tầm kiểm soát) và lười học (nhưng vẫn học tốt).'},
+              {question: 'Câu 2: Anh Trí, cơ duyên nào đã đưa anh đến với việc thành lập Eco Smart Solutions?', answer: 'Anh Trí: Cái duyên có lẽ bắt nguồn từ việc tôi tham gia một trong những hoạt động thường niên của Trung tâm hỗ trợ khởi nghiệp dành cho doanh nhân và doanh nghiệp trẻ của trường tôi. Ban Khởi nghiệp và Đổi mới Sáng tạo của Macalester trao thưởng cho các bạn trẻ có ý tưởng, sáng kiến đặc biệt giúp cải thiện cuộc sống của cộng đồng xung quanh họ. Tôi đã may mắn giành được giải thưởng và Eco Smart Solutions là ý tưởng đã giúp tôi giành được giải thưởng đó (giải thưởng có tên ban đầu là Eco Heroes Campaign).'},
+              {question: 'Câu hỏi 3: Anh Trí: Như tôi chia sẻ, tôi là người có máu liều lĩnh nhưng trong tầm kiểm soát, vì vậy mục tiêu và kỳ vọng của tôi thường cân bằng giữa những điều xa vời và thực tế. Tôi thực sự kỳ vọng Eco Smart Solutions sẽ trở thành một trong những công ty tiền phong trong lĩnh vực phát triển sản phảm bền vững lớn nhất và chuyên nghiệp nhất ở khu vực miền Bắc. Tuy nhiên, trước mắt, Eco Smart chỉ cần lớn nhất ở trong Hà Nội thôi đã (chắc là lớn nhất trong Hà Nội là đứng thứ 2 hoặc thứ 3 toàn miền Bắc nhỉ?)'},
+              {question: 'Câu hỏi 4: Anh có điều gì muốn nói với độc giả và những người theo dõi của dự án không?', answer: 'Anh Trí: Tôi chỉ muốn nói rằng Eco Smart Solutions là một dự án sẽ không mọi người phải thất vọng bởi vì với đội ngũ của Eco Smart chúng tôi - những người mà tôi tin là đầy tài năng và trách nhiệm - sẽ có thể giúp dự án phát triển và lan tỏa rộng rãi. Ngoài ra, chúng tôi cũng xin được cam kết luôn đặt tôn chỉ Hiệu quả - Tôn trọng - Chuyên nghiệp, luôn cố gắng hoạt động vì mục tiêu kiến tạo một thế giới bền vững!'},
+          ]
+      }
+  }
+}
