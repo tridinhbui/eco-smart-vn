@@ -4,26 +4,20 @@ import logo from '../../public/images/ess_logo.jpg';
 import { ADMIN_LOGIN_TEXT } from "@/config/text";
 import { ADMIN_LOGIN_API } from "@/config/api";
 import { useRouter } from 'next/navigation';
-import useSWR from 'swr';
+import { login } from "@/lib/action";
 
 export default function Login() {
   const router = useRouter();
   const [error, setError] = useState(false);
 
-  const login = async (e) => {
+  const loginSubmit = async (e) => {
     setError(false);
     e.preventDefault();
     const username = e.target.elements.username?.value;
     const password = e.target.elements.password?.value;
-    const response = await fetch(ADMIN_LOGIN_API, {
-      method: 'POST',
-      headers: { accept: 'application.json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password }),
-    });
-    const data = await response.json();
-    data.statusCode = response.status;
-    if (data.statusCode===200)
-      router.push('/dashboard');
+    const response  = await login(username, password);
+    if (response.statusCode===200)
+      router.push('/admin');
     else {
       setError(true);
     }
@@ -41,7 +35,7 @@ export default function Login() {
             alt="Sample image" />
         </div>
         <div className="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12">
-          <form onSubmit={login}>
+          <form onSubmit={loginSubmit}>
             <div className="relative mb-6" data-te-input-wrapper-init>
               <label className="block mb-6">
                 <span className="text-black-700">{ADMIN_LOGIN_TEXT.username}</span>
