@@ -1,0 +1,137 @@
+#elementor_tab {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.elementor_tab_title {
+  padding-top: 3rem;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: #365949;
+}
+
+#elementor_container {
+  /* max-width: 1200px; */
+  display: flex;
+  width: 90vw;
+  border-radius: 12px;
+  padding: 3vw;
+  margin: 5vw;
+  border: solid green 1px;
+}
+
+.elementor_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elementor_content .elementor_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.elementor_content .elementor_list label {
+  height: 5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgb(216, 237, 216);
+  z-index: 12;
+}
+
+/*Hieu ung khi hover button*/
+.elementor_list label:hover {
+  background: #365949;
+}
+
+.elementor_list label:hover div {
+  color: white;
+}
+
+.menu_click_topic {
+  display: inline-block;
+  margin: 1.3rem;
+  font-size: 22px;
+  color: #365949;
+}
+
+#elementor_container input[type="radio"] {
+  display: none;
+}
+
+/* Hieu ung nhan dien noi dung dang doc */
+.tab1:checked~.elementor_list label.cost_button {
+  background-color: #365949;
+}
+
+.tab2:checked~.elementor_list label.team_button {
+  background-color: #365949;
+}
+
+.tab3:checked~.elementor_list label.mission_button {
+  background-color: #365949;
+}
+
+#elementor_container .text-content {
+  width: calc(78vw - 338px);
+  min-width: 200px;
+  background: rgb(216, 237, 216);
+  z-index: 15;
+  margin-left: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 2vw;
+  display: flex;
+}
+
+.text-content .text-title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.text-content p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.text-content .text {
+  display: none;
+  height: fit-content;
+}
+
+.text-content .cost {
+  display: block;
+}
+
+/* Click doi tab */
+.tab1:checked~.elementor_list .cost_button,
+.tab2:checked~.elementor_list .team_button,
+.tab3:checked~.elementor_list .mission_button {
+  display: block;
+}
+
+.tab1:checked~.elementor_list .cost_button,
+.tab2:checked~.elementor_list .team_button,
+.tab3:checked~.elementor_list .mission_button {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  #elementor_container .text-content {
+    width: 84vw;
+    margin-left: 0;
+  }
+
+  .elementor_content .elementor_list label {
+    width: 84vw;
+  }
+}
