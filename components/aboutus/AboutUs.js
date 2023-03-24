@@ -1,6 +1,8 @@
 import React from 'react'
 import Awareness from './Awareness'
 import Executive from './Executive'
+import FooterAbout from './FooterAbout'
+import Ourteam from './Ourteam'
 
 export default function AboutUs() {
   return (
@@ -10,6 +12,8 @@ export default function AboutUs() {
         </div>
         <Awareness />
         <Executive />
+        <Ourteam />
+        <FooterAbout />
    </>
   )
 }

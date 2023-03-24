@@ -4,7 +4,6 @@ import Image from 'next/image';
 import logo from '../../public/images/logo.png';
 import Link from 'next/link';
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -19,14 +18,14 @@ const Navbar = () => {
     <nav className="w-full white shadow">
       <div className="justify-between container px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{paddingTop:'3px', paddingBottom:'3px'}}>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{ paddingTop: '3px', paddingBottom: '3px' }}>
             <Link href="/">
               <Image src={logo} alt="logo" style={{ width: '80px', height: '80px' }} />
             </Link>
             <div className="md:hidden">
               <button
                 className="p-2 rounded-md outline-none focus:border-gray-400 focus:border"
-                style={{color:'gray'}}
+                style={{ color: 'gray' }}
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -66,7 +65,7 @@ const Navbar = () => {
           <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 h-full ${navbar ? 'block' : 'hidden'}`} >
             <ul className="h-full items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {navItems.map((item, index) => (
-                <li className="text-black duration-75" key={index}>
+                <li onClick={() => setNavbar(!navbar)} className="text-black duration-75" key={index}>
                   <Link href={navLinks[index]}>
                     {item}
                   </Link>
@@ -75,7 +74,7 @@ const Navbar = () => {
               <div className="search_navbar hidden md:block">
                 <input type="text" className="input_navbar" />
                 <button className="btn_navbar">
-                  <FontAwesomeIcon icon={faSearch} style={{ fontSize: 17}} />
+                  <FontAwesomeIcon icon={faSearch} style={{ fontSize: 17 }} />
                 </button>
               </div>
             </ul>

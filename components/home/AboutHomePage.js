@@ -1,12 +1,13 @@
 import React from 'react'
 import { ABOUT_HOMEPAGE, TITLE_ABOUTHOME } from '../../config/api'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonChalkboard,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutHomePage() {
-
+  
   const renderListAbout = () => {
     return ABOUT_HOMEPAGE.map((item, index) => {
       return (
@@ -19,6 +20,7 @@ export default function AboutHomePage() {
     })
   }
 
+  //----------------------------------------------------------------
   return (
     <div className='hidden md:visible text-white text-center mb-10' style={{ backgroundColor: '#365949' }}>
       <h1 className="text-center font-bold text-4xl pt-16">{TITLE_ABOUTHOME}</h1>

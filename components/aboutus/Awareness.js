@@ -23,11 +23,11 @@ export default function Awareness() {
     };
 
     const {title, list_awareness} = ABOUTUS_PAGE.awareness_aboutus
-
     const renderItemAwareness = () => (
         list_awareness.map((item, index) => <ItemAwareness item={item} key={index} />)
     )
 
+    // ----------------------------------------------------------------
     return (
 
         <div className='my-12'>
