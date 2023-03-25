@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.h1ofproduct{
+.h1ofproduct {
   margin-top: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -20,7 +20,6 @@
   position: relative; /* position the image relative to its parent element */
 }
 
-
 .cardofproduct {
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -38,20 +37,20 @@
   transform-origin: center center; /* center the rotation on the element */
 }
 
-.card__face--back{
-  background-color:white;
-  color:#365949;
-  border-radius: 6%;  
-  text-align:center;
+.card__face--back {
+  background-color: white;
+  color: #365949;
+  border-radius: 6%;
+  text-align: center;
   font-weight: 600;
 }
 
-.nameofproductfeature{
+.nameofproductfeature {
   margin-top: 5rem;
 }
 
 .logoforproduct {
-  margin-top:-1rem;
+  margin-top: -1rem;
   position: absolute;
   right: 10%;
   max-width: 11rem;
@@ -61,12 +60,11 @@
 
 .logoforproduct2 {
   position: absolute;
-  left:10%;
+  left: 10%;
   max-width: 10rem;
   height: auto;
   opacity: 0.5;
 }
-
 
 .card__face--front {
   transform: rotateY(0);
@@ -87,49 +85,61 @@
 .seemoreofproduct {
   text-decoration-line: none;
   font-size: 18px;
-  font-weight:bold;
+  font-weight: bold;
   display: flex;
   justify-content: center; /* Horizontally center the element */
   align-items: center;
   color: white;
-  border-radius:1rem;
+  border-radius: 1rem;
   border: 2px white solid;
   margin: 0 auto; /* Center the element horizontally */
   width: 9rem; /* Set the width of the element */
-  margin-bottom:1rem;
-  height:3rem;
-  margin-top:0;
+  margin-bottom: 1rem;
+  height: 3rem;
+  margin-top: 0;
   background-color: white;
-  border-color:white;
-  color:#283746;
+  border-color: white;
+  color: #283746;
 }
-
 
 .seemoreofproduct:hover {
   color: #365949;
   font-weight: bolder;
   background-color: white;
-  border-color:black;
+  border-color: black;
 }
 
-#container-product{
-  background-color:#365949;
-  padding-top:0.009rem;
-  border-radius:1rem;
-  width:80vw;
-  padding-bottom:1px;
-  padding-left:2rem;
-  padding-right:2rem;
+#container-product {
+  background-color: #365949;
+  padding-top: 0.009rem;
+  border-radius: 1rem;
+  width: 80vw;
+  padding-bottom: 1px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-@media(max-width:730px){
-  .h1ofproduct{
-    font-size:1.5rem;
+.productfeature_loading.show {
+  animation: slideLtoR 3s forwards;
+}
+
+@keyframes slideLtoR {
+  from {
+    transform: translateX(-60%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
 
-@media(max-width:600px){
-  .h1ofproduct{
-    font-size:1.3rem;
+@media (max-width: 730px) {
+  .h1ofproduct {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1ofproduct {
+    font-size: 1.3rem;
   }
 }
