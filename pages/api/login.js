@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         maxAge: parseInt(cookieParse['Max-Age']),
         path: cookieParse.Path,
       }));
-      redis.set('accessToken',data.accessToken);
+      redis.set('accessToken',data.accessToken,'EX',1800);
     }
     res.json(data);
   } catch (e) {

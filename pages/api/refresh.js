@@ -9,8 +9,7 @@ export default async function handler(req, res) {
     if (!accessToken) {
       const { data, headers: returnedHeaders } = await axios.post(REFRESH_TOKEN_API, body, { headers });
       if (data.statusCode ==200){
-        //redis.set('accessToken',data.accessToken,'EX',300);
-        redis.set('accessToken',data.accessToken);
+        redis.set('accessToken',data.accessToken,'EX',1800);
       }
       res.json(data);
     } else {
