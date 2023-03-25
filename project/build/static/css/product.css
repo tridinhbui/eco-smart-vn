@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-@media(max-width: 990px) and (max-height: 990px) {
-  .popup-top {
-    flex-direction: row;
-    grid-template-columns: none;
+@media screen and (max-width: 990px) {
+ .popup .popup-top {
+    grid-template-columns: auto;
   }
 }
 

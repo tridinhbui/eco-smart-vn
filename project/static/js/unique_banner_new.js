@@ -1,25 +1,24 @@
-$(".tab1").prop("checked", true);
+var teamTitle = document.getElementById("team-text-title");
+var teamContent = document.getElementById("team-text-content");
+var team = document.getElementById("teamText");
+var costTitle = document.getElementById("cost-text-title");
+var costContent = document.getElementById("cost-text-content");
+var missionTitle = document.getElementById("mission-text-title");
+var missionContent = document.getElementById("mission-text-content");
+var defaultTitle = document.getElementById("default-text-title");
+var defaultContent = document.getElementById("default-text-content");
 
-for (let i = 2; i < 4; i++) {
-    var tab = ".tab" + i;
-    $(tab).prop("checked", false);
-}
+function showCost () {
+    defaultTitle.innerHTML = costTitle.innerHTML;
+    defaultContent.innerHTML = costContent.innerHTML;
+};
 
-function setfalse(count) {
-    for (let j = count + 1; j < 4; j++) {
-        let tab = ".tab" + j;
-        $(tab).prop("checked", false);
-    }
-}
+function showTeam () {
+    defaultTitle.innerHTML = teamTitle.innerHTML;
+    defaultContent.innerHTML = teamContent.innerHTML;
+};
 
-for (let i = 1; i < 7; i++) {
-    var step = ".st" + i;
-    $(step).click(function () {
-        $(".step" + i).prop("checked", true);
-        for (let j = i + 1; j < 7; j++) {
-            let nextstep = step.slice(0, -1) + j;
-            $(nextstep).prop("checked", false);
-        }
-        setfalse(i);
-    })
-}
+function showMission () {
+    defaultTitle.innerHTML = missionTitle.innerHTML;
+    defaultContent.innerHTML = missionContent.innerHTML;
+};
