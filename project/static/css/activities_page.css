@@ -1,100 +1,101 @@
 .head1 {
-  display:flex;
-  background-image: url('../img/activities_page/titlebackground.jpg');
+  display: flex;
+  background-image: url("../img/activities_page/titlebackground.jpg");
   background-size: cover;
   padding-top: 20px;
   height: 15vh;
   width: 100%;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
 .head1 h1 {
   font-size: 6vh;
   font-weight: bolder;
-  color: #FCF5E5;
-  animation: title-pageLoading 2s;
+  color: #fcf5e5;
+  /* animation: title-pageLoading 2s; */
 }
 .head1 h1:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
-#activities_news{
+#activities_news {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color:  white;
+  background-color: white;
   width: 300vw;
   padding: 0;
   border-right: 1px solid #365949;
-}  
+}
 @media screen and (max-width: 1000px) {
-  #activities_news .content_block{
+  #activities_news .content_block {
     width: 90%;
-  }z
-  .content_block .text1{
+  }
+  z .content_block .text1 {
     font-size: 2.4vw;
   }
   .content_block .text2 {
     font-size: 1.9vw;
   }
-  .content_block .text3{
+  .content_block .text3 {
     font-size: 1.7vw;
   }
 }
-.block_header{
+.block_header {
   margin: 5%;
 }
-.text1{
+.text1 {
   font-size: 1vw;
-  color:black;
+  color: black;
   font-weight: 600;
   margin: 0%;
 }
 
-.content2{
+.content2 {
   width: 60%;
   height: auto;
-  background-color:white;
+  background-color: white;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.image2{
-  width:50%;
-  height:auto;
-  display:flex;
+.image2 {
+  width: 50%;
+  height: auto;
+  display: flex;
   flex-direction: row;
   overflow: hidden;
 }
-.img{
+.img {
   width: 100%;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
-img:hover{
+img:hover {
   transform: scale(1.1);
 }
-.content_block{
+.content_block {
   /* border: solid rgb(233, 255, 204); */
   border-radius: 5%;
-  width:60%;
+  width: 60%;
   height: auto;
-  background-color: #E5D9B6;
-  display:flex;
+  background-color: #e5d9b6;
+  display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  margin-top:15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   font-size: 50%;
-  animation: pageLoading 2s;
+  /* animation: pageLoading 2s; */
   /* position: relative; */
 }
-.text2{
+.text2 {
   margin-top: 0%;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 0.9vw;
 }
-.text3{
+.text3 {
   position: absolute;
   bottom: 5%;
   text-decoration-line: none;
@@ -102,20 +103,21 @@ img:hover{
   border: 2px #285430 solid;
   border-radius: 20px;
   font-size: 1vw;
-  color:#285430;
+  color: #285430;
   padding: 2% 5% 2% 5%;
   transition: 0.3s;
   background-color: white;
 }
-.text3:hover{
+.text3:hover {
   border-color: white;
   background-color: #365949;
-  color:white;
-  transition: 0.3s ;
+  color: white;
+  transition: 0.3s;
 }
 .pagination {
   display: flex;
   justify-content: center;
+  margin-bottom: 0.8rem;
 }
 
 .pagination ul {
@@ -153,25 +155,24 @@ img:hover{
   color: #999;
 }
 
-
 @keyframes pageLoading {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes title-pageLoading {
   from {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -179,8 +180,6 @@ img:hover{
   display: flex;
   flex-direction: row;
 }
-
-
 
 /* .loader-wrapper {
   width: 100%;
@@ -239,10 +238,9 @@ img:hover{
   margin-right: 20px;
 }
 
-
 .most-watched {
   background-color: white;
-  animation: pageLoading 2s;
+  /* animation: pageLoading 2s; */
   padding-left: 2vw;
   padding-top: 10px;
 }
