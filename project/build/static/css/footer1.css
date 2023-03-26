@@ -30,9 +30,22 @@
   color: white;
 }
 
+@media only screen and (max-width: 590px) {
+  .footer-content p {
+    width: 27rem;
+  }
+}
+
 @media only screen and (max-width: 485px) {
   .footer-content p {
     width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .footer-content p {
+    width: 15rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -85,8 +98,6 @@
   color: white;
   width: 2rem;
 }
-
-
 
 @media only screen and (max-width: 595px) {
   .footer-bottom {
