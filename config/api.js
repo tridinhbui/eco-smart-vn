@@ -1,9 +1,9 @@
-export const ADMIN_LOGIN_API = "http://localhost:8080/user/login";
-export const REFRESH_TOKEN_API = "http://localhost:8080/user/refresh";
-export const ADD_POST_API = "http://localhost:8080/post/add-post"
-export const GET_POST_API = "http://localhost:8080/post/get-post"
-export const UPDATE_POST_API = "http://localhost:8080/post/update-post"
-export const DELETE_POST_API = "http://localhost:8080/post/delete-post"
+export const ADMIN_LOGIN_API = "https://lazy-hare-bracelet.cyclic.app/user/login";
+export const REFRESH_TOKEN_API = "https://lazy-hare-bracelet.cyclic.app/user/refresh";
+export const ADD_POST_API = "https://lazy-hare-bracelet.cyclic.app/post/add-post"
+export const GET_POST_API = "https://lazy-hare-bracelet.cyclic.app/post/get-post"
+export const UPDATE_POST_API = "https://lazy-hare-bracelet.cyclic.app/post/update-post"
+export const DELETE_POST_API = "https://lazy-hare-bracelet.cyclic.app/post/delete-post"
 
 export const ABOUT_HOMEPAGE = [
   { icon: 'fa-solid fa-person-chalkboard', title: 'Chi phí tối ưu', content: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
