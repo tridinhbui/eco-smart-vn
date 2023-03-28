@@ -10,6 +10,7 @@ const ListPost = ({ posts, getPosts, type }) => {
   const [selectedTitle, setSelectTitle] = useState("");
   const [selectedContent, setSelectContent] = useState("");
   const [selectStatus, setSelectStatus] = useState("");
+  const [selectLink, setSelectLink] = useState("");
 
   const handleDelete = async()=>{
     await refresh();
@@ -45,6 +46,7 @@ const ListPost = ({ posts, getPosts, type }) => {
                       setSelectId(post._id);
                       setSelectTitle(post.title);
                       setSelectStatus(post.privacy);
+                      setSelectLink(post.link);
                     }}
                     className=" text-white font-bold py-2 px-4 border rounded"
                     style={{ fontSize: "12px", backgroundColor: "rgb(59 130 246)" }}>
@@ -80,7 +82,8 @@ const ListPost = ({ posts, getPosts, type }) => {
                 </div>
                 {/*body and footer*/}
                 <EditPost setOpenModal={setEditModal} getPosts={getPosts} content={selectedContent} setContent={setSelectContent}
-                  title={selectedTitle} setTitle={setSelectTitle} id={selectedId} status={selectStatus} type={type} />
+                  title={selectedTitle} setTitle={setSelectTitle} id={selectedId} status={selectStatus} type={type} 
+                  link={selectLink} setLink={setSelectLink}/>
               </div>
             </div>
           </div>

@@ -10,13 +10,14 @@ const NewPost = ({ setOpenModal, getPosts}) => {
   const [isValid, setIsValid] = useState("true");
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const [link, setLink] = useState("");
   const handleEditorChange = async (text) => {
     setContent(text);
   };
 
   const save = async (type) => {
     await refresh();
-    await addPost(content, title, type);
+    await addPost(content, title, type, link);
     getPosts();
     setOpenModal(false);
   };
@@ -28,6 +29,10 @@ const NewPost = ({ setOpenModal, getPosts}) => {
           <div>
             <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Title" onChange={(e) => { setTitle(e.target.value) }} />
+          </div>
+          <div>
+            <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="username" type="text" placeholder="Other links" onChange={(e) => { setLink(e.target.value) }} />
           </div>
           <Editor
             apiKey={TINYMCE_KEY}

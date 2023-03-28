@@ -5,7 +5,7 @@ import { TINYMCE_KEY, CLOUD_NAME, UPLOAD_PRESET_NAME } from "@/config/account";
 import axios from "axios";
 import { updatePost, refresh } from "@/lib/action";
 
-const EditPost = ({ setOpenModal, getPosts, content, setContent, title, setTitle, id, status, type }) => {
+const EditPost = ({ setOpenModal, getPosts, content, setContent, title, setTitle, id, status, type, link, setLink }) => {
   const [confirmModal, setConfirmModal] = useState(false);
   const [isAdd, setIsAdd] = useState(false);
   const [newStatus, setNewStatus] = useState(status);
@@ -31,6 +31,10 @@ const EditPost = ({ setOpenModal, getPosts, content, setContent, title, setTitle
           <div>
             <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Title" value={title} onChange={(e) => { setTitle(e.target.value) }} />
+          </div>
+          <div>
+            <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="username" type="text" placeholder="Other links" value={link} onChange={(e) => { setLink(e.target.value) }} />
           </div>
           <Editor
             apiKey={TINYMCE_KEY}
