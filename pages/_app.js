@@ -9,6 +9,10 @@ import React from 'react';
 import Head from 'next/head';
 import { config } from "@fortawesome/fontawesome-svg-core";
 import 'tailwindcss/tailwind.css'
+
+import '../i18n/i18n'
+
+
 config.autoAddCss = false;
 export default function App({ Component, pageProps }) {
   return (

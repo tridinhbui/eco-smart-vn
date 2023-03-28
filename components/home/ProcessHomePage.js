@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from '../../styles/processHomePage.module.css'
-import { PROCESS_HOMEPAGE } from '../../config/api'
+import { PROCESS_HOMEPAGE } from '../../config/DataPage/HomePageAPI/ProcessAPI'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

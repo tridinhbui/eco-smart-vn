@@ -1,0 +1,38 @@
+{
+    "find": { 
+        "id": 1, 
+        "title_banner": "Tìm kiếm đối tác", 
+        "content": "Chúng tôi sẽ tìm kiếm, chọn lọc và đề xuất hợp tác với các doanh nghiệp trong hệ sinh thái các doanh nghiệp phát triển bền vững. Chúng tôi sẽ chủ động tiếp cận các doanh nghiệp này và gửi lời mời hợp tác kinh doanh, hỗ trợ họ quảng bá thương hiệu và đề xuất các chiến lược phân phối sản phẩm phù hợp.", 
+        "title": "TÌM KIẾM" 
+    },
+    "services": { 
+        "id": 2, 
+        "title_banner": "ĐỀ XUẤT GÓI DỊCH VỤ", 
+        "content": "Chúng tôi sẽ tạo ra các gói dịch vụ khác nhau để phù hợp với nhu cầu của khách hàng, bao gồm gói 1 năm với mức giá 8.900.000 VNĐ, gói 6 tháng với mức giá 6.900.000 VNĐ và gói 3 tháng với mức giá 3.900.000 VNĐ. Các gói này sẽ bao gồm các dịch vụ như tư vấn marketing, tư vấn chiến lược, phân tích thị trường, quảng cáo trực tuyến, thiết kế trang web, cung cấp nội dung và hỗ trợ khách hàng.", 
+        "title": "Gói dịch vụ" 
+    },
+    "media": { 
+        "id": 3, 
+        "title_banner": "XÂY DỰNG TRUYỀN THÔNG", 
+        "content": "Chúng tôi sẽ xây dựng các nền tảng truyền thông như website, Facebook, Instagram và TikTok để giới thiệu và quảng bá các sản phẩm đạt yêu cầu phát triển bền vững của đối tác. Chúng tôi sẽ tập trung vào việc thiết kế các nội dung hấp dẫn và chia sẻ chúng trên các nền tảng này để tăng khả năng tiếp cận của khách hàng.", 
+        "title": "Truyền thông" 
+    },
+    "community": { 
+        "id": 4, 
+        "title_banner": "XÂY DỰNG CỘNG ĐỒNG", 
+        "content": "Chúng tôi sẽ xây dựng một cộng đồng các doanh nghiệp kinh doanh sản phẩm phát triển bền vững. Chúng tôi sẽ tạo ra các sự kiện trực tuyến và offline nhằm tăng cường sự kết nối giữa các doanh nghiệp và khách hàng. Chúng tôi cũng sẽ cung cấp các nội dung giáo dục và thông tin về các sản phẩm phát triển bền vững cho cộng đồng này.", 
+        "title": "Cộng đồng" 
+    },
+    "support":  { 
+        "id": 5, 
+        "title_banner": "TƯ VẤN & HỖ TRỢ", 
+        "content": "Chúng tôi sẽ cung cấp các dịch vụ tư vấn và hỗ trợ khách hàng về các sản phẩm phát triển bền vững của đối tác. Chúng tôi sẽ giúp khách hàng tìm kiếm các sản phẩm phù hợp với nhu cầu của họ và đưa ra các giải pháp tiết kiệm chi phí cho các doanh nghiệp. Chúng tôi cũng sẽ đảm bảo rằng khách hàng nhận được sự hỗ trợ và phản hồi kịp thời khi có câu hỏi hoặc yêu cầu hỗ trợ.", 
+        "title": "Tư vấn & Hỗ trợ"
+    },
+    "evaluate":{ 
+        "id": 6, 
+        "title_banner": "ĐÁNH GIÁ HIỆU QUẢ", 
+        "content": "Chúng tôi sẽ đánh giá hiệu quả của chiến dịch và đưa ra các phản hồi để cải thiện chiến dịch trong tương lai. Chúng tôi sẽ đo lường các chỉ số như tăng trưởng lượng truy cập trang web, tăng trưởng doanh số bán hàng, tăng trưởng lượt theo dõi và tương tác trên các mạng xã hội.", 
+        "title": "Đánh giá" 
+    }
+}
