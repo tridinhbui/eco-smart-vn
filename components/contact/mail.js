@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from 'next/image';
 import { MAIL_TEXT } from '../../config/text';
-import { ACCESS_KEY, SECRET_KEY, DEFAULT_MAIL } from '../../config/amz-key';
+import { ACCESS_KEY, SECRET_KEY, DEFAULT_MAIL } from '../../config/account';
 
 const AWS = require('aws-sdk');
 
