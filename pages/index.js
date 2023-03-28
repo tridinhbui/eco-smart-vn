@@ -1,12 +1,11 @@
 import React from "react";
-import Slogan from "@/components/home/home";
+import HomePage from "./homepage";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <Slogan/>
-    </div>
+    <>
+      <HomePage />
+    </>
   )
 };
 
-export default Home;

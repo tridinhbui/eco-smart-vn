@@ -3,10 +3,17 @@ import '@/styles/navbar.css';
 import '@/styles/home.css';
 import '@/styles/contact.css';
 import '@/styles/admin.css';
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import Layout from '../components/layout/layout';
 import React from 'react';
 import Head from 'next/head';
+import { config } from "@fortawesome/fontawesome-svg-core";
+import 'tailwindcss/tailwind.css'
 
+import '../i18n/i18n'
+
+
+config.autoAddCss = false;
 export default function App({ Component, pageProps }) {
   return (
     <>

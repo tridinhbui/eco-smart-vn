@@ -1,0 +1,85 @@
+.select:hover {
+  cursor: pointer;
+  color: #365949;
+}
+
+.select h2 {
+  color: gray;
+  transition: all .5s;
+}
+
+.select:hover h2 {
+  color: #365949;
+}
+
+.select:hover::before {
+  background-color: #365949;
+}
+
+.select::before {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 18px;
+  transition: all .5s;
+}
+
+.select::after {
+  content: '';
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  background: #365949;
+  border-radius: 50%;
+  margin: auto;
+  border: 0.6vw solid #fff;
+  margin-top: 2vw;
+  box-shadow: 0 0 2vw 0 rgb(0, 0, 0, .2);
+}
+
+.line {
+  width: 80%;
+  margin: auto;
+  background: #eee;
+  height: 8%;
+  position: absolute;
+  left: 10%;
+  top: 8.75vw;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.banner {
+  padding-top: 50px;
+  height: 100%;
+}
+
+.section {
+  background-image: linear-gradient(to right, #6bb77b 10%, #116740 100%);
+  text-align: center;
+  margin: 0 80px;
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.line span {
+  content: ' ';
+  width: 0%;
+  height: 100%;
+  background-image: linear-gradient(to right, #6bb77b 0%, #0a492d 100%);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all .8s ease;
+}
+
+.select::checked~.select::before {
+  background-corlor: green;
+}

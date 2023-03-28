@@ -1,26 +1,39 @@
 import React, { useState } from "react";
-import { NAVBAR_TEXT } from '../../config/text';
 import Image from 'next/image';
 import logo from '../../public/images/logo.png';
 import Link from 'next/link';
+import { NAV_ITEMS, NAV_LINKS } from '../../config/DataPage/navAPI/navAPI'
 
-const navItems = [NAVBAR_TEXT.home, NAVBAR_TEXT.product, NAVBAR_TEXT.activity, NAVBAR_TEXT.aboutus, NAVBAR_TEXT.contact];
-const navLinks = ["/", "/product", "/activities", "/about-us", "/contact"];
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearch,
+  faGlobe
+} from "@fortawesome/free-solid-svg-icons";
+
+import { useTranslation } from "react-i18next";
+import ItemNavbar from "./itemNavbar";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+
+  const { i18n } = useTranslation()
+  const changeLanguages = (lng) => i18n.changeLanguage(lng)
+
+  // ----------------------------------------------------------------
   return (
     <nav className="w-full white shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between container px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{paddingTop:'3px', paddingBottom:'3px'}}>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block" style={{ paddingTop: '3px', paddingBottom: '3px' }}>
+
             <Link href="/">
               <Image src={logo} alt="logo" style={{ width: '80px', height: '80px' }} />
             </Link>
-            <div className="md:hidden">
+
+            <div className="md:hidden flex items-center">
               <button
                 className="p-2 rounded-md outline-none focus:border-gray-400 focus:border"
-                style={{color:'gray'}}
+                style={{ color: 'gray' }}
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -53,24 +66,21 @@ const Navbar = () => {
                   </svg>
                 )}
               </button>
+              <div>
+                <FontAwesomeIcon icon={faGlobe} style={{ fontSize: 17, color: '#375849' }} />
+                <select className='outline-none font-semibold cursor-pointer' onChange={(e) => changeLanguages(e.target.value)}>
+                  <option value="vn">VN</option>
+                  <option value="en">EN</option>
+                </select>
+              </div>
             </div>
+
           </div>
+
         </div>
-        <div>
-          <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'}`}
-          >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {navItems.map((item, index) => (
-                <li className="text-black " key={index}>
-                  <Link href={navLinks[index]}>
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+
+        <ItemNavbar NAV_LINKS={NAV_LINKS} changeLanguages={changeLanguages} navbar={navbar} setNavbar={setNavbar} NAV_ITEMS={NAV_ITEMS} />
+
       </div>
     </nav>
   );
