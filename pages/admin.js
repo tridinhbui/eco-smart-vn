@@ -17,6 +17,7 @@ const Admin = ({data}) => {
 };
 
 export async function getServerSideProps(ctx) {
+  console.log(ctx);
   let data;
   let isMobileView = (ctx.req
     ? ctx.req.headers['user-agent']

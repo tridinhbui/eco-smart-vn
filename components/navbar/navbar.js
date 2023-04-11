@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useTranslation } from "react-i18next";
-import ItemNavbar from "./itemNavbar";
+import ItemNavbar from "./ItemNavbar";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);

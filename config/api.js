@@ -16,7 +16,20 @@ export const TITLE_ABOUTHOME = 'Sự khác biệt của Eco Smart Solutions'
 export const CUSTOMER_HOMEPAGE = {
   title: 'Đội ngũ cố vấn - bảo trợ',
   list_customer: [
-    { content: 'Ngay từ khi đọc bản đề xuất kinh doanh của Eco Smart Solutions, chúng tôi đã cảm thấy những tác động tích cực mà ESS sẽ đem lại cho đất nước Việt Nam. Đặc biệt, khi được làm việc với Trí, tôi cảm thấy tầm nhìn, sự nhiệt huyết, đam mê, và tinh thần trách nhiệm cao, điều mà quyết định rất lớn đến quyết định đầu tư của chúng tôi', name: 'Jody Emmings', info: 'Giám đốc Trung tâm Khởi nghiệp và Sáng tạo Macalester - Minnesota, Hoa Kỳ', img: 'https://ecosmart.netlify.app/static/img/customer/customer_1.png' }, { content: 'Giải pháp hỗ trợ thúc đẩy kinh doanh cho các doanh nghiệp phát triển bền vững của Eco Smart Solutions là một mô hình kinh doanh bền vững và có tính hiệu quả cao, góp phần tham gia vào các chính sách phát triển bền vững của xã hội mà chính phủ đang đề ra.', name: 'Bùi Tôn Hiến', info: 'Cục trưởng cục Khoa học Lao Động và Xã Hội, Bộ Lao Động Thương Binh và Xã hội, trực tiếp chỉ đạo chính sách phát triển bền vững của Chính Phủ Việt Nam', img: 'https://ecosmart.netlify.app/static/img/customer/customer_2.png' }
+    {
+      id: 1,
+      content: 'Ngay từ khi đọc bản đề xuất kinh doanh của Eco Smart Solutions, chúng tôi đã cảm thấy những tác động tích cực mà ESS sẽ đem lại cho đất nước Việt Nam. Đặc biệt, khi được làm việc với Trí, tôi cảm thấy tầm nhìn, sự nhiệt huyết, đam mê, và tinh thần trách nhiệm cao, điều mà quyết định rất lớn đến quyết định đầu tư của chúng tôi', 
+      name: 'Jody Emmings', 
+      info: 'Giám đốc Trung tâm Khởi nghiệp và Sáng tạo Macalester - Minnesota, Hoa Kỳ', 
+      img: 'https://ecosmart.netlify.app/static/img/customer/customer_1.png' 
+    }, 
+    { 
+      id: 2,
+      content: 'Giải pháp hỗ trợ thúc đẩy kinh doanh cho các doanh nghiệp phát triển bền vững của Eco Smart Solutions là một mô hình kinh doanh bền vững và có tính hiệu quả cao, góp phần tham gia vào các chính sách phát triển bền vững của xã hội mà chính phủ đang đề ra.', 
+      name: 'Bùi Tôn Hiến', 
+      info: 'Cục trưởng cục Khoa học Lao Động và Xã Hội, Bộ Lao Động Thương Binh và Xã hội, trực tiếp chỉ đạo chính sách phát triển bền vững của Chính Phủ Việt Nam', 
+      img: 'https://ecosmart.netlify.app/static/img/customer/customer_2.png' 
+    }
   ]
 }
 
@@ -26,7 +39,7 @@ export const ACHIEVE_HOMEPAGE = {
 }
 
 export const SPONSORS_HOMEPAGE = {
-  title: 'Mốt Số Đối Tác Nổi Bật',
+  title: 'Một Số Đối Tác Nổi Bật',
   icon_sponsors: ['https://ecosmart.netlify.app/static/img/sponsor/sponsor1-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor2-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor3-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor4-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor5-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor6-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor7-logo.png', 'https://ecosmart.netlify.app/static/img/sponsor/sponsor8-logo.png']
 }
 

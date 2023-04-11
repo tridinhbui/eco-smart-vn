@@ -12,8 +12,13 @@ import {
   faListCheck
 } from "@fortawesome/free-solid-svg-icons";
 
+import { useTranslation } from 'react-i18next';
+
 
 export default function ProcessHomePage() {
+  //i18n
+  const { t } = useTranslation();
+
   // use hook
   const [banner, setBanner] = useState(PROCESS_HOMEPAGE.list_process[0])
   const width = (100 / 5 * (banner.id - 1))
@@ -33,7 +38,7 @@ export default function ProcessHomePage() {
     return PROCESS_HOMEPAGE.list_process.map((item, index) => {
       return (
         <li onClick={() => handleChangeBanner(item)} key={index} className={style.select}>
-          <h2 className="p_inner text-xl font-bold">{item.title}</h2>
+          <h2 className="p_inner text-xl font-bold">{t(`processHome.processes.${item.title}.title`)}</h2>
         </li>
       )
     })
@@ -42,11 +47,11 @@ export default function ProcessHomePage() {
   // ------------------------------------------------
   return (
     <div className={`hidden md:block py-28 container mx-auto ${style.process_head} `}>
-      <h2 className='text-center text-4xl hover:text-5xl  h-10 font-bold mb-10'>{PROCESS_HOMEPAGE.title}</h2>
+      <h2 className='text-center text-4xl hover:text-5xl  h-10 font-bold mb-10'>{t('processHome.title')}</h2>
 
       <div className="title_process">
         <ul className="grid grid-cols-6 gap-10 text-center relative px-8">
-
+          
           {renderTitleProcess()}
 
           <div className={style.line}>
@@ -59,8 +64,8 @@ export default function ProcessHomePage() {
       <div className={style.banner}>
         <section className={style.section}>
           <FontAwesomeIcon icon={icon} style={{ fontSize: 150, color: "#008001" }} />
-          <h1 className='text-5xl my-7 tracking-widest'>{banner.title_banner}</h1>
-          <p className=' italic tracking-wider font-mono leading-9 text-xl'>{banner.content}</p>
+          <h1 className='text-5xl my-7 tracking-widest'>{t(`processHome.processes.${banner.title}.title_banner`)}</h1>
+          <p className=' italic tracking-wider font-mono leading-9 text-xl'>{t(`processHome.processes.${banner.title}.content`)}</p>
         </section>
       </div>
       

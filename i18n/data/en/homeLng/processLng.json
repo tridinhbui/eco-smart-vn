@@ -1,38 +1,42 @@
 {
-    "find": { 
+    "title": "Operating procedure - GreenBoost",
+    "processes":
+    {
+      "find": { 
         "id": 1, 
         "title_banner": "Seeking partners", 
         "content": "We will search, select and propose to cooperate with businesses in the ecosystem of sustainable businesses. We will proactively approach these businesses and send business invitations, assist them in promoting their brands, and recommend appropriate product distribution strategies.", 
         "title": "Search" 
-    },
-    "services": { 
-        "id": 2, 
-        "title_banner": "Recommend service pack", 
-        "content": "We will create different service packages to suit customers' needs, including 1-year package 8,900,000 VND, 6-month package 6,900,000 VND and 3-month package 6,900,000 VND. price 3,900,000 VND. These packages will include services such as marketing consulting, strategic consulting, market analysis, online advertising, website design, content delivery and customer support.", 
-        "title": "Service pack" 
-    },
-    "media": { 
-        "id": 3, 
-        "title_banner": "Seeking partners", 
-        "content": "We will build communication platforms such as websites, Facebook, Instagram and TikTok to introduce and promote our partners' sustainable development products. We will focus on designing engaging content and sharing them on these platforms to increase customer reach.", 
-        "title": "Media" 
-    },
-    "community": { 
-        "id": 4, 
-        "title_banner": "COMMUNITY BUILDING", 
-        "content": "We will build a community of businesses dealing in sustainable development products. We will create online and offline events to strengthen the connection between businesses and customers. We will also provide educational content and information about sustainable products to this community.", 
-        "title": "Community" 
-    },
-    "support":  { 
-        "id": 5, 
-        "title_banner": "SUPPORT COUNSELING", 
-        "content": "We will provide consulting services and support customers on sustainable development products of our partners. We will help customers find the right products for their needs and provide cost-effective solutions for businesses. We will also ensure that customers receive prompt support and response when they have questions or requests for assistance.", 
-        "title": "Support counseling"
-    },
-    "evaluate":{ 
-        "id": 6, 
-        "title_banner": "EVALUATE THE EFFECTIVENESS", 
-        "content": "We will evaluate the effectiveness of the campaign and provide feedback to improve the campaign in the future. We'll measure metrics like website traffic growth, sales growth, social media following, and engagement growth.", 
-        "title": "Evaluate" 
+      },
+      "services": { 
+          "id": 2, 
+          "title_banner": "Recommend service pack", 
+          "content": "We will create different service packages to suit customers' needs, including 1-year package 8,900,000 VND, 6-month package 6,900,000 VND and 3-month package 6,900,000 VND. price 3,900,000 VND. These packages will include services such as marketing consulting, strategic consulting, market analysis, online advertising, website design, content delivery and customer support.", 
+          "title": "Service pack" 
+      },
+      "media": { 
+          "id": 3, 
+          "title_banner": "Seeking partners", 
+          "content": "We will build communication platforms such as websites, Facebook, Instagram and TikTok to introduce and promote our partners' sustainable development products. We will focus on designing engaging content and sharing them on these platforms to increase customer reach.", 
+          "title": "Media" 
+      },
+      "community": { 
+          "id": 4, 
+          "title_banner": "COMMUNITY BUILDING", 
+          "content": "We will build a community of businesses dealing in sustainable development products. We will create online and offline events to strengthen the connection between businesses and customers. We will also provide educational content and information about sustainable products to this community.", 
+          "title": "Community" 
+      },
+      "support":  { 
+          "id": 5, 
+          "title_banner": "SUPPORT COUNSELING", 
+          "content": "We will provide consulting services and support customers on sustainable development products of our partners. We will help customers find the right products for their needs and provide cost-effective solutions for businesses. We will also ensure that customers receive prompt support and response when they have questions or requests for assistance.", 
+          "title": "Support Counselling"
+      },
+      "evaluate":{ 
+          "id": 6, 
+          "title_banner": "EVALUATE THE EFFECTIVENESS", 
+          "content": "We will evaluate the effectiveness of the campaign and provide feedback to improve the campaign in the future. We'll measure metrics like website traffic growth, sales growth, social media following, and engagement growth.", 
+          "title": "Evaluate" 
+      }
     }
 }
