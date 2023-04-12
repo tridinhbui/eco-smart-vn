@@ -1,7 +1,9 @@
 import React from 'react'
 import { SPONSORS_HOMEPAGE } from '../../config/api'
+import { useTranslation } from 'react-i18next'
 
 export default function Sponsors() {
+  const {t} = useTranslation();
 
   const renderListSponsors = () => {
     return SPONSORS_HOMEPAGE.icon_sponsors.map((item, index) => {
@@ -15,7 +17,7 @@ export default function Sponsors() {
 
   return (
     <div className='container mx-auto my-16'>
-      <h2 className='text-center md:text-4xl text-3xl my-7 font-bold'>{SPONSORS_HOMEPAGE.title}</h2>
+      <h2 className='text-center md:text-4xl text-3xl my-7 font-bold'>{t(`headersHome.sponsors`)}</h2>
       <div className='md:grid md:grid-cols-4 md:gap-5 mt-10 text-center'>
 
         {renderListSponsors()}

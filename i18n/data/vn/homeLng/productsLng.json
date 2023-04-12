@@ -1,0 +1,31 @@
+{
+  "title": "Sản phẩm nổi bật",
+  "0": {
+    "details": 
+      {
+       "0": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "1": "▪ Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut.", 
+       "2": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "3": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+  },
+  "1": {
+    "details": 
+      {
+       "0": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "1": "▪ Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut.", 
+       "2": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "3": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+  },
+  "2": {
+    "details": 
+      {
+       "0": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "1": "▪ Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut.", 
+       "2": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+       "3": "▪ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+  },
+  "more": "Xem Thêm"
+}

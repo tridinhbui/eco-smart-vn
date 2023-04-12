@@ -8,8 +8,12 @@ import {
   faEarthAsia,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { useTranslation } from 'react-i18next'
+
 
 export default function Achievement() {
+  const {t} = useTranslation();
+
   const arrIcon = [faMedal, faHandshake, faEarthAsia, faMedal]
 
   const renderModal = () => {
@@ -26,7 +30,7 @@ export default function Achievement() {
 
   return (
     <div className="achieve container mx-auto">
-      <h2 className='text-center md:text-4xl text-3xl font-bold'>{ACHIEVE_HOMEPAGE.title}</h2>
+      <h2 className='text-center md:text-4xl text-3xl font-bold'>{t(`achieveHome.title`)}</h2>
       <div className="modal grid grid-cols-4 mt-10">
 
         {renderModal()}

@@ -1,11 +1,11 @@
 import React from 'react'
 import style from '../../styles/ProductHomePage.module.css'
 
-export default function ItemProduct( {product} ) {
+export default function ItemProduct( {id, product, t} ) {
 
   const renderItemProduct = () => {
-    return product.details.map((item, index) => {
-      return <p key={index}>{item}</p>
+    return product.details.map((_, index) => {
+      return <p key={index}>{t(`productsHome.${id}.details.${index}`)}</p>
     })
   }
   

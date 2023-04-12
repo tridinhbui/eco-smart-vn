@@ -4,9 +4,11 @@ import 'react-multi-carousel/lib/styles.css';
 
 import ItemProduct from './ItemProduct';
 import { PRODUCT_HOMEPAGE } from '../../config/api'
+import { useTranslation } from 'react-i18next';
 
 
 export default function Product() {
+  const {t} = useTranslation()
   // use hook
   const [widthOfScreen, setWidthOfScreen] = useState(false);
 
@@ -33,14 +35,14 @@ export default function Product() {
   // render ele
   const renderListProducts = () => {
     return PRODUCT_HOMEPAGE.list_product.map((product, index) => {
-      return <ItemProduct product={product} key={index} />
+      return <ItemProduct product={product} key={index} id={index} t={t} />
     })
   }
 
   return (
     <div className='product_homepage sm:my-20 mx-auto p-7 md:w-full' >
       <div className='container mx-auto rounded-2xl relative' style={{ backgroundColor: '#365949' }}>
-        <h2 className='text-center text-4xl hover:text-5xl h-20 font-bold pt-10 pb-10 text-white'>{PRODUCT_HOMEPAGE.title}</h2>
+        <h2 className='text-center text-4xl hover:text-5xl h-20 font-bold pt-10 pb-10 text-white'>{t(`productsHome.title`)}</h2>
 
         <div className=" wrapper md:px-10 px-5 mt-10">
 
@@ -49,7 +51,7 @@ export default function Product() {
           </Carousel>
 
           <div className="btn_product text-center py-7">
-            <button className='px-7 py-2 bg-white text-lg rounded-lg font-semibold hover:bg-slate-50'>Xem Them</button>
+            <button className='px-7 py-2 bg-white text-lg rounded-lg font-semibold hover:bg-slate-50'>{t(`productsHome.more`)}</button>
           </div>
 
         </div>

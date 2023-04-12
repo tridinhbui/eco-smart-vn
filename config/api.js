@@ -48,7 +48,7 @@ export const PRODUCT_HOMEPAGE = {
   list_product: [
     { img: 'https://ecosmart.netlify.app/static/img/products/product_page_1.jpg', details: ['▪ Dầu dưỡng Hoàng Lan 90.000 VND', '▪ Hồng nhuận da, chống lão hoá, duy trì nét thanh xuân', '▪ Tăng sức đề kháng, bồi bổ sức khỏe, giúp ngủ ngon', '▪ Ích trí, bổ huyết, định thần'] },
     { img: 'https://ecosmart.netlify.app/static/img/products/product_page_2.jpg', details: ['▪ Dầu dưỡng Hoàng Lan 90.000 VND', '▪ Hồng nhuận da, chống lão hoá, duy trì nét thanh xuân', '▪ Tăng sức đề kháng, bồi bổ sức khỏe, giúp ngủ ngon', '▪ Ích trí, bổ huyết, định thần'] },
-    { img: '	https://ecosmart.netlify.app/static/img/products/product_page_3.jpg', details: ['▪ Dầu dưỡng Hoàng Lan 90.000 VND', '▪ Hồng nhuận da, chống lão hoá, duy trì nét thanh xuân', '▪ Tăng sức đề kháng, bồi bổ sức khỏe, giúp ngủ ngon', '▪ Ích trí, bổ huyết, định thần'] }
+    { img: 'https://ecosmart.netlify.app/static/img/products/product_page_3.jpg', details: ['▪ Dầu dưỡng Hoàng Lan 90.000 VND', '▪ Hồng nhuận da, chống lão hoá, duy trì nét thanh xuân', '▪ Tăng sức đề kháng, bồi bổ sức khỏe, giúp ngủ ngon', '▪ Ích trí, bổ huyết, định thần'] }
   ],
 }
 
