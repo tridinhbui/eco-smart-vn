@@ -27,11 +27,11 @@ const NewPost = ({ setOpenModal, getPosts}) => {
       <div className="relative p-6 flex-auto">
         <div style={{ width: "100%" }}>
           <div>
-            <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+            <input style={{ marginBottom: "10px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Title" onChange={(e) => { setTitle(e.target.value) }} />
           </div>
           <div>
-            <input style={{ marginBottom: "10px" }} className="shadow appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+            <input style={{ marginBottom: "10px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Other links" onChange={(e) => { setLink(e.target.value) }} />
           </div>
           <Editor
@@ -43,9 +43,9 @@ const NewPost = ({ setOpenModal, getPosts}) => {
               images_upload_base_path: `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
               images_upload_credentials: true,
               plugins: [
-                'a11ychecker', 'advlist', 'advtable', 'autolink', 'checklist', 'export',
+                'advlist', 'autolink',
                 'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
-                'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+                'fullscreen', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
               ],
               toolbar: `undo redo| link image | fontfamily fontsize | bold italic underline | \
                 alignleft aligncenter alignright alignjustify | \
@@ -75,14 +75,15 @@ const NewPost = ({ setOpenModal, getPosts}) => {
       </div>
       <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
         <button
-          className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="bg-emerald-500 active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           type="button"
           onClick={() => setCancelModal(true)}
+          style={{ backgroundColor: "rgb(239 68 68)", color: "white" }}
         >
           Close
         </button>
         <button
-          className="bg-emerald-500 active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="bg-emerald-500 active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           type="button"
           onClick={() => {
             if (content == "" || title == "")

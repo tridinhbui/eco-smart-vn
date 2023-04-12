@@ -30,7 +30,7 @@ function Posts() {
         Posts
       </div>
       <div>
-        Create, edit, and manage the posts on your site
+        Create, edit, and manage the posts.
       </div>
       <div className="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700" style={{ marginTop: "10px" }}>
         <ul className="flex" style={{ cursor: "pointer" }}>

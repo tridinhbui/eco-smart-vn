@@ -1,9 +1,4 @@
-
-import axios from 'axios';
-import { ADMIN_LOGIN_API } from '@/config/api';
 import cookie from 'cookie'
-import redis from '@/lib/redis';
-
 export default async function handler(req, res) {
   const { method, headers, body } = req;
   try {
