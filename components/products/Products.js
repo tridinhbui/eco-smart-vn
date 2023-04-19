@@ -1,5 +1,7 @@
 import React from 'react'
 import Menu from './Menu'
+import ContactHomePage from '../home/ContactHomePage'
+import Feedback from './Feedback'
 
 export default function Products() {
   return (
@@ -8,6 +10,8 @@ export default function Products() {
             <h1 className='py-7 ' style={{color: '#FCF5E5'}}>Sản phẩm</h1>
         </div>
         <Menu/>
+        <ContactHomePage/>
+        <Feedback/>
    </>
   )
 }
