@@ -74,9 +74,9 @@ const EditPost = ({ setOpenModal, getPosts, content, setContent, title, setTitle
             onEditorChange={handleEditorChange}
           />
           <div style={{ marginTop: "20px" }}>
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a status</label>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a status</label>
             <select defaultValue={newStatus} id="status" onClick={(e) => { setNewStatus(e.target?.value); }}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option value="Public">Public</option>
               <option value="Private">Private</option>
             </select>

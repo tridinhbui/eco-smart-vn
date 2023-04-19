@@ -3,13 +3,15 @@ import { CLOUD_NAME, UPLOAD_PRESET_NAME } from "@/config/account";
 import axios from "axios";
 import { addProduct, refresh } from "@/lib/action";
 
-const NewProduct = ({ setOpenModal, getProducts }) => {
+const NewProduct = ({ setOpenModal, getProducts, brands }) => {
   const [files, setFiles] = useState([]);
+  const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [initialPrice, setInitialPrice] = useState(0);
   const [salePrice, setSalePrice] = useState(0);
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(brands[0].email);
   const [condition, setCondition] = useState("Available");
+  const [brand, setBrand] = useState(brands[0].name);
   const [confirmModal, setConfirmModal] = useState(false);
   const [isProcess, setIsProcess] = useState(false);
   const [message, setMessage] = useState("");
@@ -24,7 +26,7 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
   const saveProduct = async () => {
     setIsProcess(true);
     await refresh();
-    await addProduct(files, description, initialPrice, salePrice, email, condition);
+    await addProduct(files, name, description, initialPrice, salePrice, brand, email, condition);
     setConfirmModal(false);
     setOpenModal(false);
     setIsProcess(false);
@@ -64,7 +66,7 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
               return (
                 <div key={key} className="overflow-hidden relative">
                   <i onClick={() => { removeImage(file.name) }} className="mdi mdi-close absolute right-1 hover:text-white cursor-pointer">
-                    <svg class="h-4 w-4 text-orange" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="h-4 w-4 text-orange" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" />  <line x1="18" y1="6" x2="6" y2="18" />  <line x1="6" y1="6" x2="18" y2="18" />
                     </svg>
                   </i>
@@ -75,24 +77,37 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
           </div>
           <div>
             <input style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" type="text" placeholder="Description" onChange={(e) => { setDescription(e.target.value) }} />
+              id="name" type="text" placeholder="Name of product" onChange={(e) => { setName(e.target.value) }} />
+          </div>
+          <div>
+            <textarea  style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="description" type="text" placeholder="Description" rows={5} onChange={(e) => { setDescription(e.target.value) }} />
           </div>
           <div>
             <input type="number" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Initial Price" onChange={(e) => { setInitialPrice(e.target.value) }} />
+              id="initialPrice" placeholder="Initial Price" onChange={(e) => { setInitialPrice(e.target.value) }} />
           </div>
           <div>
             <input type="number" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Sale Price" onChange={(e) => { setSalePrice(e.target.value) }} />
+              id="salePrice" placeholder="Sale Price" onChange={(e) => { setSalePrice(e.target.value) }} />
+          </div>
+          <div style={{ marginTop: "20px" }}>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select brand</label>
+            <select defaultValue={brands[0].name} id="status" onClick={(e) => { setBrand(e.target?.value); setEmail(brands[e.target.options.selectedIndex].email); }}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              {brands.map((brand, index) => (
+                <option value={brand.name} key={index}>{brand.name}</option>
+              ))}
+            </select>
           </div>
           <div>
             <input type="email" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Supplier's email" onChange={(e) => { setEmail(e.target.value) }} />
+              id="username" placeholder="Supplier's email" value={email} disabled />
           </div>
           <div style={{ marginTop: "20px" }}>
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select condition</label>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select condition</label>
             <select defaultValue={condition} id="status" onClick={(e) => { setCondition(e.target?.value); }}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option value="Public">Available</option>
               <option value="Private">Out of stock</option>
             </select>
@@ -112,11 +127,11 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
             className="bg-emerald-500 active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="button"
             onClick={() => {
-              if (files.length==0){
+              if (files.length == 0) {
                 setMessage("Please upload at least one image")
-              } else if (description=="") {
+              } else if (description == "") {
                 setMessage("Please fill in the description")
-              } else if (email==""){
+              } else if (email == "") {
                 setMessage("Please fill in the supplier's email")
               } else {
                 setMessage("");
@@ -148,8 +163,8 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
                 {
                   isProcess == true ?
                     <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                      <button disabled="" type="button" class="py-2.5 px-5 mr-2 text-sm font-medium text-gray-900 bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center">
-                        <svg aria-hidden="true" role="status" class="inline mr-2 w-4 h-4 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <button disabled="" type="button" className="py-2.5 px-5 mr-2 text-sm font-medium text-gray-900 bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center">
+                        <svg aria-hidden="true" role="status" className="inline mr-2 w-4 h-4 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path>
                           <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"></path>
                         </svg>
@@ -166,7 +181,7 @@ const NewProduct = ({ setOpenModal, getProducts }) => {
                         onClick={() => setConfirmModal(false)}
                         className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">
                         Cancel</button>
-                      
+
                     </div>
                 }
               </div>

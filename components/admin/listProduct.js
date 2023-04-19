@@ -4,7 +4,7 @@ import EditPost from "./editPost";
 import style from "../../styles/admin.module.css";
 import EditProduct from "./editProduct";
 
-const ListProduct = ({ products, getProducts }) => {
+const ListProduct = ({ products, getProducts, brands }) => {
   const [selectProduct, setSelectProduct] = useState({});
   const [editModal, setEditModal] = useState(false);
   const [selectedId, setSelectId] = useState("");
@@ -26,17 +26,17 @@ const ListProduct = ({ products, getProducts }) => {
             products.map((product, index) => (
               <>
                 <div>
-                  <a class="relative block group rounded-lg"
+                  <a className="relative block group rounded-lg"
                     href="#">
-                    <img class="absolute inset-0 object-cover rounded-lg
+                    <img className="absolute inset-0 object-cover rounded-lg
                                 w-full h-full group-hover:opacity-50"
                       src={product.images[0]} />
-                    <div class="relative p-5 ">
-                      <div class="mt-40">
-                        <div class="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
-                          <div class="p-2">
-                            <p class="text-lg font-medium">
-                              {product.description}
+                    <div className="relative p-5 ">
+                      <div className="mt-40">
+                        <div className="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+                          <div className="p-2">
+                            <p className="text-lg font-medium">
+                              {product.name}
                             </p>
                             <button
                               onClick={() => {
@@ -49,10 +49,12 @@ const ListProduct = ({ products, getProducts }) => {
                                   salePrice: product.salePrice,
                                   description: product.description,
                                   email: product.email,
-                                  privacy: product.privacy
+                                  privacy: product.privacy,
+                                  name: product.name,
+                                  brand: product.brand
                                 })
                               }}
-                              class="px-4 py-2 text-sm text-white rounded-lg" style={{ backgroundColor: "rgb(64, 109, 89)" }}>
+                              className="px-4 py-2 text-sm text-white rounded-lg" style={{ backgroundColor: "rgb(64, 109, 89)" }}>
                               Show
                             </button>
                           </div>
@@ -80,7 +82,7 @@ const ListProduct = ({ products, getProducts }) => {
                   </h3>
                 </div>
                 {/*body and footer*/}
-                <EditProduct setOpenModal={setEditModal} getProducts={getProducts} product={selectProduct} setProduct={setSelectProduct} />
+                <EditProduct setOpenModal={setEditModal} getProducts={getProducts} product={selectProduct} setProduct={setSelectProduct} brands={brands} />
               </div> 
             </div>
           </div>

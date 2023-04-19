@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NewPost from "./newPost";
 import ListPost from "./listPost";
-import { getProduct, refresh } from "@/lib/action";
+import { getBrand, getProduct, refresh } from "@/lib/action";
 import NewProduct from "./newProduct";
 import ListProduct from "./listProduct";
 
@@ -11,6 +11,7 @@ import ListProduct from "./listProduct";
 function Products() {
   const [openModal, setOpenModal] = useState(false);
   const [products, setProducts] = useState([]);
+  const [brands, setBrands] = useState([]);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const getProducts = async () => {
@@ -19,8 +20,14 @@ function Products() {
     setProducts(data.products);
   }
 
+  const getBrands = async ()=>{
+    const data = await getBrand();
+    setBrands(data.brands);
+  }
+
   useEffect(() => {
     getProducts();
+    getBrands();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -41,7 +48,7 @@ function Products() {
             Add new product
           </button>
         </div>
-        <ListProduct products={products} getProducts={getProducts}/>
+        <ListProduct products={products} getProducts={getProducts} brands={brands}/>
       </div>
       {openModal ? (
         <>
@@ -58,7 +65,7 @@ function Products() {
                   </h3>
                 </div>
                 {/*body and footer*/}
-                <NewProduct setOpenModal={setOpenModal} getProducts={getProducts} />
+                <NewProduct setOpenModal={setOpenModal} getProducts={getProducts} brands={brands}  />
               </div>
             </div>
           </div>
