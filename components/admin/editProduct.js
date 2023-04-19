@@ -2,18 +2,18 @@
 import React, { useState, useEffect } from "react";
 import { addImage, removeImage, refresh, updateProduct } from "@/lib/action";
 
-const EditProduct = ({ setOpenModal, getProducts, product, setProduct }) => {
+const EditProduct = ({ setOpenModal, getProducts, product, setProduct, brands }) => {
   const handleFile = async (e) => {
     await refresh();
     let fileList = e.target.files;
     let images;
     for (let i = 0; i < fileList.length; i++) {
-      images = await addImage(product.id,fileList[i])
+      images = await addImage(product.id, fileList[i])
     }
     setProduct({ ...product, images: images })
   };
 
-  const update = async()=>{
+  const update = async () => {
     await refresh();
     await updateProduct(product);
     getProducts();
@@ -54,7 +54,7 @@ const EditProduct = ({ setOpenModal, getProducts, product, setProduct }) => {
               return (
                 <div key={key} className="overflow-hidden relative">
                   <i onClick={() => { removeImg(url) }} className="mdi mdi-close absolute right-1 hover:text-white cursor-pointer">
-                    <svg class="h-4 w-4 text-orange" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className="h-4 w-4 text-orange" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" />  <line x1="18" y1="6" x2="6" y2="18" />  <line x1="6" y1="6" x2="18" y2="18" />
                     </svg>
                   </i>
@@ -65,32 +65,45 @@ const EditProduct = ({ setOpenModal, getProducts, product, setProduct }) => {
           </div>
           <div>
             <input style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" type="text" placeholder="Description" value={product.description} onChange={(e) => { setProduct({ ...product, description: e.target.value }) }} />
+              id="name" type="text" placeholder="Name of product" value={product.name} onChange={(e) => { setProduct({ ...product, name: e.target.value }) }} />
+          </div>
+          <div>
+            <input style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="description" type="text" placeholder="Description" value={product.description} onChange={(e) => { setProduct({ ...product, description: e.target.value }) }} />
           </div>
           <div>
             <input type="number" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Initial Price" value={product.initialPrice} onChange={(e) => { setProduct({ ...product, initialPrice: e.target.value }) }} />
+              id="initialPrice" placeholder="Initial Price" value={product.initialPrice} onChange={(e) => { setProduct({ ...product, initialPrice: e.target.value }) }} />
           </div>
           <div>
             <input type="number" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Sale Price" value={product.salePrice} onChange={(e) => { setProduct({ ...product, salePrice: e.target.value }) }} />
+              id="salePrice" placeholder="Sale Price" value={product.salePrice} onChange={(e) => { setProduct({ ...product, salePrice: e.target.value }) }} />
+          </div>
+          <div style={{ marginTop: "20px" }}>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select brand</label>
+            <select defaultValue={product.brand} id="status" onClick={(e) => { setProduct({ ...product, brand: e.target?.value, email: brands[e.target.options.selectedIndex].email }) }}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              {brands.map((brand, index) => (
+                <option value={brand.name} key={index}>{brand.name}</option>
+              ))}
+            </select>
           </div>
           <div>
             <input type="email" style={{ marginTop: "20px" }} className="appearance-none rounded-lg border w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
-              id="username" placeholder="Supplier's email" value={product.email} onChange={(e) => { setProduct({ ...product, email: e.target.value }) }} />
+              id="username" placeholder="Supplier's email" value={product.email} disabled />
           </div>
           <div style={{ marginTop: "20px" }}>
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select condition</label>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select condition</label>
             <select defaultValue={product.condition} id="status" onClick={(e) => { setProduct({ ...product, condition: e.target.value }) }}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option value="Public">Available</option>
               <option value="Private">Out of stock</option>
             </select>
           </div>
           <div style={{ marginTop: "20px" }}>
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a status</label>
+            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a status</label>
             <select defaultValue={product.privacy} id="status" onClick={(e) => { setProduct({ ...product, privacy: e.target.value }) }}
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
               <option value="Public">Public</option>
               <option value="Private">Private</option>
             </select>
@@ -109,7 +122,7 @@ const EditProduct = ({ setOpenModal, getProducts, product, setProduct }) => {
         <button
           className="font-bold uppercase text-sm px-6 py-3 rounded hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           type="button"
-          onClick={() => { update();}}
+          onClick={() => { update(); }}
           style={{ backgroundColor: "rgb(64, 109, 89)", color: "white" }}
         >
           Save Changes

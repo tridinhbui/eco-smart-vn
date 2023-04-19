@@ -1,4 +1,5 @@
 export const API_SOURCE = "https://lazy-hare-bracelet.cyclic.app";
+//export const API_SOURCE = "http://localhost:8080";
 export const ADMIN_LOGIN_API = API_SOURCE+"/user/login";
 export const REFRESH_TOKEN_API = API_SOURCE+"/user/refresh";
 export const ADD_POST_API = API_SOURCE+"/post/add-post";
@@ -7,6 +8,7 @@ export const UPDATE_POST_API = API_SOURCE+"/post/update-post";
 export const DELETE_POST_API = API_SOURCE+"/post/delete-post";
 export const ADD_PRODUCT_API = API_SOURCE+"/product/add-product"
 export const GET_PRODUCT_API = API_SOURCE+"/product/get-product";
+export const GET_BRAND_API = API_SOURCE+"/product/get-brand";
 export const DELETE_IMAGE_API = API_SOURCE+"/product/remove-image";
 export const ADD_IMAGE_API = API_SOURCE+"/product/add-image";
 export const UPDATE_PRODUCT_API = API_SOURCE+"/product/update-product"
