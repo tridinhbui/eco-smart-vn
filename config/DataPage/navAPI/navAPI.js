@@ -21,4 +21,4 @@ export const NAV_ITEMS = [
     },
   ]
 
-  export const NAV_LINKS = ["/", "/product", "/activities", "/about-us", "/contact"]
+  export const NAV_LINKS = ["/", "/products", "/activities", "/about-us", "/contact"]
