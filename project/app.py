@@ -35,6 +35,11 @@ def activities_page4():
     return render_template('activities/page4.html')
 
 
+@app.route('/activities/vietstraw/')
+def activities_vietstraw():
+    return render_template('activities/vietstraw.html')
+
+
 @app.route('/contact-us/')
 def contactUs():
     return render_template('contactus.html')
