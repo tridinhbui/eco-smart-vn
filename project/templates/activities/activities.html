@@ -1,43 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/activities_page.css') }}"
-    />
 
-    <title>Hoạt Động</title>
-    <link
-      rel="icon"
-      href="{{ url_for('static', filename='img/aboutus/logo2.png') }}"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/activities_page.css') }}" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+  <title>Hoạt Động</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/aboutus/logo2.png') }}" type="image/x-icon" />
 
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
+    rel="stylesheet">
 
-  <body style="font-family: 'Inter', sans-serif">
-    {% include 'navbar.html' %}
-    <div class="bodystyle">
-      <div class="head1">
-        <h1>Hoạt Động</h1>
-      </div>
+</head>
+
+<body style="font-family: 'Inter', sans-serif">
+  {% include 'navbar.html' %}
+  <div class="bodystyle">
+    <div class="head1">
+      <h1>Hoạt Động</h1>
+    </div>
     <div class="activities-container">
       <div id="activities_news">
+        <div class="content_block ">
+          <div class="content2" style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
+            <div class="block_header">
+              <div class="text1">Eco Touch - A new journey of Viet Straw to go global</div>
+            </div>
+            <span class="text2">Joining forces with EcoSmart Solutions, ECO Touch embarks on an exhilarating journey
+              alongside VietStraw! As Vietnam's trailblazer in the green movement, VietStraw has introduced rice straws
+              - an eco-friendly alternative that perfectly aligns with the commitment to sustainability.
+            </span>
+            <div class="readmore">
+              <a href="/activities/vietstraw/"
+                class="text3">
+                Read More</a>
+            </div>
+          </div>
+          <div class="image2">
+            <img style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;"
+              src="{{ url_for('static', filename='img/activities_page/vietstraw.png') }}" class="img" alt="" />
+          </div>
+        </div>
+
         <div class="content_block " style="display: none">
           <div class="content2" style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
             <div class="block_header">
               <div class="text1">VIETSTRAW - ECO TOUCH</div>
             </div>
             <span class="text2">Cocoon Việt Nam là thương hiệu mỹ phẩm thuần chay nổi tiếng ra đời từ năm 2013.
-              Để hiểu một cách đơn giản, mỹ phẩm thuần chay là những sáng tạo mỹ phẩm hoàn toàn không chứa bất kỳ thành phần nào
+              Để hiểu một cách đơn giản, mỹ phẩm thuần chay là những sáng tạo mỹ phẩm hoàn toàn không chứa bất kỳ thành
+              phần nào
               có nguồn gốc từ động vật...
             </span>
             <div class="readmore">
@@ -54,37 +70,30 @@
         <div class="content_block ">
           <div class="content2" style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
             <div class="block_header">
-              <div class="text1">COCOON - DOANH NGHIỆP MỸ PHẨM VIỆT "TIÊN PHONG" TRONG PHONG TRÀO SỬ DỤNG SẢN PHẨM THUẦN CHAY</div>
+              <div class="text1">COCOON - DOANH NGHIỆP MỸ PHẨM VIỆT "TIÊN PHONG" TRONG PHONG TRÀO SỬ DỤNG SẢN PHẨM THUẦN
+                CHAY</div>
             </div>
-            <span class="text2"
-              >Cocoon Việt Nam là thương hiệu mỹ phẩm thuần chay nổi tiếng ra đời từ năm 2013. 
-              Để hiểu một cách đơn giản, mỹ phẩm thuần chay là những sáng tạo mỹ phẩm hoàn toàn không chứa bất kỳ thành phần nào có nguồn gốc từ động vật...
+            <span class="text2">Cocoon Việt Nam là thương hiệu mỹ phẩm thuần chay nổi tiếng ra đời từ năm 2013.
+              Để hiểu một cách đơn giản, mỹ phẩm thuần chay là những sáng tạo mỹ phẩm hoàn toàn không chứa bất kỳ thành
+              phần nào có nguồn gốc từ động vật...
             </span>
             <div class="readmore">
-              <a
-                href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid02vjRyzCzvEzaxTpCQdQvziXSHBJBSbkU4VPyhLQj3wGEpkEsQsbU1ukeUYx4NHu4Ll"
-                class="text3"
-              >
-                Read More</a
-              >
+              <a href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid02vjRyzCzvEzaxTpCQdQvziXSHBJBSbkU4VPyhLQj3wGEpkEsQsbU1ukeUYx4NHu4Ll"
+                class="text3">
+                Read More</a>
             </div>
           </div>
           <div class="image2">
             <img style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_20.jpg') }}"
-              class="img"
-              alt=""
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_20.jpg') }}" class="img" alt="" />
           </div>
         </div>
 
         <div class="content_block ">
-          <div class="image2" >
+          <div class="image2">
             <img style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_19.jpg') }}"
-              class="img"
-              alt="TẾT CỦA CÔNG DÂN TOÀN CẦU CÓ GÌ KHÁC BIỆT?"
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_19.jpg') }}" class="img"
+              alt="TẾT CỦA CÔNG DÂN TOÀN CẦU CÓ GÌ KHÁC BIỆT?" />
           </div>
           <div class="content2" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
             <div class="block_header">
@@ -92,15 +101,13 @@
             </div>
             <span class="text2">
               Ngày nay, cùng với sự phát triển của xã hội,
-               đi kèm theo là sự nảy sinh của các vấn đề về môi trường, người tiêu dùng ngày càng khắt khe hơn trong việc lựa chọn quần áo, phụ kiện. 
+              đi kèm theo là sự nảy sinh của các vấn đề về môi trường, người tiêu dùng ngày càng khắt khe hơn trong việc
+              lựa chọn quần áo, phụ kiện.
             </span>
             <div class="readmore">
-              <a
-                href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0hiu2V2EgNWeSoqR5uDXQawN1vFt5BswrD63nXYCqgRyKMR7psQvJbNCHZ8KWezhjl"
-                class="text3"
-              >
-                Read More</a
-              >
+              <a href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0hiu2V2EgNWeSoqR5uDXQawN1vFt5BswrD63nXYCqgRyKMR7psQvJbNCHZ8KWezhjl"
+                class="text3">
+                Read More</a>
             </div>
           </div>
         </div>
@@ -110,138 +117,120 @@
             <div class="block_header">
               <div class="text1">RA MẮT THỜI TRANG CỦA MỴ x ECO SMART SOLUTIONS</div>
             </div>
-            <span class="text2"
-              >Today, we are excited to announce our new partnership with Mỵ Store!
+            <span class="text2">Today, we are excited to announce our new partnership with Mỵ Store!
 
-              Eco Smart Solutions chính thức ra mắt kênh phân phối sản phẩm chính thức của thương hiệu Mỵ Store - Thời trang của Mỵ...
+              Eco Smart Solutions chính thức ra mắt kênh phân phối sản phẩm chính thức của thương hiệu Mỵ Store - Thời
+              trang của Mỵ...
             </span>
             <div class="readmore">
-              <a
-                href="https://www.facebook.com/photo/?fbid=117135821308772&set=a.117125581309796"
-                class="text3"
-              >
-                Read More</a
-              >
+              <a href="https://www.facebook.com/photo/?fbid=117135821308772&set=a.117125581309796" class="text3">
+                Read More</a>
             </div>
           </div>
           <div class="image2">
             <img style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_18.jpg') }}"
-              class="img"
-              alt=""
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_18.jpg') }}" class="img" alt="" />
           </div>
         </div>
 
         <div class="content_block ">
           <div class="image2">
             <img style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_17.jpg') }}"
-              class="img"
-              alt=""
-              class="anh"
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_17.jpg') }}" class="img" alt=""
+              class="anh" />
           </div>
           <div class="content2" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
             <div class="block_header">
               <div class="text1">17SDGs LÀ GÌ? BẠN ĐÃ SỐNG CÓ TRÁCH NHIỆM CHƯA?</div>
             </div>
-            <span class="text2"
-              >Sustainable Development Goals (SDGs) là 17 Mục tiêu Phát triển Bền vững như một lộ trình để chấm dứt đói nghèo, 
+            <span class="text2">Sustainable Development Goals (SDGs) là 17 Mục tiêu Phát triển Bền vững như một lộ trình
+              để chấm dứt đói nghèo,
               chống bất bình đẳng và chống biến đổi khí hậu trong 15 năm tới,...
             </span>
             <div class="readmore">
-              <a
-                href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0RFRFm7hZuJD4QQhd6ppBCzhpkiiYQRbFgFZEqaHynNGhT1JdDjeKz3LXQNxbvNSCl"
-                class="text3"
-              >
-                Read More</a
-              >
+              <a href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0RFRFm7hZuJD4QQhd6ppBCzhpkiiYQRbFgFZEqaHynNGhT1JdDjeKz3LXQNxbvNSCl"
+                class="text3">
+                Read More</a>
             </div>
           </div>
         </div>
 
         <div class="content_block ">
-          <div class="content2"style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
+          <div class="content2" style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;">
             <div class="block_header">
               <div class="text1">ZAKKA NATURALS - THƯƠNG HIỆU CHẤT LƯỢNG MANG ĐẾN NIỀM TIN CHO MỸ PHẨM NỘI ĐỊA </div>
             </div>
-            <span class="text2"
-              >Những năm gần đây, làn sóng mỹ phẩm nội địa dần chiếm lại vị thế trong lòng người tiêu dùng Việt.
-               Trong đó không thể bỏ qua Zakka Naturals...
-              
+            <span class="text2">Những năm gần đây, làn sóng mỹ phẩm nội địa dần chiếm lại vị thế trong lòng người tiêu
+              dùng Việt.
+              Trong đó không thể bỏ qua Zakka Naturals...
+
             </span>
             <div class="readmore">
-              <a
-                href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0pxvJkUwtsx1NiWrSYJgGsVgKYHc4KfrGwRjH8tkNcDWmyh3qwSj7Y2gwXGPteeRCl"
-                class="text3"
-              >
-                Read More</a
-              >
+              <a href="https://www.facebook.com/ecosmartsolutionssjc/posts/pfbid0pxvJkUwtsx1NiWrSYJgGsVgKYHc4KfrGwRjH8tkNcDWmyh3qwSj7Y2gwXGPteeRCl"
+                class="text3">
+                Read More</a>
             </div>
           </div>
           <div class="image2">
             <img style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_16.jpg') }}"
-              class="img"
-              alt=""
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_16.jpg') }}" class="img" alt="" />
           </div>
         </div>
 
         <div class="content_block ">
           <div class="image2">
             <img style="border-top-left-radius: 5%; border-bottom-left-radius: 5%;"
-              src="{{ url_for('static', filename='img/activities_page/activities_page_15.jpg') }}"
-              class="img"
-              alt=""
-            />
+              src="{{ url_for('static', filename='img/activities_page/activities_page_15.jpg') }}" class="img" alt="" />
           </div>
           <div class="content2" style="border-top-right-radius: 5%; border-bottom-right-radius: 5%;">
             <div class="block_header">
               <div class="text1">HỢP TÁC ECO SMART SOLUTIONS X MỴ STORE</div>
             </div>
-            <span class="text2">Thời trang và lối sống vẫn luôn song hành, quần áo không chỉ để mặc mà còn để phản chiếu tâm hồn, lối sống không chỉ là lựa chọn nhất thời mà là tinh túy của mỗi con người sau từng ấy năm trải nghiệm...</span>
+            <span class="text2">Thời trang và lối sống vẫn luôn song hành, quần áo không chỉ để mặc mà còn để phản chiếu
+              tâm hồn, lối sống không chỉ là lựa chọn nhất thời mà là tinh túy của mỗi con người sau từng ấy năm trải
+              nghiệm...</span>
             <div class="readmore">
-              <a href="https://www.facebook.com/photo/?fbid=152048607756593&set=a.109001262061328" class="text3">Read More</a>
+              <a href="https://www.facebook.com/photo/?fbid=152048607756593&set=a.109001262061328" class="text3">Read
+                More</a>
             </div>
           </div>
         </div>
       </div>
-      
+
       <!--Most-watched -->
       <div class="most-watched">
         <p class="mw-heading">Xem nhiều</p>
         <div class="mw-content">
-          
+
           <div class="mw-content-block">
-            <img class="mw-image mw-child" src="{{ url_for('static', filename='img/activities_page/activities_page_14.jpg') }}" class="img" alt=""/>
+            <img class="mw-image mw-child"
+              src="{{ url_for('static', filename='img/activities_page/activities_page_14.jpg') }}" class="img" alt="" />
             <div class="text1 mw-child">CHECK YOUR MAIL!</div>
           </div>
           <div class="mw-content-block">
-            <img class="mw-image mw-child" src="{{ url_for('static', filename='img/activities_page/activities_page_13.jpg') }}" class="img" alt=""/>
+            <img class="mw-image mw-child"
+              src="{{ url_for('static', filename='img/activities_page/activities_page_13.jpg') }}" class="img" alt="" />
             <div class="text1 mw-child">Exciting news!</div>
           </div>
           <div class="mw-content-block">
-            <img class="mw-image mw-child" src="{{ url_for('static', filename='img/activities_page/activities_page_12.jpg') }}" class="img" alt=""/>
+            <img class="mw-image mw-child"
+              src="{{ url_for('static', filename='img/activities_page/activities_page_12.jpg') }}" class="img" alt="" />
             <div class="text1 mw-child">THÔNG BÁO CÒN 1 NGÀY ĐĂNG KÝ ĐÓNG ĐƠN</div>
           </div>
         </div>
       </div>
-    </div>        
+    </div>
     <div class="pagination">
       <ul>
-        <li><a href="/activities/" data-page ="1" class="page-link">1</a></li>
-        <li><a href="/activities/page2/" data-page ="2" class="page-link">2</a></li>
-        <li><a href="/activities/page3/" data-page ="3" class="page-link">3</a></li>
-        <li><a href="/activities/page4/" data-page ="4" class="page-link">4</a></li>
+        <li><a href="/activities/" data-page="1" class="page-link">1</a></li>
+        <li><a href="/activities/page2/" data-page="2" class="page-link">2</a></li>
+        <li><a href="/activities/page3/" data-page="3" class="page-link">3</a></li>
+        <li><a href="/activities/page4/" data-page="4" class="page-link">4</a></li>
       </ul>
     </div>
-    <script
-      src="{{ url_for('static', filename='js/activities.js')}}"
-      type="text/javascript"
-    ></script>
+    <script src="{{ url_for('static', filename='js/activities.js')}}" type="text/javascript"></script>
     {% include 'chatbot.html' %}
     {% include 'footer1.html' %}
-  </body>
+</body>
+
 </html>

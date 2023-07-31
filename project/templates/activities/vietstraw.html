@@ -4,11 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>vietstraw</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/aboutus/logo2.png') }}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/vietstraw.css') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <h1>VIETSTRAW - THE ECO TOUCH</h1>
+  {% include 'navbar.html' %}
+  <!-- Post content-->
+  <section class="post-header" style="background-image: url('../../static/img/activities_page/titlebackground.jpg')">
+    <div class="header-content post-container">
+      <!--Title-->
+      <h1 class="header-title"> Eco Touch - A new journey of Viet Straw to go global</h1>
+      <!--Post Image-->
+      <img src="{{ url_for('static', filename='img/activities_page/vietstraw.png') }}" alt="" class="header-img">
+    </div>
+  </section>
+
+
+  <!--Post-->
+  <section class="post-content post container">
+    <p class="post-text">Joining forces with EcoSmart Solutions, ECO Touch embarks on an exhilarating journey alongside VietStraw! As
+      Vietnam's trailblazer in the green movement, VietStraw has introduced rice straws - an eco-friendly alternative
+      that perfectly aligns with the commitment to sustainability. Empowering consumers and businesses to switch from
+      plastic to biodegradable rice straws, ECO Touch aims to expand its impact to international markets. </p>
+    <p class="post-text">Welcome to ECO Touch - an expedition brimming with promise and breakthroughs in the UK and European market. As
+      the pioneer and creator of VietStraw in Vietnam, ECO Touch proudly presents biodegradable rice straws - an
+      impressive eco-conscious product captivating Vietnamese consumers. </p>
+    <p class="post-text">The mission revolves around building a greener and cleaner Vietnam through eco-friendly solutions, with rice
+      straws as a significant step in the journey. Utilizing rice - a bountiful natural resource in Vietnam - as the
+      primary material, ECO Touch ensures its products are environmentally benign, making them the intelligent and
+      responsible choice for the community.</p>
+    <p class="post-text">Despite early challenges, ECO Touch's unwavering passion and perseverance propelled the dream of creating a
+      positive environmental impact and enhancing people's lives.</p>
+    <p class="post-text">A pivotal milestone was the acquisition of the first rice straw production machine, marking the beginning of an
+      eco-friendly production process and ensuring product excellence. ECO Touch's first rice straws emerged, carrying a
+      powerful message of sustainability and significance for the community.</p>
+    <p class="post-text">First partners, believers in ECO Touch, played a pivotal role in inspiring continuous improvement and delivering
+      unparalleled value to customers, contributing to a greener Vietnam</p>
+    <p class="post-text">With unwavering support from customers and partners, ECO Touch expands into international markets, championing
+      sustainability in the UK and European countries. Standing firm, ECO Touch envisions a brighter future,
+      orchestrating a beautiful symphony for the environment worldwide!</p>
+  </section>
+  
+  {% include 'footer1.html' %}
 </body>
 
 </html>
