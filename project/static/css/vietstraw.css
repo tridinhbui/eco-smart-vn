@@ -9,11 +9,11 @@
 section{
     padding: 3rem 0 2rem;
 }
-/* Post content    */
+/* Post content*/
 .post-header{
     width: 100%;
     height: 500px;
-    background-size: 50%;
+    background-size: 100%;
 }
 .post-container{
     max-width: 800px;
@@ -51,7 +51,7 @@ section{
 }
 
 /* responsive */
-@media (max-width: 800px){
+@media (max-width: 700px){
  section {
     padding: 2rem 0;
  }
@@ -62,12 +62,12 @@ section{
     font-size: 2rem;
  }
  .header-img{
-    height: 370px;
+    height: 300px;
  }
  .post-header{
     height: 435px;
  }
  .post-content{
-    margin-top: 9rem !important;
+    margin-top: 6rem !important;
  }
 }
