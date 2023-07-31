@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer1.css') }}" />
 
 </head>
 
@@ -20,6 +21,7 @@
   <section class="post-header" style="background-image: url('../../static/img/activities_page/titlebackground.jpg')">
     <div class="header-content post-container">
       <!--Title-->
+      <a class="back-link" href="/activities/">Trở lại trang Hoạt động</a>
       <h1 class="header-title"> Eco Touch - A new journey of Viet Straw to go global</h1>
       <!--Post Image-->
       <img src="{{ url_for('static', filename='img/activities_page/vietstraw.png') }}" alt="" class="header-img">
@@ -73,6 +75,8 @@
       Touch</a> envisions a brighter future,
       orchestrating a beautiful symphony for the environment worldwide!</p>
   </section>
+  {% include 'chatbot.html' %}
+  {% include 'footer1.html' %}
 </body>
 
 </html>

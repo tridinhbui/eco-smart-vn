@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/footer1.css" />
 
 </head>
 
@@ -117,6 +118,7 @@
   <section class="post-header" style="background-image: url('../../static/img/activities_page/titlebackground.jpg')">
     <div class="header-content post-container">
       <!--Title-->
+      <a class="back-link" href="/activities/">Trở lại trang Hoạt động</a>
       <h1 class="header-title"> Eco Touch - A new journey of Viet Straw to go global</h1>
       <!--Post Image-->
       <img src="/static/img/activities_page/vietstraw.png" alt="" class="header-img">
@@ -170,6 +172,100 @@
       Touch</a> envisions a brighter future,
       orchestrating a beautiful symphony for the environment worldwide!</p>
   </section>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chatbot Example</title>
+    <link
+  rel="stylesheet"
+  href="/static/css/chatbot.css"
+/>
+  </head>
+  <body>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102113552756762");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>
+  
+<link rel="stylesheet" href="../static/css/footer1.css" />
+
+<footer class="footer" id = "footer">
+  <div class="footer-content">
+    <h4>Eco Smart Solutions</h4>
+    <p>
+      Đội ngũ Eco Smart Solutions luôn đặt tôn chỉ Hiệu quả - Tôn trọng - Chuyên nghiệp luôn cố gắng hoạt động vì mục tiêu kiến tạo một thế giới bền vững.
+    </p>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://www.facebook.com/ecosmartvietnam"
+      ><i class="fa-brands fa-facebook footer-icon"></i
+    ></a>
+
+    <a
+      href="https://www.instagram.com/ecosmart.vietnam/?fbclid=IwAR33v8jFTPm6HNBmon6yHHyNhUbpEJvLy9DKcHGuEd04n6YYh4S35JoM7hM"
+      ><i class="fa-brands fa-instagram footer-icon"></i
+    ></a>
+
+    <a href="https://www.linkedin.com"
+      ><i class="fa-brands fa-linkedin footer-icon"></i
+    ></a>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-flex-item">
+      <p class="copyright-text">
+        Bản quyền thuộc về &copy; <a class="footer-link" href="#">ecosmartsolutions</a>
+      </p>
+    </div>
+    <div class="footer-flex-item">
+      <div class="footer-menu">
+        <p><a class="footer-link" href="">Trang Chủ</a></p>
+        <p><a class="footer-link" href="">Về Chúng Tôi</a></p>
+        <p><a class="footer-link" href="">Liên Hệ</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script
+  src="https://kit.fontawesome.com/550795c27f.js"
+  crossorigin="anonymous"
+></script>
+
+<script
+      type="text/javascript"
+      src="/static/js/scrolltotop.js"
+    ></script>
 </body>
 
 </html>
