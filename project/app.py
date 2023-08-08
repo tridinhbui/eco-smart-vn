@@ -35,7 +35,7 @@ def activities_page4():
     return render_template('activities/page4.html')
 
 
-@app.route('/activities/vietstraw/')
+@app.route('/activities/ECO-Touch-Rice-Straws/')
 def activities_vietstraw():
     return render_template('activities/vietstraw.html')
 
